@@ -1138,7 +1138,7 @@ input:focus, textarea:focus {
 }
 
 button {
-	color: rgba(255,255,255,0.81);
+	color: white;
 	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.6);
 	box-shadow: 0 1px 5px rgba(0,0,0,0.6);
 	background: #3d607e url(button.png) 0 0;
@@ -1310,7 +1310,7 @@ p.geekAlert em {
 	margin-bottom: 0;
 	left: 3px;
 	letter-spacing: 1px;
-	color: rgba(254,255,254,0.5);
+	color: white;
 	background-color: transparent;
 	border: none;
 	height: 32px;
@@ -1330,16 +1330,16 @@ p.geekAlert em {
 }
 
 #search input::-webkit-input-placeholder {
-    color: rgba(252,255,255,0.4);
+    color: white;
 	line-height: 20px;
 }
 #search input:-moz-placeholder {
-    color: rgba(252,255,255,0.4);
+    color: white;
 	line-height: 20px;
 }
 
 #search input:placeholder {
-    color: rgba(252,255,255,0.4);
+    color: white;
 	line-height: 20px;
 }
 
@@ -1368,7 +1368,7 @@ p.geekAlert em {
 
 #globalNavigation li a {
 	padding-left: 20px;
-	color: #aeb7c4;
+	color: white;
 	text-decoration: none;
 	letter-spacing: 2px;
 	transition-property: color, background-color;
@@ -1484,7 +1484,7 @@ p.geekAlert em {
 	background-image: url(pattern.png),url(grain.png) ;
 	background-repeat: no-repeat,repeat;
 	transition: background-color 2s ease-out;
-	color: #aeb7c4;
+	color: white;
 	display: block;
 	margin-left: -310px;
 	margin-right: -180px;
