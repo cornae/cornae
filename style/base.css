@@ -1779,7 +1779,7 @@ body.mood-avocado .posts .post a.articleAvatar:hover img,
 body.mood-avocado hr,
 body.mood-avocado #shadowbox_overlay {
 	background-color: #777f58;
-	color: #dce6c7;
+	color: white;
 }
 
 body.mood-avocado #contentBody .shortMessage ul li,
