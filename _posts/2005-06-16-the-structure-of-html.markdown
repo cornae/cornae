@@ -16,7 +16,7 @@ All content in HTML is placed in so called tags. De syntax of this paragraph is 
 
 To every kind of content belongs a certain tag. In the example above the content is a paragraph and paragraphs get a 'p-tag'. These tags are to be written in lowercase. Right next to the letter p there is a space and then a so called 'attribute'. An attribute is a piece of code which says something about the information, the content, of a tag. In this case we're looking at a lang attribute. This attribute states the language of the content within the tag. Other attributes may be used to influence the graphic representation of the content, or to add scripts to elements.
 
-Another thing that catches the eye is that the piece of content is followed by '``'. This piece of code is the termination of the tag. It is an *unbreakable law* that every tag in XHTML must be terminated.
+Another thing that catches the eye is that the piece of content is followed by `</p>`. This piece of code is the termination of the tag. It is an *unbreakable law* that every tag in XHTML must be terminated.
 
 A few commonly used tags are: `<p>` (paragraph text), `<img>` (image), `<ul>` (unordered list), `<table>` (table), `<h1>` (high level header), `<h2>` (lower level header), `<div>` (division, rough segmentation of groups of content) and `<a>` (hyperlink).
 
