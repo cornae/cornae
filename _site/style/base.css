@@ -1787,18 +1787,11 @@ body.mood-avocado #prologue,
 body.mood-avocado h1,
 body.mood-avocado #twitter ul li span  {
 	border-left-color: white;
-	color: #dce6c7;
 }
 
 body.mood-avocado div#contentBody p.geekAlert,
 body.mood-avocado #sideBar .tileItem a.articleAvatar img {
 	background-color: #777f58;
-}
-
-body.mood-avocado #globalNavigation li a,
-body.mood-avocado #search label.superImpose,
-body.mood-avocado a {
-	color: #dce6c7;
 }
 
 body.mood-avocado #mainMenu li#portaltab-contact a:hover {
@@ -1870,7 +1863,6 @@ body.mood-mocha #shadowbox_overlay {
 
 body.mood-mocha #prologue,
 body.mood-mocha h1 {
-	color: #d2baa9;
 }
 
 body.mood-mocha hr,
@@ -1881,10 +1873,6 @@ body.mood-mocha .posts .post body.mood-mocha a.articleAvatar:hover img {
 
 body.mood-mocha div#contentBody p.geekAlert {
 	background-color: #8b745f;
-}
-
-body.mood-mocha #globalNavigation li a {
-	color: #d2baa9;
 }
 
 body.mood-mocha #mainMenu li#portaltab-contact,
@@ -1949,14 +1937,6 @@ body.mood-topaz #shadowbox_overlay {
 	background-color: #4e91cb;
 }
 
-body.mood-topaz #prologue ul#languages li,
-body.mood-topaz #prologue ul#languages a,
-body.mood-topaz #prologue,
-body.mood-topaz h1
- {
-	color: #bddceb;
-}
-
 body.mood-topaz #home #prologue ul#languages a:hover {
 	color: #4e91cb;
 }
@@ -1970,10 +1950,6 @@ body.mood-topaz #sideBar .tileItem a.articleAvatar img {
 
 body.mood-topaz div#contentBody p.geekAlert {
 	background-color: #4e91cb;
-}
-
-body.mood-topaz #globalNavigation li a {
-	color: #bddceb;
 }
 
 body.mood-topaz #mainMenu li#portaltab-contact a:hover {
@@ -2047,15 +2023,6 @@ body.mood-orchid #sideBar .tileItem body.mood-orchid a.articleAvatar img {
 body.mood-orchid #mainMenu li#portaltab-contact a:hover {
 	background-color: #fcb6e8;
 	color: #cb4eab;
-}
-
-body.mood-orchid #globalNavigation li a,
-body.mood-orchid #prologue ul#languages li,
-body.mood-orchid #prologue ul#languages a,
-body.mood-orchid #prologue,
-body.mood-orchid h1
- {
-	color: #fcb6e8;
 }
 
 body.mood-orchid #contentBody h2,
