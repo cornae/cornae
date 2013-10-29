@@ -1,0 +1,612 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+iframe,script,img {
+	display: none;
+}
+
+#main img {
+	display: block;
+}
+
+/* @group Dropshadow */
+
+.wrap1, .wrap2, .wrap3 {
+  display:inline-table;
+  /* \*/display:block;
+}
+.wrap1 {
+  background: url(shadow.gif) no-repeat right bottom;
+	float: left;
+	position: absolute;
+}
+.wrap2 {
+  background:url(corner_bl.gif) -4px 100% no-repeat;
+}
+.wrap3 {
+  padding: 0 6px 6px 0;
+  background: url(corner_tr.gif) no-repeat 100% -4px;
+}
+
+.wrap1 .introduction {
+	top: 0;
+	left: 0;
+	position: relative;
+}
+
+.wrap1 .description {
+	top: 0;
+	left: 0;
+	position: relative;
+}
+ 
+
+
+
+
+
+/* @end */
+
+img {
+	border-style: none;
+}
+
+#main {
+	width: 881px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	display: block;
+}
+
+#header {
+	float: left;
+	position: relative;
+	width: 881px;
+	border-bottom: 3px solid #e6e3d4;
+}
+
+#header h1 {
+	margin: 0;
+	position: absolute;
+	top: 15px;
+	z-index: 1;
+}
+
+#header h1 a {
+	background: url(logoSubPage-hamptonBay.gif) no-repeat;
+	width: 86px;
+	height: 0;
+	padding-top: 53px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+
+#header h2 {
+	display: inline;
+	float: left;
+	width: 292px;
+	height: 0;
+	padding-top: 90px;
+	background-image: url(pageHeaderPatioSets.gif);
+	overflow: hidden;
+	margin: 16px 0 0 -50px;
+	position: absolute;
+	z-index: 0;
+}
+
+#header p {
+	float: right;
+	margin: 0;
+}
+
+#header p img {
+	float: left;
+}
+
+#mainContent {
+	position: relative;
+	float: left;
+	width: 881px;
+	margin-top: 20px;
+	display: inline;
+}
+
+a.buttonDefault {
+	color: #9f6e41;
+	text-decoration: none;
+	border: 1px solid #865434;
+	font: 10px "Lucida Grande", Lucida, Verdana, sans-serif;
+	display: inline-block;
+	background: url(rightArrow-viewCollection.gif) no-repeat right center;
+	padding: 5px 28px 5px 8px;
+	position: static;
+}
+
+a.buttonDefault:hover,
+p.catalogue a.buttonDefault:hover {
+	color: #553b22;
+	border: 1px solid #846437;
+	display: inline-block;
+}
+
+.introduction h2 {
+	margin-top: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	margin-bottom: 5px;
+	letter-spacing: 1px;
+	line-height: 20px;
+}
+
+.descriptions h2 {
+	margin-top: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 42px;
+	letter-spacing: 1px;
+	padding-right: 25px;
+	padding-left: 25px;
+	line-height: 42px;
+	margin-bottom: 5px;
+}
+
+.introduction {
+	position: absolute;
+}
+
+.introduction p {
+	font-size: 13px;
+	line-height: 18px;
+	margin-top: 0;
+	float: left;
+	margin-bottom: 10px;
+}
+
+/* @group sIFR default classes */
+
+.sIFR-flash {
+	visibility: visible !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.descriptions h2.sIFR-replaced,.introduction h2.sIFR-replaced {
+	visibility: visible !important;
+	margin: 0 !important;
+	line-height: 0;
+}
+
+.sIFR-alternate {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+}
+
+/* @end */
+
+/* @group sIFR configuration */
+
+.sIFR-replaced > div {
+  display: none !important;
+}
+
+/* @end */
+
+#mainContent.productDetails {
+	background: url(shadowDescription-typeA.gif) no-repeat 0 10px;
+}
+
+.description {
+	position: absolute;
+}
+
+.descriptions p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 11px;
+	line-height: 13px;
+	color: white;
+	clear: left;
+	padding: 0;
+	width: 100%;
+}
+
+.descriptions p a {
+	padding: 6px 25px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 11px;
+	line-height: 13px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	width: auto;
+}
+
+.descriptions p a:hover,
+.descriptions p.productActive a {
+	float: left;
+	width: 237px;
+}
+
+html>body .descriptions p a:hover,
+html>body .descriptions p.productActive a {
+	float: none;
+	width: auto;
+	display: block;
+}
+
+html>body .descriptions p {
+	width: auto;
+	display: block;
+}
+
+*:first-child+html .descriptions p {
+	width: 100%;
+}
+
+/* @group Primary Navigation */
+
+#primaryNavigation ul {
+	float: left;
+	margin-top: 0;
+	width: 881px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 14px;
+}
+
+#primaryNavigation li {
+	float: left;
+	width: 220px;
+	margin: 0;
+	padding: 0;
+}
+
+#primaryNavigation li a {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	width: 220px;
+	text-align: center;
+	float: left;
+	text-decoration: none;
+	color: #465d53;
+	background-color: #e6e3d4;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+#primaryNavigation li a:hover {
+	background-color: #cdcbbc;
+}
+
+
+
+/* @end */
+
+/* @group Secondary Navigation */
+
+#secondaryNavigation {
+	width: 881px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+#secondaryNavigation ul {
+	float: left;
+	overflow: hidden;
+	border-bottom: 3px solid #e6e3d4;
+	list-style-type: none;
+	width: 894px;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 5px 0;
+	white-space: nowrap;
+	margin-top: 0;
+}
+
+#secondaryNavigation ul li {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+	width: 89px;
+	height: 80px;
+	display: inline;
+	background-position: bottom;
+}
+
+#secondaryNavigation ul li a {
+	float: left;
+	border-top: 10px solid;
+	width: 89px;
+	height: 0;
+	display: inline;
+	overflow: hidden;
+	padding-top: 66px;
+	margin: 0;
+}
+
+#secondaryNavigation ul li a:hover,
+#secondaryNavigation ul li.active a {
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+	border-right-width: 4px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-left-width: 4px;
+	width: 81px;
+}
+
+#secondaryNavigation ul li#benedetto {
+	background-image: url(navPhoto-benedetto.jpg);
+}
+
+#secondaryNavigation ul li#benedetto a {
+	border-top-color: #eabc66;
+}
+
+#secondaryNavigation ul li#benedetto a:hover,
+#secondaryNavigation ul li#benedetto.active a {
+	border-color: #eabc66;
+}
+
+#secondaryNavigation ul li#folian {
+	background-image: url(navPhoto-folian.jpg);
+}
+
+#secondaryNavigation ul li#folian a {
+	border-top-color: #E5A599;
+}
+
+#secondaryNavigation ul li#folian a:hover,
+#secondaryNavigation ul li#folian.active a {
+	border-color: #E5A599;
+}
+
+#secondaryNavigation ul li#kampar {
+	background-image: url(navPhoto-kampar.jpg);
+}
+
+#secondaryNavigation ul li#kampar a {
+	border-top-color: #8BB7D7;
+}
+
+#secondaryNavigation ul li#kampar a:hover,
+#secondaryNavigation ul li#kampar.active a {
+	border-color: #8BB7D7;
+}
+
+#secondaryNavigation ul li#calabria {
+	background-image: url(navPhoto-calabria.jpg);
+}
+
+#secondaryNavigation ul li#calabria a {
+	border-top-color: #D49659;
+}
+
+#secondaryNavigation ul li#calabria a:hover,
+#secondaryNavigation ul li#calabria.active a {
+	border-color: #D49659;
+}
+
+#secondaryNavigation ul li#simone {
+	background-image: url(navPhoto-simone.jpg);
+}
+
+#secondaryNavigation ul li#simone a {
+	border-top-color: #A8C786;
+}
+
+#secondaryNavigation ul li#simone a:hover,
+#secondaryNavigation ul li#simone.active a {
+	border-color: #A8C786;
+}
+
+#secondaryNavigation ul li#cabrera {
+	background-image: url(navPhoto-cabrera.jpg);
+}
+
+#secondaryNavigation ul li#cabrera a {
+	border-top-color: #D49659;
+}
+
+#secondaryNavigation ul li#cabrera a:hover,
+#secondaryNavigation ul li#cabrera.active a {
+	border-color: #D49659;
+}
+
+#secondaryNavigation ul li#sydney {
+	background-image: url(navPhoto-sydney.jpg);
+}
+
+#secondaryNavigation ul li#sydney a {
+	border-top-color: #D6CE48;
+}
+
+#secondaryNavigation ul li#sydney a:hover,
+#secondaryNavigation ul li#sydney.active a {
+	border-color: #D6CE48;
+}
+
+#secondaryNavigation ul li#teak {
+	background-image: url(navPhoto-teak.jpg);
+}
+
+#secondaryNavigation ul li#teak a {
+	border-top-color: #8BB7D7;
+}
+
+#secondaryNavigation ul li#teak a:hover,
+#secondaryNavigation ul li#teak.active a {
+	border-color: #8BB7D7;
+}
+
+#secondaryNavigation ul li#verrado {
+	background-image: url(navPhoto-verrado.jpg);
+}
+
+#secondaryNavigation ul li#verrado a {
+	border-top-color: #A8C786;
+}
+
+#secondaryNavigation ul li#verrado a:hover,
+#secondaryNavigation ul li#verrado.active a {
+	border-color: #A8C786;
+}
+
+
+
+/* @end */
+
+/* @group Catalogue Section */
+
+p.catalogue {
+	margin-top: 0;
+	padding-top: 0;
+	float: left;
+	position: absolute;
+	top: 0;
+	display: inline;
+	left: 0;
+	width: 881px;
+	overflow: hidden;
+}
+
+p.catalogue a {
+	position: absolute;
+	display: inline;
+	float: left;
+	text-decoration: none;
+	font-size: 11px;
+	overflow: hidden;
+}
+
+p.catalogue a img {
+	float: left;
+}
+
+p.catalogue a span {
+	display: none;
+	width: 100%;
+}
+
+html>body p.catalogue a span {
+	width: auto;
+}
+
+p.catalogue a:hover {
+	display: block;
+}
+
+p.catalogue a:hover span
+ {
+	bottom: 0;
+	left: 0;
+	color: white;
+	text-decoration: none;
+	padding: 8px;
+	line-height: 18px;
+	position: absolute;
+	display: block;
+	float: left;
+	right: 0;
+	cursor: pointer;
+}
+
+p.catalogue a.productActive span.productID {
+	bottom: 0;
+	left: 0;
+	color: white;
+	text-decoration: none;
+	line-height: 18px;
+	position: absolute;
+	display: block;
+	float: left;
+	right: 0;
+	cursor: pointer;
+	padding: 8px 0;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 36px;
+	text-align: center;
+}
+
+
+
+/* @end */
+
+/* @group Appendix */
+
+div#appendix {
+	padding-bottom: 8px;
+	padding-top: 6px;
+	display: inline;
+	border-bottom: 20px solid white;
+	min-height: 16px;
+}
+
+div#appendix p#quickLinks {
+	float: left;
+	width: 861px;
+
+	background-color: #e8e2d2;
+	overflow: hidden;
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 15px;
+	display: inline;
+	padding: 6px 0 8px;
+	border-left: 20px solid #e8e2d2;
+}
+
+div#appendix p#quickLinks a {
+	padding-left: 9px;
+	margin-left: -5px;
+	border-left: 1px solid #465d53;
+	padding-right: 10px;
+	color: #465d53;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+div#appendix p#quickLinks a:hover {
+	text-decoration: underline;
+}
+
+div#appendix p#disclaimer {
+	color: #465d53;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 20px;
+	float: left;
+	width: 881px;
+	margin-top: 10px;
+}
+
+div#appendix p#disclaimer a {
+	color: #465d53;	
+}
+
+/* @end */  '
+

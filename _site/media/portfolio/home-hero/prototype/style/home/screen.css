@@ -1,0 +1,364 @@
+/* @group Global Navigation */
+
+#mainMenu {
+	margin-top: 1px;
+	position: static;
+	z-index: 0;
+	background-color: #cc0000;
+	background-image: none;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#mainMenu li {
+	
+}
+
+#mainMenu li a {
+	padding-left: 12px;
+	width: 155px;
+	text-align: left;
+	color: #ff9999;
+	font-size: 11px;
+	padding-bottom: 15px;
+	background-image: none;
+	padding-right: 12px;
+}
+
+#mainMenu li a em {
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	font-style: normal;
+}
+
+
+
+/* @end */
+
+/* @group Logo */
+
+#logo {
+	display: block;
+	height: 14px;
+	width: 874px;	
+	position: relative;
+	left: 50%;
+	top: 14px;
+	margin: 0 0 0 -437px;
+}
+
+html>body #logo{
+	background: url(../base/shadowTop.png) repeat-x 0 top;
+}
+
+html>body #logo a {
+	height: 339px;
+}
+
+#logo sub,
+#logo #shadowRight {
+	padding-top: 339px;
+}
+
+/* @end */
+
+#mainContent {
+	background: url(footerBottom.png) no-repeat 0 bottom;
+	padding-bottom: 17px;
+	float: left;
+	top: 0;
+}
+
+/* @group Footer */
+
+#footer img {
+	position:absolute;
+	display: none;
+}
+
+#footer span#footerImages {
+	float: left;
+	margin-right: 0;
+	width: 332px;
+	height: 116px;
+	margin-top: 0;
+	position: absolute;
+	top: 30px;
+}
+
+#footer {
+	padding: 30px 12px 0;
+	margin-top: 1px;
+	float: left;
+	width: 876px;
+	background-image: url(footer.png);
+	background-color: #cccccc;
+	margin-left: 0;
+	margin-right: 0;
+	border-style: none;
+	position: relative;
+}
+
+#footer h3 {
+	font-size: 11px;
+	margin-top: 0;
+	color: #333333;
+	margin-bottom: 7px;
+	float: left;
+	width: 543px;
+	position: absolute;
+	top: 10px;
+	margin-left: 342px;
+}
+
+#footer p {
+	font-size: 11px;
+	color: #333333;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0 0 1px;
+	line-height: 14px;
+	padding: 0;
+	float: right;
+	width: 544px;
+}
+
+#footer p a {
+	color: #333333;
+	display: block;
+	text-decoration: none;
+	padding-bottom: 5px;
+	float: left;
+	width: 544px;
+	margin: 0;
+	padding-top: 0;
+}
+
+#footer p a:hover {
+	background: url(fingerTabsHighlight-bottom-right.gif) no-repeat right bottom;
+}
+
+#footer p a span {
+	float: left;
+	width: 524px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#footer p a:hover span {
+	color: black;
+	text-decoration: none;
+	background: url(fingerTabsHighlight-top-right.gif) no-repeat right top;
+}
+
+
+
+/* @end */
+
+/* @group sectionCarousel */
+
+#sectionCarousel {
+	width: 900px;
+	height: 339px;
+	overflow: hidden;
+	padding-bottom: 1px;
+	border-bottom: 3px solid black;
+}
+
+#sectionCarousel sup {
+	font-size: 60%;
+	margin-right: -8px;
+}
+
+#sectionCarousel dl {
+	height: 339px;
+	display: block;
+	margin: 0;
+	width: 4500px;
+	overflow: hidden;
+}
+
+#sectionCarousel dl dd {
+	width: 900px;
+	float: left;
+	margin: 0;
+	font-size: 16px;
+	color: #666666;
+	height: 339px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 22px;
+}
+
+#sectionCarousel dl dd strong {
+	color: #cc0000;
+}
+
+#sectionCarousel dl dt {
+	display: none;
+}
+
+#sectionCarousel .productInformation {
+	background-image: url(homeRolloverPhoto-productInfo.jpg);
+	padding-left: 274px;
+	padding-top: 45px;
+	padding-right: 163px;
+	width: 463px;
+}
+
+#sectionCarousel .fireSafetyTips {
+	background-image: url(homeRolloverPhoto-fireSafetyTips.jpg);
+	padding-top: 45px;
+	padding-left: 34px;
+	padding-right: 510px;
+	width: 356px;
+}
+
+#sectionCarousel .beAHomeHero {
+	background-image: url(homeRolloverPhoto-becomeHomeHero.jpg);
+	padding-top: 45px;
+	padding-left: 267px;
+	padding-right: 254px;
+	width: 379px;
+}
+
+#sectionCarousel .myHomeSafety {
+	background-image: url(homeRolloverPhoto-myHomeSafety.jpg);
+	padding-left: 245px;
+	padding-top: 95px;
+	padding-right: 430px;
+	width: 225px;
+}
+
+#sectionCarousel .upcomingEvents {
+	background-image: url(homeRolloverPhoto-upcomingEvents.jpg);
+	padding-left: 270px;
+	padding-top: 45px;
+	padding-right: 380px;
+	width: 250px;
+}
+
+
+
+/* @end */
+
+/* @group Intro */
+
+#intro {
+	width: 900px;
+	height: 339px;
+	overflow: hidden;
+	padding-bottom: 1px;
+	border-bottom: 3px solid black;
+	position: absolute;
+	z-index: 3;
+}
+
+#intro ol {
+	height: 339px;
+	display: block;
+	margin: 0;
+	width: 4500px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+
+#intro li {
+	width: 900px;
+	float: left;
+	margin: 0;
+	font-size: 28px;
+	color: #cc0000;
+	height: 339px;
+	font-weight: normal;
+	font-style: normal;
+	padding: 0;
+	position: absolute;
+	background-color: white;
+}
+
+#intro p {
+	position:absolute;
+	font-size: 28px;
+	color: #cc0000;
+	font-weight: normal;
+	font-style: normal;
+	padding: 1px 0 1em 0;
+	line-height: 40px;
+}
+
+#intro .yourHome {
+	z-index: 5;
+}
+#intro .yourHome p {
+	left: 610px;
+	top: 150px;
+}
+
+#intro .yourFamily {
+	z-index: 4;
+	display: none;
+}
+
+#intro .yourFamily p {
+	top: 150px;
+	left: 150px;
+}
+
+#intro .yourSafety {
+	z-index: 3;
+	display: none;
+}
+
+#intro .yourSafety p {
+	top: 135px;
+	left: 400px;
+	text-align: center;
+}
+
+#intro .planOnIt {
+	z-index: 2;
+	display: none;
+}
+
+#intro .planOnIt p {
+	left: 575px;
+	top: 150px;
+}
+
+#intro .beAHomeHero {
+	z-index: 1;
+	display: none;
+}
+
+#intro .beAHomeHero p {
+	left: 50px;
+	top: 150px;
+}
+
+/* @end */
+
+#main {
+	margin-top: 70px;
+}
+
+#head {
+	display: inline;
+	margin-top: auto;
+	position: static;
+	z-index: 98;
+	height: auto;
+	background-image: none;
+	padding-top: 0;
+}
+
+#panelGlobalNavigation {
+	display: none;
+}
+

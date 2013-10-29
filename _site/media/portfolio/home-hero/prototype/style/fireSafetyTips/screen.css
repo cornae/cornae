@@ -1,0 +1,792 @@
+/* @group Footer */
+
+#footer {
+	padding: 2px 0 0;
+	float: left;
+	width: 900px;
+	background-image: url(footer.png);
+	border-style: none;
+	display: inline;
+	margin-right: 0;
+	margin-top: 1px;
+	margin-left: 0;
+}
+
+#footer h3 {
+	font-size: 11px;
+	margin-top: 0;
+	color: #cc0000;
+	margin-bottom: 7px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+#footer p {
+	font-size: 11px;
+	padding-top: 0;
+	padding-bottom: 7px;
+	margin: 0;
+}
+
+
+
+/* @end */
+
+#fireSafetyTips #contentSectionA,
+#footerSectionA {
+	width: 326px;
+	overflow: hidden;
+	margin-bottom: 2px;
+	padding: 0 20px;
+	margin-top: 0;
+	float: left;
+	display: inline;
+}
+
+#fireSafetyTips #contentSectionA img {
+	display: inline;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	clear: none;
+	float: left;
+}
+
+#fireSafetyTips #contentSectionA ul.jumpMenu {
+	float: right;
+	display: inline;
+	width: 345px;
+	margin-right: -20px;
+	margin-left: 0;
+	margin-bottom: 15px;
+}
+
+#fireSafetyTips #contentSectionB {
+	float: right;
+	padding: 0 20px 0 0;
+	margin-top: 20px;
+	display: inline;
+	margin-bottom: 1px;
+	width: 514px;
+	background: url(fireSafetyTips-lifestylePhoto8.jpg) no-repeat 0 top;
+	position: relative;
+	overflow: hidden;
+}
+
+#contentSectionB img {
+	float: left;
+	margin: 0;
+}
+
+#footerSectionA {
+	width: 860px;
+	padding: 0;
+	border-top: 3px solid #cc0000;
+	float: left;
+	display: inline;
+	margin-left: 20px;
+}
+
+#footerSectionA p {
+	width: 387px;
+	float: right;
+}
+
+#footerSectionA img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 0;
+}
+
+#footerSectionA p img {
+	clear: left;
+	float: left;
+	margin-top: 10px;
+	display: inline;
+	margin-left: 40px;
+}
+
+h3#titleTips {
+	width: 10px;
+	height: 0;
+	padding-top: 286px;
+	overflow: hidden;
+	position: absolute;
+	margin: 0;
+	background-image: url(fireSafetyTips-interiorShadow-lifestylePhoto1.png);
+	display: block;
+	z-index: 13;
+	left: 0;
+	top: 0;
+}
+
+#fireSafetyTips #contentSectionB #addendum {
+	float: left;	
+	background: url(../base/rampGray.gif) repeat-x 0 2px;
+	margin-top: 288px;
+	border-top: 3px solid #cc0000;
+	width: 475px;
+	padding: 20px 20px 40px;
+}
+
+/* @group Footer */
+
+#fireSafetyTips #footerSectionB img {
+	position:absolute;
+	display: none;
+}
+
+#fireSafetyTips #footer span#footerImages {
+	float: left;
+	margin-right: 0;
+	width: 141px;
+	height: 88px;
+	margin-top: 0;
+	position: absolute;
+	top: 35px;
+	right: 20px;
+	overflow: hidden;
+}
+
+#fireSafetyTips #footerSectionB {
+	padding: 35px 12px 0;
+	margin-top: 1px;
+	float: left;
+	width: 876px;
+	background-image: url(footer.png);
+	background-color: #cccccc;
+	margin-left: 0;
+	margin-right: 0;
+	border-style: none;
+	position: relative;
+}
+
+#fireSafetyTips #footerSectionB h3 {
+	font-size: 11px;
+	margin-top: 0;
+	color: #333333;
+	margin-bottom: 7px;
+	float: left;
+	width: 543px;
+	position: absolute;
+	top: 15px;
+	margin-left: 10px;
+	left: 12px;
+}
+
+#fireSafetyTips #footerSectionB p {
+	font-size: 11px;
+	color: #333333;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0 0 1px;
+	line-height: 14px;
+	padding: 0;
+	float: left;
+	width: 727px;
+}
+
+#fireSafetyTips #footerSectionB p a {
+	color: #333333;
+	display: block;
+	text-decoration: none;
+	padding-bottom: 5px;
+	float: left;
+	width: 727px;
+	margin: 0;
+	padding-top: 0;
+}
+
+#fireSafetyTips #footerSectionB p a:hover {
+	background: url(fingerTabsHighlight-bottom-left.gif) no-repeat left bottom;
+}
+
+#fireSafetyTips #footerSectionB p a span {
+	float: left;
+	width: 707px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#fireSafetyTips #footerSectionB p a:hover span {
+	color: black;
+	text-decoration: none;
+	background: url(fingerTabsHighlight-top-left.gif) no-repeat left top;
+}
+
+
+
+/* @end */
+
+/* @group tipsBrowserPrevention */
+
+dl#tipsBrowserPrevention {
+	width: 514px;
+	height: 276px;
+	float: left;
+	background-image: url(fireSafetyTips-lifestylePhoto1.jpg);
+	margin: 0;
+	padding: 10px 0 0;
+	overflow: hidden;
+	font-size: 11px;
+	line-height: 12px;
+	z-index: 12;
+	position: absolute;
+	display: block;
+	left: 0;
+}
+
+dl#tipsBrowserPrevention dt {
+	background: url(drawer.png) no-repeat left top;
+	width: 279px;
+	margin: 0;
+	margin-left: -270px;
+	padding: 14px 270px 5px 10px;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	float: left;
+	clear:left;
+	display:inline;/*fix for IE double margin bug*/
+}
+
+dl#tipsBrowserPrevention dt a {
+	text-decoration: none;
+	color: black;
+	background: url(../base/buttonForward-compact.gif) no-repeat right center;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: block;
+	font-weight: bold;
+}
+
+html>body dl#tipsBrowserPrevention dt a {
+	background: url(../base/buttonForward-compact.png) no-repeat right center;	
+}
+
+dl#tipsBrowserPrevention dt a:hover {
+	text-decoration: underline;
+}
+
+dl#tipsBrowserPrevention dd {
+	background: url(drawer.png) no-repeat left bottom;
+	width: 279px;
+	margin-top: 0;
+	margin-bottom: 2px;
+	margin-left: -270px;
+	font-size: 11px;
+	padding: 8px 270px 15px 10px;
+	float: left;
+	clear:left;
+	display:inline;/*fix for IE double margin bug*/
+}
+
+
+
+/* @end */
+
+/* @group tipsBrowserResponsive */
+
+dl#tipsBrowserResponsive {
+	width: 514px;
+	height: 276px;
+	float: left;
+	background-image: url(fireSafetyTips-lifestylePhoto8.jpg);
+	margin: 0;
+	padding: 10px 0 0;
+	overflow: hidden;
+	z-index: 11;
+	position: absolute;
+	display: none;
+	left: 0;
+}
+
+dl#tipsBrowserResponsive dt {
+	background: url(drawer.png) no-repeat right top;
+	margin: 0;
+	margin-left: -170px;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+	clear:left;
+	display: inline;
+	width: 178px;
+	padding: 19px 15px 10px 110px;
+}
+
+dl#tipsBrowserResponsive dt a {
+	text-decoration: none;
+	color: black;
+	background: url(../base/buttonForward-compact.gif) no-repeat right center;
+	padding-right: 25px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	display: block;
+	font-weight: bold;
+	position: relative;
+}
+
+html>body dl#tipsBrowserResponsive dt a {
+	background: url(../base/buttonForward-compact.png) no-repeat right center;
+}
+
+dl#tipsBrowserResponsive dt a:hover {
+	color: #cc0000;
+}
+
+dl#tipsBrowserResponsive dd {
+	background: url(drawer.png) no-repeat right bottom;
+	width: 178px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: -170px;
+	font-size: 11px;
+	padding: 8px 15px 15px 110px;
+	float: left;
+	clear: left;
+	height: 195px;
+	display: inline;
+}
+
+dl#tipsBrowserResponsive dd p {
+	font-size: 11px;
+	color: black;
+	line-height: normal;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+dl#tipsBrowserResponsive dd ul {
+	font-size: 11px;
+	color: black;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+dl#tipsBrowserResponsive dd ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 180px;
+}
+
+dl#tipsBrowserResponsive dd ul li a {
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 155px;
+	text-align: right;
+	color: black;
+	text-transform: uppercase;
+	position: relative;
+	font-weight: bold;
+}
+
+
+
+/* @end */
+
+/* @group Doormat Navigator */
+
+#doormatNavigator {
+	background: url(../base/rampGray.gif) repeat-x;
+	float: left;
+	width: 870px;
+	display: inline;
+	margin: 2px 0 0 1px;
+}
+
+#doormatNavigator div {
+	float: left;
+	width: 157px;
+	border-right: 1px solid white;
+	padding: 15px 7px 25px;
+}
+
+#doormatNavigator h3 {
+	width: 143px;
+	top: 0;
+	clear: none;
+	display: inline;
+	float: left;
+	padding-right: 7px;
+	padding-left: 7px;
+	font-size: 10px;
+	margin-bottom: 4px;
+	color: #666666;
+}
+
+#doormatNavigator img {
+	margin-bottom: 10px;
+	float: left;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#doormatNavigator p {
+	width: 143px;
+	display: inline;
+	float: left;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 0;
+	padding-right: 7px;
+	padding-left: 7px;
+	font-size: 11px;
+}
+
+#doormatNavigator p a {
+	display: block;
+	text-decoration: none;
+	color: #666666;
+}
+
+#doormatNavigator p a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+
+
+/* @end */
+
+/* @group Topic Browser */
+
+#preventionByTopic #contentSectionA {
+	padding-left: 20px;
+	padding-bottom: 40px;
+	float: left;
+}
+
+#mainText ul#preventionTopics {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	width: 880px;
+	float: left;
+}
+
+#preventionTopics li {
+	width: 280px;
+	margin: 0 13px 13px 0;
+	padding: 0;
+	float: left;
+	background: url(preventionByTopic-navBottom.gif) no-repeat 0 bottom;
+	display: inline;
+}
+
+#preventionTopics li a {
+	width: 244px;
+	padding-top: 156px;
+	display: inline;
+	float: left;
+	text-align: right;
+	padding-bottom: 12px;
+	padding-right: 36px;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	color: black;
+	letter-spacing: 1px;
+	background-repeat: no-repeat;
+	text-decoration: none;
+}
+
+#preventionTopics li a:hover {
+	text-decoration: underline;
+}
+
+#preventionItem1 a {
+	background-image: url(preventionByTopic-family.jpg);
+}
+
+#preventionItem2 a {
+	background-image: url(preventionByTopic-cooking.jpg);
+}
+
+#preventionItem3 a {
+	background-image: url(preventionByTopic-heating.jpg);
+}
+
+#preventionItem4 a {
+	background-image: url(preventionByTopic-smoking.jpg);
+}
+
+#preventionItem5 a {
+	background-image: url(preventionByTopic-candles.jpg);
+}
+
+#preventionItem6 a {
+	background-image: url(preventionByTopic-gasoline.jpg);
+}
+
+
+
+/* @end */
+
+.preventionTopic #mainContent {
+	width: 860px;
+	float: left;
+	display: inline;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 100px;
+	overflow: hidden;
+}
+
+.preventionTopic #mainContent h2 {
+	width: 864px;
+	float: left;
+}
+
+.preventionTopic #contentSectionA {
+	float: left;
+	width: 864px;
+	background: url(preventionByTopic-backgroundTop.gif) no-repeat 0 0;
+	padding-left: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.preventionTopic #contentSectionA h3 {
+
+	border-bottom: 1px solid #d0d0d0;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: #666666;
+	margin-top: 15px;
+}
+
+.preventionTopic #introduction {
+	width: 470px;
+	float: right;
+	padding-right: 35px;
+	padding-left: 20px;
+}
+
+.preventionTopic #contentSectionA #mainText {
+	
+}
+
+.preventionTopic #contentSectionA img {
+	float: left;
+	position: static;
+}
+
+.preventionTopic #contentSectionA .jumpMenu a {
+	width: 450px;
+}
+
+.preventionTopic #footer {
+	float: left;
+	width: 808px;
+	display: inline;
+	background: url(preventionByTopic-backgroundBottom.gif) no-repeat 0 bottom;
+	padding: 35px 35px 35px 20px;
+}
+
+.preventionTopic #footerSectionA p {
+	float: none;
+	width: 267px;
+	color: #666666;
+}
+
+.preventionTopic #footerSectionA {
+	border-top-style: none;
+	margin-left: 0;
+}
+
+.preventionTopic #contentSectionA .buttonBack {
+	position: absolute;
+	top: 280px;
+	left: 15px;
+}
+
+.preventionTopic #contentSectionA .buttonForward {
+	position: absolute;
+	top: 280px;
+	right: 535px;
+}
+
+/* @group Tip Page */
+
+.tip #contentSectionA {
+	width: 490px;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.tip #introduction {
+	clear: left;
+}
+
+.tip #mainText {
+	clear: left;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.tip #contentSectionA ul.jumpMenu {
+	float: left;
+	width: 490px;
+	margin-bottom: 20px;
+}
+
+.tip #contentSectionA ul.jumpMenu li a {
+	float: left;
+	width: 470px;
+}
+
+.tip #contentSectionA .buttonBack {
+	float: left;
+}
+
+.tip #contentSectionA .buttonForward {
+	float: right;
+}
+
+.tip #contentSectionB {
+	width: 340px;
+	float: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+
+/* @end */
+
+/* @group fireSafetyPlan */
+
+#fireSafetyPlan #mainContent {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 860px;
+	margin: 0;
+}
+
+#fireSafetyPlan #contentSectionA {
+	width: 320px;
+	float: left;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+
+#fireSafetyPlan #contentSectionA img {
+	margin-top: 30px;
+}
+
+#fireSafetyPlan #contentSectionA #introduction {
+	clear: left;
+}
+
+#fireSafetyPlan #contentSectionB {
+	width: 514px;
+	float: right;
+	display: inline;
+	padding-top: 20px;
+}
+
+#fireSafetyPlan #contentSectionB img {
+	border-bottom: 20px solid #cc0000;
+	margin-bottom: 20px;
+	padding-bottom: 2px;
+}
+
+
+
+/* @end */
+
+/* @group fireSafetySystems */
+
+#fireSafetySystems #mainContent {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 860px;
+	margin: 0;
+}
+
+#fireSafetySystems #contentSectionA {
+	width: 320px;
+	float: left;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+
+#fireSafetySystems #contentSectionA img {
+	margin-top: 30px;
+}
+
+#fireSafetySystems #contentSectionA #introduction {
+	clear: left;
+}
+
+#fireSafetySystems #contentSectionB {
+	width: 514px;
+	float: right;
+	display: inline;
+	padding-top: 20px;
+}
+
+#fireSafetySystems #contentSectionB img {
+	border-bottom: 20px solid #cc0000;
+	margin-bottom: 20px;
+	padding-bottom: 2px;
+}
+
+
+
+/* @end */
+
+/* @group InteractiveLearning */
+
+#interactiveLearning #mainContent {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 860px;
+	margin: 0;
+}
+
+#interactiveLearning #contentSectionA {
+	width: 320px;
+	float: left;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+
+#interactiveLearning #contentSectionA img {
+	margin-top: 30px;
+}
+
+#interactiveLearning #contentSectionA #introduction {
+	clear: left;
+}
+
+#interactiveLearning #contentSectionB {
+	width: 514px;
+	float: right;
+	display: inline;
+	padding-top: 20px;
+}
+
+#interactiveLearning #contentSectionB img {
+	border-bottom: 20px solid #cc0000;
+	margin-bottom: 20px;
+	padding-bottom: 2px;
+}
+
+
+
+/* @end */
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	    <meta name="viewport" content="width=device-width" />
+	    <title>Dealing with labels — Cornæ</title>
+	    <meta name="Language" content="en" />
+	    <link rel="stylesheet" href="/style/base.css" type="text/css" media="screen" charset="utf-8" />   
+	    <script src="http://www.patternslib.com/bundles/patterns.min.js" type="text/javascript"></script> 
+	</head>
+	<body class="post mood-blueberry">
+		<div id="main" class="pat-auto-scale" data-pat-auto-scale="method: zoom; min-width: 769">
+			      <div id="prologue">
+        <h1>
+          Dealing with labels
+        </h1>
+        <p class="byline">
+          Cornelis G.A. Kolbach, February,  1, 2009
+        </p>
+        <p class="introduction">
+          As suggested in the article 'Form follows function and achieving thereof', every input element on a form should ideally have a label. Labels give more meaning to input elements and makes them accessible. This article dives into dealing with labels and input fields for postal addresses on forms.
+        </p>
+      </div>
+      <div id="contentBody">
+        <p>A great example of a pattern that really requires the application of visible labels is the postal address entry. Postal address entries may easily contain four, five, or more fields to fill out. The many fields often lead to forms that are lengthier than necessary if all the labels are kept on the left. Another disadvantage of the left-label-layout is that it&#8217;s far off of the layout of postal adresses on envelopes and letters in the real world.</p>
+
+<p><img alt='Verbose address method' src='/media/verbose-address.png' /></p>
+
+<p>If you make the layout of the address group more compact by mimicking a traditional postal address layout, then it will make the form more compact. More importantly: People will be able to fill you an address information in the same fashion they are used to on a postcard. Almost without looking at the labels.</p>
+
+<p>This doesn&#8217;t make visible labels completely obsolete though. In the example below, a Dutch address layout is applied. Imagine that you would like to send a nice bouquet of flower to your favorite blogger in The Netherlands. But if you&#8217;ve never lived in The Netherlands, then you&#8217;re not likely to be familiar to this layout. Hence the use of visible labels will be helpful.</p>
+
+<p><img alt='Dutch Address with Super Script Labels' src='/media/super-script-labels.png' /></p>
+
+<p>Putting all the labels as superscripts in between the input fields and the term &#8216;Address&#8217; as a legend on the left is a great improvement for the layout, but there is an alternative that&#8217;s even more compact, which I like to call <strong>superimposed labels</strong>.</p>
+
+<p><img alt='Super imposed labels' src='/media/super-imposed-labels.png' /></p>
+
+<p>Some implementions of this interaction pattern do just pre-fill the values of the input fields with the terms Residence, Street, Postal Code, etc. This is semantically incorrect, because &#8216;Residence&#8217; is not a valid value for the field that&#8217;s called Residence unless there is a place on this planet that is called &#8216;Residence&#8217;. A practical issue is that the backend would always receive this value back as a place name, rather than for instance &#8216;Amsterdam&#8217;. The backend would have to check whether this field&#8217;s value is not called &#8220;residence&#8221; rather than simply checking whether a field was filled out at all for validation purposes. Extra site languages could even further complicate this matter.</p>
+
+<h2 id='the_super_imposed_label_solution'>The super imposed label solution</h2>
+
+<p>The terms street, postal code and son on are labels more than anything else. These labels are positioned in front of the labels by means of CSS and triggered to disappear by a little bit of JavaScript code. The particular feature of these labels is that they disappear upon the click of a mouse. The terms will remain invisible after the user entered text into the field. Would the user move the focus to another element without filling in anything would return the label. It&#8217;s an elegant pattern that saves space on the screen while labels are properly applied for all the right reasons.</p>
+
+<h2 id='html_placeholders'>HTML placeholders</h2>
+
+<p>The HTML 5 standard has a solution built in for this. Not with the use of labels, but a certain attribute called &#8216;placeholder&#8217; instead. The markup looks like this and it works in most modern browsers:</p>
+
+<pre><code>&lt;input type=&quot;text&quot; placeholder=&quot;residence&quot; /&gt;</code></pre>
+
+<p>If this pattern is picked up quickly by screen readers, then it will become an accessible solution. For now, of all major browsers, only Internet Explorer (9) does not support the pattern. The IE problem could be fixed with a bit of JavaScript that fills in the value of the input field based on the value of the placeholder attribute and to erase that just before submitting the form if it hasn&#8217;t been altered by the user.</p>
+	  </div>
+        
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'cornae'; // required: replace example with your forum shortname
+  
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+
+			<ul class="navigation" id="globalNavigation">
+				<li id="portaltab-home" class="home">
+					<a href="">Home</a>
+				</li>
+				<li class="contact">
+					<a href="/about.html">About</a>
+				</li>
+				<li class="articles">
+					<a href="/articles.html">Articles</a>
+				</li>
+				<li class="portfolio">
+					<a href="/portfolio.html">Portfolio</a>
+				</li>
+			</ul>
+
+	        <form action="/search-results.html" id="search">
+	        	<input type="search" placeholder="Search" name="q" id="tipue_search_input">
+	        </form>
+	        
+	        <ul id="colours">
+				<li class="blueberry pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-blueberry; store: local">
+					Blueberry
+				</li>
+				<li class="topaz pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-topaz; store: local">
+					Topaz
+				</li>
+				<li class="orchid pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-orchid; store: local">
+					Orchid
+				</li>
+				<li class="mocha pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-mocha; store: local">
+					Mocha
+				</li>
+				<li class="avocado pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-avocado; store: local">
+					Avocado
+				</li>
+	        </ul>
+	    </div>
+
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style" id="share">
+         	<a class="addthis_button_preferred_1"></a>
+         	<a class="addthis_button_preferred_2"></a>
+        </div>
+        
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=cornae"></script>
+        
+        <a href="#main" id="top" name="top">Back to top</a>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+.catalogue,#mainContent {
+	height: 454px;
+}
+
+#mainContent {
+	margin-top: 60px;
+}
+
+#header h2 {
+	background-image: url(pageHeader.gif);
+	width: 377px;
+}
+
+#mainContent h1 {
+	display: none;
+}
+
+.introduction,.wrap1 {
+	left: 270px;
+	top: 278px;
+}
+
+.introduction {
+	height: 110px;
+	position: absolute;
+	color: white;
+	overflow: auto;
+	z-index: 1;
+	padding: 20px 27px 0;
+	width: 377px;
+}
+
+p.catalogue a:hover span,
+.introduction,
+.descriptions,
+p.catalogue a.productActive span.productID {
+	background-color: #A8C786;
+}
+
+#catalogueImage-1 {
+	top: 0;
+	left: 270px;
+}
+
+#catalogueImage-2 {
+	left: 531px;
+	top: 0;
+}
+
+#catalogueImage-3 {
+	top: 139px;
+	left: 711px;
+}
+
+#catalogueImage-4 {
+	top: 0;
+	left: 0;
+}
+
+#catalogueImage-5 {
+	top: 0;
+	left: 711px;
+}
+
+#catalogueImage-6 {
+	top: 139px;
+	left: 531px;
+}
+
+p.catalogue .buttonDefault {
+	top: 160px;
+	left: 0;
+	position: absolute;
+	background-color: white;
+}
+
+/* @group Product Details */
+
+#mainContent.productDetails .catalogue,#mainContent.productDetails{
+	height: 715px;
+	padding-bottom: 20px;
+}
+
+.descriptions {
+	float: right;
+	width: 287px;
+	height: 505px;
+	position: absolute;
+	top: 10px;
+	color: white;
+	overflow: auto;
+	z-index: 1;
+	padding: 20px 0 0;
+	left: 0px;
+}
+
+p.productActive a,
+.descriptions a:hover {
+	background-color: #8ea973;
+}
+
+#catalogueImage-A {
+	left: 297px;
+	top: 10px;
+}
+
+#catalogueImage-B {
+	left: 297px;
+	top: 185px;
+}
+
+#catalogueImage-C {
+	top: 95px;
+	left: 693px;
+}
+
+#catalogueImage-D {
+	top: 245px;
+	left: 693px;
+}
+
+#catalogueImage-E {
+	top: 395px;
+	left: 297px;
+}
+
+#catalogueImage-F {
+	top: 395px;
+	left: 495px;
+}
+
+#catalogueImage-G {
+	top: 395px;
+	left: 693px;
+}
+
+#catalogueImage-H {
+	top: 545px;
+	left: 0px;
+}
+
+#catalogueImage-I {
+	left: 297px;
+	top: 545px;
+}
+
+#catalogueImage-J {
+	top: 545px;
+	left: 495px;
+}
+
+#catalogueImage-K {
+	top: 545px;
+	left: 693px;
+}
+
+/* @end */
+
+.introduction .buttonDefault {
+	margin-top: 10px;
+	float: left;
+}
+

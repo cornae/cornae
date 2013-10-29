@@ -1,0 +1,148 @@
+.catalogue,#mainContent {
+	height: 394px;
+}
+
+#header h2 {
+	background-image: url(pageHeader.gif);
+}
+
+#mainContent h1 {
+	width: 300px;
+	height: 0;
+	padding-top: 40px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	top: 9px;
+	left: 521px;
+	position: relative;
+	margin: 0;
+	z-index: 1;
+	background: url(pageTitle.gif) no-repeat;
+}
+
+.introduction,.wrap1 {
+	left: 0;
+	top: 30px;
+}
+
+.introduction {
+	width: 431px;
+	height: 100px;
+	position: absolute;
+	color: white;
+	overflow: auto;
+	z-index: 1;
+	padding: 20px 27px 0;
+}
+
+p.catalogue a:hover span,
+.introduction,
+.descriptions,
+p.catalogue a.productActive span.productID {
+	background-color: #D49659;
+}
+
+#catalogueImage-1 {
+	position: absolute;
+	top: 160px;
+	left: 198px;
+}
+
+#catalogueImage-2 {
+	position: absolute;
+	left: 495px;
+	top: 273px;
+}
+
+#catalogueImage-3 {
+	position: absolute;
+	top: 273px;
+	left: 627px;
+}
+
+#catalogueImage-4 {
+	float: right;
+	top: 273px;
+	margin-right: 0;
+	left: 759px;
+	position: absolute;
+}
+
+#catalogueImage-5 {
+	top: 30px;
+	left: 495px;
+	position: absolute;
+}
+
+#catalogueImage-6 {
+	float: right;
+	top: 189px;
+	left: 0;
+	position: absolute;
+}
+
+p.catalogue .buttonDefault {
+	top: 160px;
+	left: 0;
+	position: absolute;
+	background-color: white;
+}
+
+/* @group Product Details */
+
+#mainContent.productDetails {
+	background: url(shadowDescription-typeC.gif) no-repeat 594px 160px;
+	width: 930px;
+}
+
+#mainContent.productDetails .catalogue,#mainContent.productDetails{
+	height: 570px;
+	padding-bottom: 20px;
+}
+
+.descriptions {
+	float: right;
+	width: 287px;
+	height: 385px;
+	position: absolute;
+	top: 160px;
+	color: white;
+	overflow: auto;
+	z-index: 1;
+	padding: 20px 0 0;
+	left: 594px;
+}
+
+p.productActive a,
+.descriptions a:hover {
+	background-color: #bf8750;
+}
+
+#catalogueImage-A {
+	left: 0;
+	top: 10px;
+}
+
+#catalogueImage-B {
+	left: 396px;
+	top: 10px;
+}
+
+#catalogueImage-C {
+	top: 10px;
+	left: 594px;
+}
+
+#catalogueImage-D {
+	top: 160px;
+	left: 396px;
+}
+
+#catalogueImage-E {
+	top: 425px;
+	left: 199px;
+}
+
+/* @end */
+

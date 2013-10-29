@@ -1,0 +1,152 @@
+#primaryNavigation,#secondaryNavigation,p#quickLinks ,.buttonDefault {
+	display: none !important;
+}
+
+/* @group sIFR default classes */
+
+.sIFR-flash {
+	visibility: visible !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	display: none;
+	overflow: visible;
+}
+
+.descriptions h2.sIFR-replaced,.introduction h2.sIFR-replaced {
+	visibility: visible !important;
+	margin: 0 !important 20px;
+	line-height: normal;
+	display: block;
+	overflow: visible;
+}
+
+.sIFR-alternate {
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin-top: 0;
+	padding: 0 0 8px;
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+	position: static;
+}
+
+/* @end */
+
+/* @group sIFR configuration */
+
+.sIFR-replaced > div {
+  display: block;
+	overflow: visible;
+}
+
+/* @end */
+
+#header {
+}
+
+#header h2,#header h1 {
+	display: none;
+}
+
+#mainContent,#mainContent.productDetails {
+	background-image: none;
+}
+
+#mainContent h1 {
+	height: auto;
+	width: auto;
+	background-image: none;
+	display: block;
+	overflow: visible;
+	position: absolute;
+	z-index: 99999999;
+	left: 0;
+	top: -140px;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 50px;
+	letter-spacing: 3px;
+	color: #a6a498;
+}
+
+.descriptions h2 {
+	height: auto;
+	width: auto;
+	background-image: none;
+	display: block;
+	overflow: visible;
+	z-index: 99999999;
+	left: 0;
+	top: -100px;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 50px;
+	letter-spacing: 3px;
+	color: #a6a498;
+	position: absolute;
+}
+
+.introduction,.descriptions {
+	padding-left: 0;
+	background-image: none;
+	overflow: visible;
+	background-color: white;
+}
+
+.introduction p,.descriptions p,.descriptions p a {
+	color: black;
+	padding-left: 0;
+	background-color: white;
+}
+
+.wrap1,.wrap2,.wrap3 {
+	background-image: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p.catalogue a span
+ {
+	bottom: 0;
+	left: 0;
+	color: black;
+	text-decoration: none;
+	padding: 3px;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	background-color: white;
+	font-size: 8px;
+	width: auto;
+	margin: 3px;
+	float: left;
+	display: block;
+}
+
+p.catalogue a span.productID {
+	bottom: 0;
+	left: 0;
+	color: black;
+	text-decoration: none;
+	line-height: 18px;
+	position: absolute;
+	display: block;
+	float: left;
+	right: 0;
+	cursor: pointer;
+	padding: 4px 0;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 27px;
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid white;
+	background-color: white;
+}
+
+

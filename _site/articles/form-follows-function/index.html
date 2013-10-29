@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	    <meta name="viewport" content="width=device-width" />
+	    <title>Form follows function and achieving thereof — Cornæ</title>
+	    <meta name="Language" content="en" />
+	    <link rel="stylesheet" href="/style/base.css" type="text/css" media="screen" charset="utf-8" />   
+	    <script src="http://www.patternslib.com/bundles/patterns.min.js" type="text/javascript"></script> 
+	</head>
+	<body class="post mood-blueberry">
+		<div id="main" class="pat-auto-scale" data-pat-auto-scale="method: zoom; min-width: 769">
+			      <div id="prologue">
+        <h1>
+          Form follows function and achieving thereof
+        </h1>
+        <p class="byline">
+          Cornelis G.A. Kolbach, February,  3, 2008
+        </p>
+        <p class="introduction">
+          Forms can be dreadfully tricky to style and structure properly. Several articles that are out there focus on best practises for building forms using HTML en CSS. This article focusses in a non technical fashion on the use of meaningful nomenclature and how form semantics relate to elements that current markup standards have to offer. It may help anyone to recognise structural patterns and to compose forms properly.
+        </p>
+      </div>
+      <div id="contentBody">
+        <h3 id='form_building_blocks'>Form Building Blocks</h3>
+
+<p>All input elements on a form must be tagged with labels. Labels describe what type of information the form may contain.</p>
+
+<p><img alt='Score' src='/media/Vioolsleutel-illustratie.png' /></p>
+
+<p>All input elements on a form should also be logically grouped in <em>field sets</em>. A field set is a group of form elements that are related towards each other. For instance a yes/no answer with radio buttons or an address input fields group.</p>
+
+<p>The subject of the field set may be marked by means of a <em>legend</em>. A legend describes a group of form elements that are contained within a field set.</p>
+
+<p>In retrospect it could be said that there is the following list of most important building blocks for forms:</p>
+
+<ul>
+<li>Input elements (Free-form input fields, text areas, radio buttons, etc.)</li>
+
+<li>Labels</li>
+
+<li>Legends</li>
+
+<li>Fieldsets</li>
+</ul>
+
+<p>This article will illuminate which element has to be used when.</p>
+
+<p>There are basically two types of forms in the world. <strong>Simple layout forms</strong>, and <strong>Complex layout</strong> forms.</p>
+
+<p>Simple forms are the old fashioned type of forms that are popular for smaller patterns, such as a login dialogue.</p>
+
+<p>Complex forms have a bit more layout to them. This often means that the form is divided into two imaginary columns. There&#8217;s each time a question on one side and one or more answers, or input fields for the answers, on the other side.</p>
+
+<h3 id='complex_forms'>Complex Forms</h3>
+
+<h4 id='the_concise_pattern'>The Concise Pattern</h4>
+
+<p>The following example displays a complex layout for where there&#8217;s each time a short question on the left and room for an answer on the right. These questions are related towards each other and therefore grouped in a field set and tagged with a legend that says &#8216;Personal Information&#8217;.</p>
+
+<p><img alt='Concise' src='/media/Concise.png' /></p>
+
+<p>Question doesn&#8217;t mean that it looks 100% like a question sentence that ends with a question mark, but that it semantically IS a question. The author of the form is simply asking the user for all this information in the most concise fashion. This makes the short questions on the left hardly anything more than labels of the input fields, which is the reason that most site editors would choose the following structure of form elements to push the baby out:</p>
+
+<p><img alt='Fielset Concise' src='/media/Fielset-Concise.png' /></p>
+
+<p>The chosen structure creates a nice little form. I like to call this type of field set the <em>Concise Form Pattern</em>. So far so good. But… now I dare challenge you to apply a similar structure to the following example.</p>
+
+<p><img alt='Longer form' src='/media/Longer-form.png' /></p>
+
+<p>If Name, E-mail and Phone Number are labels as established before, then the Gender question would be a label as well. But then the answers Male, Female and Not sure couldn&#8217;t be labels any longer, because the XHTML specification reads: &#8220;Each label must not contain more than ONE field. Label elements shouldn&#8217;t be nested.&#8221;</p>
+
+<p>The only form element that&#8217;s left to use is legend. Since the current group of elements already has a legend, the radio buttons should be grouped in a field set inside the existing field set. The structure would look like this:</p>
+
+<p><img alt='Combo form' src='/media/Combo.png' /></p>
+
+<p>I like to call the pattern that has a legend on the left and the answers on the right the <em>Comprehensive Form Pattern</em>. The example above is a combination of the concise and the comprehensive pattern.</p>
+
+<h3 id='simple_forms'>Simple Forms</h3>
+
+<p>Simple forms don&#8217;t differ from complex form by structure, only by layout. This is an example of a simple form:</p>
+
+<p><img alt='Simple form' src='/media/Simple-form.png' /></p>
+
+<p>The diagram below demonstrates how the universal structure of this form doesn&#8217;t differ in any way from the complex form. I call this layout the <em>Condensed Form Pattern</em>.</p>
+
+<p><img alt='Condensed form' src='/media/Fieldset-Condensed.png' /></p>
+
+<h3 id='judge_the_things_by_what_they_are'>Judge the Things by What They Are</h3>
+
+<p>What becomes clear in this story is that visual layout of a form doesn&#8217;t have to influence the structure of it. In a complex layout form, the things that are positioned as questions that are positioned on one side of the form may be labels, legends, or a mixture of both. The same principle applies to simple layout forms. The differences are merely cosmetic.</p>
+
+<p>A clear and shared nomenclature of form elements based on what things are, rather than what they look like, helps multi disciplinary teams to work more efficiently and to build lean products using reusable and highly maintainable building blocks.</p>
+	  </div>
+        
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'cornae'; // required: replace example with your forum shortname
+  
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+
+			<ul class="navigation" id="globalNavigation">
+				<li id="portaltab-home" class="home">
+					<a href="">Home</a>
+				</li>
+				<li class="contact">
+					<a href="/about.html">About</a>
+				</li>
+				<li class="articles">
+					<a href="/articles.html">Articles</a>
+				</li>
+				<li class="portfolio">
+					<a href="/portfolio.html">Portfolio</a>
+				</li>
+			</ul>
+
+	        <form action="/search-results.html" id="search">
+	        	<input type="search" placeholder="Search" name="q" id="tipue_search_input">
+	        </form>
+	        
+	        <ul id="colours">
+				<li class="blueberry pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-blueberry; store: local">
+					Blueberry
+				</li>
+				<li class="topaz pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-topaz; store: local">
+					Topaz
+				</li>
+				<li class="orchid pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-orchid; store: local">
+					Orchid
+				</li>
+				<li class="mocha pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-mocha; store: local">
+					Mocha
+				</li>
+				<li class="avocado pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-avocado; store: local">
+					Avocado
+				</li>
+	        </ul>
+	    </div>
+
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style" id="share">
+         	<a class="addthis_button_preferred_1"></a>
+         	<a class="addthis_button_preferred_2"></a>
+        </div>
+        
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=cornae"></script>
+        
+        <a href="#main" id="top" name="top">Back to top</a>
+  </body>
+</html>

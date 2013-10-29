@@ -1,0 +1,2007 @@
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	padding: 0px;
+	margin: 0px;
+	background: url(images/body.gif) repeat-y center #F1F1F1;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+input[type="button"],input[type="submit"] {
+	background: url(images/buttonMain.gif) no-repeat right center;
+	text-align: right;
+	width: auto;
+	border-style: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 10px;
+	padding-right: 20px;
+}
+
+div#main {
+	width: 100%;
+	background: url(images/midSection.gif) repeat-y center;
+	display: block;
+	margin-top: 100px;
+	float: left;
+	text-align: center;
+}
+
+div#main {
+	background: url(images/midSection-fleetStat.gif) repeat-y center;
+	padding-bottom: 20px;
+}
+
+a#logout {
+	color: gray;
+	font-size: 10px;
+	position: absolute;
+	top: 181px;
+	float: right;
+	text-align: right;
+	right: 50%;
+	margin-right: -380px;
+	text-decoration: none;
+}
+
+a#logout:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+/*<group=pPanel>*/
+
+div#pPanel {
+	width: 450px;
+	height: 300px;
+	display: none;
+	background-color: lightgray;
+	z-index: 999001;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -151px;
+	margin-left: -226px;
+	border: 1px solid white;
+	float: left;
+}
+
+html>body div#pPanel {
+	position: fixed;
+}
+
+div#pPanel h1 {
+	width: 100%;
+	background: #F7BB05;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: left;
+}
+
+div#pPanel h1 span {
+	float: left;
+	display: block;
+	padding: 5px;
+}
+
+div#pPanel h1 a {
+	display: block;
+	float: right;
+	width: 25px;
+	height: 25px;
+	padding-top: 25px;
+	background: blue;
+	overflow: hidden;
+}
+
+html>body div#pPanel h1 a {
+	height: 0;
+}
+	
+/*</group>*/
+
+/*<group=calendar>*/
+
+div#calendar {
+	border-top: solid white 1px;
+	display: block;
+	float: left;
+	width: 150px;
+	height: 200px;
+	overflow: hidden;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+html>body div#calendar {
+	height: auto;
+}
+
+
+
+.calendar {
+	width: 150px;
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+div#calendar .calendar table {
+	padding: 0;
+	margin: 0;
+}
+
+#secondaryColumn .calendar table td.title,#secondaryColumn .calendar table td.button,#secondaryColumn .calendar table thead td.day,#secondaryColumn .calendar table td.ttip {
+	background: #009EE3;
+}
+
+#secondaryColumn .calendar table td {
+	background: transparent;
+	text-align: center;
+	padding: 2px 0;
+	margin-bottom: 1px;
+	width: 21px;
+}
+
+#secondaryColumn .calendar table td.button {
+	cursor: pointer;
+}
+
+.calendar thead .title { /* This holds the current "month, year" */;
+	font-weight: bold;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.calendar thead .name { /* Cells <TD> containing the day names */
+	color: white;
+	font-size: 9px;
+	cursor: default;
+}
+
+.calendar table {
+	background: url(images/calendarRow.gif) repeat-y 0px 0px;
+}
+
+.calendar tbody .day.othermonth {
+	color: #009EE3;
+}
+
+.calendar tbody .day.othermonth.oweekend {
+	color: #009EE3;
+}
+
+html>body .calendar tbody tr {
+	background: url(images/calendarRow.gif) no-repeat center center;
+}
+
+.calendar tbody tr.rowhilite {
+	background: url(images/calendarRow-over.gif) no-repeat center center;
+}
+
+.calendar tbody tr.rowhilite td.weekend {
+	color: #009EE3;
+}
+
+#secondaryColumn .calendar tbody td.hilite { /* Hovered cells <TD> */
+	cursor: pointer;
+	color: #002985;
+	background: url(images/calendarDay-over.gif) no-repeat;
+}
+
+#secondaryColumn .calendar tbody td.selected { /* Hovered cells <TD> */
+	cursor: pointer;
+	color: #002985;
+	background: url(images/calendarDay-selected.gif) no-repeat;
+}
+
+.calendar tbody td.weekend { /* Cells showing weekend days */
+	color: #0C2577;
+}
+
+.calendar tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+	color: black;
+	font-size: 9px;
+	margin: 0;
+	padding: 0;
+}
+
+.calendar .combo {
+	display: none;
+}
+	
+/*</group>*/
+
+/*<group=login>*/
+
+table.login {
+}
+
+table.login td {
+	border-bottom-style: none;
+}
+
+table.login input {
+	width: 102%;
+	background: #DBF3FB;
+	margin-bottom: 14px;
+	border-style: none;
+	margin-top: -4px;
+	margin-left: -2px;
+	font-size: 10px;
+	border-top: 1px solid #4cbdeb;
+	padding: 2px;
+	height: 17px;
+}
+
+html>body table.login input {
+	margin-top: -3px;
+	height: auto;
+}
+	
+/*</group>*/
+
+/*<group=portal>*/
+
+body#portal #midSection img {
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+	
+/*</group>*/
+
+/*<group=werkenBijKwikfit>*/
+
+body#werkenBijKwikfit div#content {
+	background: url(images/werkenContent.jpg) no-repeat right top;
+	width: 600px;
+	padding: 0px;
+	margin: 0px;
+}
+
+div#solliciteren,div#vacatures {
+	width: 300px;
+	height: 120px;
+	display: block;
+	float: left;
+	background: url(images/portalStone.gif) repeat;
+}
+
+div#vacatures {
+	border-bottom: 2px solid #002985;
+}
+
+div#solliciteren p,div#vacatures p {
+	color: #002985;
+	margin-top: 0px;
+	margin-left: 6px;
+	padding-left: 0px;
+	font-weight: bold;
+}
+
+div#solliciteren select,div#vacatures select {
+	margin-left: 6px;
+	width: 288px;
+}
+
+div#solliciteren ul,div#vacatures ul {
+	margin-left: 6px;
+	padding: 0px;
+	list-style: none;
+	margin-bottom: 4px;
+}
+
+div#solliciteren ul li a,div#vacatures ul li a,div.portalBlock2x2 ul li a {
+	text-decoration: none;
+	font-size: 10px;
+	color: #002985;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	display: block;
+	background: url(images/stoneBullet.gif) no-repeat left center;
+	padding-left: 12px;
+}
+
+div#solliciteren ul li a:hover,div#vacatures ul li a:hover,div.portalBlock2x2 ul li a:hover {
+	text-decoration: underline;
+}
+
+a.buttonApk-keurmeester {
+	background: #F7BB05 url(images/buttonApk-keurmeester.gif) no-repeat;
+	border-left: 1px solid white;
+	height: 0px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: white;
+	padding-top: 120px;
+	overflow: hidden;
+	width: 149px;
+}
+
+a.buttonApk-keurmeester:hover {
+	background-color: #ffd65a;
+}
+
+a.buttonCarriere {
+	background: #F7BB05 url(images/buttonCarriere.gif) no-repeat;
+	border-left: 1px solid white;
+	width: 149px;
+	height: 0px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: white;
+	padding-top: 120px;
+	overflow: hidden;
+}
+
+a.buttonCarriere:hover {
+	background-color: #ffd65a;
+}
+
+body#werkenBijKwikfit div#content p.introduction {
+	background: url(images/introduction-werkenBijKwikfit.jpg) no-repeat;
+	height: 195px;
+	color: white;
+	font-weight: bold;
+	overflow: auto;
+	margin: 0px;
+	padding-top: 15px;
+	border-bottom: 1px solid white;
+}
+
+div#vacatures a.buttonLink {
+	float: right;
+}
+	
+/*</group>*/
+
+/*<group=corporate>*/
+
+body#corporate div#main {
+	background: url(images/midSection-corporate.gif) repeat-y center;
+}
+
+div#content div.portalBlock2x2.actueel {
+	background: silver;
+	overflow: auto;
+}
+
+div#content div.portalBlock2x2.actueel p {
+	color: black;
+}
+
+div.portalBlock2x2 {
+	width: 300px;
+	height: 200px;
+	border-bottom: 2px solid #f7bb05;
+	background: white;
+	display: block;
+	float: left;
+}
+
+div#content div.portalBlock2x2 ul {
+	padding: 0px;
+	margin: 0px 6px 6px 6px;
+	list-style: none;
+}
+
+div.portalBlock2x2 ul li a {
+	color: black;
+	display: block;
+}
+
+div.portalBlock2x2 ul li a span {
+	color: #002985;
+	font-size: 9px;
+	display: block;
+	border-bottom: 1px dotted #002985;
+	padding-bottom: 2px;
+	margin-bottom: 2px;
+}
+
+body#corporate div#content {
+	background: url(images/werkenContent.jpg) no-repeat right top;
+	width: 600px;
+	padding: 0px;
+	margin: 0px;
+}
+
+body#corporate div#content p.introduction {
+	background: url(images/introduction-corporate.jpg) no-repeat;
+	height: 195px;
+	color: white;
+	font-weight: bold;
+	overflow: auto;
+	margin: 0px;
+	padding-top: 15px;
+	border-bottom: 1px solid white;
+}
+	
+/*</group>*/
+
+/*<group=autoservice>*/
+
+div#sideBar h2.portalHeader {
+	margin-right: 1px;
+	display: block;
+	float: left;
+	width: 179px;
+}
+
+div#sideBar div#news {
+	
+}
+
+div#sideBar div#news ul {
+	padding: 0px;
+	margin: 0px 6px 6px 6px;
+	list-style: none;
+	float: left;
+	width: 168px;
+}
+
+div#sideBar div#news ul li a {
+	color: white;
+	display: block;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+div#sideBar div#news ul li a:hover {
+	text-decoration: underline;
+}
+
+div#sideBar div#news ul li a span {
+	color: black;
+	font-size: 9px;
+	display: block;
+	border-bottom: 1px dotted black;
+	padding-bottom: 8px;
+	margin-bottom: 4px;
+	text-decoration: none;
+	font-weight: normal;
+	margin-top: 4px;
+}
+
+body#autoservice div#main {
+	background: url(images/midSection-autoservice.gif) repeat-y center;
+}
+
+body#autoservice div#content {
+	background: url(images/werkenContent.jpg) no-repeat right top;
+	width: 600px;
+	padding: 0px;
+	margin: 0px;
+}
+
+body#autoservice div#content p.introduction {
+	background: url(images/introduction-autoservice.jpg) no-repeat;
+	height: 195px;
+	color: white;
+	font-weight: bold;
+	overflow: auto;
+	margin: 0px;
+	padding-top: 15px;
+	border-bottom: 1px solid white;
+}
+
+body#autoservice div.portalBlock2x2 {
+	border-bottom: 2px solid #002985;
+	height: 230px;
+}
+
+div#content div.portalBlock2x2.boxActie {
+	background: url(images/boxActie.gif) repeat;
+	overflow: auto;
+}
+
+div#content div.portalBlock2x2.boxOnlineServices {
+	background: url(images/boxOnlineServices.jpg) no-repeat;
+	overflow: auto;
+}
+	
+/*</group>*/
+
+/*<group=navigation>*/
+
+/*<group=tabs>*/
+
+#tabs {
+	padding: 0;
+	list-style: none;
+	float: right;
+	margin: 0px 0px 0px 0px;
+	width: 780px;
+	z-index: 1000;
+	position: relative;
+}
+
+#tabs li a {
+	display: block;
+	text-decoration: none;
+	font-size: 10px;
+	background: no-repeat right top  #FFC600;
+	color: black;
+	text-transform: uppercase;
+	padding: 2px 6px 2px 6px;
+	float: right;
+}
+
+#tabs li a:hover {
+	color: white;
+	background: #002985;
+}
+
+#tabs li.current a {
+	margin-bottom: 16px;
+	margin-top: -16px;
+	background: #A8A8A8;
+	color: white;
+}
+	
+/*</group>*/
+
+/*<group=subNavigation>*/
+
+div#subNavigation ul {
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+	display: block;
+	background: url(images/subNavigation.gif) repeat-y;
+}
+
+div#subNavigation ul li {
+	display: block;
+	border-bottom: 1px solid white;
+}
+
+div#subNavigation ul li a {
+	font-size: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	background: #ffc600 url(images/subNavigation-a.gif) no-repeat;
+	display: block;
+	padding: 6px 20px 6px 6px;
+	border-right: 1px solid white;
+}
+
+div#subNavigation ul li a:hover {
+	background-color: #acacad;
+}
+
+div#subNavigation ul li.current a {
+	background: url(images/subNavigation-a-current.gif) no-repeat left top;
+	color: white;
+	border-right-style: none;
+}
+
+div#subNavigation ul li.current ul {
+	margin-bottom: 5px;
+}
+
+div#subNavigation ul li ul li {
+	border-bottom-style: none;
+}
+
+div#subNavigation ul li.current ul li a {
+	background: url(images/bullet.gif) no-repeat left center;
+	text-transform: capitalize;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom-style: none;
+	padding-left: 15px;
+	font-size: 9px;
+}
+
+div#subNavigation ul li.current ul li.current a {
+	color: #ffc600;
+}
+
+div#subNavigation ul li.current ul li a:hover {
+	text-decoration: underline;
+}
+
+div#breadcrumbs {
+	padding-right: 20px;
+	display: block;
+	float: left;
+	margin-top: 6px;
+	padding-left: 5px;
+}
+
+div#breadcrumbs a {
+	background: url(images/breadcrumbsDivider.gif) no-repeat left center;
+	text-decoration: none;
+	font-size: 9px;
+	display: block;
+	float: left;
+	padding: 3px 5px 3px 15px;
+	font-style: italic;
+	font-weight: normal;
+	color: #002985;
+}
+
+div#breadcrumbs a.current {
+	color: #ffc600;
+	font-weight: bold;
+}
+
+div#breadcrumbs a:hover {
+	text-decoration: underline;
+}
+	
+/*</group>*/
+	
+/*</group>*/
+
+/*<group=content>*/
+
+/*<group=swapPanel>*/
+
+.swapPanel {
+	background: url(images/backdropSwapPanel.jpg) no-repeat left center #eeeeee;
+	margin-bottom: 20px;
+	width: 730px;
+	display: block;
+	float: left;
+	border: 1px solid silver;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -367px;
+	margin-top: -220px;
+	z-index: 9999;
+}
+
+.swapPanel h3 {
+	background: url(images/backdropSwapPanelH.gif) no-repeat;
+	margin: 0px;
+	padding: 7px 8px 5px 8px;
+	font-size: 10px;
+	font-weight: bold;
+	border-bottom: 1px solid silver;
+	color: black;
+	display: block;
+	text-align: center;
+	float: left;
+	width: 714px;
+}
+
+div.selected {
+	display: block;
+	font-size: 10px;
+	padding-top: 15px;
+	text-align: center;
+	float: left;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+div.selected select {
+	width: 260px;
+	height: 300px;
+	margin-top: 15px;
+	font-size: 10px;
+	float: left;
+}
+
+.swapPanel .arrows {
+	width: 130px;
+	display: block;
+	float: left;
+	padding-top: 140px;
+}
+
+.swapPanel .arrows a {
+	width: 130px;
+	height: 0px;
+	margin-bottom: 15px;
+	display: block;
+	float: left;
+	padding-top: 40px;
+	overflow: hidden;
+}
+
+.swapPanel .arrows a.add {
+	background: url(images/backdropAdd.gif) no-repeat;
+}
+
+.swapPanel .arrows a.add:hover {
+	background: url(images/backdropAdd-over.gif) no-repeat;
+}
+
+.swapPanel .arrows a.remove {
+	background: url(images/backdropRemove.gif) no-repeat;
+}
+
+.swapPanel .arrows a.remove:hover {
+	background: url(images/backdropRemove-over.gif) no-repeat;
+}
+
+.available {
+	display: block;
+	font-size: 10px;
+	text-align: center;
+	float: left;
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.available select {
+	width: 260px;
+	height: 300px;
+	float: left;
+	margin-top: 15px;
+	font-size: 10px;
+}
+
+.swapPanel p {
+	float: left;
+	display: block;
+	width: 690px;
+	left: 20px;
+	position: relative;
+}
+
+.swapPanel p a {
+	float: left;
+}
+
+.swapPanel table {
+	float: left;
+	display: block;
+	width: 690px;
+	left: 20px;
+	position: relative;
+	font-size: 10px;
+}
+
+.swapPanel table th {
+	text-align: left;
+	padding: 5px;
+}
+
+.swapPanel table td {
+	padding: 5px;
+}
+
+.swapPanel table td input {
+	border: 1px solid silver;
+	margin-right: 5px;
+	color: black;
+	padding: 4px;
+	font-size: 10px;
+	background: url(images/backdropPartListTR-over.gif) repeat-x left top white;
+	width: 95%;
+}
+
+.swapPanel table td input:focus {
+	border-color: black;
+	color: black;
+}
+	
+/*</group>*/
+
+#content select {
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	background: #dbf3fb;
+}
+
+#content dt {
+	background: #ffd65a;
+	font-size: 14px;
+}
+
+#content dt a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 8px 8px 8px 20px;
+	font-size: 14px;
+}
+
+#content dd {
+	margin: 10px 20px 20px 20px;
+	padding: 0px;
+	color: white;
+	font-size: 12px;
+}
+
+a.buttonLink {
+	font-size: 10px;
+	color: #002985;
+	font-weight: bold;
+	text-decoration: none;
+	background: url(images/buttonLink.gif) no-repeat right bottom;
+	padding-right: 15px;
+	display: block;
+	padding-top: 4px;
+	margin-right: 6px;
+	margin-top: 0px;
+	float: right;
+	text-transform: uppercase;
+}
+
+a.buttonLink:hover {
+	text-decoration: underline;
+}
+
+h2.portalHeader {
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 0px;
+	border-top: 2px solid #002882;
+	background: right top;
+	padding: 0px;
+	display: block;
+}
+
+h2.portalHeader a {
+	background: url(images/portalHeader.gif) no-repeat right top;
+	color: white;
+	font-size: 9px;
+	text-decoration: none;
+	padding: 0px 20px 3px 6px;
+}
+
+a#companyLogo {
+	background: url(images/logo.gif) no-repeat left center;
+	display: block;
+	width: 780px;
+	overflow: hidden;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: right;
+	float: right;
+	padding: 25px 25px 25px 0;
+}
+
+html>body a#companyLogo {
+	width: 755px;
+	margin-right: 25px;
+	padding-right: 0;
+	margin-top: 0;
+}
+
+#midSection {
+	width: 780px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background: repeat;
+	text-align: left;
+}
+
+#superPanel {
+	width: 780px;
+	background: url(images/top.gif) repeat-y center center;
+	float: left;
+	border-bottom: 1px solid white;
+	padding: 0;
+	margin-top: 0;
+}
+
+#sideBar {
+	width: 180px;
+	clear: both;
+	float: left;
+}
+
+#sideBar p {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+div#search {
+	padding-left: 6px;
+	padding-right: 6px;
+	background: #FFD65A;
+	display: block;
+	float: left;
+	width: 179px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+}
+
+html>body div#search {
+	width: 167px;
+}
+
+div#search h2 {
+	font-size: 10px;
+	margin-top: 6px;
+	margin-bottom: 26px;
+	text-transform: uppercase;
+}
+
+div#search p {
+	font-size: 10px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+	margin-left: 0;
+}
+
+div#search input {
+	width: 134px;
+	float: left;
+	padding: 3px;
+	font-size: 10px;
+	border: 1px solid black;
+	height: 20px;
+}
+
+html>body div#search input {
+	height: auto;
+}
+
+div#search a.buttonFind-c16 {
+	background: url(images/buttonGo-c20.gif) no-repeat;
+	width: 20px;
+	padding-top: 20px;
+	height: 20px;
+}
+
+html>body div#search a.buttonFind-c16 {
+	
+}
+
+#content {
+	display: block;
+	width: 720px;
+	float: left;
+	margin: 0px;
+	padding: 0 20px;
+}
+
+html>body #content {
+	width: 740px;
+}
+
+#content p a,#content ul li a {
+	color: #ffc600;
+}
+
+#content p.introduction {
+	font-weight: bold;
+}
+
+#content p img {
+	margin-right: 6px;
+	margin-bottom: 6px;
+}
+
+#content span.caption img {
+	margin-bottom: 5px;
+}
+
+#content p em {
+	font-weight: bold;
+	font-style: italic;
+}
+
+#content span.caption {
+	float: right;
+	font-size: 10px;
+	color: black;
+	padding: 5px;
+	border: 1px solid white;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	width: 250px;
+	background: #ffd65a;
+}
+
+#primaryColumn {
+	width: 542px;
+	display: block;
+	float: left;
+}
+
+#secondaryColumn {
+	width: 125px;
+	display: block;
+	float: left;
+	border-left: 1px solid white;
+	padding-left: 24px;
+	margin-left: 20px;
+}
+
+html>body #secondaryColumn {
+	margin-left: 24px;
+}
+
+div#secondaryColumn div#marginalComment {
+	border-top: 1px solid white;
+	width: 150px;
+	display: block;
+}
+
+div#secondaryColumn div#marginalComment p {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+div#marginalComment {
+	display: block;
+	float: left;
+	padding-top: 5px;
+	margin-bottom: 30px;
+}
+
+div#marginalComment p {
+	padding-left: 6px;
+	padding-right: 6px;
+	color: white;
+	font-size: 10px;
+}
+
+#content h1,#content h2 {
+	padding-right: 20px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	clear: both;
+	margin-top: 35px;
+	display: block;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+
+#content h2 form,#content h1 form {
+	float: right;
+	display: block;
+	margin-top: -18px;
+}
+
+#content h2 select,#content h2 select {
+	margin-left: 10px;
+	float: right;
+}
+
+#content h3 {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFC600;
+}
+
+#content p,#content ul,#content table,#content ol {
+	margin-left: 0px;
+	font-size: 10px;
+	color: white;
+	line-height: 15px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#content ul,#content ol {
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+a.availableMechanics {
+	float: left;
+	height: 20px;
+	background: url(images/iconMechanic.gif) repeat-x;
+	display: block;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+a.availableMechanics span {
+	height: 16px;
+	display: block;
+	float: left;
+	background: url(images/iconMechanic-warning.gif) repeat-x;
+	padding-top: 16px;
+	overflow: hidden;
+}
+
+html>body a.availableMechanics span {
+	height: 0;
+}
+
+a.availableJobs {
+	height: 40px;
+	display: block;
+	float: left;
+	background: url(images/iconJob.gif) repeat-x;
+	padding-top: 40px;
+	overflow: hidden;
+}
+
+html>body a.availableJobs {
+	height: 0;
+}
+
+#content table td.customer {
+	padding-left: 65px;
+}
+
+#content table td span.numberPlate {
+	width: 60px;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background: url(images/numberPlate.gif) no-repeat center center;
+	display: block;
+	color: black;
+	font-size: 10px;
+	float: left;
+	margin-top: -3px;
+	position: absolute;
+	margin-left: -63px;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: default;
+}
+
+#content table td a span.numberPlate {
+	background: url(images/numberPlate-warning.gif) no-repeat center center;
+	text-decoration: blink;
+	cursor: pointer;
+}
+
+#content table#dayPlanner th.identifier {
+	width: 80px;
+	padding-left: 5px;
+	background: #4cbdeb;
+	border-bottom: 1px solid #009ee3;
+	border-left: 1px solid #009ee3;
+	text-align: right;
+	color: #002681;
+	font-weight: bold;
+}
+
+#content table#dayPlanner th.identifier input {
+	width: 10px;
+	height: 10px;
+	margin: 0px;
+}
+
+table th.vTitle.groteBeurt {
+	background: url(images/vTitle-grotebeurt.gif) no-repeat left center;
+}
+
+table th.vTitle.afspraken {
+	background: url(images/vTitle-afspraken.gif) no-repeat left center;
+}
+
+table th.vTitle.apk {
+	background: url(images/vTitle-apk.gif) no-repeat left center;
+}
+
+table th.vTitle.tijd {
+	background: url(images/vTitle-tijd.gif) no-repeat left center;
+}
+
+table th.vTitle.todo {
+	background: url(images/vTitle-todo.gif) no-repeat left center;
+	border-bottom: 1px solid #009ee3;
+}
+
+/*<group=areaSelector>*/
+
+div#areaSelector {
+	display: block;
+	float: left;
+	clear: both;
+	width: 150px;
+	padding-top: 0;
+	padding-bottom: 15px;
+}
+
+div#areaSelector select {
+	width: 150px;
+}
+	
+/*</group>*/
+
+/*<group=brancheSelector>*/
+
+div#brancheSelector {
+	display: block;
+	float: left;
+	clear: both;
+	width: 150px;
+	padding-top: 15px;
+	border-top: 1px solid white;
+	padding-bottom: 15px;
+}
+
+div#brancheSelector ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+div#brancheSelector ul li {
+	padding: 0;
+	float: left;
+	display: block;
+	width: 150px;
+	background: url(images/brancheSelectorItem.gif) no-repeat center center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div#brancheSelector ul li.current {
+	padding: 0;
+	float: left;
+	display: block;
+	width: 150px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div#brancheSelector ul li.current a {
+	background: url(images/brancheSelectorItem-cover-current.gif) no-repeat left center;
+}
+
+div#brancheSelector ul li span {
+	display: block;
+	float: left;
+	height: 20px;
+	background: no-repeat url(images/brancheSelectorItem-fill.gif) right center;
+}
+
+div#brancheSelector ul li.current span {
+	display: block;
+	float: left;
+	height: 20px;
+}
+
+div#brancheSelector ul li a {
+	margin: 0;
+	display: block;
+	background: left center url(images/brancheSelectorItem-cover.gif) no-repeat;
+	text-decoration: none;
+	color: white;
+	font-size: 10px;
+	float: left;
+	width: 150px;
+	text-align: center;
+	position: absolute;
+	padding: 2px 0;
+}
+
+html>body div#brancheSelector ul li a {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+div#brancheSelector ul li a:hover {
+	background: url(images/brancheSelectorItem-cover-over.gif) no-repeat left center;
+}
+	
+/*</group>*/
+
+/*<group=standard table>*/
+
+/*<group=Extended>*/
+
+#content table td.selection select {
+	color: black;
+	size: 10px;
+	width: 100%;
+	background: #DBF3FB;
+	border-style: none;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	margin: -1px 0 16px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+#content table td.options {
+	padding-bottom: 16px;
+}
+
+#content table td.options input {
+	width: 12px;
+	height: 12px;
+	margin-top: 0;
+	padding: 0;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+#content table td.checkBoxes {
+	padding-bottom: 16px;
+}
+
+#content table td.checkBoxes input {
+	width: 12px;
+	height: 12px;
+	margin-top: 0;
+	padding: 0;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+#content table td.inputField {
+	padding-top: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+html>body #content table td.inputField {
+	padding-right: 4px;
+}
+
+#content table td.inputField input {
+	color: black;
+	size: 10px;
+	width: 100%;
+	background: #DBF3FB;
+	margin-bottom: 14px;
+	border-style: none;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	padding: 2px;
+	margin-top: -2px;
+	position: relative;
+	height: 16px;
+}
+
+html>body #content table td.inputField input {
+	height: auto;
+	margin-top: -1px;
+	margin-left: 0;
+}
+	
+/*</group>*/
+
+th.index {
+	width: 20px;
+}
+
+#content table {
+	width: 100%;
+	border-spacing: 0px 0px;
+	margin-bottom: 15px;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+}
+
+#content table th {
+	text-align: left;
+	vertical-align: top;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 4px;
+}
+
+#content table th.vTitle {
+	width: 8px;
+}
+
+#content table td {
+	padding: 2px;
+	background: #4CBDEB;
+	border-bottom: 1px solid #009ee3;
+	vertical-align: top;
+}
+
+table td input.default,table td textarea {
+	color: black;
+	size: 10px;
+	padding: 2px;
+	width: 100%;
+	background: #DBF3FB;
+	margin-bottom: 14px;
+	border-style: none;
+	margin-top: -3px;
+	margin-left: -2px;
+	border-top: 1px solid #4cbdeb;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#content table td input.default {
+	color: black;
+	size: 10px;
+	width: 103%;
+	background: #DBF3FB;
+	margin-bottom: 14px;
+	border-style: none;
+	margin-left: -2px;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	padding: 4px;
+	height: 18px;
+	margin-top: -6px;
+}
+
+html>body #content table td input.default {
+	width: 100%;
+	margin-top: -3px;
+	padding: 2px;
+	border-top: 1px solid #4cbdeb;
+}
+
+#content table td input.numberPlate {
+	background: #FFC600;
+}
+
+#content table td input.zipCode {
+	width: 80px;
+	margin-top: -2px;
+	margin-right: 0;
+	margin-left: 0;
+	position: relative;
+}
+
+#content table td input.city {
+	width: 335px;
+	margin-top: -2px;
+	margin-right: -4px;
+	margin-left: -2px;
+	height: 16px;
+	position: relative;
+}
+
+html>body #content table td input.city {
+	width: 327px;
+	height: auto;
+	margin-left: -2px;
+}
+
+#content table td.inputField-date {
+	padding-top: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#content table td input.date {
+	color: black;
+	size: 10px;
+	width: 20px;
+	background: #DBF3FB;
+	margin-bottom: 14px;
+	border-style: none;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	padding: 2px;
+	margin-top: -2px;
+	position: relative;
+	height: 16px;
+}
+
+html>body #content table td input.date {
+	height: auto;
+}
+
+#content table td select.month {
+	color: black;
+	size: 10px;
+	width: 75px;
+	background: #DBF3FB;
+	margin-bottom: 14px;
+	border-style: none;
+	margin-top: -2px;
+	border-top: 1px solid #4cbdeb;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	vertical-align: top;
+	position: relative;
+	margin-left: -2px;
+}
+
+#content table td select.year {
+	color: black;
+	size: 10px;
+	width: 304px;
+	background: #DBF3FB;
+	margin-bottom: 14px;
+	border-style: none;
+	margin-top: -1px;
+	border-top: 1px solid #4cbdeb;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	margin-right: -2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#content table td input.year {
+	color: black;
+	size: 10px;
+	width: 318px;
+	background: #DBF3FB;
+	margin-bottom: 14px;
+	border-style: none;
+	margin-top: -2px;
+	border-top: 1px solid #4cbdeb;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	position: relative;
+	height: 16px;
+	margin-left: -2px;
+}
+
+html>body #content table td input.year {
+	width: 314px;
+	height: auto;
+}
+
+#content table td.selection {
+	padding: 0;
+}
+
+#content table td textarea {
+	color: black;
+	size: 10px;
+	padding: 2px;
+	width: 101%;
+	background: #DBF3FB;
+	margin-bottom: 14px;
+	border-style: none;
+	margin-top: -3px;
+	margin-left: -2px;
+	border-top: 1px solid #4cbdeb;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#content table td select {
+	width: 100%;
+}
+
+html>body #content table td textarea {
+	width: 100%;
+}
+
+#content table td input.default:focus,#content table td input[type="text"]:focus,table td textarea:focus,table td select:focus {
+	background: white;
+}
+
+#content table th.section {
+	background: url(images/th.section.gif) no-repeat right bottom;
+	text-align: left;
+	color: #002681;
+	padding-bottom: 15px;
+	font-size: 10px;
+}
+
+#content table th.identifier {
+	text-align: left;
+	color: white;
+	width: 120px;
+	font-weight: normal;
+}
+
+#content table th.identifier span.label {
+	background: #002681;
+	padding: 2px;
+	margin-top: -2px;
+	width: 125px;
+	display: block;
+	position: absolute;
+	margin-left: -1px;
+	float: left;
+	border-bottom: 17px solid #009ee3;
+}
+
+html>body #content table th.identifier span.label {
+	margin-left: -2px;
+	margin-top: -3px;
+	width: 122px;
+}
+
+#content table td.currency,#content table th.currency,#content table td.percentage,#content table th.percentage {
+	text-align: right;
+	padding-left: 15px;
+}
+
+#content table td.currency{
+	white-space: nowrap;
+}
+
+#content table th.total,#content table td.total {
+	background: none;
+	border-top: 3px double white;
+}
+
+#content table td.buttons {
+	padding-bottom: 0;
+	padding-top: 0;
+	width: 50px;
+}
+
+#content table td.buttons a {
+	float: right;
+}
+
+#content table td.buttonBar {
+	text-align: right;
+	background: url(images/td.buttons.gif) repeat-y right;
+	white-space: nowrap;
+}
+
+#content table td.buttonBar input {
+	background: url(images/buttonMain.gif) no-repeat right center;
+	text-align: right;
+	width: auto;
+	border-style: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 10px;
+	padding-right: 20px;
+	margin-bottom: 0;
+	margin-top: 1px;
+	cursor: pointer;
+}
+
+#content table td.numberPlate {
+	color: black;
+	border-bottom: 16px solid #4cbdeb;
+	background-image: url(images/background Colour.png) ;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color: #FFC600;
+}
+
+#content table td.predefinedInput {
+	color: black;
+	border-bottom: 16px solid #4cbdeb;
+	background-color: #DBF3FB;
+}
+
+#content table td.predefinedInput input {
+	margin: 0 3px 0 5px;
+	padding: 0;
+	width: 12px;
+	height: 12px;
+	vertical-align: top;
+}
+	
+/*</group>*/
+
+p#footer {
+	float: left;
+	display: block;
+	margin-bottom: -30px;
+	padding-left: 6px;
+	width: 768px;
+	color: gray;
+	padding-bottom: 10px;
+	padding-right: 6px;
+	font-size: 9px;
+	margin-left: 0;
+}
+
+p#footer a {
+	color: gray;
+	font-size: 9px;
+	text-decoration: none;
+}
+
+p#footer a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+p#footer a.back2Main {
+	float: left;
+	display: block;
+	margin-top: -42px;
+	font-size: 10px;
+	color: white;
+	font-weight: bold;
+	background: url(images/buttonBack2Main.gif) no-repeat right bottom;
+	padding: 15px 20px 0 0;
+}
+
+/*<group=Matenmix>*/
+
+span.increase {
+	background: url(images/iconIncrease.gif) no-repeat;
+	width: 9px;
+	padding-top: 10px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	height: 10px;
+}
+
+html>body span.increase {
+	height: 0;
+}
+
+span.decrease {
+	background: url(images/iconDecrease.gif) no-repeat;
+	width: 9px;
+	padding-top: 10px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	height: 10px;
+}
+
+html>body span.decrease {
+	height: 0;
+}
+	
+/*</group>*/
+
+/*<group=Reden van vervanging>*/
+
+table#reasonForReplacement th.identifier {
+	width: 160px;
+}
+	
+/*</group>*/
+
+/*<group=navigation>*/
+
+div#navigation ul {
+	margin: 0 0px 0px -1px;
+	padding: 0;
+	list-style: none;
+	display: block;
+	float: left;
+	width: 781px;
+	background: #ffc600 url(images/navigation.gif) repeat-x left bottom;
+	line-height: 1;
+	z-index: 2000;
+}
+
+#navigation a {
+	display: block;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 10px;
+	background: #ffc600;
+	width: 194px;
+	padding: 6px;
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+html>body #navigation a {
+	width: 182px;
+}
+
+#navigation a.extend {
+	background: url(images/navigation-extend.gif) no-repeat right center;
+}
+
+#navigation li { /* all list items */
+	/*width: 8em; /*width needed or else Opera goes nuts */
+	float: left;
+}
+
+#navigation li ul { /* second-level lists */
+	position: absolute;
+	background: white;
+	width: 195px;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */;
+	right: auto;
+	bottom: auto;
+	margin-left: 0;
+	border-right: 1px solid white;
+	display: block;
+}
+
+#navigation li ul li {
+	width: 180px;
+}
+
+#navigation li ul a {
+	color: #091c5a;
+	background: silver;
+}
+
+#navigation li ul a:hover {
+	color: white;
+	background: gray;
+}
+
+#navigation li ul ul { /* third-and-above-level lists */
+	margin: -1.2em 0 0 -8em;
+	background: white;
+}
+
+/* #navigation li:hover ul ul, 
+#navigation li:hover ul ul ul, */
+
+#navigation li.sfhover ul ul, 
+#navigation li.sfhover ul ul ul 
+{
+	left: -999em;
+}
+
+/* #navigation li:hover ul, 
+#navigation li li:hover ul,
+#navigation li li li:hover ul, */
+
+#navigation li.sfhover ul, 
+#navigation li li.sfhover ul, 
+#navigation li li li.sfhover ul 
+{ /* lists nested under hovered list items */
+	left: auto;
+}
+	
+/*</group>*/
+
+div#secondaryColumn div {
+	border-bottom: 1px solid #4CBDEB;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	margin-left: -2px;
+}
+
+div#secondaryColumn div h3 {
+	font-size: 9px;
+	color: #ffd65a;
+	font-weight: bold;
+	padding: 0;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+div#secondaryColumn div div {
+	border-bottom-style: none;
+	float: left;
+	display: block;
+}
+
+div#secondaryColumn div div.col1of3,div#secondaryColumn div div.col2of3,div#secondaryColumn div div.col3of3 {
+	width: 50px;
+	padding: 0;
+	margin: 0;
+}
+
+div#secondaryColumn div div.col1of3 label,div#secondaryColumn div div.col2of3 label,div#secondaryColumn div div.col3of3 label {
+	width: 50px;
+	text-align: left;
+}
+
+/*<group=widgetTyreSpeed>*/
+
+div#widgetTyreSpeed label {
+	width: 50px;
+	margin: 0;
+}
+
+div#widgetTyreSpeed label input {
+}
+	
+/*</group>*/
+
+/*<group=widgetFilter>*/
+
+div#widgetFilter {
+	display: block;
+	float: left;
+	width: 150px;
+}
+
+div#widgetFilter input {
+	border-style: none;
+	background: url(images/search.gif) no-repeat center center;
+	color: black;
+	font-size: 10px;
+	width: 115px;
+	padding: 6px 10px 5px 25px;
+	margin-top: 8px;
+}
+
+div#widgetFilter input:focus {
+	background: url(images/search-over.gif) no-repeat center center;
+}
+	
+/*</group>*/
+
+/*<group=marginalComment>*/
+
+div#secondaryColumn div#marginalComment {
+	border-bottom-style: none;
+}
+
+div#marginalComment p {
+	font-size: 9px;
+	color: #DBF3FB;
+}
+	
+/*</group>*/
+
+/*<group=widgetSelectionList>*/
+
+div.selectionList {
+	display: block;
+	float: left;
+	width: 150px;
+}
+
+div.selectionList ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+div.selectionList ul li {
+	margin: 0;
+	padding: 0;
+}
+
+div.selectionList ul li a {
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	display: block;
+	font-size: 9px;
+}
+
+div.selectionList ul li a:hover {
+	text-decoration: underline;
+}
+
+div.selectionList label {
+	color: white;
+	font-size: 9px;
+	width: 150px;
+	display: block;
+	float: left;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+div.selectionList label:hover {
+	cursor: pointer;
+	background: #009EE3;
+}
+
+div.selectionList label input {
+	width: 10px;
+	height: 10px;
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+div.selectionList select {
+	width: 100%;
+	float: left;
+	font-size: 9px;
+	background: #0089DD;
+	color: white;
+	padding-left: 0;
+	margin: 0;
+	border: 1px solid #0C2577;
+}
+
+div.selectionList select option {
+	background: #DBF3FB;
+	color: black;
+}
+
+
+	
+/*</group>*/

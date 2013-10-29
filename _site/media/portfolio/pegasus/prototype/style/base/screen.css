@@ -1,0 +1,6280 @@
+/* @group Generic */
+
+body {
+	background-color: #b9c1c5;
+	font: 16px Arial, Helvetica, Geneva, sans-serif;
+}
+
+img {
+	border-style: none;
+}
+
+div#main {
+	width: 940px;
+	margin-left: -470px;
+	margin-right: auto;
+	margin-top: 20px;
+	float: left;
+	background-color: white;
+	left: 50%;
+	position: absolute;
+}
+
+div#content {
+	width: 930px;
+	margin-right: auto;
+	margin: 2px;
+	border: 1px solid #b8d1dc;
+	float: left;
+	padding: 2px;
+	display: inline;
+}
+
+a {
+	color: #006f95;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #005984;
+}
+
+h1#logo {
+	float: left;
+	margin: 7px 0 0 18px;
+	padding: 0;
+	z-index: 100;
+	display: inline;
+}
+
+h1#logo a {
+	margin: 0;
+	padding: 62px 0 0;
+	height: 0;
+	overflow: hidden;
+	float: left;
+	width: 186px;
+	background: url(logo.gif) no-repeat;
+	position: absolute;
+}
+
+div#sideBar {
+	width: 204px;
+	float: left;
+	padding-top: 100px;
+	clear: left;
+	padding-bottom: 35px;
+}
+
+body div#mainContent {
+	background: url(mainContent-base.gif) no-repeat right 0;
+	margin: 0;
+	padding: 48px 0 60px;
+	position: relative;
+	float: right;
+}
+
+html>body #mainContent.catalogue
+ {
+	width: 724px;
+}
+
+#catalogue {
+	width: 628px;
+	background: url(mainContent.gif) no-repeat right top;
+	float: right;	
+	padding-left: 46px;
+	padding-right: 51px;
+	margin-top: -48px;
+	padding-top: 48px;
+}
+
+div#footer {
+	float: right;
+	width: 628px;
+	padding-left: 46px;
+	padding-right: 51px;
+}
+
+div#mainContent p {
+	font-size: 11px;
+	color: #79a9bd;
+	line-height: 19px;
+}
+
+div#mainContent h1 {
+	margin-right: -26px;
+	width: 654px;
+	border-bottom: 1px solid #bfd5df;
+	margin-bottom: 8px;
+	margin-top: 0;
+	font-size: 28px;
+	color: #13668c;
+	font-weight: normal;
+	text-transform: lowercase;
+	letter-spacing: 1px;
+	padding: 0;
+	line-height: 19px;
+	font-style: normal;
+}
+
+div#mainContent h2 {
+	font-size: 12px;
+	background-color: #13668c;
+	color: #89b3c6;
+	margin-top: 0;
+	width: 644px;
+	margin-right: -26px;
+	float: left;
+	padding: 4px 5px;
+}
+
+div#head {
+	float: left;
+	width: 930px;
+}
+
+#promos {
+	float: left;
+	width: 656px;
+	margin-left: 48px;
+	border-top: 22px solid #13668c;
+	padding-top: 2px;
+	display: inline;
+	margin-top: -7px;
+}
+
+html>body #promos {
+	margin-top: 0;
+}
+
+#promos a {
+	margin-right: 2px;
+	float: left;
+}
+
+#promos p a {
+	margin-right: 2px;
+	float: none;
+}
+
+#promos img {
+	float: left;
+}
+
+#promos p {
+	float: right;
+	width: 200px;
+	margin-right: 39px;
+	display: inline;
+	clear: right;
+	margin-top: 0;
+	font-size: 11px;
+	color: #79a9bd;
+	line-height: 19px;
+}
+
+#promos h4 {
+	float: right;
+	width: 200px;
+	margin-right: 39px;
+	display: inline;
+	clear: right;
+	margin-bottom: 0;
+	color: #13668c;
+	font-size: 12px;
+	margin-top: 27px;
+}
+
+a.buttonDefault {
+	background: url(menuTreeItem.gif) no-repeat;
+	padding: 8px 10px 10px;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-style: normal;
+	float: left;
+}
+
+a.buttonDefault span {
+	padding-right: 10px;
+	background: url(linkPointer.gif) no-repeat right center;
+}
+
+/* @group sIFR default classes */
+
+.sIFR-flash {
+	visibility: visible !important;
+	padding: 0;
+	font-weight: normal;
+	font-style: normal;
+	position: absolute;
+	margin: 0;
+}
+
+.sIFR-replaced {
+	visibility: visible !important;
+}
+
+.sIFR-alternate {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+}
+
+/* @end */
+
+/* @group sIFR configuration */
+
+.sIFR-active #mainContent h1 {
+	visibility: hidden;
+	color: #13668c;
+	line-height: 28px;
+	height: 21px;
+	font-size: 28px;
+}
+
+/* @end */
+
+/* @group Page Navigation */
+
+ul#pageNavigation {
+	background-color: #13668c;
+	list-style-type: none;
+	width: 555px;
+	float: right;
+	margin: 0 20px 0 0;
+	display: inline;
+	padding: 0;
+}
+
+ul#pageNavigation li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+ul#pageNavigation li a {
+	font-size: 10px;
+	color: #79a9bd;
+	text-transform: uppercase;
+	text-decoration: none;
+	float: left;
+	padding: 6px 70px 6px 25px;
+}
+
+ul#pageNavigation li a:hover {
+	color: white;
+}
+
+/* @end */
+
+/* @group Pagination */
+
+p.pagination {
+	font-size: 12px;
+	background-color: #13668c;
+	color: #d1bb88;
+	margin-top: 0;
+	width: 644px;
+	margin-right: -26px;
+	float: left;
+	line-height: 16px;
+	padding: 4px 5px;
+}
+
+p.pagination span {
+	float: left;
+	display: inline;
+}
+
+span.pageNumbers {
+	margin-left: 20px;
+	padding-top: 0;
+}
+
+span.pageNumbers a {
+	color: #89b3c6;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	margin-left: 2px;
+	font-size: 9px;
+	border: 1px solid #89b3c6;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	width: 1.4em;
+	line-height: 10px;
+	margin-right: 2px;
+	display: inline;
+}
+
+span.pageNumbers a:hover,
+span.pageNumbers a.current {
+	background-color: #89b3c6;
+	color: #005984;
+}
+
+span.pageNumbers button.buttonPrevious {
+	float: left;
+	border-style: none;
+	width: 15px;
+	height: 17px;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	background: url(buttonPrevious-dark.gif) no-repeat center center;
+	cursor: pointer;
+}
+
+span.pageNumbers button.buttonNext {
+	float: left;
+	border-style: none;
+	width: 15px;
+	height: 17px;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	background: url(buttonNext-dark.gif) no-repeat center center;
+	cursor: pointer;
+}
+
+span.pageNumbers button.buttonPrevious.active {
+
+	background: url(buttonPrevious-light.gif) no-repeat center center;
+
+}
+
+span.pageNumbers button.buttonNext.active {
+	background: url(buttonNext-light.gif) no-repeat center center;
+
+}
+
+span.pageNumbers button span {
+	display: none;
+}
+
+/* @end */
+
+/* @group Global Navigation */
+
+div#menuBar {
+	text-align: right;
+	padding-left: 206px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	float: right;
+	z-index: 2;
+}
+
+div#menuBar p {
+	text-align: right;
+	color: gray;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	float: left;
+	letter-spacing: 1px;
+	background: url(tabs.gif) no-repeat 0 bottom;
+	display: inline;
+	margin: 0;
+	padding: 0.6em 0.7em 0.85em;
+}
+
+div#menuBar p a {
+	color: #7fa6bd;
+}
+
+div#menuBar p a:hover {
+	color: black;
+}
+
+ul#mainMenu {
+	list-style-type: none;
+	margin: 0;
+	float: left;
+	background: url(tabs.gif) no-repeat right 3px;
+	height: 1.35em;
+	padding: 0 0 0.3em;
+	overflow: hidden;
+}
+
+html>body ul#mainMenu {
+	overflow: visible;
+	background: url(tabs.gif) no-repeat right bottom;
+}
+
+ul#mainMenu li {
+	float: left;
+	background: url(tab-right.gif) no-repeat right top;
+	margin-bottom: 0;
+	margin-left: 2px;
+	padding-left: 0;
+}
+
+ul#mainMenu li a {
+	float: left;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+	background: url(tab-left.gif) no-repeat;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #7fa6bd;
+	padding: 0.6em 0.7em;
+}
+
+ul#mainMenu li a strong {
+	color: #13668c;
+}
+
+ul#mainMenu li.open {
+	background: url(tab-left-open.gif) no-repeat;
+	position: relative;
+	z-index: 1;
+	padding-left: 0.2em;
+}
+
+ul#mainMenu li.open a {
+	background: url(tab-right-open.gif) no-repeat right top;
+	z-index: 1;
+	position: relative;
+	padding-left: 0.4em;
+	padding-bottom: 1.4em;
+}
+
+ul#mainMenu li.open.itemLast {
+	background: url(tab-right.gif) no-repeat right top;
+	padding-left: 0;
+}
+
+ul#mainMenu li.open.itemLast a {
+	background: url(tab-left.gif) no-repeat left top;
+	z-index: 1;
+	position: relative;
+	padding: 0.6em 0.7em;
+	color: black;
+}
+
+ul#mainMenu li a:hover {
+	color: black;
+}
+
+ul#mainMenu ul {
+	display: none;
+}
+
+ul#mainMenu li.open ul {
+	list-style-type: none;
+	position: absolute;
+	border-bottom: 3px solid #c4d9e2;
+	border-right: 1px solid #d2d2d2;
+	border-left: 1px solid #d2d2d2;
+	z-index: 0;
+	padding: 0;
+	display: block;
+	left: 0;
+	width: 11.3em;
+	background: #f2f2f2 url(globalNavigationEdge.gif) no-repeat scroll 0 0;
+	margin: 1.95em 0 0;
+}
+
+html>body ul#mainMenu li.open ul {
+	margin-top: 1.90em;
+}
+
+*:first-child+html ul#mainMenu li.open ul {
+	margin: 1.95em 0 0;	
+}
+
+ul#mainMenu li.open ul li {
+	width: 155px;
+	background-image: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+ul#mainMenu li.open ul li a {
+	width: 155px;
+	text-align: left;
+	background-image: none;
+	font-size: 9px;
+	color: #999999;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+	margin-left: 0;
+	padding-left: 0.5em;
+}
+
+ul#mainMenu li.open ul li a:hover {
+	color: black;
+	margin-left: 0;
+	padding-left: 0.5em;
+}
+
+/* @end */
+
+/* @group Side ads */
+
+#ads {
+	margin-left: 18px;
+	float: left;
+	display: inline;
+	padding-bottom: 53px;
+}
+
+#ads a {
+	padding: 2px;
+	border: 1px solid #7fa6bd;
+	margin-bottom: 8px;
+	width: 181px;
+	display: block;
+	height: 138px;
+}
+
+#ads a:hover {
+	border: 1px solid #13668c;
+	background-color: #13668c;
+}
+
+#ads a img {
+	margin: 0;
+	border-style: none;
+	width: 181px;
+	float: left;
+	position: absolute;
+}
+
+/* @end */
+
+/* @group Bread Crumbs */
+
+div#breadcrumbs {
+	float: right;
+	overflow: hidden;
+	text-align: right;
+	white-space: nowrap;
+	clear: right;
+	width: 700px;
+	padding-bottom: 7px;
+}
+
+html>body div#breadcrumbs {
+	padding-bottom: 3px;
+}
+
+div#breadcrumbs a {
+	padding: 7px 14px;
+	color: #7fa6bd;
+	font-size: 10px;
+	text-decoration: none;
+	background: url(breadcrumbDivider.gif) no-repeat right center;
+	margin-right: -7px;
+	white-space: nowrap;
+	clear: none;
+	line-height: 16px;
+}
+
+div#breadcrumbs a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+/* @end */
+
+/* @group Secondary Menu */
+
+ul#secondaryMenu {
+	margin: 0 0 38px 18px;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 187px;
+}
+
+ul#secondaryMenu li {
+	background: url(menuTreeItem.gif) no-repeat;
+	width: 187px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+ul#secondaryMenu li a {
+	float: left;
+	width: 177px;
+	padding-top: 7px;
+	padding-left: 10px;
+	font-size: 12px;
+	padding-bottom: 6px;
+	color: #7fa6bd;
+	text-decoration: none;
+}
+
+ul#secondaryMenu li a:hover {
+
+	color: #005984;
+}
+
+ul#secondaryMenu li.active {
+	background: url(secondaryMenu-sub.gif) repeat-y 3px top;
+	width: 187px;
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#secondaryMenu li.active a {
+	background: url(menuTreeItem-active.jpg) no-repeat 0 top;
+	color: #13668c;
+}
+
+ul#secondaryMenu li.active ul {
+	margin-left: 0;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	float: left;
+	padding-bottom: 10px;
+	padding-top: 0;
+}
+
+ul#secondaryMenu li.active li {
+	background: url(secondaryMenu-sub.gif) repeat-y 3px;
+}
+
+ul#secondaryMenu li.active li a {
+	color: #939495;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 10px;
+	text-transform: lowercase;
+	line-height: 10px;
+	background-image: none;
+	margin-top: -3px;
+}
+
+ul#secondaryMenu li li.active a {
+}
+
+ul#secondaryMenu li li.current a {
+	color: black;
+}
+
+ul#secondaryMenu li.active li ul {
+	background-image: none;
+	margin-left: 10px;
+	padding-left: 0;
+	border-left: 1px solid silver;
+	padding-bottom: 0;
+	display: inline;
+	float: left;
+}
+
+ul#secondaryMenu li.active li ul li {
+	background-image: none;
+}
+
+ul#secondaryMenu li.active li ul li a {
+	padding-left: 5px;
+}
+
+ul#secondaryMenu ul li a:hover {
+	width: 177px;
+	padding-top: 5px;
+	font-size: 10px;
+	padding-bottom: 5px;
+	color: #005984;
+	text-decoration: none;
+	background-image: none;
+	margin-top: -3px;
+}
+
+/* @end */
+
+/* @group Carousel Navigation */
+
+p#carouselNavigation {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 317px;
+	margin-bottom: 25px;
+}
+
+p#carouselNavigation span {
+	float: left;
+	display: inline;
+	margin-left: 0;
+}
+
+p#carouselNavigation a.current {
+	color: white;
+}
+
+p#carouselNavigation span.pageNumbers button.buttonPrevious {
+	float: left;
+	border-style: none;
+	width: 15px;
+	height: 17px;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	background: url(buttonPrevious-light.gif) no-repeat center center;
+	cursor: pointer;
+}
+
+p#carouselNavigation span.pageNumbers button.buttonNext {
+	float: left;
+	border-style: none;
+	width: 15px;
+	height: 17px;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	background: url(buttonNext-light.gif) no-repeat center center;
+	cursor: pointer;
+}
+
+p#carouselNavigation span.pageNumbers button.buttonPrevious.active {
+
+	background: url(buttonPrevious-dark.gif) no-repeat center center;
+
+}
+
+p#carouselNavigation span.pageNumbers button.buttonNext.active {
+	background: url(buttonNext-dark.gif) no-repeat center center;
+
+}
+
+p#carouselNavigation span.pageNumbers button span {
+	display: none;
+}
+
+/* @end */
+
+/* @group Appendix */
+
+div#appendix {
+	background-color: #b9c1c5;
+	float: left;
+	width: 940px;
+	padding-bottom: 20px;
+}
+
+div#appendix p,div#appendix form {
+	color: black;
+	font-size: 10px;
+	width: 470px;
+	float: left;
+	text-align: right;
+	padding-top: 13px;
+	padding-bottom: 20px;
+	margin-top: 0;
+}
+
+div#appendix p#quickLinks {
+	overflow: hidden;
+	text-align: left;
+	padding-top: 15px;
+}
+
+div#appendix p#quickLinks a {
+	padding-left: 5px;
+	margin-left: -5px;
+	border-left: 1px solid black;
+	padding-right: 10px;
+}
+
+div#appendix a {
+	color: black;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+div#appendix a:hover {
+	text-decoration: underline;
+}
+
+div#appendix form input {
+	margin-top: -0.4em;
+	vertical-align: middle;
+}
+
+div#appendix form button.buttonGo {
+	background: url(buttonGo.gif) no-repeat 0 center;
+	width: 37px;
+	height: 16px;
+	border-style: none;
+	padding: 0;
+	margin: -0.2em 0 0 2px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+div#appendix form button.buttonGo span {
+	display: none;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group PIP */
+
+div#productInformation .productIllustration {
+	float: left;
+	width: 255px;
+	padding-top: 25px;
+}
+
+div#productInformation .productDescription {
+	float: right;
+	width: 373px;
+	padding-top: 25px;
+}
+
+div#productInformation .productDescription p {
+	color: #666666;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+div#productInformation p.productID {
+	color: gray;
+	font-size: 10px;
+	margin-top: -6px;
+}
+
+div#productInformation .productDescription h3 {
+	font-size: 14px;
+	color: #13668c;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 18px;
+	margin-bottom: 8px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.buttonBuy {
+	width: 156px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background: url(buttonBuy.gif) no-repeat 0 bottom;
+	text-decoration: none;
+	color: #a38162;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	border-top: 0.1em solid #d1bb88;
+	float: left;
+}
+
+.buttonBuy:hover {
+	color: black;
+	border-top: 0.1em solid black;
+	text-decoration: none;
+}
+
+div#productInformation .findAtTHD {
+	display: inline;
+	font-size: 11px;
+	width: 125px;
+	float: left;
+	margin-left: 25px;
+	line-height: 11px;
+	text-decoration: none;
+	margin-top: -1px;
+}
+
+div#productInformation .findAtTHD:hover {
+	color: #005984;
+	text-decoration: underline;
+}
+
+div#productInformation .imageCaption
+ {
+	color: #b3b3b3;
+	font: italic 13px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	text-transform: lowercase;
+}
+
+div#productInformation .productIllustration p.productBrowse {
+	margin-top: 0;
+}
+
+div#productInformation .productIllustration p.productBrowse a {
+	margin-top: 0;
+	width: 115px;
+	float: left;
+	text-decoration: none;
+	color: #dec896;
+	text-transform: lowercase;
+}
+
+div#productInformation .productIllustration p.productBrowse a.buttonNext:hover span {
+	color: #005984;
+	background: url(buttonNext-dark.gif) no-repeat right center;
+}
+
+div#productInformation .productIllustration p.productBrowse a.buttonPrevious:hover span {
+	color: #005984;
+	background: url(buttonPrevious-dark.gif) no-repeat left center;
+}
+
+div#productInformation .productIllustration p.productBrowse a.buttonPrevious {
+	text-align: right;
+	padding-right: 12px;
+}
+
+div#productInformation .productIllustration p.productBrowse a.buttonNext {
+	border-left: 1px solid #dec896;
+	padding-left: 12px;
+}
+
+div#productInformation .productIllustration p.productBrowse a.buttonPrevious span {
+	background: url(buttonPrevious-beige.gif) no-repeat left center;
+	padding-left: 12px;
+}
+
+div#productInformation .productIllustration p.productBrowse a.buttonNext span {
+	background: url(buttonNext-beige.gif) no-repeat right center;
+	padding-right: 12px;
+}
+
+div#promos.productInformation a {
+	padding: 2px;
+	border: 1px solid #7fa6bd;
+	margin-bottom: 8px;
+	display: block;
+}
+
+div#promos.productInformation a:hover {
+	border: 1px solid #13668c;
+	background-color: #13668c;
+}
+
+div#promos.productInformation a img {
+	margin: 0;
+	border-style: none;
+	float: left;
+}
+
+div#promos.productInformation {
+	border-top-style: none;
+}
+
+/* @end */
+
+/* @group 3 Column FFF */
+
+#mainContentFFF.collectionFFF {
+	width: 730px;
+	padding: 0;
+	margin: 80px 0 0 109px;
+	float: left;
+	background: url(mainContentCollectionFFF.gif) repeat-y;
+	display: inline;
+	border-bottom: 80px solid white;
+	position: relative;
+}
+
+#mainContentFFF.collectionFFF div.faucets,
+#mainContentFFF.collectionFFF div.fixtures,
+#mainContentFFF.collectionFFF div.furniture {
+	width: 229px;
+	float: left;
+	margin-right: 12px;
+	border-top: 1px solid silver;
+	display: inline;
+	margin-left: 0;
+}
+
+#mainContentFFF.collectionFFF div.sectionBody {
+	border-style: none;
+	background-image: none;
+	margin: 0;
+	position: static;
+	float: left;
+	display: inline;
+	padding-bottom: 217px;
+}
+
+html>body #mainContentFFF.collectionFFF div.sectionBody {
+	padding-bottom: 0;
+}
+
+*:first-child+html #mainContentFFF.collectionFFF div.sectionBody {
+	padding-bottom: 217px;
+}
+
+#mainContentFFF.collectionFFF div.footer {
+	border-bottom: 1px solid silver;
+	border-top-style: none;
+	height: 218px;
+	padding-bottom: 0;
+	position: absolute;
+	z-index: 1000;
+	bottom: 0;
+	width: 229px;
+	float: left;
+	display: inline;
+	padding-left: 0;
+}
+
+#mainContentFFF.collectionFFF div.faucets div.footer {
+	left: 0;
+}
+
+#mainContentFFF.collectionFFF div.fixtures div.footer {
+	left: 241px;
+}
+
+#mainContentFFF.collectionFFF div.furniture div.footer {
+	left: 482px;
+}
+
+#mainContentFFF.collectionFFF h2 {
+	width: 205px;
+	margin: 80px 0 0 12px;
+	padding: 43px 0 0;
+	background-color: transparent;
+	height: 0;
+	overflow: hidden;
+	float: left;
+	display: inline;
+}
+
+#mainContentFFF.collectionFFF p {
+	width: 160px;
+	margin-left: 36px;
+	float: left;
+	display: inline;
+	margin-bottom: 217px;
+	font-size: 11px;
+	color: #79a9bd;
+	line-height: 19px;
+}
+
+#mainContentFFF.collectionFFF .buttonDefault {
+	bottom: -1px;
+	width: 204px;
+	float: left;
+	right: -2px;
+	padding-bottom: 0;
+	display: inline;
+	position: absolute;
+}
+
+#mainContentFFF.collectionFFF .buttonDefault span {
+
+}
+
+/* @group Contemporary */
+
+#mainContentFFF.collectionFFF.contemporary div.faucets {
+	background: url(faucetsFFF-contemporary.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.contemporary div.fixtures {
+	background: url(fixturesFFF-contemporary.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.contemporary div.furniture {
+	background: url(furnitureFFF-contemporary.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.contemporary div.faucets .footer {
+	background: url(faucetsFFFBottom-contemporary.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.contemporary div.fixtures .footer {
+	background: url(fixturesFFFBottom-contemporary.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.contemporary div.furniture .footer {
+	background: url(furnitureFFFBottom-contemporary.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.contemporary .faucets h2 {
+	background: url(headerFaucetsFFF-contemporary.gif) no-repeat;
+}
+
+#mainContentFFF.collectionFFF.contemporary .fixtures h2 {
+	background: url(headerFixturesFFF-contemporary.gif) no-repeat;
+}
+
+#mainContentFFF.collectionFFF.contemporary .furniture h2 {
+	background: url(headerFurnitureFFF-contemporary.gif) no-repeat;
+}
+
+/* @end */
+
+/* @group Transitional */
+
+#mainContentFFF.collectionFFF.transitional div.faucets {
+	background: url(faucetsFFF-transitional.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.transitional div.fixtures {
+	background: url(fixturesFFF-transitional.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.transitional div.furniture {
+	background: url(furnitureFFF-transitional.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.transitional div.faucets .footer {
+	background: url(faucetsFFFBottom-transitional.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.transitional div.fixtures .footer {
+	background: url(fixturesFFFBottom-transitional.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.transitional div.furniture .footer {
+	background: url(furnitureFFFBottom-transitional.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.transitional .faucets h2 {
+	background: url(headerFaucetsFFF-transitional.gif) no-repeat;
+}
+
+#mainContentFFF.collectionFFF.transitional .fixtures h2 {
+	background: url(headerFixturesFFF-transitional.gif) no-repeat;
+}
+
+#mainContentFFF.collectionFFF.transitional .furniture h2 {
+	background: url(headerFurnitureFFF-transitional.gif) no-repeat;
+}
+
+/* @end */
+
+/* @group Eclectic */
+
+#mainContentFFF.collectionFFF.eclectic div.faucets {
+	background: url(faucetsFFF-eclectic.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.eclectic div.fixtures {
+	background: url(fixturesFFF-eclectic.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.eclectic div.furniture {
+	background: url(furnitureFFF-eclectic.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.eclectic div.faucets .footer {
+	background: url(faucetsFFFBottom-eclectic.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.eclectic div.fixtures .footer {
+	background: url(fixturesFFFBottom-eclectic.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.eclectic div.furniture .footer {
+	background: url(furnitureFFFBottom-eclectic.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.eclectic .faucets h2 {
+	background: url(headerFaucetsFFF-eclectic.gif) no-repeat;
+}
+
+#mainContentFFF.collectionFFF.eclectic .fixtures h2 {
+	background: url(headerFixturesFFF-eclectic.gif) no-repeat;
+}
+
+#mainContentFFF.collectionFFF.eclectic .furniture h2 {
+	background: url(headerFurnitureFFF-eclectic.gif) no-repeat;
+}
+
+/* @end */
+
+/* @group Classic */
+
+#mainContentFFF.collectionFFF.classic div.faucets {
+	background: url(faucetsFFF-classic.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.classic div.fixtures {
+	background: url(fixturesFFF-classic.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.classic div.furniture {
+	background: url(furnitureFFF-classic.jpg) no-repeat center 2px;
+}
+
+#mainContentFFF.collectionFFF.classic div.faucets .footer {
+	background: url(faucetsFFFBottom-classic.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.classic div.fixtures .footer {
+	background: url(fixturesFFFBottom-classic.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.classic div.furniture .footer {
+	background: url(furnitureFFFBottom-classic.jpg) no-repeat center 0;
+}
+
+#mainContentFFF.collectionFFF.classic .faucets h2 {
+	background: url(headerFaucetsFFF-classic.gif) no-repeat;
+}
+
+#mainContentFFF.collectionFFF.classic .fixtures h2 {
+	background: url(headerFixturesFFF-classic.gif) no-repeat;
+}
+
+#mainContentFFF.collectionFFF.classic .furniture h2 {
+	background: url(headerFurnitureFFF-classic.gif) no-repeat;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Addenda */
+
+#mainContent.addenda {
+	width: 930px;
+	float: left;
+	background: url(mainContent-base.gif) no-repeat right 0;
+	padding: 0 0 60px;
+	position: relative;
+	margin: 0;
+}
+
+#mainContent.addenda p {
+	margin-top: 0;
+}
+
+div#mainContent.addenda p strong {
+	color: #13668c;
+}
+
+div#mainContent.addenda ul {
+	font-size: 11px;
+	color: #79a9bd;
+	line-height: 19px;
+	margin-left: 10px;
+	padding-left: 0;
+}
+
+div#mainContent.addenda ul a {
+	text-decoration: none;
+}
+
+div#mainContent.addenda ul a:hover {
+	text-decoration: underline;
+}
+
+div#mainContent.addenda h3 {
+	margin-bottom: 0;
+	font-size: 13px;
+	font-weight: bold;
+	color: #13668c;
+}
+
+.addenda #mainText {
+	margin-top: -200px;
+	float: left;
+	padding-left: 197px;
+	width: 700px;
+}
+
+.addenda .backToTop {
+	float: right;
+	color: gray;
+	text-decoration: none;
+	margin-top: -5px;
+	padding-right: 16px;
+	background: url(buttonBackToTop.gif) no-repeat right center;
+}
+
+div#mainContent.addenda h3.withPegasusFausetsYoullEnjoy {
+	background-image: url(pageSubHeadAboutUs.gif);
+	width: 280px;
+	height: 0;
+	padding-top: 19px;
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+
+/* @group Contact Us */
+
+div#mainContent.contactUs h2 {
+	width: 149px;
+	float: left;
+	background: url(pageHeaderContactUs.gif) no-repeat right 0;
+	margin: 0;
+	padding: 30px 0 0;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	top: 86px;
+	left: 418px;
+	display: inline;
+}
+
+.contactUs #introduction {
+	padding-left: 450px;
+	background: url(backgroundContactUs.jpg) no-repeat;
+	float: left;
+	padding-bottom: 200px;
+	width: 450px;
+	padding-top: 60px;
+	margin-top: 35px;
+	margin-right: 30px;
+	display: inline;
+}
+
+/* @end */
+
+/* @group Luxury at Hand */
+
+div#mainContent.luxuryAtHand h2 {
+	width: 197px;
+	float: left;
+	background: url(pageHeaderLuxuryAtHand.gif) no-repeat right 0;
+	margin: 0;
+	padding: 30px 0 0;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	top: 86px;
+	left: 418px;
+	display: inline;
+}
+
+.luxuryAtHand #introduction {
+	padding-left: 450px;
+	background: url(backgroundLuxuryAtHand.jpg) no-repeat;
+	float: left;
+	padding-bottom: 40px;
+	width: 450px;
+	padding-top: 60px;
+	margin-top: 35px;
+	margin-right: 30px;
+	display: inline;
+}
+
+/* @end */
+
+/* @group termsOfUse */
+
+div#mainContent.termsOfUse h2 {
+	width: 177px;
+	float: left;
+	background: url(pageHeaderTermsOfUse.gif) no-repeat right 0;
+	margin: 0;
+	padding: 30px 0 0;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	top: 86px;
+	left: 418px;
+	display: inline;
+}
+
+.termsOfUse #introduction {
+	padding-left: 450px;
+	background: url(backgroundTermsOfUse.jpg) no-repeat;
+	float: left;
+	padding-bottom: 200px;
+	width: 450px;
+	padding-top: 60px;
+	margin-top: 35px;
+	margin-right: 30px;
+	display: inline;
+}
+
+.termsOfUse .footer {
+	font-weight: bold;
+	font-size: 9px;
+	color: #13668c;
+}
+
+/* @end */
+
+/* @group FAQs */
+
+div#mainContent.faqs h2 {
+	width: 59px;
+	float: left;
+	background: url(pageHeaderFAQs.gif) no-repeat right 0;
+	margin: 0;
+	padding: 30px 0 0;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	top: 86px;
+	left: 418px;
+	display: inline;
+}
+
+.faqs #introduction {
+	padding-left: 450px;
+	background: url(backgroundFAQs.jpg) no-repeat;
+	float: left;
+	padding-bottom: 200px;
+	width: 450px;
+	padding-top: 60px;
+	margin-top: 35px;
+	margin-right: 30px;
+	display: inline;
+}
+
+/* @end */
+
+/* @group About Us */
+
+div#mainContent.aboutUs h2 {
+	width: 123px;
+	float: left;
+	background: url(pageHeaderAboutUs.gif) no-repeat right 0;
+	margin: 0;
+	padding: 30px 0 0;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	top: 86px;
+	left: 418px;
+	display: inline;
+}
+
+.aboutUs #introduction {
+	padding-left: 450px;
+	background: url(backgroundAboutUs.jpg) no-repeat;
+	float: left;
+	padding-bottom: 200px;
+	width: 450px;
+	padding-top: 60px;
+	margin-top: 35px;
+	margin-right: 30px;
+	display: inline;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group PLP */
+
+div#productOverview {
+	margin-right: -26px;
+	float: left;
+	width: 654px;
+}
+
+div#mainContent p.product {
+	width: 142px;
+	height: 215px;
+	float: left;
+	font-size: 12px;
+	line-height: 14px;
+	margin-right: 20px;
+	margin-top: 0;
+}
+
+p.product img {
+	float: left;
+	border-style: none;
+	margin-bottom: 4px;
+}
+
+/* @end */
+
+/* @group Collections */
+
+body.collection #promos a {
+	float: left;
+	position: relative;
+	width: 110px;
+	height: 110px;
+	overflow: hidden;
+}
+
+body.collection #promos a:hover {
+	border: 4px solid #7fb7ca;	
+	width: 102px;
+	height: 102px;
+}
+
+body.collection #promos a img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+body.collection #promos a:hover img {
+	position: absolute;
+	top: -4px;
+	left: -4px;
+}
+
+body.collection .crossSell a {
+	float: left;
+}
+
+body.collection .crossSell a:hover {
+	border: 4px solid #7fb7ca;
+	position:relative;
+	overflow: hidden;
+}
+
+body.collection .crossSell a:hover img {
+	margin-left: -4px;
+	margin-top: -4px;
+}
+
+body.collection #carousel a {
+	float: left;
+}
+
+body.collection #carousel a:hover {
+	border: 4px solid #7fb7ca;
+	position:relative;
+	overflow: hidden;
+	float: left;
+}
+
+body.collection #carousel a:hover img {
+	margin-left: -4px;
+	margin-top: -4px;
+	float: left;
+}
+
+/* @group Collection Transitional */
+
+body.collection.transitional #mainContent {
+	background: url(mainContent-base.gif) no-repeat right top;
+	width: 930px;
+	padding: 28px 0 20px;
+	position: relative;
+}
+
+body.collection.transitional div#mainContent h1 {
+	border-style: none;
+	float: left;
+	margin-bottom: 25px;
+	width: 668px;
+	margin-top: 50px;
+	font-variant: normal;
+	font-style: normal;
+	font-size: 20px;
+	background: url(pageHeader-transitional.gif) no-repeat 0 0;
+	height: 0;
+	padding-top: 23px;
+	overflow: hidden;
+	margin-left: 262px;
+	display: inline;
+}
+
+body.collection.transitional div#mainContent h1 em {
+	width: 380px;
+	text-align: right;
+	font-weight: bold;
+	float: left;
+	padding-right: 5px;
+	font-style: normal;
+}
+
+body.collection.transitional #introduction {
+	float: left;
+	width: 420px;
+	margin-left: 32px;
+	display: inline;
+	padding-bottom: 20px;
+}
+
+body.collection.transitional #introduction p {
+	clear: left;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+body.collection.transitional #introduction img {
+	margin-top: 55px;
+}
+
+body.collection.transitional #lifestyle {
+	float: left;
+	clear: left;
+	position: relative;
+	height: 400px;
+	width: 378px;
+}
+
+body.collection.transitional #carousel {
+	float: left;
+	margin-left: 108px;
+	display: inline;
+	margin-bottom: 0;
+}
+
+body.collection.transitional #carousel img {
+	float: left;
+	margin-bottom: 0;
+	padding: 0;
+	margin-top: 0;
+	position: absolute;
+}
+
+body.collection.transitional #footer {
+	float: left;
+	width: 930px;
+	padding: 0;
+}
+
+body.collection.transitional p.crossSell {
+	width: 190px;
+	float: left;
+	display: inline;
+	margin: 2px 0 0 2px;
+	height: 144px;
+}
+
+body.collection.transitional #promos {
+	float: left;
+	width: auto;
+	margin: 0 0 16px 10px;
+	padding: 0;
+	clear: none;
+	display: inline;
+	
+	border: none;
+}
+
+body.collection.transitional ul#pageNavigation {
+	background-color: #13668c;
+	list-style-type: none;
+	width: 463px;
+	float: left;
+	margin: 0 0 0 2px;
+	overflow: hidden;
+	display: inline;
+}
+
+body.collection.transitional p#carouselNavigation {
+	width: auto;
+	position: absolute;
+	text-align: right;
+	right: 18px;
+	margin-bottom: 0;
+	float: left;
+	bottom: 20px;
+	clear: none;
+}
+
+body.transitional p.crossSell a:hover {
+	border: 4px solid #7fb7ca;
+	position:relative;
+	overflow: hidden;
+	width: 222px;
+	height: 132px;
+	margin-bottom: 0;
+}
+
+body.transitional #carousel a:hover {
+	border: 4px solid #7fb7ca;
+	position:relative;
+	overflow: hidden;
+	width: 262px;
+	height: 342px;
+}
+
+body.transitional #crossSellCopy {
+	float: right;
+	width: 200px;
+	margin-top: 2px;
+	padding-top: 20px;
+	background-image: none;
+	margin-right: 45px;
+}
+
+html>body.transitional #crossSellCopy {
+	margin-right: 90px;
+}
+
+body.transitional #crossSellCopy p {
+	margin-top: 0;
+}
+
+/* @end */
+
+/* @group Collection Contemporary */
+
+body.collection.contemporary #mainContent {
+	background: url(mainContent-base.gif) no-repeat right top;
+	width: 930px;
+	padding: 28px 0 20px;
+	position: relative;
+}
+
+body.collection.contemporary div#mainContent h1 {
+	border-style: none;
+	float: left;
+	margin-bottom: 25px;
+	width: auto;
+	margin-top: 50px;
+	font-variant: normal;
+	font-style: normal;
+	font-size: 20px;
+	margin-left: -127px;
+	padding-left: 18px;
+	display: inline;
+	background: url(pageHeader-contemporary.gif) no-repeat 0 0;
+	height: 0;
+	padding-top: 23px;
+	overflow: hidden;
+}
+
+body.collection.contemporary div#mainContent h1 em {
+	width: auto;
+	text-align: right;
+	font-weight: bold;
+	float: left;
+	padding-right: 5px;
+	font-style: normal;
+}
+
+body.collection.contemporary #introduction {
+	float: left;
+	width: 290px;
+	position: relative;
+	height: 400px;
+	border-bottom: 23px solid #13668c;
+	margin-left: 155px;
+	display: inline;
+}
+
+body.collection.contemporary #introductionCopy {
+	width: 290px;
+	padding-top: 115px;
+	float: left;
+	overflow: auto;
+	position: absolute;
+	left: -155px;
+	padding-left: 155px;
+	height: 285px;
+}
+
+body.collection.contemporary #introduction p {
+	clear: left;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 10px;
+	width: 140px;
+	padding: 0;
+}
+
+body.collection.contemporary #introduction img {
+	margin: 0;
+	float: right;
+}
+
+body.collection.contemporary #lifestyle {
+	float: left;
+	position: relative;
+	width: 270px;
+	padding-top: 126px;
+	height: 350px;
+	padding-bottom: 0;
+	overflow: hidden;
+}
+
+body.collection.contemporary #carousel {
+	float: left;
+	display: inline;
+	margin: 0 0 0 2px;
+}
+
+body.collection.contemporary #carousel img {
+	float: left;
+	margin: 0;
+	display: inline;
+	position: absolute;
+}
+
+html>body.collection.contemporary #carousel img {
+	position: static;
+}
+
+body.collection.contemporary #footer {
+	float: left;
+	width: 930px;
+	padding: 0;
+}
+
+body.collection.contemporary div#introduction p.crossSell {
+	float: left;
+	display: inline;
+	margin: 0;
+	position: absolute;
+	bottom: 2px;
+	line-height: 0;
+	right: 0;
+}
+
+body.collection.contemporary #promos {
+	float: left;
+	width: 110px;
+	margin: 22px 0 16px 37px;
+	padding: 0;
+	clear: none;
+	display: inline;
+	
+	border: none;
+}
+
+body.collection.contemporary #promos img {
+	margin: 0;
+	float: left;
+}
+
+body.collection.contemporary ul#pageNavigation {
+	background-color: #13668c;
+	list-style-type: none;
+	width: 450px;
+	float: right;
+	overflow: hidden;
+	display: inline;
+	margin: 0 33px 0 0;
+	padding: 0;
+}
+
+body.collection.contemporary p#carouselNavigation {
+	position: absolute;
+	text-align: right;
+	right: 0;
+	width: auto;
+	top: 0;
+	margin-top: 95px;
+}
+
+body.collection.contemporary #carousel a:hover {
+	border: 4px solid #7fb7ca;
+	position:relative;
+	overflow: hidden;
+	width: 260px;
+	height: 342px;
+}
+
+body.collection.contemporary .crossSell a {
+	float: right;
+}
+
+body.collection.contemporary .crossSell a:hover {
+	border: 4px solid #7fb7ca;
+	position:relative;
+	overflow: hidden;
+	width: 118px;
+	height: 347px;
+	float: right;
+}
+
+body.collection.contemporary .crossSell a:hover img {
+	top: -4px;
+	position: absolute;
+	left: -4px;
+}
+
+/* @end */
+
+/* @group Collection eclectic */
+
+body.collection.eclectic #mainContent {
+	background: url(mainContent-base.gif) no-repeat right top;
+	width: 930px;
+	padding: 28px 0 20px;
+	position: relative;
+}
+
+body.collection.eclectic div#mainContent h1 {
+	border-style: none;
+	width: auto;
+	font-variant: normal;
+	font-style: normal;
+	font-size: 20px;
+	display: inline;
+	float: right;
+	margin-right: 0;
+	margin-top: 125px;
+	margin-bottom: 20px;
+	background: url(pageHeader-eclectic.gif) no-repeat right 0;
+	height: 0;
+	padding-top: 23px;
+	overflow: hidden;
+}
+
+body.collection.eclectic div#mainContent h1 em {
+	width: auto;
+	text-align: right;
+	font-weight: bold;
+	float: left;
+	padding-right: 5px;
+	font-style: normal;
+}
+
+body.collection.eclectic #introduction {
+	float: left;
+	width: 451px;
+	position: relative;
+	display: inline;
+	overflow: hidden;
+}
+
+body.collection.eclectic #introductionCopy {
+	float: right;
+	overflow: auto;
+	margin-right: 25px;
+}
+
+body.collection.eclectic #introduction p {
+	clear: right;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	text-align: right;
+	width: 270px;
+	float: right;
+}
+
+body.collection.eclectic div#introduction p.crossSell {
+	float: right;
+	display: inline;
+	line-height: 0;
+	clear: right;
+	margin: 0;
+}
+
+body.collection.eclectic div#introduction p.crossSell a {
+	float: right;
+}
+
+body.collection.eclectic #introduction img {
+	margin: 0;
+	float: right;
+	clear: right;
+}
+
+body.collection.eclectic p#carouselNavigation {
+	text-align: right;
+	float: right;
+	clear: right;
+	display: inline;
+	position: relative;
+	margin-bottom: 25px;
+	margin-top: 10px;
+	margin-right: 25px;
+	width: auto;
+	#width: 90px;
+}
+
+body.collection.eclectic #lifestyle {
+	float: left;
+	position: relative;
+	width: 270px;
+	padding-top: 20px;
+	height: auto;
+}
+
+body.collection.eclectic #lifestyleCopy {
+	padding: 25px;
+	float: left;
+}
+
+body.collection.eclectic #lifestyleCopy p {
+	margin-top: 0;
+	float: left;
+}
+
+body.collection.eclectic #carousel {
+	float: left;
+	display: inline;
+	margin: 0 0 0 2px;
+}
+
+body.collection.eclectic #carousel img {
+	float: left;
+	margin: 0;
+	display: inline;
+}
+
+body.collection.eclectic #footer {
+	float: left;
+	width: 930px;
+	padding: 0;
+}
+
+body.collection.eclectic #promos {
+	float: left;
+	width: 110px;
+	margin: 22px 0 16px 37px;
+	padding: 0;
+	clear: none;
+	display: inline;
+	
+	border: none;
+}
+
+body.collection.eclectic #promos a {
+	float: right;
+}
+
+body.collection.eclectic #promos img {
+	margin: 0;
+	float: left;
+}
+
+body.collection.eclectic ul#pageNavigation {
+	background-color: #13668c;
+	list-style-type: none;
+	width: 410px;
+	float: right;
+	overflow: hidden;
+	display: inline;
+	padding: 0;
+	margin: 2px 0 0;
+	position: relative;
+}
+
+body.collection.eclectic ul#pageNavigation li.lastItem {
+	width: 123px;
+	#position: absolute;
+}
+
+body.collection.eclectic .crossSell a:hover {
+	border: 4px solid #7fb7ca;
+	overflow: hidden;
+	width: 200px;
+	height: 104px;
+	float: right;
+}
+
+body.collection.eclectic .crossSell a:hover img {
+	position: absolute;
+	top: -4px;
+	left: -4px;
+}
+
+body.collection.eclectic #carousel a:hover {
+	border: 4px solid #7fb7ca;
+	position:relative;
+	overflow: hidden;
+	width: 262px;
+	height: 342px;
+}
+
+/* @end */
+
+/* @group Collection Classic */
+
+body.collection.classic #mainContent {
+	background: url(mainContent-base.gif) no-repeat right top;
+	width: 930px;
+	padding: 28px 0 0;
+	position: relative;
+}
+
+body.collection.classic #introduction {
+	float: left;
+	width: 315px;
+	position: relative;
+	height: 350px;
+}
+
+body.collection.classic #introductionCopy {
+	width: 315px;
+	height: 235px;
+	padding-top: 115px;
+	float: left;
+	overflow: auto;
+}
+
+body.collection.classic #introduction h1 {
+	border-style: none;
+	float: left;
+	margin-bottom: 25px;
+	width: auto;
+	display: inline;
+	font-variant: normal;
+	font-style: normal;
+	font-size: 20px;
+	background: url(pageHeader-classic.gif) no-repeat 0 0;
+	height: 0;
+	padding-top: 23px;
+	overflow: hidden;
+	margin-left: 30px;
+}
+
+body.collection.classic #introduction h1 em {
+	width: 107px;
+	text-align: right;
+	font-weight: bold;
+	float: left;
+	padding-right: 5px;
+	font-style: normal;
+}
+
+body.collection.classic #introduction p {
+	clear: left;
+	padding-top: 0;
+	margin-right: 20px;
+	margin-left: 112px;
+	margin-top: 0;
+	float: left;
+	display: inline;
+	width: 180px;
+}
+
+body.collection.classic #introduction img {
+	margin-top: 55px;
+}
+
+body.collection.classic #lifestyle {
+	float: right;
+	width: 615px;
+	position: relative;
+}
+
+body.collection.classic #carousel {
+	float: left;
+	padding-bottom: 2px;
+}
+
+body.collection.classic #carousel img {
+	float: left;
+}
+
+body.collection.classic #lifestyleCopy {
+	float: left;
+	width: 271px;
+	padding-left: 30px;
+	padding-right: 45px;
+	position: absolute;
+	right: 0;
+	bottom: 58px;
+	overflow: auto;
+	max-height: 300px;
+}
+
+body.collection.classic #footer {
+	float: left;
+	width: 930px;
+	padding: 0;
+	margin: 0;
+}
+
+body.collection.classic #footer p.crossSell {
+	width: 200px;
+	float: left;
+	display: inline;
+	margin: 0 0 0 112px;
+}
+
+body.collection.classic p.crossSell img {
+	float: left;
+}
+
+body.collection.classic #promos {
+	float: left;
+	width: auto;
+	margin: 9px 0 0 26px;
+	padding: 0;
+	clear: none;
+	display: inline;
+	
+	border: none;
+}
+
+body.collection.classic ul#pageNavigation {
+	float: left;
+	display: inline;
+	margin-left: 3px;
+}
+
+body.collection.classic #carousel a:hover {
+	border: 4px solid #7fb7ca;
+	position:relative;
+	overflow: hidden;
+	height: 342px;
+	width: 262px;
+}
+
+body.collection.classic .crossSell a:hover {
+	border: 4px solid #7fb7ca;
+	overflow: hidden;
+	width: 192px;
+	height: 132px;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Homepage */
+
+/* @group Promos */
+
+body.home #promos {
+	width: 930px;
+	margin-left: 0;
+	margin-top: 0;
+	border-top-style: none;
+}
+
+body.home #promos .promo {
+	width: 310px;
+	float: left;
+	padding-bottom: 0;
+	overflow: hidden;
+}
+
+.promo img {
+	border-style: none;
+	float: left;
+	margin: 0;
+}
+
+body.home #promos h4 {
+	width: 200px;
+	float: right;
+	margin-right: 12px;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 24px;
+	margin-bottom: 0;
+	color: #797979;
+	line-height: 14px;
+}
+
+.promo h4 a {
+	
+	color: #797979;
+	text-decoration: none;
+	float: left;
+	width: 200px;
+}
+
+.promo h4 a:hover {
+	
+	color: #006f95;
+	text-decoration: underline;
+}
+
+body.home #promos p {
+	width: 200px;
+	float: right;
+	margin-right: 12px;
+	margin-top: 0;
+	font-size: 11px;
+	color: #797979;
+	line-height: 14px;
+	margin-bottom: 0;
+}
+
+.promo p a.learnMore {
+	text-transform: uppercase;
+	text-decoration: none;
+	float: left;
+	width: 200px;
+}
+
+.promo p a.learnMore:hover {
+	text-decoration: underline;
+}
+
+/* @end */
+
+body.home div#mainContent {
+	border-bottom: 20px solid #13668c;
+	height: 274px;
+	float: left;
+	width: 930px;
+	background: url(frontPageHero-1.jpg) no-repeat 0 bottom;
+	padding: 0;
+}
+
+div#mainContent object {
+
+}
+
+body.home div#footer {
+	width: 930px;
+	padding: 0;
+	margin: 0;
+}
+
+/* @group Collection Browser */
+
+/* @group Active states */
+
+dl#collectionBrowser.classic dt.classic a,
+dl#collectionBrowser.transitional dt.transitional a,
+dl#collectionBrowser.contemporary dt.contemporary a,
+dl#collectionBrowser.eclectic dt.eclectic a {
+	background-color: #d5dadc;
+}
+
+.classic dd.classic,
+.transitional dd.transitional,
+.contemporary dd.contemporary,
+.eclectic dd.eclectic {
+	display: block;
+}
+
+.classic dd.transitional,
+.classic dd.contemporary,
+.classic dd.eclectic,
+
+.transitional dd.classic,
+.transitional dd.contemporary,
+.transitional dd.eclectic,
+
+.contemporary dd.transitional,
+.contemporary dd.classic,
+.contemporary dd.eclectic,
+
+.eclectic dd.transitional,
+.eclectic dd.contemporary,
+.eclectic dd.classic
+
+ {
+	display: none;
+}
+
+/* @end */
+
+dl#collectionBrowser {
+	position: relative;
+	font-family: Myriad, "Myriad pro", "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-top: 2px;
+	float: left;
+	width: 930px;
+	margin-bottom: 2px;
+}
+
+dl#collectionBrowser dt {
+	float: left;
+	clear: left;
+	margin: 0;
+	padding: 0;
+}
+
+dl#collectionBrowser dt a {
+	float: left;
+	text-decoration: none;
+	width: 240px;
+	background-color: #b9c2c5;
+	color: #787b7c;
+	border-top: 1px solid #c7ced1;
+	text-transform: lowercase;
+	font-size: 0.7em;
+	min-height: 1.25em;
+	line-height: 1.30em;
+	padding: 14px 13px 11px;
+	#padding: 11px 13px 14px;
+}
+
+dl#collectionBrowser dt a em {
+	color: #05405b;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	margin-right: 5px;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+}
+
+dl#collectionBrowser dt.active a {
+	background-color: #d5dadc;
+}
+
+dl#collectionBrowser dd {
+	position: absolute;
+	top: 0;
+	left: 266px;
+	margin: 0;
+	z-index: 0;
+}
+
+dl#collectionBrowser dd.active {
+	z-index: 1;
+}
+
+dl#collectionBrowser dd a {
+	width: 164px;
+	height: 164px;
+	overflow: hidden;
+	float: left;
+	margin-left: 2px;
+	position: relative;
+	text-decoration: none;
+}
+
+dl#collectionBrowser dd a span {
+	display: none;
+}
+
+dl#collectionBrowser dd a:hover {
+	border: 4px solid #7fb7ca;	
+	width: 156px;
+	height: 156px;
+}
+
+dl#collectionBrowser dd a:hover span {
+	position: absolute;
+	z-index: 2000;
+	display: block;
+	bottom: 0;
+	text-decoration: none;
+	font-weight: bold;
+	color: #05405b;
+	background-color: #d5dadc;
+	font-size: 12px;
+	width: 156px;
+	text-align: center;
+	text-transform: uppercase;
+	opacity: 0.7;
+	padding: 3px 0 0;
+	margin: 0;
+}
+
+dl#collectionBrowser dd a:hover img {
+	margin-left: -4px;
+	margin-top: -4px;
+}
+
+dl#collectionBrowser dd img {
+	border-style: none;
+	height: 164px;
+	width: 164px;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Kitchen */
+
+body.kitchen #mainContent {
+	background: url(mainContent-base.gif) no-repeat top right;
+	width: 930px;
+	padding: 56px 0 0;
+	position: relative;
+}
+
+body.kitchen ul#pageNavigation {
+	width: 668px;
+	padding: 0;
+	background-color: white;
+	float: left;
+	margin: -2px 0 0;
+}
+
+body.kitchen ul#pageNavigation li {
+	width: 334px;
+	height: 163px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+body.kitchen ul#pageNavigation li a {
+	width: 334px;
+	height: 0;
+	margin: 0;
+	padding: 163px 0 0;
+	overflow: hidden;
+}
+
+body.kitchen ul#pageNavigation li.collectionClassic {
+	background: url(kitchenNavImage-classic.jpg) no-repeat right bottom;
+}
+
+body.kitchen ul#pageNavigation li.collectionTransitional {
+	background: url(kitchenNavImage-transitional.jpg) no-repeat right bottom;
+}
+
+body.kitchen ul#pageNavigation li.collectionContemporary {
+	background: url(kitchenNavImage-contemporary.jpg) no-repeat right bottom;
+}
+
+body.kitchen ul#pageNavigation li.collectionEclectic {
+	background: url(kitchenNavImage-eclectic.jpg) no-repeat right bottom;
+}
+
+body.kitchen ul#pageNavigation a:hover {
+	border: 4px solid #7fb7ca;	
+	width: 324px;
+	padding-top: 153px;
+	margin-left: 2px;
+	margin-top: 2px;
+}
+
+body.kitchen div#mainContent h1 {
+	border-style: none;
+	width: 160px;
+	font-variant: normal;
+	font-style: normal;
+	font-size: 20px;
+	display: inline;
+	float: left;
+	height: 0;
+	padding-top: 123px;
+	background: url(pageHeader-kitchen.gif) no-repeat left 99px;
+	overflow: hidden;
+	padding-bottom: 0;
+	margin: 0 0 15px 10px;
+}
+
+body.kitchen #introduction {
+	float: left;
+	width: 200px;
+	position: relative;
+	display: inline;
+	margin-left: 28px;
+	padding-left: 2px;
+	border-left: 1px solid #5892ac;
+	border-top: 1px solid #5892ac;
+	overflow: auto;
+	height: 323px;
+}
+
+body.kitchen #introduction p {
+	width: 115px;
+	float: right;
+	margin-right: 22px;
+	padding-right: 0;
+	padding-left: 0;
+	display: inline;
+	margin-top: 0;
+}
+
+body.kitchen #promos {
+	background: url(kitchenPromos.jpg) no-repeat right bottom;
+	padding-top: 25px;
+	position: relative;
+	padding-bottom: 30px;
+	width: 930px;
+	
+	border: none;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: -18px;
+}
+
+html>body.kitchen #promos {
+	margin-bottom: 0;
+}
+
+body.kitchen #promos h2 {
+	width: 205px;
+	height: 0;
+	background: url(promoHeader-faucet.gif) no-repeat right top;
+	margin-left: 28px;
+	padding: 32px 0 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+body.kitchen #promos p {
+	width: 215px;
+	color: gray;
+	margin: 0 0 18px 306px;
+	clear: none;
+	float: left;
+}
+
+body.kitchen #promos p a {
+	background: url(menuTreeItem.gif) no-repeat;
+	padding: 8px 10px 10px;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-style: normal;
+	float: left;
+}
+
+body.kitchen #promos p a span {
+	padding-right: 10px;
+	background: url(linkPointer.gif) no-repeat right center;
+}
+
+body.kitchen #promos p a:hover {
+	text-decoration: underline;
+}
+
+/* @end */
+
+/* @group Bath */
+
+body.bath #mainContent {
+	background: url(mainContent-bath-classic.jpg) no-repeat top right;
+	width: 930px;
+	padding: 56px 0 0;
+	position: relative;
+}
+
+body.bath ul#pageNavigation {
+	padding: 0;
+	float: left;
+	position: absolute;
+	left: 0;
+	width: 549px;
+	background-color: white;
+	margin: 0;
+	top: 106px;
+}
+
+body.bath ul#pageNavigation li {
+	width: 135px;
+	height: 324px;
+	float: left;
+	padding: 0;
+	margin: 0 2px 0 0;
+}
+
+body.bath ul#pageNavigation li a {
+	width: 135px;
+	height: 0;
+	margin: 0;
+	padding: 324px 0 0;
+	overflow: hidden;
+}
+
+body.bath ul#pageNavigation li.collectionClassic {
+	background: url(bathNavImage-classic.jpg) no-repeat right bottom;
+}
+
+body.bath ul#pageNavigation li.collectionTransitional {
+	background: url(bathNavImage-transitional.jpg) no-repeat right bottom;
+}
+
+body.bath ul#pageNavigation li.collectionContemporary {
+	background: url(bathNavImage-contemporary.jpg) no-repeat right bottom;
+}
+
+body.bath ul#pageNavigation li.collectionEclectic {
+	background: url(bathNavImage-eclectic.jpg) no-repeat right bottom;
+}
+
+body.bath ul#pageNavigation a:hover {
+	border: 4px solid #7fb7ca;	
+	width: 127px;
+	padding-top: 316px;
+}
+
+body.bath div#mainContent h1 {
+	border-style: none;
+	width: 444px;
+	font-variant: normal;
+	font-style: normal;
+	font-size: 20px;
+	display: inline;
+	float: left;
+	height: 0;
+	padding-top: 46px;
+	background: url(pageHeader-bath.gif) no-repeat left 0;
+	overflow: hidden;
+	padding-bottom: 0;
+	margin: 0;
+	position: absolute;
+	left: 274px;
+	top: 60px;
+}
+
+body.bath #introduction {
+	float: left;
+	display: inline;
+	margin-left: 548px;
+	padding-bottom: 170px;
+	background: url(crosssellImage-kitchen-classic1.jpg) no-repeat 0 bottom;
+	padding-top: 50px;
+}
+
+body.bath #introductionCopy {
+	border-right: 1px solid #bcd3dd;
+	float: left;
+	width: 115px;
+	margin: 0;
+	padding: 0 24px 20px 27px;
+}
+
+body.bath #introduction p {
+	padding-right: 0;
+	padding-left: 0;
+	display: inline;
+	margin: 0 0 10px;
+	padding-top: 0;
+}
+
+body.bath #promos {
+	background: url(bathPromos.jpg) no-repeat right bottom;
+	padding-top: 350px;
+	position: relative;
+	width: 190px;
+	
+	border: none;
+	margin: 0;
+	float: left;
+	display: inline;
+}
+
+body.bath #promos p {
+	width: 215px;
+	color: gray;
+	clear: none;
+	margin: 0;
+}
+
+body.bath #promos p a {
+	background: url(menuTreeItem.gif) no-repeat;
+	padding: 8px 10px 10px;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-style: normal;
+	float: right;
+	display: inline;
+}
+
+body.bath #promos p a span {
+	padding-right: 10px;
+	background: url(linkPointer.gif) no-repeat right center;
+}
+
+body.bath #promos p a:hover {
+	text-decoration: underline;
+}
+
+body.bath #footer {
+	float: right;
+	width: 378px;
+	background: url(footerBath-classic.gif) no-repeat right bottom;
+	height: 100px;
+	margin: 0;
+	padding-right: 0;
+}
+
+/* @end */
+
+/* @group Product Landing Pages */
+
+#introduction.landing {
+	width: 673px;
+	float: left;
+	display: inline;
+	padding-bottom: 0;
+	margin: -7px -28px 0 -19px;
+}
+
+html>body #introduction.landing {
+	margin: -7px 0 0 -19px;
+}
+
+#promosProductLanding {	float: left;
+	margin-top: -66px;
+	float: left;
+	width: 656px;
+	margin-left: 48px;
+	border-top: 22px solid #13668c;
+	padding-top: 2px;
+	display: inline;
+	position: relative;
+}
+
+html>body #promosProductLanding {	float: left;
+	margin-top: -58px;
+}
+
+#promosProductLanding img {
+	float: left;
+	margin-right: 2px;
+}
+
+#promosProductLanding p {
+	float: right;
+	width: 200px;
+	margin-right: 39px;
+	display: inline;
+	clear: right;
+	margin-top: 0;
+	font-size: 11px;
+	color: #79a9bd;
+	line-height: 19px;
+}
+
+#promosProductLanding h4 {
+	float: right;
+	width: 200px;
+	margin-right: 39px;
+	display: inline;
+	clear: right;
+	margin-bottom: 0;
+	color: #13668c;
+	font-size: 12px;
+	margin-top: 27px;
+}
+
+#introduction.landing h2 {
+	height: 0;
+	float: left;
+	overflow: hidden;
+	display: inline;
+	margin: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	background: white 0 0;
+}
+
+#introduction.landing p {
+	width: 150px;
+	display: inline;
+	float: left;
+	clear: left;
+	margin-bottom: 0;
+}
+
+.landingFaucets {
+	background: url(productLandingFaucets.jpg) no-repeat;
+}
+
+#introduction.landingFaucets h2 {
+	background: url(headerSubLandingFaucets.gif) 0 0;
+	margin-left: 162px;
+	margin-top: 174px;
+	padding-top: 49px;
+	width: 237px;
+}
+
+#introduction.landingFaucets p {
+	background: url(productLandingFaucetsBottom.gif) no-repeat 0 bottom;
+	margin-left: 197px;
+	padding-bottom: 20px;
+}
+
+.landingToilets {
+	background: url(productLandingToilets.jpg) no-repeat;
+}
+
+#introduction.landingToilets h2 {
+	background: url(headerSubLandingToilets.gif) 0 0;
+	margin-left: 121px;
+	margin-top: 48px;
+	padding-top: 51px;
+	width: 195px;
+}
+
+#introduction.landingToilets p {
+	background: url(productLandingToiletsBottom.gif) no-repeat right bottom;
+	margin-left: 200px;
+	padding-bottom: 140px;
+	width: 144px;
+	padding-right: 25px;
+	margin-bottom: 15px;
+}
+
+.twoPieceToilets {
+	background: url(productLandingToilets.jpg) no-repeat;
+}
+
+#introduction.twoPieceToilets h2 {
+	background: url(headerSubLandingToilets.gif) 0 0;
+	margin-left: 121px;
+	margin-top: 48px;
+	padding-top: 51px;
+	width: 195px;
+}
+
+#introduction.twoPieceToilets p {
+	background: url(productLandingToiletsBottom.gif) no-repeat right bottom;
+	margin-left: 200px;
+	padding-bottom: 140px;
+	width: 144px;
+	padding-right: 25px;
+	margin-bottom: 15px;
+}
+
+.landingVanitiesMirrors {
+	background: url(productLandingVanitiesMirrors.jpg) no-repeat;
+}
+
+#introduction.landingVanitiesMirrors h2 {
+	background: url(headerSubLandingVanitiesMirrors.gif) 0 0;
+	margin-left: 120px;
+	margin-top: 35px;
+	padding-top: 58px;
+	width: 223px;
+}
+
+#introduction.landingVanitiesMirrors p {
+	background: url(productLandingVanitiesMirrorsBottom.gif) no-repeat 0 bottom;
+	margin-left: 164px;
+	padding-bottom: 140px;
+	width: 146px;
+	padding-left: 35px;
+	padding-right: 36px;
+	margin-bottom: 20px;
+}
+
+#introduction.vanities {
+background: url(productLandingVanities.jpg) no-repeat;
+}
+
+#introduction.vanities h2 {
+background: url(headerSubLandingVanities.gif) 0 0;
+margin-left: 50px;
+margin-top: 45px;
+padding-top: 50px;
+width: 240px;
+}
+
+#introduction.vanities p {
+	margin-left: 148px;
+	padding-left: 50px;
+	padding-right: 230px;
+	padding-bottom: 130px;
+	width: 140px;
+	background: url(productLandingVanitiesBottom.gif) no-repeat left bottom;
+	margin-bottom: 15px;
+}
+
+#mainContent #introduction.vanityTops {
+	margin-bottom: 20px;
+	background: url(productLandingVanityTops.jpg) no-repeat;
+}
+
+#introduction.vanityTops h2 {
+background: url(headerSubLandingVanityTops.gif) 0 0;
+margin-left: 50px;
+margin-top: 45px;
+padding-top: 50px;
+width: 240px;
+}
+
+#introduction.vanityTops p {
+	margin-left: 198px;
+	padding-left: 0;
+	padding-right: 230px;
+	padding-bottom: 100px;
+	width: 140px;
+	background: url(productLandingVanityTopsBottom.gif) no-repeat right bottom;
+}
+
+.landingDoorHardware {
+	background: url(productLandingDoorHardware.jpg) no-repeat;
+	margin-bottom: 0;
+}
+
+#introduction.landingDoorHardware h2 {
+	background: url(headerSubLandingDoorHardware.gif) 0 0;
+	margin-left: 114px;
+	margin-top: 37px;
+	padding-top: 55px;
+	width: 237px;
+}
+
+#introduction.landingDoorHardware p {
+	background: url(productLandingDoorHardwareBottom.gif) no-repeat 0 bottom;
+	margin-left: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 0;
+	padding-bottom: 160px;
+}
+
+.landingBathHardwareAccessories {
+	background: url(productLandingBathHardwareAccessories.jpg) no-repeat;
+}
+
+#introduction.landingBathHardwareAccessories h2 {
+	background: url(headerSubLandingBathHardwareAccessories.gif) 0 0;
+	margin-left: 66px;
+	margin-top: 183px;
+	padding-top: 59px;
+	width: 169px;
+}
+
+#introduction.landingBathHardwareAccessories p {
+	background: url(productLandingBathwareBottom.gif) no-repeat right top;
+	margin-left: 24px;
+	padding-left: 0;
+	padding-right: 143px;
+	margin-bottom: 0;
+	padding-bottom: 50px;
+	width: 223px;
+}
+
+.landingSinks {
+	background: url(productLandingSinks.jpg) no-repeat;
+}
+
+#introduction.landingSinks h2 {
+	background: url(headerSubLandingSinks.gif) 0 0;
+	margin-left: 66px;
+	margin-top: 183px;
+	padding-top: 59px;
+	width: 254px;
+}
+
+#introduction.landingSinks p {
+	background: url(productLandingSinksBottom.gif) no-repeat right bottom;
+	margin-left: 24px;
+	padding-left: 0;
+	padding-right: 230px;
+	margin-bottom: 0;
+	padding-bottom: 50px;
+	width: 223px;
+}
+
+.kitchenSinksAccessories {
+	background: url(productLandingKitchenSinks.jpg) no-repeat;
+}
+
+#introduction.kitchenSinksAccessories h2 {
+	background: url(headerSubLandingKitchenSinks.gif) 0 0;
+	margin-left: 66px;
+	margin-top: 183px;
+	padding-top: 59px;
+	width: 254px;
+}
+
+#introduction.kitchenSinksAccessories p {
+	background: url(productLandingKitchenSinksBottom.gif) no-repeat right bottom;
+	margin-left: 24px;
+	padding-left: 0;
+	padding-right: 180px;
+	margin-bottom: 0;
+	padding-bottom: 50px;
+	width: 200px;
+}
+
+.landingStorage {
+	background: url(productLandingStorage.jpg) no-repeat;
+}
+
+#introduction.landingStorage h2 {
+	background: url(headerSubLandingStorage.gif) 0 0;
+	margin-left: 164px;
+	margin-top: 179px;
+	padding-top: 59px;
+	width: 127px;
+}
+
+#introduction.landingStorage p {
+	background: url(productLandingStorageBottom.gif) no-repeat right top;
+	margin-left: 24px;
+	padding-left: 150px;
+	margin-bottom: 0;
+	padding-bottom: 30px;
+	width: 223px;
+}
+
+.landingBathSets {
+	background: url(productLandingBathSets.jpg) no-repeat;
+}
+
+#introduction.landingBathSets h2 {
+	background: url(headerSubLandingBathSets.gif) 0 0;
+	margin-left: 163px;
+	margin-top: 172px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.landingBathSets p {
+	margin-left: 198px;
+	padding-left: 0;
+	padding-right: 230px;
+	padding-bottom: 20px;
+	width: 170px;
+}
+
+.handleSets {
+	background: url(productLandingHandleSets.jpg) no-repeat;
+}
+
+#introduction.handleSets h2 {
+	background: url(headerSubLandingHandleSets.gif) 0 0;
+	margin-left: 110px;
+	margin-top: 40px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.handleSets p {
+	margin-left: 198px;
+	padding-left: 0;
+	padding-right: 270px;
+	padding-bottom: 150px;
+	width: 130px;
+	background: url(productLandingHandleSetsBottom.gif) no-repeat 0 bottom;
+}
+
+.keyedEntry {
+	background: url(productLandingKeyedEntry.jpg) no-repeat;
+}
+
+#introduction.keyedEntry h2 {
+	background: url(headerSubLandingKeyedEntry.gif) 0 0;
+	margin-left: 110px;
+	margin-top: 40px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.keyedEntry p {
+	margin-left: 198px;
+	padding-left: 0;
+	padding-right: 230px;
+	padding-bottom: 150px;
+	width: 130px;
+}
+
+.passageKnobs {
+	background: url(productLandingPassageKnobs.jpg) no-repeat;
+}
+
+.privacyKnobs {
+	background: url(productLandingPrivacyKnobs.jpg) no-repeat;
+}
+
+#introduction.privacyKnobs h2 {
+	background: url(headerSubLandingPrivacyKnobs.gif) 0 0;
+	margin-left: 110px;
+	margin-top: 40px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.privacyKnobs p {
+	margin-left: 198px;
+	padding-left: 0;
+	padding-right: 270px;
+	padding-bottom: 150px;
+	width: 130px;
+	background: url(productLandingPrivacyKnobsBottom.gif) no-repeat right bottom;
+}
+
+#introduction.passageKnobs h2 {
+	background: url(headerSubLandingPassageKnobs.gif) 0 0;
+	margin-left: 110px;
+	margin-top: 40px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.passageKnobs p {
+	margin-left: 198px;
+	padding-left: 0;
+	padding-right: 345px;
+	padding-bottom: 150px;
+	width: 130px;
+	background: url(productLandingPassageKnobsBottom.gif) no-repeat right bottom;
+}
+
+.dummyKnobs {
+	background: url(productLandingDummyKnobs.jpg) no-repeat;
+}
+
+#introduction.dummyKnobs h2 {
+	background: url(headerSubLandingDummyKnobs.gif) 0 0;
+	margin-left: 110px;
+	margin-top: 40px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.dummyKnobs p {
+	padding-left: 198px;
+	padding-right: 230px;
+	padding-bottom: 150px;
+	width: 170px;
+	background: url(productLandingDummyKnobsBottom.gif) no-repeat 30px bottom;
+}
+
+.paperHolders {
+	background: url(productLandingPaperHolders.jpg) no-repeat;
+}
+
+#introduction.paperHolders h2 {
+	background: url(headerSubLandingPaperHolders.gif) 0 0;
+	margin-left: 30px;
+	margin-top: 172px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.paperHolders p {
+	margin-left: 24px;
+	padding-left: 0;
+	padding-right: 230px;
+	padding-bottom: 60px;
+	width: 170px;
+}
+
+.robeHooks {
+	background: url(productLandingRobeHooks.jpg) no-repeat;
+}
+
+#introduction.robeHooks h2 {
+	background: url(headerSubLandingRobeHooks.gif) 0 0;
+	margin-left: 30px;
+	margin-top: 172px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.robeHooks p {
+	margin-left: 24px;
+	padding-left: 0;
+	padding-right: 230px;
+	padding-bottom: 60px;
+	width: 170px;
+}
+
+.towelBars {
+	background: url(productLandingTowelBars.jpg) no-repeat;
+}
+
+#introduction.towelBars h2 {
+	background: url(headerSubLandingTowelBars.gif) 0 0;
+	margin-left: 30px;
+	margin-top: 172px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.towelBars p {
+	margin-left: 24px;
+	padding-left: 0;
+	padding-right: 230px;
+	padding-bottom: 60px;
+	width: 170px;
+}
+
+.towelRings {
+	background: url(productLandingTowelRings.jpg) no-repeat;
+}
+
+#introduction.towelRings h2 {
+	background: url(headerSubLandingTowelRings.gif) 0 0;
+	margin-left: 30px;
+	margin-top: 172px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.towelRings p {
+	margin-left: 24px;
+	padding-left: 0;
+	padding-right: 230px;
+	padding-bottom: 60px;
+	width: 170px;
+}
+
+.pegasus1000 {
+	background: url(productLandingPegasus1000.jpg) no-repeat;
+}
+
+#introduction.pegasus1000 h2 {
+	background: url(headerSubLandingPegasus1000.gif) 0 0;
+	margin-left: 163px;
+	margin-top: 172px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.pegasus1000 p {
+	margin-left: 198px;
+	padding-left: 0;
+	padding-right: 230px;
+	padding-bottom: 80px;
+	width: 170px;
+}
+
+.pegasus2000 {
+	background: url(productLandingPegasus2000.jpg) no-repeat;
+}
+
+#introduction.pegasus2000 h2 {
+	background: url(headerSubLandingPegasus2000.gif) 0 0;
+	margin-left: 163px;
+	margin-top: 172px;
+	padding-top: 55px;
+	width: 240px;
+}
+
+#introduction.pegasus2000 p {
+	margin-left: 198px;
+	padding-left: 0;
+	padding-right: 230px;
+	padding-bottom: 80px;
+	width: 170px;
+}
+
+.kitchenFaucets {
+background: url(productLandingKitchenFaucets.jpg) no-repeat;
+}
+
+#introduction.kitchenFaucets h2 {
+background: url(headerSubLandingKitchenFaucets.gif) 0 0;
+margin-left: 163px;
+margin-top: 172px;
+padding-top: 50px;
+width: 240px;
+}
+
+#introduction.kitchenFaucets p {
+margin-left: 198px;
+padding-left: 0;
+padding-right: 230px;
+padding-bottom: 40px;
+width: 170px;
+}
+
+.bathFaucets {
+background: url(productLandingBathFaucets.jpg) no-repeat;
+}
+
+#introduction.bathFaucets h2 {
+background: url(headerSubLandingBathFaucets.gif) 0 0;
+margin-left: 163px;
+margin-top: 172px;
+padding-top: 50px;
+width: 240px;
+}
+
+#introduction.bathFaucets p {
+margin-left: 198px;
+padding-left: 0;
+padding-right: 230px;
+padding-bottom: 40px;
+width: 170px;
+}
+
+.showerHeads {
+background: url(productLandingShowerheads.jpg) no-repeat;
+}
+
+#introduction.showerHeads h2 {
+background: url(headerSubLandingShowerheads.gif) 0 0;
+margin-left: 163px;
+margin-top: 172px;
+padding-top: 50px;
+width: 240px;
+}
+
+#introduction.showerHeads p {
+margin-left: 198px;
+padding-left: 0;
+padding-right: 230px;
+padding-bottom: 40px;
+width: 170px;
+}
+
+.tubShowerAccessories {
+background: url(productLandingTubShowerAccessories.jpg) no-repeat;
+}
+
+#introduction.tubShowerAccessories h2 {
+background: url(headerSubLandingtubShowerAccessories.gif) 0 0;
+margin-left: 163px;
+margin-top: 172px;
+padding-top: 50px;
+width: 240px;
+}
+
+#introduction.tubShowerAccessories p {
+margin-left: 198px;
+padding-left: 0;
+padding-right: 230px;
+padding-bottom: 40px;
+width: 170px;
+}
+
+.romanTubs {
+background: url(productLandingRomanTubFaucets.jpg) no-repeat;
+}
+
+#introduction.romanTubs h2 {
+background: url(headerSubLandingRomanTubFaucets.gif) 0 0;
+margin-left: 163px;
+margin-top: 172px;
+padding-top: 50px;
+width: 240px;
+}
+
+#introduction.romanTubs p {
+margin-left: 198px;
+padding-left: 0;
+padding-right: 230px;
+padding-bottom: 40px;
+width: 170px;
+}
+
+/* @end */
+
+/* @group Room Sub */
+
+/* @group Kitchen Transitional */
+
+.kitchenTransitional .roomSub a {
+position: absolute;
+}
+
+.kitchenTransitional .roomSub a:hover {
+background-position: -100% 0;
+}
+
+.kitchenTransitional #introduction.transitional h2 {
+left: 152px;
+top: 104px;
+background-image: url(headerKitchenSub-transitional.gif);
+width: 255px;
+padding-top: 23px;
+}
+
+.kitchenTransitional #introduction.transitional p {
+margin-top: 139px;
+margin-left: 191px;
+float: left;
+display: inline;
+}
+
+.kitchenTransitional .roomSub.transitional a.subRegion-1 {
+width: 374px;
+float: left;
+overflow: hidden;
+height: 0;
+top: 2px;
+left: 2px;
+padding-top: 179px;
+display: inline;
+background-image: url(kitchenSubRegion1-transitional.gif);
+}
+
+.kitchenTransitional .roomSub.transitional a.subRegion-2 {
+width: 118px;
+overflow: hidden;
+height: 0;
+bottom: 2px;
+left: 2px;
+float: left;
+padding-top: 215px;
+display: inline;
+background-image: url(kitchenSubRegion2-transitional.gif);
+}
+
+.kitchenTransitional .roomSub.transitional a.subRegion-3 {
+width: 256px;
+padding-top: 137px;
+float: left;
+overflow: hidden;
+height: 0;
+left: 118px;
+bottom: 2px;
+display: inline;
+background-image: url(kitchenSubRegion3-transitional.gif);
+}
+
+.kitchenTransitional .roomSub.transitional a.subRegion-4 {
+width: 331px;
+padding-top: 137px;
+float: left;
+overflow: hidden;
+height: 0;
+bottom: 2px;
+display: inline;
+background-image: url(kitchenSubRegion4-transitional.gif);
+left: 413px;
+z-index: 5;
+}
+
+.kitchenTransitional .roomSub.transitional a.subRegion-5 {
+width: 331px;
+padding-top: 276px;
+float: left;
+overflow: hidden;
+height: 0;
+display: inline;
+right: 2px;
+background-image: url(kitchenSubRegion5-transitional.gif);
+bottom: 135px;
+}
+
+/* @end */
+
+/* @group Kitchen Eclectic */
+
+.kitchenEclectic .roomSub a {
+position: absolute;
+}
+
+.kitchenEclectic .roomSub a:hover {
+background-position: -100% 0;
+}
+
+.kitchenEclectic #introduction.eclectic h2 {
+left: 152px;
+top: 104px;
+background-image: url(headerKitchenSub-eclectic.gif);
+width: 255px;
+padding-top: 23px;
+}
+
+.kitchenEclectic #introduction.eclectic p {
+margin-top: 139px;
+margin-left: 191px;
+float: left;
+display: inline;
+}
+
+.kitchenEclectic .roomSub.eclectic a.subRegion-1 {
+width: 418px;
+float: left;
+overflow: hidden;
+height: 0;
+top: 2px;
+left: 2px;
+padding-top: 172px;
+display: inline;
+background-image: url(kitchenSubRegion1-eclectic.gif);
+}
+
+.kitchenEclectic .roomSub.eclectic a.subRegion-2 {
+width: 418px;
+overflow: hidden;
+height: 0;
+bottom: 2px;
+left: 2px;
+float: left;
+padding-top: 220px;
+display: inline;
+background-image: url(kitchenSubRegion2-eclectic.gif);
+}
+
+.kitchenEclectic .roomSub.eclectic a.subRegion-3 {
+width: 287px;
+padding-top: 144px;
+float: left;
+overflow: hidden;
+height: 0;
+left: 418px;
+bottom: 2px;
+display: inline;
+background-image: url(kitchenSubRegion3-eclectic.gif);
+}
+
+.kitchenEclectic .roomSub.eclectic a.subRegion-4 {
+width: 287px;
+padding-top: 251px;
+float: left;
+overflow: hidden;
+height: 0;
+bottom: 152px;
+display: inline;
+background-image: url(kitchenSubRegion4-eclectic.gif);
+left: 418px;
+z-index: 5;
+}
+
+/* @end */
+
+/* @group Kitchen Contemporary */
+
+.kitchenContemporary .roomSub a {
+position: absolute;
+}
+
+.kitchenContemporary .roomSub a:hover {
+background-position: -100% 0;
+}
+
+.kitchenContemporary #introduction.contemporary h2 {
+left: 152px;
+top: 104px;
+background-image: url(headerKitchenSub-contemporary.gif);
+width: 255px;
+padding-top: 23px;
+}
+
+.kitchenContemporary #introduction.contemporary p {
+margin-top: 139px;
+margin-left: 191px;
+float: left;
+display: inline;
+}
+
+.kitchenContemporary .roomSub.contemporary a.subRegion-1 {
+width: 143px;
+float: left;
+overflow: hidden;
+height: 0;
+top: 2px;
+left: 2px;
+padding-top: 247px;
+display: inline;
+background-image: url(kitchenSubRegion1-contemporary.gif);
+}
+
+.kitchenContemporary .roomSub.contemporary a.subRegion-2 {
+width: 224px;
+overflow: hidden;
+height: 0;
+bottom: 2px;
+left: 2px;
+float: left;
+padding-top: 147px;
+display: inline;
+background-image: url(kitchenSubRegion2-contemporary.gif);
+}
+
+.kitchenContemporary .roomSub.contemporary a.subRegion-3 {
+width: 294px;
+padding-top: 147px;
+float: left;
+overflow: hidden;
+height: 0;
+left: 224px;
+bottom: 2px;
+display: inline;
+background-image: url(kitchenSubRegion3-contemporary.gif);
+}
+
+.kitchenContemporary .roomSub.contemporary a.subRegion-4 {
+width: 187px;
+padding-top: 394px;
+float: left;
+overflow: hidden;
+height: 0;
+bottom: 2px;
+display: inline;
+background-image: url(kitchenSubRegion4-contemporary.gif);
+right: 2px;
+z-index: 5;
+}
+
+.kitchenContemporary .roomSub.contemporary a.subRegion-5 {
+width: 375px;
+padding-top: 184px;
+float: left;
+overflow: hidden;
+height: 0;
+display: inline;
+right: 187px;
+background-image: url(kitchenSubRegion5-contemporary.gif);
+top: 2px;
+}
+
+/* @end */
+
+/* @group Kitchen Classic */
+
+.kitchenClassic .roomSub a {
+position: absolute;
+}
+
+.kitchenClassic .roomSub a:hover {
+background-position: -100% 0;
+}
+
+.kitchenClassic #introduction.classic h2 {
+left: 152px;
+top: 104px;
+background-image: url(headerKitchenSub-classic.gif);
+width: 255px;
+padding-top: 23px;
+}
+
+.kitchenClassic #introduction.classic p {
+margin-top: 139px;
+margin-left: 191px;
+float: left;
+display: inline;
+}
+
+.kitchenClassic .roomSub.classic a.subRegion-1 {
+width: 190px;
+float: left;
+overflow: hidden;
+height: 0;
+top: 2px;
+left: 2px;
+padding-top: 242px;
+display: inline;
+background-image: url(kitchenSubRegion1-classic.gif);
+}
+
+.kitchenClassic .roomSub.classic a.subRegion-2 {
+width: 190px;
+overflow: hidden;
+height: 0;
+bottom: 2px;
+left: 2px;
+float: left;
+padding-top: 152px;
+display: inline;
+background-image: url(kitchenSubRegion2-classic.gif);
+}
+
+.kitchenClassic .roomSub.classic a.subRegion-3 {
+width: 278px;
+padding-top: 152px;
+float: left;
+overflow: hidden;
+height: 0;
+left: 192px;
+bottom: 2px;
+display: inline;
+background-image: url(kitchenSubRegion3-classic.gif);
+}
+
+.kitchenClassic .roomSub.classic a.subRegion-4 {
+width: 237px;
+padding-top: 394px;
+float: left;
+overflow: hidden;
+height: 0;
+bottom: 2px;
+display: inline;
+background-image: url(kitchenSubRegion4-classic.gif);
+right: 2px;
+z-index: 5;
+}
+
+.kitchenClassic .roomSub.classic a.subRegion-5 {
+width: 278px;
+padding-top: 153px;
+float: left;
+overflow: hidden;
+height: 0;
+display: inline;
+right: 237px;
+background-image: url(kitchenSubRegion5-classic.gif);
+top: 2px;
+}
+
+/* @end */
+
+/* @group Bath Contemporary */
+
+.bathContemporary .roomSub a {
+	position: absolute;
+}
+
+.bathContemporary .roomSub a:hover {
+	background-position: -100% 0;
+}
+
+.bathContemporary #introduction.contemporary h2 {
+	left: 153px;
+	top: 107px;
+	background-image: url(headerBathSub-contemporary.gif);
+	width: 255px;
+	padding-top: 23px;
+}
+
+.bathContemporary #introduction.contemporary p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.bathContemporary .roomSub.contemporary a.subRegion-1 {
+	width: 186px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 173px;
+	display: inline;
+	background-image: url(bathSubRegion1-contemporary.gif);
+}
+
+.bathContemporary .roomSub.contemporary a.subRegion-2 {
+	width: 186px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 221px;
+	display: inline;
+	background-image: url(bathSubRegion2-contemporary.gif);
+}
+
+.bathContemporary .roomSub.contemporary a.subRegion-3 {
+	width: 191px;
+	padding-top: 126px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	left: 176px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(bathSubRegion3-contemporary.gif);
+}
+
+.bathContemporary .roomSub.contemporary a.subRegion-4 {
+	width: 162px;
+	padding-top: 257px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	display: inline;
+	background-image: url(bathSubRegion4-contemporary.gif);
+	left: 380px;
+}
+
+.bathContemporary .roomSub.contemporary a.subRegion-5 {
+	width: 166px;
+	padding-top: 179px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	display: inline;
+	right: 2px;
+	background-image: url(bathSubRegion5-contemporary.gif);
+	bottom: 2px;
+}
+
+.bathContemporary .roomSub.contemporary a.subRegion-6 {
+	width: 166px;
+	padding-top: 184px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 34px;
+	display: inline;
+	background-image: url(bathSubRegion6-contemporary.gif);
+	right: 2px;
+}
+
+.bathContemporary .roomSub.contemporary a.subRegion-7 {
+	width: 519px;
+	padding-top: 97px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(bathSubRegion7-contemporary.gif);
+	right: 2px;
+}
+
+/* @end */
+
+/* @group Bath Transitional */
+
+.bathTransitional .roomSub a {
+	position: absolute;
+}
+
+.bathTransitional .roomSub a:hover {
+	background-position: -100% 0;
+}
+
+.bathTransitional #introduction.transitional h2 {
+	left: 153px;
+	top: 107px;
+	background-image: url(headerBathSub-transitional.gif);
+	width: 225px;
+	padding-top: 25px;
+}
+
+.bathTransitional #introduction.transitional p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.bathTransitional .roomSub.transitional a.subRegion-1 {
+	width: 187px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 173px;
+	display: inline;
+	background-image: url(bathSubRegion1-transitional.gif);
+}
+
+.bathTransitional .roomSub.transitional a.subRegion-2 {
+	width: 187px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 221px;
+	display: inline;
+	background-image: url(bathSubRegion2-transitional.gif);
+}
+
+.bathTransitional .roomSub.transitional a.subRegion-3 {
+	width: 306px;
+	padding-top: 129px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	left: 176px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(bathSubRegion3-transitional.gif);
+}
+
+.bathTransitional .roomSub.transitional a.subRegion-4 {
+	width: 302px;
+	padding-top: 248px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	margin-left: 391px;
+	bottom: 2px;
+	right: 2px;
+	display: inline;
+	background-image: url(bathSubRegion4-transitional.gif);
+}
+
+.bathTransitional .roomSub.transitional a.subRegion-5 {
+	width: 218px;
+	padding-top: 156px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	right: 2px;
+	background-image: url(bathSubRegion5-transitional.gif);
+}
+
+.bathTransitional .roomSub.transitional a.subRegion-6 {
+	width: 338px;
+	padding-top: 103px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	left: 231px;
+	top: 2px;
+	display: inline;
+	background-image: url(bathSubRegion6-transitional.gif);
+}
+
+/* @end */
+
+/* @group Bath Classic */
+
+.bathClassic .roomSub a {
+	position: absolute;
+}
+
+.bathClassic .roomSub a:hover {
+	background-position: -100% 0;
+}
+
+.bathClassic #introduction.classic h2 {
+	left: 153px;
+	top: 107px;
+	background-image: url(headerBathSub-classic.gif);
+	width: 196px;
+	padding-top: 25px;
+}
+
+.bathClassic #introduction.classic p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.bathClassic .roomSub.classic a.subRegion-1 {
+	width: 274px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 142px;
+	display: inline;
+	background-image: url(bathSubRegion1-classic.gif);
+}
+
+.bathClassic .roomSub.classic a.subRegion-2 {
+	width: 126px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 252px;
+	display: inline;
+	background-image: url(bathSubRegion2-classic.gif);
+}
+
+.bathClassic .roomSub.classic a.subRegion-3 {
+	width: 148px;
+	padding-top: 147px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	left: 127px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(bathSubRegion3-classic.gif);
+}
+
+.bathClassic .roomSub.classic a.subRegion-4 {
+	width: 292px;
+	padding-top: 147px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	display: inline;
+	background-image: url(bathSubRegion4-classic.gif);
+	left: 274px;
+	z-index: 5;
+}
+
+.bathClassic .roomSub.classic a.subRegion-5 {
+	width: 299px;
+	padding-top: 278px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	display: inline;
+	right: 2px;
+	background-image: url(bathSubRegion5-classic.gif);
+	bottom: 2px;
+}
+
+.bathClassic .roomSub.classic a.subRegion-6 {
+	width: 226px;
+	padding-top: 179px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(bathSubRegion6-classic.gif);
+	right: 2px;
+}
+
+.bathClassic .roomSub.classic a.subRegion-7 {
+	width: 205px;
+	padding-top: 116px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(bathSubRegion7-classic.gif);
+	left: 275px;
+}
+
+/* @end */
+
+/* @group Bath Eclectic */
+
+.bathEclectic .roomSub a {
+	position: absolute;
+}
+
+.bathEclectic .roomSub a:hover {
+	background-position: -100% 0;
+}
+
+.bathEclectic #introduction.eclectic h2 {
+	left: 153px;
+	top: 107px;
+	background-image: url(headerBathSub-eclectic.gif);
+	width: 196px;
+	padding-top: 25px;
+}
+
+.bathEclectic #introduction.eclectic p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.bathEclectic .roomSub.eclectic a.subRegion-1 {
+	width: 231px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 175px;
+	display: inline;
+	background-image: url(bathSubRegion1-eclectic.gif);
+}
+
+.bathEclectic .roomSub.eclectic a.subRegion-2 {
+	width: 154px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 219px;
+	display: inline;
+	background-image: url(bathSubRegion2-eclectic.gif);
+}
+
+.bathEclectic .roomSub.eclectic a.subRegion-3 {
+	width: 250px;
+	padding-top: 147px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	left: 176px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(bathSubRegion3-eclectic.gif);
+}
+
+.bathEclectic .roomSub.eclectic a.subRegion-4 {
+	width: 319px;
+	padding-top: 248px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	margin-left: 391px;
+	bottom: 2px;
+	right: 2px;
+	display: inline;
+	background-image: url(bathSubRegion4-eclectic.gif);
+}
+
+.bathEclectic .roomSub.eclectic a.subRegion-5 {
+	width: 217px;
+	padding-top: 146px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	right: 2px;
+	background-image: url(bathSubRegion5-eclectic.gif);
+}
+
+.bathEclectic .roomSub.eclectic a.subRegion-6 {
+	width: 298px;
+	padding-top: 102px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	left: 231px;
+	top: 2px;
+	display: inline;
+	background-image: url(bathSubRegion6-eclectic.gif);
+}
+
+/* @end */
+
+body.roomSub #mainContent {
+	width: 706px;
+	float: left;
+	display: inline;
+	background-image: none;
+	margin-left: 112px;
+	padding: 80px 0;
+}
+
+body.roomSub #mainContent #introduction {
+	margin-left: 0px;
+	padding-bottom: 151px;
+	width: 707px;
+	position: relative;
+	float: left;
+	background-image: none;
+	display: inline;
+	border: 1px solid silver;
+}
+
+body.roomSub #introduction h2 {
+	width: auto;
+	position: absolute;
+	background-color: transparent;
+	display: inline;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin: 0;
+}
+
+body.roomSub #introduction p {
+	padding: 0;
+	width: 204px;
+	float: left;
+	background-image: none;
+	margin-right: 0;
+	margin-bottom: 0;
+	display: inline;
+}
+
+body.roomSub #introduction p.productLinks {
+	margin: 0;
+	padding: 0;
+	width: 204px;
+	float: left;
+	background-image: none;
+	display: inline;
+}
+
+body.roomSub #introduction a.buttonDefault {
+	position: absolute;
+	right: -1px;
+	bottom: -15px;
+}
+
+body.roomSub #introduction a.buttonDefault:hover {
+	background-position: 0 0;
+}
+
+#mainContent.roomSub #introduction p.toolBar {
+	width: 709px;
+	position: absolute;
+	background-color: #13668c;
+	float: left;
+	left: -1px;
+	margin-left: 0;
+	padding: 0;
+	bottom: -2.4em;
+}
+
+#mainContent.roomSub #introduction p.toolBar a {
+	float: right;
+	padding: 3px 20px 3px 0;
+	position: static;
+	font-size: 12px;
+	color: #a3c3d2;
+	text-decoration: none;
+}
+
+#mainContent.roomSub #introduction p.toolBar a span {
+	padding-right: 10px;
+	background: url(linkPointer.gif) no-repeat right center;
+}
+
+#mainContent.roomSub #introduction p.toolBar a:hover {
+	color: #c5edff;
+}
+
+/* @end */
+
+/* @group Details */
+
+#mainContent.productLineDetails {
+	width: 930px;
+	float: right;
+	background: url(mainContent-base.gif) no-repeat right 0;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+#mainContent.productLineDetails h2 {
+	width: 210px;
+	height: 0;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	margin: 30px 0 0 361px;
+	padding: 23px 0 0;
+	position: absolute;
+}
+
+html>body #mainContent.productLineDetails h2 {
+	margin-top: 75px;
+}
+
+#mainContent.productLineDetails.exhibit h2 {
+		background: transparent url(pageHeaderDetails-exhibit.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.cottage h2 {
+		background: transparent url(pageHeaderDetails-cottage.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.eurasia h2 {
+		background: transparent url(pageHeaderDetails-eurasia.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.pacifica h2 {
+		background: transparent url(pageHeaderDetails-pacifica.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.eclectic h2 {
+		background: transparent url(pageHeaderDetails-eclectic.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.contemporary h2 {
+		background: transparent url(pageHeaderDetails-contemporary.gif) no-repeat 0 top;
+	width: 230px;
+}
+
+#mainContent.productLineDetails.naples h2 {
+		background: transparent url(pageHeaderDetails-naples.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.odienne h2 {
+		background: transparent url(pageHeaderDetails-odienne.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.classic h2 {
+		background: transparent url(pageHeaderDetails-classic.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.estates h2 {
+		background: transparent url(pageHeaderDetails-estates.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.haven h2 {
+		background: transparent url(pageHeaderDetails-haven.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.leguna h2 {
+		background: transparent url(pageHeaderDetails-leguna.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.farmhouse h2 {
+		background: transparent url(pageHeaderDetails-farmhouse.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.classic h2 {
+		background: transparent url(pageHeaderDetails-classic.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.cityloft h2 {
+background: transparent url(pageHeaderDetails-cityloft.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails.transitional h2 {
+background: transparent url(pageHeaderDetails-transitional.gif) no-repeat 0 top;
+}
+
+#mainContent.productLineDetails .descriptions,
+#mainContent.productLineDetails .productImages,
+#mainContent.productLineDetails .introduction {
+	width: 230px;
+	float: left;
+	display: inline;
+}
+
+.productLineDetails .descriptions a:hover {
+
+}
+
+#mainContent.productLineDetails .descriptions p {
+	color: #666666;
+	width: 230px;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	float: left;
+	display: inline;
+	padding-right: 0;
+}
+
+.productLineDetails .descriptions p a {
+	color: #666666;
+	text-decoration: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 190px;
+	float: left;
+	padding-right: 40px;
+}
+
+.productLineDetails .descriptions p a:hover {
+	color: #13668c;
+	text-decoration: underline;
+
+}
+
+.productLineDetails .sectionB {	
+	float: left;
+	width: 230px;
+	margin-left: 65px;
+	display: inline;
+	margin-top: 5px;
+}
+
+html>body .productLineDetails .sectionB {
+	margin-top: 50px;
+}
+
+.productLineDetails .sectionA {
+	width: 521px;
+	float: right;
+	margin-right: 48px;
+	display: inline;
+	margin-top: 0;
+	padding-top: 70px;
+}
+
+html>body .productLineDetails .sectionA {
+	padding-top: 100px;
+}
+
+.productLineDetails .sectionC {
+	width: 521px;
+	float: right;
+	margin-right: 48px;
+	display: inline;
+	padding-bottom: 40px;
+}
+
+.productLineDetails .sectionA .lifestyle {
+	float: right;
+	width: 230px;
+	padding: 0;
+	margin-right: 0;
+	display: inline;
+	margin-top: -65px;
+}
+
+html>body .productLineDetails .sectionA .lifestyle {
+	margin-top: -50px;
+
+	margin-right: 61px;
+
+}
+
+.productLineDetails .sectionA .lifestyle a {
+	float: left;
+	display: inline;
+	cursor: pointer;
+	padding-left: 20px;
+}
+
+.productLineDetails .sectionA .lifestyle a img {
+	float: left;
+	display: inline;
+	margin: 0;
+}
+
+.productLineDetails .sectionA .introduction {
+	float: left;
+	width: 230px;
+	clear: none;
+	display: inline;
+}
+
+.productLineDetails .sectionC .descriptions {
+	padding-top: 39px;
+}
+
+#mainContent.productLineDetails .sectionC .productImages {
+	width: 250px;
+	float: left;
+	display: inline;
+	border-top: 20px solid #13668c;
+	padding-top: 20px;
+}
+
+#mainContent.productLineDetails .productImages a {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 230px;
+	height: 230px;
+	position: relative;
+}
+
+#mainContent.productLineDetails .productImages a img {
+	float: left;
+	display: inline;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#mainContent.productLineDetails .descriptions .productActive {
+		color: #13668c;
+		background: url(descriptionActive.gif) no-repeat right center;
+	}
+
+#mainContent.productLineDetails .descriptions p.productActive a {
+		color: #13668c;
+	text-decoration: underline;
+}
+	
+	#mainContent.productLineDetails .productImages .productActive {
+		border: 4px solid #7fb7ca;
+		overflow: hidden;
+		float: left;
+		width: 222px;
+		height: 222px;
+		display: inline;
+	}
+	
+	#mainContent.productLineDetails .productImages .productActive img {
+		margin-top: -4px;
+		margin-left: -4px;
+	}
+
+
+/* @end */
+
+/* @group Collection FFF */
+
+/* @group Transitional */
+
+.fixturesTransitional a {
+	position: absolute;
+}
+
+.fixturesTransitional a:hover {
+	background-position: -100% 0;
+}
+
+.fixturesTransitional #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFixturesSubFFF-transitional.gif) 0 0;
+}
+
+.fixturesTransitional #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.fixturesTransitional a.subRegion-1 {
+	width: 190px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 242px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion1-transitional.gif);
+}
+
+.fixturesTransitional a.subRegion-2 {
+	width: 190px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 152px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion2-transitional.gif);
+}
+
+.fixturesTransitional a.subRegion-3 {
+	width: 278px;
+	padding-top: 152px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	left: 190px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion3-transitional.gif);
+}
+
+.fixturesTransitional a.subRegion-4 {
+	width: 237px;
+	padding-top: 394px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	right: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion4-transitional.gif);
+}
+
+.fixturesTransitional a.subRegion-5 {
+	width: 278px;
+	padding-top: 112px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion5-transitional.gif);
+	left: 192px;
+}
+
+/* @end */
+
+body div#mainContentFFF.collectionFFFSub {
+	width: 706px;
+	float: left;
+	display: inline;
+	background-image: none;
+	margin-left: 112px;
+	padding: 80px 0;
+}
+
+#mainContentFFF.collectionFFFSub {
+	width: 706px;
+	float: left;
+	display: inline;
+	background-image: none;
+	margin-left: 112px;
+	padding: 80px 0;
+}
+
+#mainContentFFF.collectionFFFSub #introduction {
+	margin-left: 0px;
+	padding-bottom: 151px;
+	width: 707px;
+	position: relative;
+	float: left;
+	background-image: none;
+	display: inline;
+	border: 1px solid silver;
+}
+
+#mainContentFFF.collectionFFFSub #introduction h2 {
+	position: absolute;
+	background-color: transparent;
+	display: inline;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin: 0;
+}
+
+#mainContentFFF.collectionFFFSub #introduction p {
+	font-size: 11px;
+	color: #79a9bd;
+	line-height: 19px; 
+	padding: 0;
+	width: 204px;
+	float: left;
+	background-image: none;
+	margin-right: 0;
+	margin-bottom: 0;
+	display: inline;
+}
+
+#mainContentFFF.collectionFFFSub #introduction p.productLinks {
+	margin: 0;
+	padding: 0;
+	width: 204px;
+	float: left;
+	background-image: none;
+	display: inline;
+}
+
+#mainContentFFF.collectionFFFSub a.buttonDefault {
+	position: absolute;
+	right: -1px;
+	bottom: -15px;
+}
+
+#mainContentFFF.collectionFFFSub a.buttonDefault:hover {
+	background-position: 0 0;
+}
+
+#mainContentFFF.collectionFFFSub #introduction p.toolBar {
+	width: 709px;
+	position: absolute;
+	background-color: #13668c;
+	float: left;
+	left: -1px;
+	margin-left: 0;
+	padding: 0;
+	bottom: -2.4em;
+}
+
+#mainContentFFF.collectionFFFSub #introduction p.toolBar a {
+	float: right;
+	padding: 3px 20px 3px 0;
+	position: static;
+	font-size: 12px;
+	color: #a3c3d2;
+	text-decoration: none;
+}
+
+#mainContentFFF.collectionFFFSub #introduction p.toolBar a span {
+	padding-right: 10px;
+	background: url(linkPointer.gif) no-repeat right center;
+}
+
+#mainContentFFF.collectionFFFSub #introduction p.toolBar a:hover {
+	color: #c5edff;
+}
+
+/* @end */
+
+/* @group Faucets Collection Classic */
+
+.faucetsClassic a {
+	position: absolute;
+}
+
+.faucetsClassic a:hover {
+	background-position: -100% 0;
+}
+
+.faucetsClassic #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFaucetsSubFFF-classic.gif) 0 0;
+}
+
+.faucetsClassic #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.faucetsClassic a.subRegion-1 {
+	width: 231px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 175px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion1-classic.gif);
+}
+
+.faucetsClassic a.subRegion-2 {
+	width: 154px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 219px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion2-classic.gif);
+}
+
+.faucetsClassic a.subRegion-3 {
+	width: 232px;
+	padding-top: 147px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 321px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion3-classic.gif);
+}
+
+.faucetsClassic a.subRegion-4 {
+	width: 319px;
+	padding-top: 248px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 2px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion4-classic.gif);
+}
+
+.faucetsClassic a.subRegion-5 {
+	width: 176px;
+	padding-top: 146px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion5-classic.gif);
+	right: 2px;
+}
+
+.faucetsClassic a.subRegion-6 {
+	width: 298px;
+	padding-top: 146px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegions6-classic.gif);
+	right: 178px;
+}
+
+/* @end */
+
+/* @group Faucets Collection Eclectic */
+
+.faucetsEclectic a {
+	position: absolute;
+}
+
+.faucetsEclectic a:hover {
+	background-position: -100% 0;
+}
+
+.faucetsEclectic #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFaucetsSubFFF-eclectic.gif) 0 0;
+}
+
+.faucetsEclectic #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.faucetsEclectic a.subRegion-1 {
+	width: 231px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 175px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion1-eclectic.gif);
+}
+
+.faucetsEclectic a.subRegion-2 {
+	width: 193px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 219px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion2-eclectic.gif);
+}
+
+.faucetsEclectic a.subRegion-3 {
+	width: 289px;
+	padding-top: 147px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 225px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion3-eclectic.gif);
+}
+
+.faucetsEclectic a.subRegion-4 {
+	width: 223px;
+	padding-top: 394px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 2px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion4-eclectic.gif);
+}
+
+.faucetsEclectic a.subRegion-5 {
+	width: 273px;
+	padding-top: 146px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion5-eclectic.gif);
+	left: 231px;
+}
+
+/* @end */
+
+/* @group Faucets Collection Transitional */
+
+.faucetsTransitional a {
+	position: absolute;
+}
+
+.faucetsTransitional a:hover {
+	background-position: -100% 0;
+}
+
+.faucetsTransitional #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFaucetsSubFFF-transitional.gif) 0 0;
+}
+
+.faucetsTransitional #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.faucetsTransitional a.subRegion-1 {
+	width: 143px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 247px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion1-transitional.gif);
+}
+
+.faucetsTransitional a.subRegion-2 {
+	width: 224px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 147px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion2-transitional.gif);
+}
+
+.faucetsTransitional a.subRegion-3 {
+	width: 294px;
+	padding-top: 147px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 189px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion3-transitional.gif);
+}
+
+.faucetsTransitional a.subRegion-4 {
+	width: 187px;
+	padding-top: 394px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 2px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion4-transitional.gif);
+}
+
+.faucetsTransitional a.subRegion-5 {
+	width: 375px;
+	padding-top: 166px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion5-transitional.gif);
+	right: 189px;
+}
+
+/* @end */
+
+/* @group Faucet Collection Contemporary */
+
+.faucetsContemporary a {
+	position: absolute;
+}
+
+.faucetsContemporary a:hover {
+	background-position: -100% 0;
+}
+
+.faucetsContemporary #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFaucetsSubFFF-contemporary.gif) 0 0;
+}
+
+.faucetsContemporary #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.faucetsContemporary a.subRegion-1 {
+	width: 143px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 247px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion1-contemporary.gif);
+}
+
+.faucetsContemporary a.subRegion-2 {
+	width: 224px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 147px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion2-contemporary.gif);
+}
+
+.faucetsContemporary a.subRegion-3 {
+	width: 294px;
+	padding-top: 147px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 187px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion3-contemporary.gif);
+}
+
+.faucetsContemporary a.subRegion-4 {
+	width: 187px;
+	padding-top: 394px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	right: 2px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion4-contemporary.gif);
+}
+
+.faucetsContemporary a.subRegion-5 {
+	width: 375px;
+	padding-top: 205px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	right: 187px;
+	display: inline;
+	background-image: url(faucetsSubFFFRegion5-contemporary.gif);
+}
+
+/* @end */
+
+/* @group Fixtures Collection Classic */
+
+.fixturesClassic a {
+	position: absolute;
+}
+
+.fixturesClassic a:hover {
+	background-position: -100% 0;
+}
+
+.fixturesClassic #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFixturesSubFFF-classic.gif) 0 0;
+}
+
+.fixturesClassic #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.fixturesClassic a.subRegion-1 {
+	width: 418px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 172px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion1-classic.gif);
+}
+
+.fixturesClassic a.subRegion-2 {
+	width: 418px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 222px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion2-classic.gif);
+}
+
+.fixturesClassic a.subRegion-3 {
+	width: 287px;
+	padding-top: 144px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 2px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion3-classic.gif);
+}
+
+.fixturesClassic a.subRegion-4 {
+	width: 287px;
+	padding-top: 250px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	right: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion4-classic.gif);
+}
+
+/* @end */
+
+/* @group Fixtures Collection Contemporary */
+
+.fixturesContemporary a {
+	position: absolute;
+}
+
+.fixturesContemporary a:hover {
+	background-position: -100% 0;
+}
+
+.fixturesContemporary #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFixturesSubFFF-contemporary.gif) 0 0;
+}
+
+.fixturesContemporary #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.fixturesContemporary a.subRegion-1 {
+	width: 231px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 175px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion1-contemporary.gif);
+}
+
+.fixturesContemporary a.subRegion-2 {
+	width: 154px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 219px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion2-contemporary.gif);
+}
+
+.fixturesContemporary a.subRegion-3 {
+	width: 250px;
+	padding-top: 147px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	left: 156px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion3-contemporary.gif);
+}
+
+.fixturesContemporary a.subRegion-4 {
+	width: 319px;
+	padding-top: 248px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	right: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion4-contemporary.gif);
+}
+
+.fixturesContemporary a.subRegion-5 {
+	width: 176px;
+	padding-top: 146px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion5-contemporary.gif);
+	right: 2px;
+}
+
+.fixturesContemporary a.subRegion-6 {
+	width: 298px;
+	padding-top: 146px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion6-contemporary.gif);
+	right: 178px;
+}
+
+/* @end */
+
+/* @group Fixtures Collection Eclectic */
+
+.fixturesEclectic a {
+	position: absolute;
+}
+
+.fixturesEclectic a:hover {
+	background-position: -100% 0;
+}
+
+.fixturesEclectic #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFixturesSubFFF-eclectic.gif) 0 0;
+}
+
+.fixturesEclectic #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.fixturesEclectic a.subRegion-1 {
+	width: 418px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 172px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion1-eclectic.gif);
+}
+
+.fixturesEclectic a.subRegion-2 {
+	width: 418px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 222px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion2-eclectic.gif);
+}
+
+.fixturesEclectic a.subRegion-3 {
+	width: 287px;
+	padding-top: 144px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 2px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion3-eclectic.gif);
+}
+
+.fixturesEclectic a.subRegion-4 {
+	width: 287px;
+	padding-top: 250px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	right: 2px;
+	display: inline;
+	background-image: url(fixturesSubFFFRegion4-eclectic.gif);
+}
+
+/* @end */
+
+/* @group Furniture Collection Transitional */
+
+.furnitureTransitional a {
+	position: absolute;
+}
+
+.furnitureTransitional a:hover {
+	background-position: -100% 0;
+}
+
+.furnitureTransitional #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFurnitureSubFFF-transitional.gif) 0 0;
+}
+
+.furnitureTransitional #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.furnitureTransitional a.subRegion-1 {
+	width: 418px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 172px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion1-transitional.gif);
+}
+
+.furnitureTransitional a.subRegion-2 {
+	width: 418px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 222px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion2-transitional.gif);
+}
+
+.furnitureTransitional a.subRegion-3 {
+	width: 287px;
+	padding-top: 144px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 2px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion3-transitional.gif);
+}
+
+.furnitureTransitional a.subRegion-4 {
+	width: 287px;
+	padding-top: 250px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	right: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion4-transitional.gif);
+}
+
+/* @end */
+
+/* @group Furniture Collection Classic */
+
+.furnitureClassic a {
+	position: absolute;
+}
+
+.furnitureClassic a:hover {
+	background-position: -100% 0;
+}
+
+.furnitureClassic #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFurnitureSubFFF-classic.gif) 0 0;
+}
+
+.furnitureClassic #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.furnitureClassic a.subRegion-1 {
+	width: 418px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 172px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion1-classic.gif);
+}
+
+.furnitureClassic a.subRegion-2 {
+	width: 418px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 222px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion2-classic.gif);
+}
+
+.furnitureClassic a.subRegion-3 {
+	width: 287px;
+	padding-top: 124px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 2px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion3-classic.gif);
+}
+
+.furnitureClassic a.subRegion-4 {
+	width: 287px;
+	padding-top: 270px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	right: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion4-classic.gif);
+}
+
+/* @end */
+
+/* @group Furniture Collection Contemporary */
+
+.furnitureContemporary a {
+	position: absolute;
+}
+
+.furnitureContemporary a:hover {
+	background-position: -100% 0;
+}
+
+.furnitureContemporary #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFurnitureSubFFF-contemporary.gif) 0 0;
+}
+
+.furnitureContemporary #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.furnitureContemporary a.subRegion-1 {
+	width: 190px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 242px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion1-contemporary.gif);
+}
+
+.furnitureContemporary a.subRegion-2 {
+	width: 190px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 152px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion2-contemporary.gif);
+}
+
+.furnitureContemporary a.subRegion-3 {
+	width: 278px;
+	padding-top: 152px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	left: 200px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion3-contemporary.gif);
+}
+
+.furnitureContemporary a.subRegion-4 {
+	width: 237px;
+	padding-top: 394px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	right: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion4-contemporary.gif);
+}
+
+.furnitureContemporary a.subRegion-5 {
+	width: 278px;
+	padding-top: 103px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion5-contemporary.gif);
+	right: 239px;
+}
+
+.furnitureContemporary a.subRegion-6 {
+	width: 298px;
+	padding-top: 146px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion6-contemporary.gif);
+	right: 178px;
+}
+
+/* @end */
+
+/* @group Furniture Collection Eclectic */
+
+.furnitureEclectic a {
+	position: absolute;
+}
+
+.furnitureEclectic a:hover {
+	background-position: -100% 0;
+}
+
+.furnitureEclectic #introduction h2 {
+	left: 153px;
+	top: 107px;
+	width: 255px;
+	padding-top: 23px;
+	height: 0;
+	background: url(headerFurnitureSubFFF-eclectic.gif) 0 0;
+}
+
+.furnitureEclectic #introduction p {
+	margin-top: 139px;
+	margin-left: 191px;
+	float: left;
+	display: inline;
+}
+
+.furnitureEclectic a.subRegion-1 {
+	width: 231px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	left: 2px;
+	padding-top: 175px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion1-eclectic.gif);
+}
+
+.furnitureEclectic a.subRegion-2 {
+	width: 154px;
+	overflow: hidden;
+	height: 0;
+	bottom: 2px;
+	left: 2px;
+	float: left;
+	padding-top: 219px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion2-eclectic.gif);
+}
+
+.furnitureEclectic a.subRegion-3 {
+	width: 319px;
+	padding-top: 248px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 2px;
+	bottom: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion3-eclectic.gif);
+}
+
+.furnitureEclectic a.subRegion-4 {
+	width: 176px;
+	padding-top: 146px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	right: 2px;
+	top: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion4-eclectic.gif);
+}
+
+.furnitureEclectic a.subRegion-5 {
+	width: 298px;
+	padding-top: 146px;
+	float: left;
+	overflow: hidden;
+	height: 0;
+	top: 2px;
+	display: inline;
+	background-image: url(furnitureSubFFFRegion5-eclectic.gif);
+	right: 176px;
+}
+
+/* @end */
+
+/* @group Shop by Product */
+
+#catalogue.products {
+	margin-bottom: -100px;
+}
+
+html>body #catalogue.products {
+	padding-bottom: 0;
+	margin-bottom: -60px;
+}
+
+*:first-child+html #catalogue.products {
+	padding-bottom: 0;
+	margin-bottom: -68px;
+}
+
+#introduction.landingProducts p {
+	width: 656px;
+	float: right;
+	padding-bottom: 314px;
+	background: url(mainContent-product.jpg) no-repeat 0 bottom;
+	margin-top: 55px;
+	margin-right: 0;
+	display: inline;
+	margin-bottom: 0;
+}
+
+#introduction.landingProducts a.bathHardware {
+	width: 162px;
+	height: 0px;
+	padding-top: 162px;
+	overflow: hidden;
+	background: url(productNavImage-bathHardware.jpg);
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+#introduction.landingProducts a.bathSets {
+	width: 162px;
+	height: 0px;
+	padding-top: 162px;
+	overflow: hidden;
+	background: url(productNavImage-bathSets.jpg);
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+#introduction.landingProducts a.doorHardware {
+	width: 162px;
+	height: 0px;
+	padding-top: 162px;
+	overflow: hidden;
+	background: url(productNavImage-doorHardware.jpg);
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+#introduction.landingProducts a.faucets {
+	width: 162px;
+	height: 0px;
+	padding-top: 162px;
+	overflow: hidden;
+	background: url(productNavImage-faucets.jpg);
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+#introduction.landingProducts a.sinks {
+	width: 162px;
+	height: 0px;
+	padding-top: 162px;
+	overflow: hidden;
+	background: url(productNavImage-sinks.jpg);
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+#introduction.landingProducts a.storage {
+	width: 162px;
+	height: 0px;
+	padding-top: 162px;
+	overflow: hidden;
+	background: url(productNavImage-storage.jpg);
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+#introduction.landingProducts a.toilets {
+	width: 162px;
+	height: 0px;
+	padding-top: 162px;
+	overflow: hidden;
+	background: url(productNavImage-toilets.jpg);
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+#introduction.landingProducts a.vanitiesMirrors {
+	width: 162px;
+	height: 0px;
+	padding-top: 162px;
+	overflow: hidden;
+	background: url(productNavImage-vanitiesMirrors.jpg);
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+#introduction.landingProducts a:hover {
+	width: 154px;
+	padding-top: 154px;
+	border: 4px solid #7fb7ca;
+	background-position: -4px -4px;
+}
+
+/* @end */
+
+/* @group Shop by Collection */
+
+#mainContent.shopByCollection {
+	width: 930px;
+	position: relative;
+}
+
+#mainContent.shopByCollection h1 {
+	margin: -37px 0 0 -30px;
+	padding: 37px 0 0;
+	width: 800px;
+	height: 0;
+	overflow: hidden;
+	border-style: none;
+	float: left;
+	background: url(pageHeader-collection.gif) no-repeat;
+	display: inline;
+	position: absolute;
+	color: white;
+}
+
+html>body #mainContent.shopByCollection h1 {
+	position: static;
+}
+
+#mainContent.shopByCollection h2 {
+	margin: 0;
+	padding: 69px 0 0;
+	background-image: url(mainContentCenter-collection.gif);
+	width: 173px;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	background-color: transparent;
+	left: 260px;
+	bottom: 122px;
+	float: left;
+	display: inline;
+}
+
+html>body #mainContent.shopByCollection h2 {
+	left: 280px;
+}
+
+#mainContent.shopByCollection #introduction {
+	border-bottom: 1px solid #bcd3dd;
+	border-left: 1px solid #bcd3dd;
+	float: left;
+	padding-left: 29px;
+	margin-left: 29px;
+	display: inline;
+	padding-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-top: 37px;
+}
+
+#mainContent.shopByCollection #introduction p {
+	margin: 0;
+	padding: 0;
+}
+
+#mainContent.shopByCollection #introduction #introductionCopy {
+	padding-left: 375px;
+	width: 200px;
+	padding-top: 45px;
+	float: left;
+	margin: 0;
+	display: inline;
+	padding-bottom: 50px;
+}
+
+#mainContent.shopByCollection #introduction a.classic {
+	width: 210px;
+	height: 0px;
+	padding-top: 210px;
+	overflow: hidden;
+	background: url(collectionNavImage-classic.jpg);
+	float: left;
+	margin-right: 2px;
+}
+
+#mainContent.shopByCollection #introduction a.transitional {
+	width: 210px;
+	height: 0px;
+	padding-top: 210px;
+	overflow: hidden;
+	background: url(collectionNavImage-transitional.jpg);
+	float: left;
+	margin-right: 2px;
+}
+
+#mainContent.shopByCollection #introduction a.contemporary {
+	width: 210px;
+	height: 0px;
+	padding-top: 210px;
+	overflow: hidden;
+	background: url(collectionNavImage-contemporary.jpg);
+	float: left;
+	margin-right: 2px;
+}
+
+#mainContent.shopByCollection #introduction a.eclectic {
+	width: 210px;
+	height: 0px;
+	padding-top: 210px;
+	overflow: hidden;
+	background: url(collectionNavImage-eclectic.jpg);
+	float: left;
+}
+
+#mainContent.shopByCollection #introduction a:hover {
+	width: 202px;
+	padding-top: 202px;
+	border: 4px solid #7fb7ca;
+	background-position: -4px -4px;
+}
+
+#mainContent.shopByCollection #promos {
+	border-style: none;
+	background-image: url(mainContentRight-collection.gif);
+	bottom: 0;
+	width: 228px;
+	height: 275px;
+	float: right;
+	margin: -145px 20px -59px 0;
+	padding: 0;
+	right: 8px;
+	background-color: white;
+}
+
+#mainContent.shopByCollection #footer {
+	border-style: none;
+	bottom: 0;
+	position: absolute;
+	width: 530px;
+	height: 265px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	left: 8px;
+	background-image: url(mainContentLeft-collection.gif);
+}
+
+/* @end */
+
+/* @group Shop by Room */
+
+#mainContent.shopByRoom {
+	width: 930px;
+	position: relative;
+}
+
+#mainContent.shopByRoom h1 {
+	margin: -37px 0 0 -30px;
+	padding: 37px 0 0;
+	width: 800px;
+	height: 0;
+	overflow: hidden;
+	border-style: none;
+	float: left;
+	background: url(pageHeader-room.gif) no-repeat;
+	display: inline;
+	position: absolute;
+	color: white;
+}
+
+html>body #mainContent.shopByRoom h1 {
+	position: static;
+}
+
+#mainContent.shopByRoom h2 {
+	margin: 0;
+	padding: 79px 0 0;
+	background-image: url(mainContentCenter-room.gif);
+	width: 291px;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	background-color: transparent;
+	left: 260px;
+	top: 372px;
+}
+
+html>body #mainContent.shopByRoom h2 {
+	left: 270px;
+}
+
+#mainContent.shopByRoom #introduction {
+	border-bottom: 1px solid #bcd3dd;
+	border-left: 1px solid #bcd3dd;
+	float: left;
+	padding-bottom: 149px;
+	padding-left: 29px;
+	margin-left: 29px;
+	display: inline;
+	padding-top: 0;
+	margin-top: 37px;
+}
+
+#mainContent.shopByRoom #introduction p {
+	margin: 0;
+	padding: 0;
+}
+
+#mainContent.shopByRoom #introduction a.bath {
+	width: 422px;
+	height: 0px;
+	padding-top: 210px;
+	overflow: hidden;
+	background: url(roomNavImage-bath.jpg);
+	float: left;
+	margin-right: 2px;
+}
+
+#mainContent.shopByRoom #introduction a.kitchen {
+	width: 422px;
+	height: 0px;
+	padding-top: 210px;
+	overflow: hidden;
+	background: url(roomNavImage-kitchen.jpg);
+	float: left;
+}
+
+#mainContent.shopByRoom #introduction a:hover {
+	width: 414px;
+	padding-top: 202px;
+	border: 4px solid #7fb7ca;
+	background-position: -4px -4px;
+}
+
+#mainContent.shopByRoom #promos {
+	border-style: none;
+	background-image: url(mainContentRight-room.gif);
+	bottom: 0;
+	width: 359px;
+	height: 276px;
+	float: right;
+	margin: -145px 8px -59px 0;
+	padding: 0;
+	right: 8px;
+	background-color: white;
+}
+
+#mainContent.shopByRoom #footer {
+	border-style: none;
+	bottom: 0;
+	position: absolute;
+	width: 540px;
+	height: 251px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	left: 8px;
+	background-image: url(mainContentLeft-room.gif);
+}
+
+/* @end */
+
+/* @group Product Details Classic */
+
+/* @end */
+
+/* @group Splash Ad */
+
+#mainContent.adSplash-typeA h1 {
+	background-color: transparent;
+	
+	height: 0;
+	float: left;
+	overflow: hidden;
+	border-style: none;
+	display: inline;
+	position: absolute;
+	line-height: 30px;
+	margin: 0;
+	top: 110px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+#mainContent.adSplash-typeA h2 {
+	background-color: transparent;
+	display: none;
+}
+
+#mainContent.adSplash-typeA #introduction {
+	border-bottom: 22px solid #13668c;
+	margin: -22px 25px 50px 0;
+	padding: 230px 0 0;
+	width: 882px;
+}
+
+#mainContent.adSplash-typeA #introductionCopy {
+	padding-top: 170px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid white;
+	padding-right: 402px;
+	width: 480px;
+}
+
+#mainContent.adSplash-typeA #introduction p {
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#mainContent.adSplash-typeA #introduction h4 {
+	font-size: 11px;
+	margin-bottom: 6px;
+	color: #13668c;
+	margin-top: 6px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#mainContent.adSplash-typeB h1 {
+	background-color: transparent;
+	background-image: url(pageHeader-splashAd-commercialStyleKitchenFaucet.gif);
+	width: 474px;
+	height: 0;
+	float: left;
+	overflow: hidden;
+	border-style: none;
+	display: inline;
+	position: absolute;
+	padding: 65px 0 0;
+	line-height: 30px;
+	top: 65px;
+	margin: 0;
+	right: 140px;
+}
+
+#mainContent.adSplash-typeB #introduction {
+	margin: -22px 25px 50px 0;
+	padding: 0 0 0 383px;
+	width: 412px;
+	float: right;
+	display: inline;
+}
+
+#mainContent.adSplash-typeB #introductionCopy {
+	width: 367px;
+	float: right;
+	background: url(splashAdBottom-commercialStyleKitchenFaucet.gif) no-repeat right top;
+	padding-top: 205px;
+	margin-top: 127px;
+	margin-right: 45px;
+	display: inline;
+}
+
+#mainContent.adSplash-typeB #introduction p {
+	width: 180px;
+	border-bottom: 2px solid white;
+	margin-bottom: 0;
+	margin-top: 0;
+	border-bottom: 22px solid #13668c;
+	padding: 0 0 20px 48px;
+	margin-left: 2px;
+}
+
+/* @group Vessels */
+
+#mainContent.adSplash-typeA.vessels h1 {
+	background-image: url(pageHeader-splashAd-pegasusLavatories.gif);
+	width: 360px;
+	padding: 108px 0 0;
+	margin-left: 20px;
+}
+
+#mainContent.adSplash-typeA.vessels #introduction {
+	background: url(splashAd-pegasusLavatories.jpg) no-repeat right bottom;
+}
+
+#mainContent.adSplash-typeA.vessels #introductionCopy {
+	width: 307px;
+	padding-right: 575px;
+	padding-top: 10px;
+}
+
+/* @end */
+
+/* @group Kitchen Faucet */
+
+#mainContent.adSplash-typeB.kitchenFaucet #introduction {
+	background: url(splashAd-commercialStyleKitchenFaucet.jpg) no-repeat left bottom;
+	}
+
+#mainContent.adSplash-typeA.k300 #introduction p {
+	background-position: 106px top;
+	background-repeat: no-repeat;
+	no-repeat right bottom;
+	}
+
+#mainContent.adSplash-typeB.kithcenFaucet #introduction p {
+	background: url(splashAd1Bottom-k300.jpg) no-repeat 106px top;
+}
+
+/* @end */
+
+/* @group k300 */
+
+#mainContent.adSplash-typeA.k300 h1 {
+	background-image: url(pageHeader-splashAd1.gif);
+	width: 546px;
+	padding: 80px 0 0;
+}
+
+#mainContent.adSplash-typeA.k300 #introduction {
+	background: url(splashAd1-k300.jpg) no-repeat right bottom;
+	padding-top: 180px;
+}
+
+#mainContent.adSplash-typeA.k300 #introductionCopy {
+	/*background: url(splashAd1Bottom-k300.jpg) no-repeat 106px top;*/
+	padding-top: 30px;
+}
+
+#tvAd {
+		width: 320px;
+		height: 240px;
+		z-index: 1000000;
+	margin-left: 110px;
+}
+
+#mainContent.adSplash-typeA.k300 .buttonViewPegasusLuxuryVideo {
+	width: 96px;
+	height: 40px;
+	padding-top: 41px;
+	display: inline;
+	overflow: hidden;
+	border-style: none;
+	float: left;
+	margin-top: 199px;
+	background: transparent url(buttonViewPegasusLuxuryVideo.gif) no-repeat;
+	color: white;
+	position: absolute;
+	cursor: pointer;
+}
+
+/* @end */
+
+/* @end */
+

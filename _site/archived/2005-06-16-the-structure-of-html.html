@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	    <meta name="viewport" content="width=device-width" />
+	    <title>The structure of xHTML — Cornæ</title>
+	    <meta name="Language" content="en" />
+	    <link rel="stylesheet" href="/style/base.css" type="text/css" media="screen" charset="utf-8" />   
+	    <script src="http://www.patternslib.com/bundles/patterns.min.js" type="text/javascript"></script> 
+	</head>
+	<body class="post mood-blueberry">
+		<div id="main" class="pat-auto-scale" data-pat-auto-scale="method: zoom; min-width: 769">
+			      <div id="prologue">
+        <h1>
+          The structure of xHTML
+        </h1>
+        <p class="byline">
+          Cornelis G.A. Kolbach, 
+        </p>
+        <p class="introduction">
+          A concise manual for building a basic xHMTL document for novice.
+        </p>
+      </div>
+      <div id="contentBody">
+        <h3 id='tags'>Tags</h3>
+
+<p>All content in HTML is placed in so called tags. De syntax of this paragraph is like this:</p>
+
+<pre><code>&lt;p&gt;
+ All content in XHTML is placed in so called tags. De syntax of this paragraph is like this:
+&lt;/p&gt;</code></pre>
+
+<p>To every kind of content belongs a certain tag. In the example above the content is a paragraph and paragraphs get a &#8216;p-tag&#8217;. These tags are to be written in lowercase. Right next to the letter p there is a space and then a so called &#8216;attribute&#8217;. An attribute is a piece of code which says something about the information, the content, of a tag. In this case we&#8217;re looking at a lang attribute. This attribute states the language of the content within the tag. Other attributes may be used to influence the graphic representation of the content, or to add scripts to elements.</p>
+
+<p>Another thing that catches the eye is that the piece of content is followed by <code>&lt;/p&gt;</code>. This piece of code is the termination of the tag. It is an <em>unbreakable law</em> that every tag in XHTML must be terminated.</p>
+
+<p>A few commonly used tags are: <code>&lt;p&gt;</code> (paragraph text), <code>&lt;img&gt;</code> (image), <code>&lt;ul&gt;</code> (unordered list), <code>&lt;table&gt;</code> (table), <code>&lt;h1&gt;</code> (high level header), <code>&lt;h2&gt;</code> (lower level header), <code>&lt;div&gt;</code> (division, rough segmentation of groups of content) and <code>&lt;a&gt;</code> (hyperlink).</p>
+
+<h3 id='head'>Head</h3>
+
+<p>The article <a href='/media/anatomyOfDOM.html'>Anatomy of a (web) document</a> explained how an XHTML-documents are divided into a head section and a body section. The head section contains information which is not intended to be seen by the end user, but instead help a webbrowser to render a page in the right manner. Below, I will touch the most important and most commonly used parts of the head section.</p>
+
+<h4 id='meta'>Meta</h4>
+
+<p>One of the most important elements that we put inside the head section is the characterset declaration of the document&#8217;s content. A <a href='http://www.cornae.com/articles/%28http://www.w3.org/International/O-charset.html'>character set</a> is a table with codes and the matching letters or characters. Imagine that, for whatever reason, you would like to use a character set which contains exclusively contains (post) Latin characters, then this is the place to indicate this. Now, the browser also knows which character set to use and will so be able to render the text as intended.</p>
+
+<p>There&#8217;s a vast number of character sets for you to choose from. Each of them has it&#8217;s own history. A few random examples of this are:</p>
+
+<ul>
+<li>iso-8859-1 (Exclusively suitable for some western languages, including English)</li>
+
+<li>iso-8859-5 (Cyrillic)</li>
+
+<li>big5 (Chinese, traditional)</li>
+
+<li>windows-950 (Chinese, traditional)</li>
+
+<li>shift_jis (Japanse)</li>
+
+<li>iso-8859-8 (Hebrew)</li>
+
+<li>iso-8859-3 (Maltese)</li>
+
+<li>iso-8859-6 (Arabic)</li>
+
+<li>utf-8 (All sets)</li>
+
+<li>utf-16 (All sets)</li>
+</ul>
+
+<p>The above list is by far incomplete. Due to historic reasons do many alphabets and character systems have at least one dedicated code table. Some character sets, such as Arabic, have four or more, which actually all try to do the same job. For those who are interested, iana.org offers <a href='http://www.iana.org/assignments/character-sets'>a complete list</a> of all existing character sets.</p>
+
+<p>It would be far beyond the extent of this writing to elaborate on the history and functioning of text encoding. Therefore <em>my dogma: use UTF-8 exclusively</em>. <a href='http://www.cornae.com/articles/%28EmptyReference%21%29'>UTF-8</a> is a code table from the so called <a href='http://www.unicode.org'>unicode familie</a>. Unicode offers a standard encoding which contains code tables for all character sets — including <a href='http://www.kli.org/'>Klingon</a> —, plus room for future character sets. This may sound ideal to you… and so it is. There&#8217;s more to learn about text encoding in general and unicode in particular at <a href='http://www.joelonsoftware.com/articles/Unicode.html'>joelonsoftware.com</a>.</p>
+
+<p>The syntax for the character set declaration is as follows:</p>
+
+<pre><code>&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;</code></pre>
+
+<p>Where utf-8 indicates the character set. As you may have noticed, the character set declaration is applied as an attribute to the meta-tag.</p>
+
+<p>An XHTML document is a full member of the XML-familie. Therefore, the two very first lines of each XHTML-document will look like this:</p>
+
+<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</code></pre>
+
+<p>&#8220;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#8221;&gt;</p>
+
+<p>At the first line, the used XML version is declared, as well as the character set in which the document itself is encoded. Also here, it&#8217;s recommended to use UTF-8. At the second line there&#8217;s indicated which XHTML version is used for the document. We call this the document type declaration and it&#8217;s probably one of the most important lines of the HTML-document, as because of this line, the browser knows exactly in which way to interpret the document code. In this case the XHTML 1.0 Transitional standard is used.</p>
+
+<p>The image below illustrates what the code of a simple XHTML page may look like. Click on the image to render the obtained page in your browser.</p>
+
+<p><img alt='xHTML' src='/media/xHTML.png' /></p>
+
+<p>It might have occurred to you that your browser automatically generates some space between two paragraphs of text. Besides that, the header of the page looks a little larger and bolded. This happens, because your browser will — even without adding any layout information — know what to do with things such as paragraphs and headers, but also lists, tables, etc.</p>
+
+<p>The XHTML attribute on the html tag won&#8217;t have escaped your attention either. This is a mandatory part of the XHTML-document and it is basically a link to a file on the internet which exactly describes which rules the code should meet.</p>
+
+<p>Now your are capable of assembling an XHTML document, u are ready to embellish this page using Cascading Style Sheets, or just: &#8216;CSS&#8217;.</p>
+<hr />
+	  </div>
+        
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'cornae'; // required: replace example with your forum shortname
+  
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+
+			<ul class="navigation" id="globalNavigation">
+				<li id="portaltab-home" class="home">
+					<a href="">Home</a>
+				</li>
+				<li class="contact">
+					<a href="/about.html">About</a>
+				</li>
+				<li class="articles">
+					<a href="/articles.html">Articles</a>
+				</li>
+				<li class="portfolio">
+					<a href="/portfolio.html">Portfolio</a>
+				</li>
+			</ul>
+
+	        <form action="/search-results.html" id="search">
+	        	<input type="search" placeholder="Search" name="q" id="tipue_search_input">
+	        </form>
+	        
+	        <ul id="colours">
+				<li class="blueberry pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-blueberry; store: local">
+					Blueberry
+				</li>
+				<li class="topaz pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-topaz; store: local">
+					Topaz
+				</li>
+				<li class="orchid pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-orchid; store: local">
+					Orchid
+				</li>
+				<li class="mocha pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-mocha; store: local">
+					Mocha
+				</li>
+				<li class="avocado pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-avocado; store: local">
+					Avocado
+				</li>
+	        </ul>
+	    </div>
+
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style" id="share">
+         	<a class="addthis_button_preferred_1"></a>
+         	<a class="addthis_button_preferred_2"></a>
+        </div>
+        
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=cornae"></script>
+        
+        <a href="#main" id="top" name="top">Back to top</a>
+  </body>
+</html>

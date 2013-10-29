@@ -1,0 +1,1274 @@
+/* @group Normalisation */
+
+
+/** :link,:visited { text-decoration:none }*/ /* no underline by default on links */
+* ul,ol { list-style:none } /* when we want markers on lists, we will be explicit about it */
+* h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }  /* Browsers are inconsistent here, reset */
+* a img,:link img,:visited img { border:none } /* Linked images should not have borders */
+
+/* List classes without markers */
+ul.visualNoMarker,
+ol.visualNoMarker {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0.5em 0 0 0;
+}
+
+.visualOverflow {
+    overflow: auto;
+    margin: 0 0 1em 0;
+}
+.visualOverflow pre,
+.visualOverflow table,
+.visualOverflow img {
+    margin: 0;
+}
+
+/* Correction for WYSIWYG editors */
+.visualFontSizeCorrection {
+    font-size: 75%;
+    background: transparent;
+    background-image: none;
+}
+
+/* Accessibility and visual enhancement elements */
+.hiddenStructure {
+    display: block;
+    background: transparent;
+    background-image: none; /* safari bug */
+    border: none;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px 0 0 -1px;
+    width: 1px;
+}
+.contentViews .hiddenStructure,
+.contentActions .hiddenStructure {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+}
+.hiddenLabel {
+    display: block;
+    background: transparent;
+    background-image: none; /* safari bug */
+    border: none;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px 0 0 -1px;
+    width: 1px;
+}
+	
+/* Helper element to work with CSS floats */
+.visualClear {
+    display: block;
+    clear: both;
+}
+
+/* Hiding helper elements for old browsers */
+.netscape4 {
+    display: none;
+}
+
+/* @end */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background: url(logoTile.gif) repeat-x 0 14px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+	font-style: normal;
+	width: 450px;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 0;
+	padding-left: 58px;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	background: url(iconBeAHomeHero.gif) no-repeat 0 0;
+}
+
+h3 {
+	color: #cc0000;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 15px;
+}
+
+h3.subHeader {
+	float: left;
+	white-space: nowrap;
+	margin-bottom: 15px;
+	font-size: 16px;
+	padding-left: 59px;
+	width: 100%;
+	clear: left;
+	margin-top: -12px;
+}
+
+h4 {
+	color: #666666;
+	font-size: 15px;
+	margin-bottom: 3px;
+	margin-top: 0;
+}
+
+h5 {
+	color: #cc0000;
+	font-size: 12px;
+	margin-bottom: 3px;
+	margin-top: 0;
+}
+
+#introduction h3,#mainText h3 {
+	color: black;
+	margin-bottom: 4px;
+}
+
+/* @group sIFR */
+
+/* These are standard sIFR styles... do not modify */
+
+.sIFR-flash {
+	visibility: visible !important;
+	margin: 0;
+}
+
+.sIFR-replaced {
+	visibility: visible !important;
+}
+
+span.sIFR-alternate {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+}
+
+/* Hide Adblock Object tab: the text should show up just fine, not poorly with a tab laid over it. */
+.sIFR-flash + div[adblocktab=true] {
+  display: none !important;
+}
+
+/* These "decoy" styles are used to hide the browser text before it is replaced... the negative-letter spacing in this case is used to make the browser text metrics match up with the sIFR text metrics since the sIFR text in this example is so much narrower... your own settings may vary... any weird sizing issues you may run into are usually fixed by tweaking these decoy styles */
+
+.sIFR-hasFlash h2 {
+	text-align: left;
+	visibility: hidden;
+	font-size: 10px;
+	padding-top: 11px;
+	padding-bottom: 7px;
+	margin-bottom: 6px;
+}
+
+.sIFR-hasFlash h3.subHeader {
+	visibility: hidden;
+	font-size: 18px;
+	margin-top: -12px;
+	float: left;
+	display: inline;
+	padding-top: 0;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+/* @end */
+
+p {
+	font-size: 11px;
+	color: #666666;
+	line-height: 18px;
+	margin-top: 0;
+	margin-bottom: 8px;
+	text-align: justify;
+}
+
+#introduction ul,#mainText ul,#contentSectionB ul {
+	font-size: 11px;
+	color: #666666;
+	line-height: 18px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	list-style-type: disc;
+	margin-left: 0;
+	padding-left: 16px;
+}
+
+a {
+	color: #cc0000;
+	cursor: pointer;
+}
+
+a:hover {
+	color: black;
+}
+
+#introduction dd,#mainText dd {
+	color: #666666;
+	font-size: 11px;
+	line-height: 18px;
+	margin-left: 0;
+}
+
+#introduction dt,#mainText dt {
+	color: #cc0000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#main {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 84px;
+}
+
+#mainContent {
+	background: url(footerBottom.gif) no-repeat 0 bottom;
+	padding-bottom: 30px;
+	float: left;
+	width: 900px;
+	position: relative;
+	overflow: hidden;
+}
+
+#footer {
+	float: left;
+	padding-top: 1px;
+	width: 860px;
+	margin-left: 20px;
+}
+
+#footer h3 {
+	color: #cc0000;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+#head {
+	display: block;
+	margin-top: -84px;
+	padding-top: 84px;
+	background: url(logoTile.gif) repeat-x 0 14px;
+	position: relative;
+	top: 0;
+	z-index: 98;
+	height: 31px;
+}
+
+/* @group Addenda */
+
+#addendumA {	background: url(../base/rampGray.gif) repeat-x;
+	
+}
+
+#addendumA img {
+	z-index: 0 !important;
+}
+
+/* @group addendumEmergencyAssistance */
+
+.addendumEmergencyAssistance {
+	width: 320px;
+	float: left;
+	position: relative;
+	margin-top: 2px;
+	margin-bottom: 20px;
+	min-height: 230px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 230px;
+}
+
+.addendumEmergencyAssistance h3 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.addendumEmergencyAssistance h3 a {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.addendumEmergencyAssistance p {
+	float: left;
+	width: 116px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.addendumEmergencyAssistance img {
+	float: left;
+	margin-right: 10px !important;
+	margin-bottom: 0;
+}
+
+.addendumEmergencyAssistance p img {
+	clear: left;
+	float: left;
+	display: inline;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	top: 0;
+}
+
+/* @end */
+
+/* @group SpecialNeeds */
+
+.addendumSpecialNeeds {
+	width: 320px;
+	float: left;
+	position: relative;
+	margin-top: 2px;
+	margin-bottom: 20px;
+	min-height: 230px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 230px;
+}
+
+.addendumSpecialNeeds h3 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.addendumSpecialNeeds h3 a {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.addendumSpecialNeeds p {
+	float: left;
+	width: 116px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.addendumSpecialNeeds img {
+	float: left;
+	margin-right: 10px !important;
+	margin-bottom: 0;
+}
+
+.addendumSpecialNeeds p img {
+	clear: left;
+	float: left;
+	display: inline;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	top: 0;
+}
+
+/* @end */
+
+/* @group PreventionTips */
+
+.addendumPreventionTips {
+	width: 320px;
+	float: left;
+	position: relative;
+	margin-top: 2px;
+	margin-bottom: 20px;
+	min-height: 230px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 230px;
+}
+
+.addendumPreventionTips h3 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.addendumPreventionTips h3 a {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.addendumPreventionTips p {
+	float: left;
+	width: 116px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.addendumPreventionTips img {
+	float: left;
+	margin-right: 10px !important;
+	margin-bottom: 0;
+}
+
+.addendumPreventionTips p img {
+	clear: left;
+	float: left;
+	display: inline;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	top: 0;
+}
+
+/* @end */
+
+/* @group PractiseIsKey */
+
+.addendumPractiseIsKey {
+	width: 320px;
+	float: left;
+	position: relative;
+	margin-top: 2px;
+	margin-bottom: 20px;
+	min-height: 230px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 230px;
+}
+
+.addendumPractiseIsKey h3 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.addendumPractiseIsKey h3 a {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.addendumPractiseIsKey p {
+	float: left;
+	width: 116px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.addendumPractiseIsKey img {
+	float: left;
+	margin-right: 10px !important;
+	margin-bottom: 0;
+}
+
+.addendumPractiseIsKey p img {
+	clear: left;
+	float: left;
+	display: inline;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	top: 0;
+}
+
+/* @end */
+
+/* @group EscapePlan */
+
+.addendumEscapePlan {
+	width: 320px;
+	float: left;
+	position: relative;
+	margin-top: 2px;
+	margin-bottom: 20px;
+	min-height: 230px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 230px;
+}
+
+.addendumEscapePlan h3 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.addendumEscapePlan h3 a {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.addendumEscapePlan p {
+	float: left;
+	width: 116px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.addendumEscapePlan img {
+	float: left;
+	margin-right: 10px !important;
+	margin-bottom: 0;
+}
+
+.addendumEscapePlan p img {
+	clear: left;
+	float: left;
+	display: inline;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	top: 0;
+}
+
+/* @end */
+
+/* @group Know the Drill */
+
+.addendumKnowTheDrill {
+	width: 320px;
+	float: left;
+	position: relative;
+	margin-top: 2px;
+	margin-bottom: 20px;
+	min-height: 230px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 230px;
+}
+
+.addendumKnowTheDrill h3 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.addendumKnowTheDrill h3 a {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.addendumKnowTheDrill p {
+	float: right;
+	width: 259px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.addendumKnowTheDrill img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 0;
+}
+
+.addendumKnowTheDrill p img {
+	clear: left;
+	float: left;
+	display: inline;
+	position: absolute;
+	left: 40px;
+	bottom: 20px;
+}
+
+/* @end */
+
+/* @group First Aid */
+
+.addendumFirstAid {
+	width: 320px;
+	float: left;
+	position: relative;
+	margin-top: 2px;
+	margin-bottom: 20px;
+	min-height: 230px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 230px;
+}
+
+.addendumFirstAid h3 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.addendumFirstAid h3 a {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.addendumFirstAid p {
+	float: left;
+	width: 116px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.addendumFirstAid img {
+	float: left;
+	margin-right: 10px !important;
+	margin-bottom: 0;
+}
+
+.addendumFirstAid p img {
+	clear: left;
+	float: left;
+	display: inline;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	top: 0;
+}
+
+/* @end */
+
+
+
+/* @end */
+
+html>body #addendumA,html>body #addendumB,html>body #addendumC {
+	height: auto !important;
+}
+
+/* @group Page Icons */
+
+.productInformation h2 {
+	background-image: url(iconProductInformation.gif);
+}
+
+.fireSafetyTips h2 {
+	background-image: url(iconFireSafetyTips.gif);
+}
+
+.beAHomeHero h2 {
+	background-image: url(iconBeAHomeHero.gif);
+}
+
+.myHomeSafety h2 {
+	background-image: url(iconMyHomeSafety.gif);
+}
+
+.upcomingEvents h2 {
+	background-image: url(iconUpcomingEvents.gif);
+}
+
+#fireSafetyTips-seasonal h2 {
+	background-image: url(iconFireSafetyTips-seasonalPrevention.gif);
+}
+
+#fireSafetyTips-checklist h2 {
+	background-image: url(iconFireSafetyTips-safetyChecklist.gif);
+}
+
+.tip h2 {
+	background-image: url(iconFireSafetyTips-responsiveGroups.gif);
+}
+
+
+
+/* @end */
+
+/* @group Logo */
+
+#logo {
+	margin: 0 0 0 13px;
+	display: block;
+	width: 874px;
+	position: absolute;
+	z-index: 100;
+}
+
+#logo a {
+	width: 13px;
+	height: 566px;
+	float: left;
+	position: absolute;
+	right: -13px;
+}
+
+html>body #logo a {
+	background: url(shadowUpperRight.png) no-repeat right top;
+}
+
+#logo sub {
+	width: 13px;
+	height: 0;
+	float: right;
+	padding-top: 566px;
+	overflow: hidden;
+	position: absolute;
+	left: -13px;
+}
+
+html>body #logo sub {
+	background: url(shadowUpperLeft.png) no-repeat 0 top;
+	
+}
+
+#logo a strong {
+	width: 190px;
+	height: 0;
+	padding-top: 62px;
+	display: block;
+	overflow: hidden;
+	background-image: url(logo.gif);
+	margin-top: -69px;
+	position: absolute;
+	left: -888px;
+	cursor: pointer;
+	z-index: 101;
+}
+
+/* @group MSIE 6 Fixes */
+
+#logo #shadowTop {
+	display:block;
+	position:absolute;
+	top: 0;
+	left:0;
+	height: 13px;
+	width:874px;
+}
+
+#logo #shadowRight {
+	float:right;
+	height:0pt;
+	right:-13px;
+	overflow:hidden;
+	position:absolute;
+	width:13px;
+	padding-top: 556px;
+}
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group Buttons */
+
+/* @group Button Forward */
+
+a.buttonForward {
+	color: white;
+	font-size: 11px;
+	background: url(buttonDefault-left.gif) no-repeat left;
+	float: left;
+	text-decoration: none;
+	padding-top: 0;
+	padding-left: 20px;
+	padding-bottom: 0;
+	white-space: nowrap;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+a.buttonForward:hover {
+	color: #ffe066;
+}
+
+html>body a.buttonForward {
+		background: url(buttonDefault-left.png) no-repeat left;
+}
+
+a.buttonForward strong {
+	font-weight: bold;
+	background: url(buttonForward-right.gif) no-repeat right;
+	float: left;
+	padding-top: 4px;
+	padding-right: 30px;
+	padding-bottom: 6px;
+}
+
+html>body a.buttonForward strong {
+	background-image: url(buttonForward-right.png);
+}
+
+/* @end */
+
+/* @group Button Default */
+
+a.buttonDefault {
+	color: white;
+	font-size: 11px;
+	background: url(buttonDefault-left.gif) no-repeat left center;
+	padding-left: 18px;
+	float: left;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+html>body a.buttonDefault {
+		background-image: url(buttonDefault-left.png);
+
+}
+
+a.buttonDefault:hover {
+	color: #ffe066;
+}
+
+a.buttonDefault strong {
+	font-weight: bold;
+	background: url(buttonDefault-right.gif) no-repeat right center;
+	padding-top: 4px;
+	padding-right: 20px;
+	padding-bottom: 6px;
+	float: left;
+}
+
+html>body a.buttonDefault strong {
+	background-image: url(buttonDefault-right.png);
+}
+
+/* @end */
+
+/* @group Button Back */
+
+a.buttonBack {
+	color: white;
+	font-size: 11px;
+	padding-left: 20px;
+	background: url(buttonBack-left.gif) no-repeat left;
+	padding-bottom: 0;
+	padding-top: 0;
+	float: left;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+a.buttonBack:hover {
+	color: #ffe066;
+}
+
+html>body a.buttonBack {
+		background: url(buttonBack-left.png) no-repeat left;
+}
+
+a.buttonBack strong {
+	font-weight: bold;
+	padding: 4px 20px 6px 5px;
+	background: url(buttonDefault-right.gif) no-repeat right;
+	float: left;
+}
+
+html>body a.buttonBack strong {
+	background-image: url(buttonDefault-right.png);
+}
+
+/* @end */
+
+a.readMore {
+	background: url(buttonForward-compact.gif) no-repeat right center;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+
+a.readMore:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+html>body a.readMore {
+	background: url(buttonForward-compact.png) no-repeat right center;
+	font-size: 11px;
+	color: #cc0000;
+	font-weight: bold;
+}
+
+
+
+/* @end */
+
+/* @group Global Navigation */
+
+#panelGlobalNavigation {
+	width: 899px;
+	display: block;
+	background: url(globalNavigation-sub.png) repeat-x 0 0;
+	z-index: 80;
+	position: absolute;
+	top: -296px;
+	left: 50%;
+	height: 0;
+	padding-top: 430px;
+	overflow: hidden;
+	margin-left: -450px;
+}
+
+#mainMenu {
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+	display: block;
+	padding: 0;
+	float: left;
+	width: 900px;
+	position: absolute;
+	z-index: 99;
+	background-repeat: repeat-x;
+}
+
+#mainMenu li {
+	float: left;
+	width: 20%;
+	padding: 0 1px 0 0;
+	margin: 0 0 0 -1px;
+}
+
+#mainMenu li a {
+	float: left;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	display: block;
+	text-align: left;
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	background: #cc0000 url(shadowTop.png) no-repeat 0 0;
+	padding-left: 14px;
+	border-left: 1px solid white;
+	width: 165px;
+}
+
+#mainMenu li a em {
+	font-weight: bold;
+	font-style: normal;
+}
+
+#mainMenu li a:hover,
+#mainMenu li a.hover,
+.productInformation #menuProductInformation a,
+.fireSafetyTips #menuFireSafetyTips a,
+.beAHomeHero #menuBeAHomeHero a,
+.myHomeSafety #menuMyHomeSafety a,
+.upcomingEvents #menuUpcomingEvents a {
+	background-color: #8e0000;
+}
+
+#mainMenu #menuProductInformation a {
+	background-position: 13px 0;
+	background-repeat: no-repeat;
+}
+
+#mainMenu #menuUpcomingEvents a {
+	background-position: -12px 0;
+	background-repeat: no-repeat;
+}
+
+#mainMenu ul {
+	width: 180px;
+	float: left;
+	border-top: 1px solid white;
+	padding: 8px 0 15px;
+	margin-right: 0;
+	margin-top: 0;
+	margin-left: 0;
+	display: none;
+}
+
+#mainMenu ul li {
+	width: 180px;
+	float: left;
+	border-style: none;
+	border-left-style: none;
+}
+
+#mainMenu ul li.current {
+	background-color: #ffe066;
+}
+
+#mainMenu li:hover ul,
+#mainMenu li.hover ul {
+	background-color: #f3f3f3;
+}
+
+#mainMenu ul li a {
+	width: 160px;
+	float: left;
+	border-style: none;
+	color: #666666;
+	background-image: none;
+	background-color: transparent !important;
+	font-size: 11px;
+	padding: 3px 6px 3px 14px;
+}
+
+#mainMenu ul li a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+
+
+/* @end */
+
+/* @group Appendix */
+
+#appendix {
+	float: left;
+	width: 900px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#appendix p {
+	text-align: center;
+	font-size: 10px;
+	color: gray;
+	overflow: hidden;
+}
+
+#appendix p a {
+	color: gray;
+	padding-right: 5px;
+	padding-left: 6px;
+	margin-left: -1px;
+}
+
+#appendix p a:hover {
+	color: black;
+}
+
+
+
+/* @end */
+
+/* @group Jump Menu Extended */
+
+ul.jumpMenu-extended,
+#introduction ul.jumpMenu-extended,
+#mainText ul.jumpMenu-extended,
+ol.jumpMenu-extended,
+#introduction ol.jumpMenu-extended,
+#mainText ol.jumpMenu-extended {
+	border-left: 1px solid #cccccc;
+	padding-left: 0 !important;
+	margin-top: 0;
+	float: left;
+	display: inline;
+	margin-left: 0 !important;
+	line-height: normal !important;
+	border-right: 1px solid #cccccc;
+}
+
+ul.jumpMenu-extended li,
+ol.jumpMenu-extended li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+ul.jumpMenu-extended li a,
+ol.jumpMenu-extended li a {
+	padding: 10px 20px;
+	display: block;
+	font-size: 11px;
+	color: #666666;
+	outline: none;
+	text-decoration: none;
+}
+
+ul.jumpMenu-extended li a span,
+ol.jumpMenu-extended li a span {
+	background: url(secondaryArrow-current.gif) no-repeat right center;
+	padding-right: 20px;
+}
+
+ul.jumpMenu-extended li a:hover,
+ol.jumpMenu-extended li a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+ul.jumpMenu-extended li.active a,
+ol.jumpMenu-extended li.active a {
+	background-color: #ffe066;
+}
+
+ul.jumpMenu-extended li a:hover span,
+ol.jumpMenu-extended li a:hover span {
+	background: url(secondaryArrow-over.gif) no-repeat right center;
+	padding-right: 20px;
+}
+
+ul.jumpMenu-extended li strong {
+
+	display: none;
+
+}
+
+ul.jumpMenu-extended li a:hover strong {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: -10px;
+	color: #cc0000;
+	border-right: 6px solid #cc0000;
+	width: 70px;
+	position: absolute;
+	left: -77px;
+}
+
+html>body ul.jumpMenu-extended li a:hover strong {
+	margin-top: -22px;
+	height: 12px;
+}
+
+
+
+/* @end */
+
+/* @group Jump Menu */
+
+ul.jumpMenu,
+#introduction ul.jumpMenu,
+#mainText ul.jumpMenu,
+ol.jumpMenu,
+#introduction ol.jumpMenu,
+#mainText ol.jumpMenu {
+	border-top: 1px solid #cccccc;
+	padding-left: 0;
+	margin-top: 0;
+	float: left;
+	display: inline;
+	margin-left: 0;
+	line-height: normal;
+}
+
+ul.jumpMenu li,
+ol.jumpMenu li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+ul.jumpMenu li a,
+ol.jumpMenu li a {
+	padding: 5px 10px;
+	display: block;
+	font-size: 11px;
+	color: #666666;
+	border-bottom: 1px solid #cccccc;
+	outline: none;
+	text-decoration: none;
+}
+
+ul.jumpMenu li a span,
+ol.jumpMenu li a span {
+	background: url(secondaryArrow-current.gif) no-repeat right center;
+	padding-right: 20px;
+}
+
+ul.jumpMenu li a:hover,
+ol.jumpMenu li a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+ul.jumpMenu li.active a,
+ol.jumpMenu li.active a {
+	background-color: #ffe066;
+}
+
+ul.jumpMenu li a:hover span,
+ol.jumpMenu li a:hover span {
+	background: url(secondaryArrow-over.gif) no-repeat right center;
+	padding-right: 20px;
+}
+
+
+
+/* @end */
+
+/* @group Panels */
+
+.panel {
+	position: fixed;
+	z-index: 102;
+	left: 50%;
+}
+
+/* @group Under Construction Message */
+
+#underConstructionWarning {
+	width: 870px;
+	height: 430px;
+	display: block;
+	background: url(panelUnderConstruction.png) no-repeat;
+	margin-left: -435px;
+	top: -430px;
+}
+
+#underConstructionWarning .panelContent {
+	padding-top: 95px;
+	padding-right: 450px;
+	padding-left: 65px;
+}
+
+#underConstructionWarning a.buttonBack {
+	margin-right: 15px;
+}
+
+/* @end */
+
+/* @group Outbound Disclaimer */
+
+#outboundWarning {
+	width: 870px;
+	height: 430px;
+	display: block;
+	background: url(panelDisclaimer.png) no-repeat;
+	margin-left: -435px;
+	top: -430px;
+}
+
+#outboundWarning .panelContent {
+	padding-top: 95px;
+	padding-right: 450px;
+	padding-left: 65px;
+}
+
+#outboundWarning a.buttonBack {
+	margin-right: 15px;
+}
+
+
+
+/* @end */
+
+
+
+/* @end */
+

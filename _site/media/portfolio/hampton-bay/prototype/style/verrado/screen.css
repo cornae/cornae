@@ -1,0 +1,173 @@
+.catalogue,#mainContent {
+	height: 394px;
+}
+
+#header h2 {
+	background-image: url(pageHeader.gif);
+}
+
+#mainContent h1 {
+	background-image: url(pageTitle.gif);
+	width: 147px;
+	height: 0;
+	padding-top: 40px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	top: 9px;
+	left: 521px;
+	position: relative;
+	margin: 0;
+	z-index: 1;
+}
+
+.introduction,.wrap1 {
+	left: 0;
+	top: 30px;
+}
+
+.introduction {
+	width: 431px;
+	height: 100px;
+	position: absolute;
+	color: white;
+	overflow: auto;
+	z-index: 1;
+	padding: 20px 27px 0;
+}
+
+p.catalogue a:hover span,
+.introduction,
+.descriptions,
+p.catalogue a.productActive span.productID {
+	background-color: #A8C786;
+}
+
+#catalogueImage-1 {
+	position: absolute;
+	top: 160px;
+	left: 198px;
+}
+
+#catalogueImage-2 {
+	position: absolute;
+	left: 495px;
+	top: 273px;
+}
+
+#catalogueImage-3 {
+	position: absolute;
+	top: 273px;
+	left: 627px;
+}
+
+#catalogueImage-4 {
+	float: right;
+	top: 273px;
+	margin-right: 0;
+	left: 759px;
+	position: absolute;
+}
+
+#catalogueImage-5 {
+	top: 30px;
+	left: 495px;
+	position: absolute;
+}
+
+#catalogueImage-6 {
+	float: right;
+	top: 189px;
+	left: 0;
+	position: absolute;
+}
+
+p.catalogue .buttonDefault {
+	top: 160px;
+	left: 0;
+	position: absolute;
+	background-color: white;
+}
+
+/* @group Product Details */
+
+#mainContent.productDetails .catalogue,#mainContent.productDetails{
+	height: 715px;
+	padding-bottom: 20px;
+}
+
+.descriptions {
+	float: right;
+	width: 287px;
+	height: 505px;
+	position: absolute;
+	top: 10px;
+	color: white;
+	overflow: auto;
+	z-index: 1;
+	padding: 20px 0 0;
+	left: 0px;
+}
+
+p.productActive a,
+.descriptions a:hover {
+	background-color: #8ea973;
+}
+
+#catalogueImage-A {
+	left: 297px;
+	top: 10px;
+}
+
+#catalogueImage-B {
+	left: 297px;
+	top: 185px;
+}
+
+#catalogueImage-C {
+	top: 95px;
+	left: 693px;
+}
+
+#catalogueImage-D {
+	top: 245px;
+	left: 693px;
+}
+
+#catalogueImage-E {
+	top: 395px;
+	left: 297px;
+}
+
+#catalogueImage-F {
+	top: 395px;
+	left: 495px;
+}
+
+#catalogueImage-G {
+	top: 395px;
+	left: 693px;
+}
+
+#catalogueImage-H {
+	top: 545px;
+	left: 0px;
+}
+
+#catalogueImage-I {
+	left: 297px;
+	top: 545px;
+}
+
+#catalogueImage-J {
+	top: 545px;
+	left: 495px;
+}
+
+#catalogueImage-K {
+	top: 545px;
+	left: 693px;
+}
+
+/* @end */
+

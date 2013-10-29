@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	    <meta name="viewport" content="width=device-width" />
+	    <title>Multi-lingual websites — A different approach — Cornæ</title>
+	    <meta name="Language" content="en" />
+	    <link rel="stylesheet" href="/style/base.css" type="text/css" media="screen" charset="utf-8" />   
+	    <script src="http://www.patternslib.com/bundles/patterns.min.js" type="text/javascript"></script> 
+	</head>
+	<body class="post mood-blueberry">
+		<div id="main" class="pat-auto-scale" data-pat-auto-scale="method: zoom; min-width: 769">
+			      <div id="prologue">
+        <h1>
+          Multi-lingual websites — A different approach
+        </h1>
+        <p class="byline">
+          Cornelis G.A. Kolbach, July,  7, 2005
+        </p>
+        <p class="introduction">
+          Once upon a time the world was a well defined, less complicated place than it is today. The Italians lived on a pasta diet, only Japanese people drank sake and the Frisians only spoke Frysk. But things have moved on from here.
+        </p>
+      </div>
+      <div id="contentBody">
+        <p>In modern societies, all of the above no longer applies and on the ever expanding world wide web, national borders will look even more trivial tomorrow than today.</p>
+
+<p>Neither the web, nor languages seem to respect the comfort of spatial limitations that national borders used to dictate. Not only have your customers&#8217; diet and habits changed, but they may also come from a number of different places. As desirable as the effect of this on the size of your target market may be, there is a downside: you might not share the same customs, currency or even the same language as your customers anymore. The latter will most certainly have a significant effect on the extent of your external communication.</p>
+
+<p>The obvious solution to all this would be to teach all of your customers to speak Mandarin. Yet easier — and much cheaper — solutions are available. One solution is to offer a complete or a concise version of your website in translation to your (potential) customer.</p>
+
+<h3 id='the_trouble_with_translation'>The trouble with translation</h3>
+
+<p>As with teaching Mandarin, the creation and maintainence of multi-lingual sites doesn&#8217;t happen by itself and <em>de dato</em>, websites still do not translate themselves effectively either.</p>
+
+<p>Before you can launch a successful multi lingual website, certain issues need to be addressed, including how the webserver chooses what language to present to the specific end user and how to handle pages that need be launched but have not yet been (fully) translated.</p>
+
+<p>In the year 1517 Martin Luther needed no less than ninety five statements to cause a reformation. I will do my best to address all of the issues mentioned before in the next <strong>eight statements</strong>.</p>
+
+<ol>
+<li>
+<p><span>French isn&#8217;t French</span></p>
+</li>
+
+<li>
+<p><span>Internationalisation is not localisation</span></p>
+</li>
+
+<li>
+<p><span>Don&#8217;t push options, push content</span></p>
+</li>
+
+<li>
+<p><span>Make the switch</span></p>
+</li>
+
+<li>
+<p><span>Mark your markup</span></p>
+</li>
+
+<li>
+<p><span>Dialects matter</span></p>
+</li>
+
+<li>
+<p><span>Translation as presentation</span></p>
+</li>
+
+<li>
+<p><span>Form follows direction</span></p>
+</li>
+</ol>
+
+<h3 id='the_statements'>The statements</h3>
+
+<h4 id='french_isnt_french'>French isn&#8217;t French</h4>
+
+<p>Some multi lingual websites offer a language choice at their front page or elsewhere on the website. Certain webbuilders hold on to this awkward tradition of writing the names of all these languages in the main language of that website. E.g.: Suppose I&#8217;m a French speaking person who is visiting a website that presents me with English language content. Somewhere on the page I find a drop down menu containing the alternate languages… in English! So looking for Français, I overlook French. Now surely, one wouldn&#8217;t have the need to look for other than English language content if he understands the English word &#8216;French&#8217;. Some people might argue that the word French looks similar enough to Français to be recognised as such by most people. However I&#8217;m sure you&#8217;re not one of these people as we all considered: Dutch vs. Nederlands, German vs. Deutsch or… Persian vs. فارسی, Hebrew vs. עברית or Greek vs. Ελληνικά.</p>
+
+<h4 id='internationalisation_is_not_localisation'>Internationalisation is not localisation</h4>
+
+<p>Rob is a good friend of mine. He&#8217;s American, lives in Amsterdam and English is his native tongue. All though he speaks adequate Dutch as well, it&#8217;s understandable that he likes to read things in his own language. How annoying for him it must be to discover that every other time he visits a website of an international corporation with an .nl domain he is presented with Dutch language content. Even though his web browser is configured well, with English as his first language.</p>
+
+<p>For some obscure reason, a number of web builders assume that one who visits, for instance, a .nl domain, has Dutch as a first language. At the time of writing, a clear example is the website of Sony Ericsson. Sony Ericsson is a company that makes great phones, but learning more about their products can be a real pain if you don&#8217;t fit exactly into one of their boxes. If you visit <span>sonyericsson.nl</span>, you will only find Dutch language content. Even though most of their content, is available in English as well, but exclusively via the .co.uk domain. Not only is the whole search for the preferred language annoying, if you&#8217;re interested in finding the nearest dealer or you want to know the local prices, visiting a foreign domain is also hardly helpful either. Unfortunately, Sony Ericsson is in good company, as other big names including: Microsoft, Siemens, Apple, Samsung, Motorola… — well, the list is infinitely long —, make the same mistake, by linking the language content to the domain only.</p>
+
+<p>Information on local dealers, pricing, tax or environmental regulations all have a tight connection to global location. Languages don&#8217;t, otherwise countries like Switzerland (as you know, Switzerland has 4 official languages) would have multiple domains for their country, except they don&#8217;t. Therefore, domain spaces could make fine instruments to determine someone&#8217;s possible location at times, for determining one&#8217;s language they are less useful.</p>
+
+<h4 id='dont_push_options_push_content'>Don&#8217;t push options, push content</h4>
+
+<p>Fortunately many other websites do offer a language choice at some, or any of their domains. Quite often a .com portal or front page is used for this purpose and in that stage the visitor will have to make a choice in which language he would like read the website&#8217;s content. In my opinion, this is much more elegant than linking the presented language to a domain name, but wouldn&#8217;t it be even nicer if the right language was selected FOR the user, rather than BY the user? I think it would and the browsing experience would certainly be smoother experience this way than by bothering a potential customer with language– or location questions.</p>
+
+<p>The issue is, how does the website &#8216;know&#8217; the preferred language of the site&#8217;s visitor? Software manufacturers have found an answer to this and so modern web browsers tell what language is preferred. In most cases, this setting is based on the language setting of the system or the software version of the client.</p>
+
+<h4 id='make_the_switch'>Make the switch</h4>
+
+<p>Utilising automatic system language detection may smoothen up the visitor&#8217;s browsing experience to a great extend, yet certain problems may occur:</p>
+
+<ul>
+<li>
+<p>The website&#8217;s content might not be available in the desired language. Alternatives must be offered somehow.</p>
+</li>
+
+<li>
+<p>For whatever reason, one may feel the urge to review an article in his second or third language as well. Offering a language choice only at the site&#8217;s portal or front page would make live switching impossible.</p>
+</li>
+
+<li>
+<p>Your Lebanese friend — whom you probably communicate with in French — might have launched you a web browser on his Arabic system. It would be desirable to have a choice of switching to another language at any given moment.</p>
+</li>
+</ul>
+
+<p>Select boxes are widely used for language- or location switchers. A simple list in the sideline of what other languages are available, the way <a href='http://www.wikipedia.org'>wikipedia</a>] does, also makes an elegant solution. The advantage of a simple list on each page is that people have direct visual access to the name of their language at all times. One common mistake to indicate the language choice or to indicate the chosen language is flags. Flags have just as little to do with languages as domain names do. Think about it, with multiple countries where languages such as English, French or Arabic is an official language, what flag to use? Or what to do with languages that have no nationality, such as Roma? There&#8217;s only one answer to the flag problem: if you can get around them, don&#8217;t use them.</p>
+
+<p>I will address these and other issues in a <span>proposed model</span>, further below.</p>
+
+<h4 id='mark_your_markup'>Mark your markup</h4>
+
+<p>Language attributes (e.g. <code>lang=&quot;en-GB&quot;</code>) are by far not used enough on the web. <em>Lang</em> attributes on tags, such as paragraphs and headers that indicate what language is used in the content of the tag, help search engines, such as <span>Google</span>, to determine the language of the content you offer to the world. Applying the <em>lang</em> attributes on tags within the body allows you to mix different languages on a page and filter some languages out, or visually highlight others. In the near future, these tags might also help browsers to use the right thesaurus to wrap text and wrap words effectively, which will result in cleaner page layouts.</p>
+
+<h4 id='dialects_matter'>Dialects matter</h4>
+
+<p>Another great thing about using language attributes, is that it allows you to not only indicate the language that is used in the content, but also the specific dialect of that language. This way, different dialects of, for instance English, may be distinguised. Separation becomes of much higher importance when individual dialects of the same language differ from each other to a greater extend.</p>
+
+<p>Example: An Englishman, who&#8217;s client is configured British English, visits a website that offers content in US English and Japanese. Allthough you could make a wild guess and present the visitor with Japanese content, knowing his browser setting, it&#8217;s more likely that this visitor better understands another dialect of his own language than a completely different language. I suggest to select on exact match first and next, search for alternative dialects.</p>
+
+<h4 id='translation_as_presentation'>Translation as presentation</h4>
+
+<p>We fit our content in the structure of X(HT)ML and manipulate it&#8217;s presentation using stylesheets and scripts. If there&#8217;s any desire for changing the graphic design of a page, one replaces the Stylesheet, not the content or the structure, because content is content and not presentation.</p>
+
+<p>The relation between content, structure and presentation could be seen as a triangle, pointing up. On top, there&#8217;s the content. At one other corner resides the structure and the third corner is host to the presentation as depicted below. The attributes that indicate the language, belong in the corner of the structure. Few would argue that the way the content looks, such as the colour of the words, is part of the presentation of the content.</p>
+
+<p><img alt='Content triangle' src='/media/magicTriangle.png' /></p>
+
+<p>Changing the graphic representation of words doesn&#8217;t affect their meaning, nor does language. Therefor I propose to conceive language as just <em>an aspect of presentation</em> of content as well. So why put different language versions of the same content in different X(HT)ML documents or even in a different databases? Different language versions could just as well be put together in the same document. Each element, such as paragraphs and headers, may be labeled with the appropriate language tag. Either server side (E.g.: XML/XSL) or client side (E.g: XHTML/Javascript) technology may be applied to filter out tags labeled with languages that are not to be presented to the site&#8217;s visitor.</p>
+
+<h4 id='form_follows_direction'>Form follows direction</h4>
+
+<p>A switch from a language which is offered in a left to right script (such as Latin), to a right to left script (such as Hebrew), should generally not be done without a layout change as well. The reason for this is, that languages, not written from right to left, are not only aligned right by default, but also have an effect on the visual balance of the page layout. Not changing the page layout to the text direction will result in a page layout which feels unnatural to someone who reads a right to left script, even though it might feel natural to someone who is more used to reading left to right scripts. That&#8217;s why it&#8217;s usually not enough to mirror only the alignment of the text. If a website has a sidecolumn, it&#8217;s often best to move it to the other side as well. Here&#8217;s an example:</p>
+
+<p><img alt='Latin l2r' src='/media/latin-l2r.png' /></p>
+
+<p>Above, you see the old frontpage of cornae.org in English, using Latin script. Now, we switch to Persian, which uses the Arabic alphabet, without touching the layout. It would look something like this:</p>
+
+<p><img alt='http://www.cornae.com/arabicl2r.png' src='/media/arabic-l2r.png' /></p>
+
+<p>This would look as unnatural to a reader of Arabic script as the example below would to a Latin script reader.</p>
+
+<p><img alt='Latin r2l' src='/media/latin-r2l.png' /></p>
+
+<p>The solution is to mirror the complete page layout. It&#8217;s recommended to also change the order of tabs and menu items if they&#8217;re displayed in a horizontal fashion.</p>
+
+<p>The example below shows a mirrored page layout, opposed to the layout that was used for Latin script languages. Mind the small details, such as the find button, which moved to the left of the search box. Also the minus- and plus signs of the sidebar widget headers moved to the other side and even the order of the fruit buttons to make it complete.</p>
+
+<p><img alt='Arabic r2l' src='/media/arabic-r2l.png' /></p>
+
+<p>Different stylesheets may be used to present the pages using the proper layout, without having to touch the structure of the pages.</p>
+
+<h3 id='the_proposed_model'>The proposed model</h3>
+
+<p>As I prefer to provide you with answers, — rather than leaving you with more questions than you had before reading this article — I will propose a concrete model on which all of the above is applied.</p>
+<p class='geekAlert'><strong>Nerd alert</strong><br /> <em>The now following information might be of a technical nature.</em></p>
+<p>The model, as proposed below, is based on XHTML pages of which each page contains all of the available languages for that document. Tags containing text or other language sensitive content are labeled with language tags, such as applied on a the paragraph in English, Italian and French, shown in the example below:</p>
+
+<pre><code>&lt;p lang=&quot;en-GB&quot;&gt;
+  This is a multi lingual website. Despite all efforts it might occur that a certain page is not (completely) available in your preferred language. My apologies for the inconvenience.
+&lt;/p&gt;
+&lt;p lang=&quot;it-IT&quot;&gt;
+  Questo è un sito multilinguistico. Malgrado tutti i miei sforzi potrebbe accadere che una determinata pagina non sia completamente disponibile nella vostra lingua. Mi scuso per il disagio.
+&lt;/p&gt;
+&lt;p lang=&quot;fr-FR&quot;&gt;
+  Ceci est un site multi-lingue. Malgré les efforts il est bien possible que certains pages ne sont pas dans leurs totalités disponibles dans votre langue préférée. Veuillez nous excuser.
+&lt;/p&gt;    </code></pre>
+
+<p>By means of a javascript, all non desired languages are filtered out of the visible part of the DOM-tree. This is what enables any visitor to perform live language switching without generating any extra line traffic. One might argue that sending all non needed languages over the line results in unnesecary line traffic anyway. We&#8217;re talking however, merely plain text in most cases. There&#8217;s is a curve where a new ip-request a document in another language would result in larger waiting time than would be the case with downloading one, slightly larger file. There&#8217;s also room to play with the order in which languages are taken up in the structure. On way of building the structure is by adding all the content for all languages first and next all the content for the next language, etcetera, showing here:</p>
+
+<pre><code>&lt;h2 lang=&quot;en-GB&quot;&gt;
+  Multi lingual websites:&lt;br/&gt;
+  a different approach
+&lt;/h2&gt;
+&lt;p lang=&quot;en-GB&quot;&gt;
+  Once upon a time the world was a well defined, less complicated place than it is today. The Italians lived on a pasta diet, only Japanese people drank sake and the Frysians only spoke Frysk. But things have moved on from here.
+&lt;/p&gt;
+&lt;p lang=&quot;en-GB&quot;&gt;
+  In modern societies, all of the above no longer applies and on the ever expanding world wide web, national borders will look even more trivial tomorrow than today.
+&lt;/p&gt;
+&lt;h2 lang=&quot;nl-NL&quot;&gt;
+  Meertalige websites:&lt;br/&gt;
+  een frisse blik
+&lt;/h2&gt;
+&lt;p lang=&quot;nl-NL&quot;&gt;
+  Ooit was de wereld wonderbaarlijk overzichtelijke planeet. De Italianen aten pasta, alleen de Japanners dronken sake, Amsterdammers spraken Nederlands en de meeste Amerikanen hadden geen paspoort. De tijden zijn echter radicaal verander
+&lt;/p&gt;
+&lt;p lang=&quot;nl-NL&quot;&gt;
+  In de hedendaagse samenleving is al het bovengenoemde niet meer van toepassing en op het immer uitdijende internet zullen nationale grenzen morgen van nog kleinere betekenis lijken dan vandaag.
+&lt;/p&gt;</code></pre>
+
+<p>One may as well choose to group all language versions of the first element together in succession all the languages for the next element, etcetera, like demonstrated the example below:</p>
+
+<pre><code>&lt;h2 lang=&quot;en-GB&quot;&gt;
+  Multi lingual websites: &lt;br/&gt;a different approach
+&lt;/h2&gt;
+&lt;h2 lang=&quot;nl-NL&quot;&gt;
+  Meertalige websites: &lt;br/&gt;een frisse blik
+&lt;/h2&gt;
+&lt;p lang=&quot;en-GB&quot;&gt;
+  Once upon a time the world was a well defined, less complicated place than it is today. The Italians lived on a pasta diet, only Japanese people drank sake and the Frysians only spoke Frysk. But things have moved on from here.
+&lt;/p&gt;
+&lt;p lang=&quot;nl-NL&quot;&gt;
+  Ooit was de wereld wonderbaarlijk overzichtelijke planeet. De Italianen aten pasta, alleen de Japanners dronken sake, Amsterdammers spraken Nederlands en de meeste Amerikanen hadden geen paspoort. De tijden zijn echter radicaal veranderd.
+&lt;/p&gt;
+&lt;p lang=&quot;en-GB&quot;&gt;
+  In modern societies, all of the above no longer applies and on the ever expanding world wide web, national borders will look even more trivial tomorrow than today.
+&lt;/p&gt;
+&lt;p lang=&quot;nl-NL&quot;&gt;
+  In de hedendaagse samenleving is al het bovengenoemde niet meer van toepassing en op het immer uitdijende internet zullen nationale grenzen morgen van nog kleinere betekenis lijken dan vandaag.
+&lt;/p&gt;  </code></pre>
+
+<p>The latter method has the advantage that the first paragraphs of each language will be drawn at more or less the same time. The visitor can already start reading the first lines while the rest of the content is still loading, regardless of his preferred language. The drawback is, that users of less advanced mobile readers, will have to scroll after reading each paragraph. Still, all content is availble to them.</p>
+
+<h3 id='the_flow'>The flow</h3>
+
+<p>In a few easy steps, your customer will be presented with the intended content, without even noticing that some magic has occurred in the client or on the server.</p>
+
+<h4 id='step_1_get_the_languages_of_the_page'>STEP 1: Get the languages of the page</h4>
+
+<p>Every time a page is loaded the script will detect what languages are used on the page by recursively detecting all the elements within the DOM-tree that are equipped with a <em>lang</em> attribute and build a list of all the different lang values that are used on the page. Next, all the different options will be added to a select box using real names of the languages. The script will locate and identify the select box by it&#8217;s unique ID. A cross reference table is embedded in the script to link the real language names to the iso codes.</p>
+
+<h4 id='step_2_get_information_from_cookie'>STEP 2: Get information from cookie</h4>
+
+<p>Each time the select box is set to a another value, this value will be stored in a cookie on the visitor&#8217;s system. If a cookie is available, the script will look whether this preferred language is available on the page. If so, the select box will be set to that language and all other languages will be filtered out of the DOM-tree. All other steps are now skipped. In case the cookie language is not available on the page, it will check the client language.</p>
+
+<h4 id='step_3_sniffing_the_clients_preferred_language'>STEP 3: Sniffing the client&#8217;s preferred language</h4>
+
+<p>Browsers declare the user&#8217;s language first and second the preferred local dialect using <a href='http://www.sil.org/'>iso 639</a> codes of 2 or 3 digits each. E.g.: American English = en-US. &#8216;Some systems&#8217; are less correct in announcing the language code as they could be and they will only state the language itself, not the preferred dialect of that language.</p>
+
+<p>If you don&#8217;t know your client language, find out about it with this <span>language check</span>.</p>
+
+<p>An extra function may be added to the script which looks for alternate dialects of the desired language, before looking for another language.</p>
+
+<p>Next the script will check if the browser language is available on the page. If it is, then the select box will be set to that language and all other languages will be filtered out of the DOM-tree. All following steps are now skipped.</p>
+
+<h4 id='step_4_get_first_language_used_on_page'>STEP 4: Get first language used on page.</h4>
+
+<p>If the browser language is not available on the page, then the script will make a decision of it&#8217;s own, based on the value of the very first <em>lang</em> attribute that&#8217;s found on the page. To this language the select box will be set and all other languages are filtered out of the DOM-tree.</p>
+
+<p>This whole process as described above, is illustrated below. The flow chart is also available as a <a href='/media/language-switcher.pdf'>pdf-file</a>.</p>
+
+<p><img alt='Language' src='/media/Language-switcher.png' /></p>
+
+<h3 id='addendum'>Addendum</h3>
+
+<p>In this model, all the actual filtering takes place within the client, with some great advantages to it, including live switching, search engine friendliness and no need for complex server side technology. The application of Unicode permits you to mix every possible character system in one page. But of course, nothing keeps you from using the same technology for a server side language filter. If your pages derive from XML files, the same <em>lang</em> attributes may be applied to the XML. Another mechanism can used to filter out the unwanted languages for a certain request while generating the page.</p>
+
+<p>For websites that generate large amounts of traffic every day, the latter method would probably be a fair option. For somewhat smaller scale websites, or websites for which no multi lingual content management system is on for hand, the client side model could more than well fit your needs.</p>
+	  </div>
+        
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'cornae'; // required: replace example with your forum shortname
+  
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+
+			<ul class="navigation" id="globalNavigation">
+				<li id="portaltab-home" class="home">
+					<a href="">Home</a>
+				</li>
+				<li class="contact">
+					<a href="/about.html">About</a>
+				</li>
+				<li class="articles">
+					<a href="/articles.html">Articles</a>
+				</li>
+				<li class="portfolio">
+					<a href="/portfolio.html">Portfolio</a>
+				</li>
+			</ul>
+
+	        <form action="/search-results.html" id="search">
+	        	<input type="search" placeholder="Search" name="q" id="tipue_search_input">
+	        </form>
+	        
+	        <ul id="colours">
+				<li class="blueberry pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-blueberry; store: local">
+					Blueberry
+				</li>
+				<li class="topaz pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-topaz; store: local">
+					Topaz
+				</li>
+				<li class="orchid pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-orchid; store: local">
+					Orchid
+				</li>
+				<li class="mocha pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-mocha; store: local">
+					Mocha
+				</li>
+				<li class="avocado pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-avocado; store: local">
+					Avocado
+				</li>
+	        </ul>
+	    </div>
+
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style" id="share">
+         	<a class="addthis_button_preferred_1"></a>
+         	<a class="addthis_button_preferred_2"></a>
+        </div>
+        
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=cornae"></script>
+        
+        <a href="#main" id="top" name="top">Back to top</a>
+  </body>
+</html>
