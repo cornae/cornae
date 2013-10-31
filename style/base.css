@@ -1609,7 +1609,8 @@ body:not(.welcome) #prologue {
 	padding-top: 100px;
 }
 
-#prologue *:before {
+#prologue h1:before,
+#prologue p:before {
 	display: none;
 } }
 
