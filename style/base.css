@@ -219,6 +219,12 @@ img {
 	margin-bottom: 1em;
 }
 
+@media only screen and (max-width: 768px) {
+
+#contentBody img{
+	max-width: 100%;
+} }
+
 #contentBody video {
 	margin-right: auto;
 	margin-left: auto;
@@ -1470,18 +1476,25 @@ p.geekAlert em {
 	top: 20px;
 	width: auto;
 	left: 20px;
-	right: 20px;
-	border-top: 1px solid white;
-	margin-top: 90px;
+	right: 20px;	margin-top: 100px;
 	margin-right: 0;
+	border-top: 1px solid white;
 }
 
 body:not(.welcome) #globalNavigation {
-	margin-top: 55px;
+	margin-top: 65px;
+	border-top: none;
+
 }
 
 body:not(.welcome) #globalNavigation li:not(#portaltab-home) {
 	display: none;
+}
+
+body:not(.welcome) #globalNavigation li#portaltab-home a {
+
+	width: 70px;
+	overflow: hidden;
 }
 
 #globalNavigation li a {
@@ -1497,7 +1510,7 @@ body:not(.welcome) #globalNavigation li:not(#portaltab-home) {
 	top: -140px;
 	right: 0;
 	zoom: 0.7;
-	margin-right: -15px;
+	margin-right: 0;
 }
 
 body:not(.welcome) #globalNavigation li#portaltab-home {
@@ -1506,6 +1519,7 @@ body:not(.welcome) #globalNavigation li#portaltab-home {
 
 #globalNavigation li#portaltab-home a {
 	border-bottom-style: none;
+	float: right;
 } }
 
 /* @end */
