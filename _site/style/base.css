@@ -1569,6 +1569,15 @@ body:not(.welcome) #globalNavigation li#portaltab-home {
 	float: right;
 } }
 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+
+#globalNavigation {
+	right: 60px;
+	left: 60px;
+}}
+
 /* @end */
 
 /* @group Side Bar */
