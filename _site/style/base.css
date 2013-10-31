@@ -93,12 +93,26 @@ body {
 	font: 20px/1.8 Raleway;
 }
 
+@media only screen and (max-width: 768px) {
+
+body {
+	font-size: 14px;
+} }
+
 #main
  {
 	
 	width: 830px;
 	padding: 0 180px 0 310px;
 }
+
+@media only screen and (max-width: 768px) {
+
+#main {
+	padding-right: 20px;
+	padding-left: 20px;
+	width: auto;
+} }
 
 a {
 	color: #3d607e;
@@ -141,6 +155,13 @@ a:before
 	margin-right: 3.2%;
 	margin-left: 3.2%;
 }
+
+@media only screen and (max-width: 768px) {
+
+.social-links a
+ {
+	margin-bottom: 30px;
+} }
 
 .social-links a:before
  {
@@ -1302,6 +1323,13 @@ p.geekAlert em {
 	line-height: 32px;
 }
 
+@media only screen and (max-width: 768px) {
+
+#search
+ {
+	display: none;
+} }
+
 #search input {
 	-webkit-appearance: none;
 	appearance: none;
@@ -1402,10 +1430,6 @@ p.geekAlert em {
 }
 
 #globalNavigation li#portaltab-home a {
-	background: url(logo-inverted.png) no-repeat right 0;
-}
-
-#globalNavigation li#portaltab-home a {
 	width: 197px;
 	height: 81px;
 	overflow: hidden;
@@ -1420,6 +1444,53 @@ p.geekAlert em {
 #globalNavigation li#portaltab-home:before {
 	display: none !important;
 }
+
+@media only screen and (max-width: 768px) {
+
+#globalNavigation {
+	padding-left: 0;
+	margin-left: 0;
+	position: absolute;
+	top: 20px;
+	width: auto;
+	left: 20px;
+	right: 20px;
+	border-top: 1px solid white;
+	margin-top: 90px;
+	margin-right: 0;
+}
+
+body:not(.welcome) #globalNavigation {
+	margin-top: 55px;
+}
+
+body:not(.welcome) #globalNavigation li:not(#portaltab-home) {
+	display: none;
+}
+
+#globalNavigation li a {
+	border-bottom: 1px solid white;
+	display: block;
+	padding: 5px 0;
+	text-align: center;
+}
+
+#globalNavigation li#portaltab-home {
+	float: right;
+	position: absolute;
+	top: -140px;
+	right: 0;
+	zoom: 0.7;
+	margin-right: -15px;
+}
+
+body:not(.welcome) #globalNavigation li#portaltab-home {
+	top: -90px;
+}
+
+#globalNavigation li#portaltab-home a {
+	border-bottom-style: none;
+} }
 
 /* @end */
 
@@ -1493,6 +1564,20 @@ p.geekAlert em {
 	font-weight: 100;
 
 }
+
+@media only screen and (max-width: 768px) {
+
+#prologue {
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-right: -20px;
+	margin-left: -20px;
+	padding-top: 260px;
+}
+
+body:not(.welcome) #prologue {
+	padding-top: 100px;
+} }
 
 #prologue:after {
 	content: " ";
@@ -1570,6 +1655,12 @@ p.geekAlert em {
 	width: 800px;
 	letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 768px) {
+
+#prologue p {
+	width: auto;
+} }
 
 #prologue strong {
 	color: white;
@@ -1716,6 +1807,13 @@ body.welcome #prologue,
 /* @end */
 
 /* @group Colours */
+
+@media only screen and (max-width: 768px) {
+
+#colours
+ {
+	display: none;
+} }
 
 /* @group Blueberry */
 
