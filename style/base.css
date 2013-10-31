@@ -1323,6 +1323,13 @@ p.geekAlert em {
 	line-height: 32px;
 }
 
+@media only screen and (max-width: 768px) {
+
+#search
+ {
+	display: none;
+} }
+
 #search input {
 	-webkit-appearance: none;
 	appearance: none;
@@ -1800,6 +1807,13 @@ body.welcome #prologue,
 /* @end */
 
 /* @group Colours */
+
+@media only screen and (max-width: 768px) {
+
+#colours
+ {
+	display: none;
+} }
 
 /* @group Blueberry */
 
