@@ -89,6 +89,7 @@ body {
 	background-size:  100% auto, 400px 400px;
 	color: rgba(0,0,0,0.6);
 	overflow-x: hidden;
+	overflow-y: auto;
 	display: block;
 	font: 20px/1.8 Raleway;
 }
