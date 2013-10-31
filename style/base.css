@@ -100,12 +100,23 @@ body {
 	font-size: 14px;
 } }
 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+
+body {
+	font-size: 16px;
+	padding-right: 40px;
+	padding-left: 40px;
+}}
+
 #main
  {
 	
 	width: 830px;
 	padding: 0 180px 0 310px;
 }
+
 
 @media only screen and (max-width: 768px) {
 
@@ -1090,6 +1101,18 @@ sup {
 	text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+
+.posts .post .description {
+	float: none;
+	width: auto;
+	text-align: left;
+	margin-left: 0;
+	font-size: inherit;
+	line-height: inherit;
+
+} }
+
 .posts .post .description h4 {
 	display: block;
 	margin-bottom: 0;
@@ -1111,6 +1134,18 @@ sup {
 .posts .post.case h4:after {
 	display: none;
 }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+
+.posts .post:not(.case) {
+	margin-bottom: 2em;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed silver;
+	clear: both;
+	padding-left: 189px;
+}}
 
 /* @end */
 
@@ -1613,6 +1648,17 @@ body:not(.welcome) #prologue {
 #prologue p:before {
 	display: none;
 } }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+
+#prologue {
+	padding-right: 60px;
+	padding-left: 60px;
+	margin-right: -60px;
+	margin-left: -60px;
+}}
 
 #prologue:after {
 	content: " ";
