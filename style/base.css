@@ -1593,6 +1593,10 @@ body:not(.welcome) #globalNavigation li#portaltab-home {
 
 body:not(.welcome) #prologue {
 	padding-top: 100px;
+}
+
+#prologue *:before {
+	display: none;
 } }
 
 #prologue:after {
