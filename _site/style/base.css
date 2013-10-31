@@ -613,7 +613,7 @@ h1 {
 	transition: all 0.4s;
 	width: 830px;
 	margin-bottom: 0.5em;
-	line-height: 1;
+	line-height: 1.2;
 	font-size: 2.8em;}
 
 @media only screen and (max-width: 768px) {
@@ -1615,9 +1615,9 @@ body:not(.welcome) #prologue {
 
 #prologue p.byline {
 	margin-bottom: 30px;
-	margin-top: -25px;
 	font-size: 14px;
 	font-style: italic;
+	margin-top: -1.5em;
 }
 
 #prologue h1:before {
