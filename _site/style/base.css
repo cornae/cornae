@@ -868,6 +868,13 @@ sup {
 	user-select: none
 }
 
+@media only screen and (max-width: 768px) {
+
+#colours
+ {
+	display: none;
+} }
+
 #colours:before {
 	content: " ";
 	box-shadow: inset 0 1px 6px rgba(0,0,0,0.5);
@@ -1808,13 +1815,6 @@ body.welcome #prologue,
 /* @end */
 
 /* @group Colours */
-
-@media only screen and (max-width: 768px) {
-
-#colours
- {
-	display: none;
-} }
 
 /* @group Blueberry */
 
