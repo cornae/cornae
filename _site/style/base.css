@@ -3,6 +3,7 @@
 	http://www.cornae.com/++resource++cornae.style/main/screen.css
 	http://cornae.github.com/cornae/style/base.css
 	http://cornae.com/style/base.css
+	http://localhost:4000/style/base.css
 */
 
 /*@import url("../libraries/animate.css/animate.css");*/
@@ -1649,6 +1650,10 @@ and (max-device-width : 1024px)  {
 	background-size:  100% auto, 400px 400px;
 	font-weight: 100;
 
+}
+
+body.welcome #prologue {
+	padding-top: 250px;
 }
 
 @media only screen and (max-width: 768px) {
