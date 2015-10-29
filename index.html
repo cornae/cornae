@@ -18,11 +18,11 @@ title: Welcome
 			    </h4>
 			    {% if post.layout == 'case' %}
 					{% for pic in post.pictures limit:1 %}
-						<img src="/portfolio/media/{{ pic.url }}" title="{{ pic.caption }}" alt="" />
+						<img src="/media/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="" />
 					{% endfor %}
 			     	{% for vid in post.videos limit:1 %}
 				        <video controls>
-				          	<source src="/portfolio/media/{{ vid.url }}" type="video/mp4" />
+				          	<source src="/media/portfolio/{{ vid.url }}" type="video/mp4" />
 				          {{ video.caption }}
 				        </video>
 			        {% endfor %}
