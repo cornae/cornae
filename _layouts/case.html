@@ -17,9 +17,9 @@ template: case
       <div id="contentBody">
           <div class="gallery pat-gallery">
             {% for pic in page.pictures limit:1 %}
-              <a id="main-image" href="{{site.media}}/portfolio/{{ pic.url }}">
+              <a id="main-image" href="/media/portfolio/{{ pic.url }}">
                 <figure>
-                  <img src="{{site.media}}/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
+                  <img src="/media/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
                   <figcaption>
                     {{ pic.caption }}
                   </figcaption>
@@ -28,9 +28,9 @@ template: case
             {% endfor %}
 
             {% for pic in page.pictures offset: 1 %}
-                <a href="{{site.media}}/portfolio/{{ pic.url }}">
+                <a href="/media/portfolio/{{ pic.url }}">
                   <figure>
-                    <img src="{{site.media}}/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
+                    <img src="/media/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
                     <figcaption>
                       {{ pic.caption }}
                     </figcaption>
@@ -40,7 +40,7 @@ template: case
 
             {% for vid in page.videos %}
             <video controls>
-              <source src="{{site.media}}/portfolio/{{ vid.url }}" type="video/mp4" />
+              <source src="/media/portfolio/{{ vid.url }}" type="video/mp4" />
               {{ video.caption }}
             </video>
             {% endfor %}
@@ -50,9 +50,9 @@ template: case
             {% if page.pictures %}
               <div class="pat-gallery">
               {% for pic in page.pictures limit:1 %}
-              <a id="main-image" href="{{site.media}}/portfolio/{{ pic.url }}">
+              <a id="main-image" href="/media/portfolio/{{ pic.url }}">
                 <figure>
-                  <img src="{{site.media}}/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
+                  <img src="/media/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
                   <figcaption>
                     {{ pic.caption }}
                   </figcaption>
@@ -61,7 +61,7 @@ template: case
               {% endfor %}
               <div class="thumbs">
                 {% for pic in page.pictures offset: 1 %}
-                <a href="{{site.media}}/portfolio/{{ pic.url }}">
+                <a href="/media/portfolio/{{ pic.url }}">
                   <!-- <img width="830" src="http://proxy.boxresizer.com/convert?resize=71x40&source=http://{{ site.domain }}{{ site.media }}/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" /> -->
                   <img width="830" src="http://demo.cloudimg.io/s/resize/71/{{ site.domain }}{{ site.media }}/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
                 </a>
@@ -71,7 +71,7 @@ template: case
           {% endif %}
           {% for vid in page.videos %}
             <video controls>
-              <source src="{{site.media}}/portfolio/{{ vid.url }}" type="video/mp4" />
+              <source src="/media/portfolio/{{ vid.url }}" type="video/mp4" />
               {{ video.caption }}
             </video>
           {% endfor %}
