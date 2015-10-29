@@ -1,6 +1,6 @@
 title: Cornae
 author: Cornelis Kolbach
-baseurl: '/'
+baseurl: 'http://www.cornae.com'
 domain: cornae.com
 media: /media
 permalink: /:title
