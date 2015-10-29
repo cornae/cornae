@@ -9,20 +9,20 @@ title: Welcome
 <div class="posts" id="posts">
 	{% for post in paginator.posts %}
 		<article class="post {{ post.layout }}">
-			<a href="{{ site.baseurl }}{{ post.url }}">
+			<a href="/{{ post.url }}">
 				{% if post.layout != 'case' %}
-					<img src="{{ site.media }}/{{ post.avatar }}" class="avatar" alt="" />
+					<img src="/media/{{ post.avatar }}" class="avatar" alt="" />
 				{% endif %}
 			    <h4>
 			    	{% if post.layout == 'case' %}Showcase: {% endif %}{{ post.title }}
 			    </h4>
 			    {% if post.layout == 'case' %}
 					{% for pic in post.pictures limit:1 %}
-						<img src="/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="" />
+						<img src="/portfolio/media/{{ pic.url }}" title="{{ pic.caption }}" alt="" />
 					{% endfor %}
 			     	{% for vid in post.videos limit:1 %}
 				        <video controls>
-				          	<source src="/portfolio/{{ vid.url }}" type="video/mp4" />
+				          	<source src="/portfolio/media/{{ vid.url }}" type="video/mp4" />
 				          {{ video.caption }}
 				        </video>
 			        {% endfor %}
