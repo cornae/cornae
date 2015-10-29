@@ -1,11 +1,14 @@
-twitter: cornae
 title: Cornae
-author: Cornelis G. A. Kolbach
-baseurl: 
+author: Cornelis Kolbach
+baseurl: '/'
 domain: cornae.com
 media: /media
-paginate: 1
-permalink: /articles/:title
+permalink: /:title
+paginate: 5
+encoding: utf-8
+exclude: ['bungledeps']
+sass:
+  style: compressed
 categories:
 - articles
 - cases
