@@ -9,7 +9,7 @@ title: Welcome
 <div class="posts" id="posts">
 	{% for post in paginator.posts %}
 		<article class="post {{ post.layout }}">
-			<a href="/{{ post.url }}">
+			<a href="{{ post.url }}">
 				{% if post.layout != 'case' %}
 					<img src="/media/{{ post.avatar }}" class="avatar" alt="" />
 				{% endif %}
