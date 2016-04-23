@@ -80,8 +80,12 @@
 @mixin pat-rich() {
   @include clear();
 
+  line-height: $grid-unit;
+
   h1,h2,p,ul,ol,table,dl,pre {
-    margin-bottom: 2rem;
+    margin-bottom: $grid-unit;
+    margin-top: 0;
+    line-height: $grid-unit;
   }
 
   ul,
