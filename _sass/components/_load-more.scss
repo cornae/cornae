@@ -1,0 +1,19 @@
+.load-more {
+  position: relative;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  display: inline-block;
+  padding: 0 3em;
+  text-decoration: none;
+
+  line-height: 2 * $grid-unit;
+
+  margin: 0 0 $grid-unit 0;
+
+  background: rgba(0,0,0,0.5);
+  color: white;
+
+  border-radius: $grid-unit;
+}
