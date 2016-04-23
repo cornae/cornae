@@ -12,6 +12,14 @@
   right: 0;
   top: 35px;
 
+  .csspositionsticky & {
+    position: sticky;
+    position: -webkit-sticky;
+    margin-bottom: -280px;
+    margin-right: -344px;
+    float: right;
+  }
+
   opacity: 0.3;
 
   @include box-sizing();
