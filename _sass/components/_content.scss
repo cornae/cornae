@@ -3,7 +3,6 @@
   background: #3d607e url(pattern.png) no-repeat fixed right 0;
   background-image: url(pattern.png), url(grain.png);
   background-repeat: no-repeat,repeat;
-  // background: url(grid.png) repeat;
   transition: background-color 2s ease-out;
   color: white;
   display: block;
@@ -12,6 +11,7 @@
 }
 
 #content {
-  padding: 24px 344px 3em 240px;
+  padding: $grid-unit 344px $grid-unit 240px;
+  // background: url(grid.png) repeat;
   position: relative;
 }
