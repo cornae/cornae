@@ -16,26 +16,28 @@
 	    <script src="/bundles/patterns-2.0.12-min.js" type="text/javascript"></script> 
 	</head>
 	<body class="{{ page.template }} mood-blueberry">
-		<div id="main" class="pat-auto-scale" data-pat-auto-scale="method: scale; min-width: 769">
+		<div id="main" class="pat-auto-scale" data-pat-auto-scale="method: zoom; min-width: 769">
 			{{ content }}
 	        
-	        <ul id="colours">
-				<li class="blueberry pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-blueberry; store: local">
-					Blueberry
-				</li>
-				<li class="topaz pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-topaz; store: local">
-					Topaz
-				</li>
-				<li class="orchid pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-orchid; store: local">
-					Orchid
-				</li>
-				<li class="mocha pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-mocha; store: local">
-					Mocha
-				</li>
-				<li class="avocado pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-avocado; store: local">
-					Avocado
-				</li>
-	        </ul>
+	        <div id="header">
+		        <ul id="colours">
+					<li class="blueberry pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-blueberry; store: local">
+						Blueberry
+					</li>
+					<li class="topaz pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-topaz; store: local">
+						Topaz
+					</li>
+					<li class="orchid pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-orchid; store: local">
+						Orchid
+					</li>
+					<li class="mocha pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-mocha; store: local">
+						Mocha
+					</li>
+					<li class="avocado pat-switch" data-pat-switch="selector: body; remove: mood-*; add: mood-avocado; store: local">
+						Avocado
+					</li>
+		        </ul>
+	        </div>
 	    </div>
 
 	</body>

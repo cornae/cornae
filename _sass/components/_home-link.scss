@@ -12,6 +12,9 @@
   position: absolute;
   right: 0;
   top: $grid-unit;
+  margin-top: $grid-unit;
+
+  float: right;
 
   .csspositionsticky & {
     position: sticky;

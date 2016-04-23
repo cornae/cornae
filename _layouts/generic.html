@@ -4,25 +4,31 @@ template: welcome
 ---
 
 <div id="prologue">
-	{% if page.layout == 'post' or page.layout == 'case' %}
-		<h1>
-			{{ page.title }}
-		</h1>
-	    <p class="byline">
-	        Cornelis G.A. Kolbach, {{ page.date | date: "%B, %e, %Y" }}
-	    </p>
-	{% endif %}
+	<div id="prologue-content">
+		{% if page.layout == 'post' or page.layout == 'case' %}
+			<h1>
+				{{ page.title }}
+			</h1>
+		    <p class="byline">
+		        Cornelis G.A. Kolbach, {{ page.date | date: "%B, %e, %Y" }}
+		    </p>
+		{% endif %}
 
-	{% if page.summary %}
-	    <p class="introduction">
-	      	{{ page.summary }}
-	    </p>
-	{% endif %}
+		{% if page.summary %}
+		    <p class="introduction">
+		      	{{ page.summary }}
+		    </p>
+		{% endif %}
+	</div>
 </div>
+
 <div id="content">
-	<p id="home-link" class="">
+	<p id="home-link">
 		<a href="/">Home</a>
 	</p>
 
-	{{ content }}
+	<div id="main-content">
+		{{ content }}
+	</div>
+	
 </div>

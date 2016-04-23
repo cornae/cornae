@@ -1,5 +1,5 @@
 #prologue {
-  padding: 240px 344px 0 240px;
+  width: 100%;
   position: relative;
   color: white;
 
@@ -10,6 +10,19 @@
   background-attachment: fixed, fixed;
   background-image: url(pattern.png), url(grain.png);
   background-size: 100% auto, 400px 400px;
+
+  #prologue-content {
+    padding: 240px 344px 0 240px;
+    margin: 0 auto;
+    width: $page-width;
+    @include box-sizing;
+
+    @-moz-document url-prefix() { 
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 60%;
+    }
+  }
 
   @media only screen and (max-width: 768px) {
 	  p {

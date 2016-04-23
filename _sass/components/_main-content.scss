@@ -1,3 +1,14 @@
 #main-content {
-  padding: 24px 344px 0 240px;
+  padding: $grid-unit 344px $grid-unit 240px;
+
+  @-moz-document url-prefix() { 
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 60%;
+  }
+
+  width: $page-width;
+  margin: 0 auto;
+
+  @include box-sizing;
 }

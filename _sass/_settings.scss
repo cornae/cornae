@@ -6,6 +6,8 @@
 $grid-unit: 36px;
 $grid-gutter:$grid-unit;
 
+$page-width: 1280px;
+
 // Libraries
 @import "libraries/reset";
 @import "libraries/animate";
@@ -16,6 +18,7 @@ $grid-gutter:$grid-unit;
 @import "components/colours";
 @import "components/content";
 @import "components/footer";
+@import "components/header";
 @import "components/hidden";
 @import "components/home-link";
 @import "components/main";
