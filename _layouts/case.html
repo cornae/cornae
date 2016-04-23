@@ -1,83 +1,71 @@
 ---
-layout: shell
+layout: generic
 template: case
 ---
 
-      <div id="prologue">
-        <h1>
-          {{ page.title }}
-        </h1>
-        <p class="byline">
-          Cornelis G.A. Kolbach, {{ page.date | date: "%B, %e, %Y" }}
-        </p>
-        <p class="introduction">
-          {{ page.summary }}
-        </p>
+{{ content }}
+
+<article class="gallery pat-gallery">
+    {% for pic in page.pictures limit:1 %}
+      <a id="main-image" href="/media/portfolio/{{ pic.url }}">
+        <figure>
+          <img src="/media/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
+          <figcaption>
+            {{ pic.caption }}
+          </figcaption>
+        </figure>
+      </a>
+    {% endfor %}
+
+    {% for pic in page.pictures offset: 1 %}
+        <a href="/media/portfolio/{{ pic.url }}">
+          <figure>
+            <img src="/media/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
+            <figcaption>
+              {{ pic.caption }}
+            </figcaption>
+          </figure>
+        </a>
+    {% endfor %}
+
+    {% for vid in page.videos %}
+    <video controls>
+      <source src="/media/portfolio/{{ vid.url }}" type="video/mp4" />
+      {{ video.caption }}
+    </video>
+    {% endfor %}
+  </div> 
+  {{ content }}
+  <div id="gallery" hidden>
+    {% if page.pictures %}
+      <div class="pat-gallery">
+      {% for pic in page.pictures limit:1 %}
+        <a id="main-image" href="/media/portfolio/{{ pic.url }}">
+          <figure>
+            <img src="/media/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
+            <figcaption>
+              {{ pic.caption }}
+            </figcaption>
+          </figure>
+        </a>
+      {% endfor %}
+      <div class="thumbs">
+        {% for pic in page.pictures offset: 1 %}
+        <a href="/media/portfolio/{{ pic.url }}" hidden>
+          <!-- <img width="830" src="http://proxy.boxresizer.com/convert?resize=71x40&source=http://{{ site.domain }}{{ site.media }}/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" /> -->
+          <!-- <img width="830" src="http://demo.cloudimg.io/s/resize/71/{{ site.domain }}{{ site.media }}/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" /> -->{{ pic.caption }}
+        </a>
+        {% endfor %}
       </div>
-      <div id="contentBody">
-          <div class="gallery pat-gallery">
-            {% for pic in page.pictures limit:1 %}
-              <a id="main-image" href="/media/portfolio/{{ pic.url }}">
-                <figure>
-                  <img src="/media/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
-                  <figcaption>
-                    {{ pic.caption }}
-                  </figcaption>
-                </figure>
-              </a>
-            {% endfor %}
-
-            {% for pic in page.pictures offset: 1 %}
-                <a href="/media/portfolio/{{ pic.url }}">
-                  <figure>
-                    <img src="/media/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
-                    <figcaption>
-                      {{ pic.caption }}
-                    </figcaption>
-                  </figure>
-                </a>
-            {% endfor %}
-
-            {% for vid in page.videos %}
-            <video controls>
-              <source src="/media/portfolio/{{ vid.url }}" type="video/mp4" />
-              {{ video.caption }}
-            </video>
-            {% endfor %}
-          </div> 
-          {{ content }}
-          <div id="gallery" hidden>
-            {% if page.pictures %}
-              <div class="pat-gallery">
-              {% for pic in page.pictures limit:1 %}
-              <a id="main-image" href="/media/portfolio/{{ pic.url }}">
-                <figure>
-                  <img src="/media/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
-                  <figcaption>
-                    {{ pic.caption }}
-                  </figcaption>
-                </figure>
-              </a>
-              {% endfor %}
-              <div class="thumbs">
-                {% for pic in page.pictures offset: 1 %}
-                <a href="/media/portfolio/{{ pic.url }}">
-                  <!-- <img width="830" src="http://proxy.boxresizer.com/convert?resize=71x40&source=http://{{ site.domain }}{{ site.media }}/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" /> -->
-                  <img width="830" src="http://demo.cloudimg.io/s/resize/71/{{ site.domain }}{{ site.media }}/portfolio/{{ pic.url }}" title="{{ pic.caption }}" alt="image" />
-                </a>
-                {% endfor %}
-              </div>
-            </div>
-          {% endif %}
-          {% for vid in page.videos %}
-            <video controls>
-              <source src="/media/portfolio/{{ vid.url }}" type="video/mp4" />
-              {{ video.caption }}
-            </video>
-          {% endfor %}
-          {{ content }}
-        </div>
-	  </div>
+    </div>
+  {% endif %}
+  {% for vid in page.videos %}
+    <video controls>
+      <source src="/media/portfolio/{{ vid.url }}" type="video/mp4" />
+      {{ video.caption }}
+    </video>
+  {% endfor %}
+</article>
 
       <div id="disqus_thread"></div>
       <script type="text/javascript">

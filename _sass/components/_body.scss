@@ -1,0 +1,49 @@
+body {
+  line-height: 1.5;
+  background: #fff;
+  margin: 0;
+  font: 20px/1.8 Raleway;
+
+  background-position: right 0, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-image: url(pattern.png), url(grain.png);
+  background-size: 100% auto, 400px 400px;
+  background-attachment: fixed, fixed;
+  background-color: #e1e6f0;
+
+  color: rgba(0, 0, 0, 0.6);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+      font-size: 16px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+
+  &.contact,
+  &.contact #prologue {
+    background-image: url(postStamp.png), url(grain.png);
+  }
+
+  &.portfolio,
+  &.portfolio #prologue {
+    background-image: url(portfolio.png), url(grain.png);
+  }
+
+  &.welcome,
+  &.welcome #prologue {
+    background-image: url(cornelis.png), url(grain.png);
+    background-position: 0 0, 0 0;
+    background-size: 80% auto, 400px 400px;
+  }
+}

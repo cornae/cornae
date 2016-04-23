@@ -1,11 +1,9 @@
 ---
 layout: frontpage
 title: Welcome
+summary: Welcome to the personal website of Cornelis G. A. Kolbach. This is where you may get a taster of his work and his ideas. 
 ---
 
-<h3>
-	Most recent posts
-</h3>
 <div class="posts" id="posts">
 	{% for post in paginator.posts %}
 		<article class="post {{ post.layout }}">
@@ -36,5 +34,4 @@ title: Welcome
 	{% if paginator.next_page %}
 		<a href="/page{{paginator.next_page}}#posts" class="next pat-inject" data-pat-inject="target: self::element; trigger: autoload-visible">Loading…</a>
 	{% endif %}
-
 </div>

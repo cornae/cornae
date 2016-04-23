@@ -15,17 +15,8 @@ Font license info
    Copyright (C) 2012 by Dave Gandy
 
    Author:    Dave Gandy
-   License:   CC BY 3.0 (http://creativecommons.org/licenses/by/3.0/)
+   License:   SIL ()
    Homepage:  http://fortawesome.github.com/Font-Awesome/
-
-
-## Typicons
-
-   (c) Stephen Hutchings 2012
-
-   Author:    Stephen Hutchings
-   License:   CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)
-   Homepage:  http://typicons.com/
 
 
 ## Elusive
@@ -35,6 +26,15 @@ Font license info
    Author:    Aristeides Stathopoulos
    License:   SIL (http://scripts.sil.org/OFL)
    Homepage:  http://aristeides.com/
+
+
+## Typicons
+
+   (c) Stephen Hutchings 2012
+
+   Author:    Stephen Hutchings
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://typicons.com/
 
 
 ## Fontelico

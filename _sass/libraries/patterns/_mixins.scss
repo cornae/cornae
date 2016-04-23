@@ -62,11 +62,12 @@
 
 @mixin injection() {
   .injecting {
-  * {
-      opacity: 0.19;
-    }
+    * {
+        opacity: 0.19;
+      }
 
-    &.injecting-after * {
+    &.injecting-after *,
+    &.injecting-content-after * {
       opacity: inherit;
     }
   }
@@ -134,7 +135,7 @@
     font-size: 1em;
     // line-height: 130%;
     letter-spacing: 0.05em;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 1em;
   }
 
@@ -261,18 +262,24 @@
     color: rgba(0,0,0,0.5);
     padding: 0.8em;
     margin-bottom: 1em;
-    border: rgba(0,0,0,0.05) solid 0.2rem;
+    // border: rgba(0,0,0,0.05) solid 0.2rem;
     background-color: #efefef;
 
     &.success {
         background-color: $colour-success;
-        color: darken($colour-success, 50%);;
+        color: darken($colour-success, 50%);
     }
+
     &.notice {
         background-color: $colour-notice;
     }
+
     &.warning {
         background-color: $colour-warning;
-        color: white;
+        color: darken($colour-warning, 30%);
+        a { 
+          color: darken($colour-warning, 30%); 
+          text-decoration: underline;
+        }
     }
 }

@@ -1,5 +1,6 @@
 title: Cornae
-author: Cornelis Kolbach
+author: Cornelis G. A. Kolbach
+gems: ["jekyll-paginate"]
 baseurl: 'http://www.cornae.com'
 domain: cornae.com
 media: /media

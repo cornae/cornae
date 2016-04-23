@@ -1,0 +1,43 @@
+#home-link {
+  height: 280px;
+  width: 104px;
+  color: rgba(0,0,0,0.4);
+  text-align: center;
+  font-size: 70px;
+  display: block;
+  // background-color: rgba(255,255,255,0.15);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 35px;
+
+  opacity: 0.3;
+
+  @include box-sizing();
+
+  a {
+    overflow: hidden;
+    text-indent: -1000px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none !important;
+
+    &:before {
+      content: '\e800';
+      font-size: 279px;
+      line-height: 1;
+      text-indent: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      font-weight: bold;
+      font-family: fontello;
+
+      display: block;
+      overflow: hidden;
+      width: 100%;
+    }
+  }
+}

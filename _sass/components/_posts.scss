@@ -1,0 +1,144 @@
+
+.posts .post {
+  margin-bottom: 2em;
+  padding-bottom: 20px;
+  // border-bottom: 1px dashed silver;
+  clear: both;
+  &.case {
+    min-height: 446px;
+  }
+  img,
+  video {
+    max-width: 100%;
+  }
+}
+
+.posts .post img {
+  max-width: 100%;
+}
+
+.posts .post .collection, #contentBody .posts .post .collection {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.posts .post .collection {
+  a {
+    display: inline-block;
+  }
+  figure {
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+#contentBody .posts .post .collection figure {
+  margin: 0;
+  display: inline-block;
+}
+
+.posts .post {
+  .collection {
+    figure figcaption {
+      display: none;
+    }
+    img {
+      outline: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .thumbs {
+      display: none;
+    }
+  }
+  a {
+    text-decoration: none;
+    display: block;
+
+    @include clear-fix();
+
+    &:hover {
+    }
+  }
+  .avatar {
+    width: 176 px;
+    height: 176px;
+    background-color: rgba(255, 254, 255, 0.7);
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid white;
+    float: left;
+    margin-right: 32px;
+    margin-top: 8px;
+  }
+}
+
+#contentBody .posts .post .avatar {
+  width: 148px;
+  height: 148px;
+  background-color: rgba(255, 254, 255, 0.7);
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid white;
+  float: left;
+  // margin-left: -187px;
+  margin-top: 8px;
+}
+
+.posts .post:hover .avatar, #contentBody .posts .post:hover .avatar {
+  background-color: white;
+}
+
+.posts .post {
+  p {
+    clear: none;
+    display: inline;
+  }
+  &.case p {
+    display: block;
+  }
+  .description {
+    float: left;
+    width: 190px;
+    text-align: right;
+    margin-left: -222px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 2em;
+    text-decoration: none;
+    h4 {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+  h4 {
+    margin-bottom: 0;
+    display: inline-block;
+    &:after {
+      content: " —";
+    }
+  }
+  &.case h4 {
+    margin-bottom: 1em;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .posts .post .description {
+    float: none;
+    width: auto;
+    text-align: left;
+    margin-left: 0;
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .posts .post:not(.case) {
+    margin-bottom: 2em;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed silver;
+    clear: both;
+    padding-left: 189px;
+  }
+}
