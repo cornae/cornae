@@ -3,9 +3,11 @@ layout: generic
 template: case
 ---
 
-{{ content }}
+<article class="pat-rich">
+  {{ content }}
+</article>
 
-<article class="gallery pat-gallery">
+<article class="gallery pat-gallery pat-rich">
     {% for pic in page.pictures limit:1 %}
       <a id="main-image" href="/media/portfolio/{{ pic.url }}">
         <figure>
@@ -35,7 +37,7 @@ template: case
     </video>
     {% endfor %}
   </div> 
-  {{ content }}
+
   <div id="gallery" hidden>
     {% if page.pictures %}
       <div class="pat-gallery">
