@@ -8,10 +8,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   margin: 0;
   padding: 0;
   border: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
   vertical-align: baseline;
 }
 
@@ -51,23 +47,6 @@ a img {
 
 * {
   outline: none;
-}
-
-body {
-  font: 20px/1.8 Raleway;
-}
-
-#main {
-  width: 1280px;
-}
-
-@media only screen and (max-width: 768px) {
-  #main {
-    padding-right: 20px;
-    padding-left: 20px;
-    width: auto;
-    zoom: 1 !important;
-  }
 }
 
 a {
@@ -854,9 +833,6 @@ button {
   /* Opera11.10+ */
   background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
   /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#33000000',GradientType=0 );
-  /* IE6-9 */
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
   border: 1px solid #797979;
   padding: 3px 25px;
   &:active {

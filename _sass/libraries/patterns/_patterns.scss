@@ -8,12 +8,12 @@
 
 // Variable defaults
 
-$body-font-family: 'Source Sans Pro', sans-serif;
+$body-font-family: 'Source Sans Pro', sans-serif !default;
+$grid-unit: 28px !default;
+$grid-gutter: $grid-unit !default;
 
 $break-small: 768px !default;
 $break-large: 769px !default;
-
-$grid-gutter: '1em' !default;
 
 $colour-base: #efefef !default;
 $colour-primary: black !default;
@@ -34,9 +34,6 @@ $glyph-checkbox-active: \e809 !default;
 $glyph-radio-button: \e807 !default;
 $glyph-radio-button-active: \e806 !default;
 $glyph-close: '\e813' !default;
-
-$grid-unit: 28px !default;
-$grid-gutter: $grid-unit !default;
 
 // Individual scss files are imported for each Pattern. These files may
 // also be imported seperately in a project, but always require the Patterns

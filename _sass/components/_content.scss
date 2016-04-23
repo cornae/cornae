@@ -1,17 +1,9 @@
-#content-0ld {
-  z-index: 1;
-  background: #3d607e url(pattern.png) no-repeat fixed right 0;
-  background-image: url(pattern.png), url(grain.png);
-  background-repeat: no-repeat,repeat;
-  transition: background-color 2s ease-out;
-  color: white;
-  display: block;
-  background-size: 100% auto, 400px 400px;
-  font-weight: 100;
-}
-
 #content {
   padding: $grid-unit 344px $grid-unit 240px;
   // background: url(grid.png) repeat;
   position: relative;
+
+  position: relative;
+
+  @include box-sizing;
 }

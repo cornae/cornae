@@ -29,9 +29,9 @@
   h1 {
 	  letter-spacing: 2px;
 	  transition: all 0.4s;
-	  margin-bottom: 0.5em;
-	  line-height: 1.2;
-	  font-size: 2.8em;
+	  margin-bottom: 0.5 * $grid-unit;
+	  line-height: $grid-unit;
+	  font-size: 1.5 * $grid-unit;
 	  font-weight: 100;
 	}
 
@@ -41,10 +41,10 @@
   }
 
   p.byline {
-    margin-bottom: 30px;
+    margin-bottom: $grid-unit;
     font-size: 14px;
     font-style: italic;
-    margin-top: -1.5em;
+    // margin-top: -1.5 * $grid-unit;
   }
 
   strong {

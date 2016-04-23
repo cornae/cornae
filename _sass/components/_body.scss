@@ -1,8 +1,9 @@
 body {
-  line-height: 1.5;
   background: #fff;
   margin: 0;
-  font: 20px/1.8 Raleway;
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: $grid-unit;
 
   background-position: right 0, 0 0;
   background-repeat: no-repeat, repeat;
@@ -15,6 +16,8 @@ body {
 
   overflow-x: hidden;
   overflow-y: auto;
+
+  // overflow: hidden;
 
   @media only screen and (max-width: 768px) {
     body {
