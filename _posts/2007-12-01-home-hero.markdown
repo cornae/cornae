@@ -1,6 +1,7 @@
 ---
 layout: case
 category: cases
+discipline: website
 title: Home hero
 summary: HomeHero™ is a collection of home fire safety products designed to give people more control over their safety and security needs. Cornelis worked as interaction, front-end engineer and technical director on the creation of the HomeHero campaign website. 
 pictures:

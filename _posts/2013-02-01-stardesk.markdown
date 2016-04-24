@@ -1,6 +1,7 @@
 ---
 layout: case
 category: cases
+discipline: application
 title: StarDesk
 summary: Stardesk is the collaborative environment for the member airlines of Star Alliance. Cornelis contributed to this project as a UX Design lead, UX Consultant and web technologies consultant. 
 pictures:

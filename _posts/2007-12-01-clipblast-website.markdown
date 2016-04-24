@@ -1,6 +1,7 @@
 ---
 layout: case
 category: cases
+discipline: website
 title: Clipblast website
 summary: ClipBlast! is a Video Index, Search and Navigation Platform. ClipBlast! technology helps Viewers search, navigate, watch and personalise their experience with the Video Web. 
 pictures:

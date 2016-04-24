@@ -1,6 +1,7 @@
 ---
 layout: case
 category: cases
+discipline: website
 title: 2style4you
 summary: 2style4you is a Dutch fashion shopping website for women that uses an automated styling advice.
 videos: 

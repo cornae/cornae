@@ -1,6 +1,7 @@
 ---
 layout: case
 category: cases
+discipline: print
 title: Rhizosys productline
 summary: Rhizosys is a line of root fertilisers for semi professional use. Cornelis developed its corporate style and the design for all the product labels.
 pictures:

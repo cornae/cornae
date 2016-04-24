@@ -1,0 +1,12 @@
+#doormat {
+	column-count: 3;
+	column-gap: 2 * $grid-unit;
+	font-size: 0.7em;
+	padding-top: 2 * $grid-unit;
+
+	h3 {
+		padding: 0 0 0 0;
+		margin: 0;
+		font-weight: bold;
+	}
+}

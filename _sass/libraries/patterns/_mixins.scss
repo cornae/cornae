@@ -62,11 +62,12 @@
 
 @mixin injection() {
   .injecting {
-  * {
-      opacity: 0.19;
-    }
+    * {
+        opacity: 0.19;
+      }
 
-    &.injecting-after * {
+    &.injecting-after *,
+    &.injecting-content-after * {
       opacity: inherit;
     }
   }
@@ -79,8 +80,12 @@
 @mixin pat-rich() {
   @include clear();
 
+  line-height: $grid-unit;
+
   h1,h2,p,ul,ol,table,dl,pre {
-    margin-bottom: 2rem;
+    margin-bottom: $grid-unit;
+    margin-top: 0;
+    line-height: $grid-unit;
   }
 
   ul,
@@ -134,11 +139,12 @@
     font-size: 1em;
     // line-height: 130%;
     letter-spacing: 0.05em;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 1em;
   }
 
-  img {
+  img,
+  video {
     max-width: 100%;
     margin: 0 auto;
     display: block;
@@ -165,15 +171,13 @@
   }
 
   figure {
-    margin-bottom: 2em;
+    margin-bottom: 1.5 * $grid-unit;
 
     figcaption {
       font-style: italic;
-      font-size: 0.7em;
-      line-height: 1.3em;
-      color: rgba(0,0,0,0.3);
-      border-bottom: 1px dotted rgba(0,0,0,0.3);
-      padding: 0.4em 0.7em 0.4em;
+      font-size: 0.8em;
+      color: rgba(0,0,0,0.5);
+      padding: 0.25 * $grid-unit 0;
     }
   }
 }
@@ -261,18 +265,24 @@
     color: rgba(0,0,0,0.5);
     padding: 0.8em;
     margin-bottom: 1em;
-    border: rgba(0,0,0,0.05) solid 0.2rem;
+    // border: rgba(0,0,0,0.05) solid 0.2rem;
     background-color: #efefef;
 
     &.success {
         background-color: $colour-success;
-        color: darken($colour-success, 50%);;
+        color: darken($colour-success, 50%);
     }
+
     &.notice {
         background-color: $colour-notice;
     }
+
     &.warning {
         background-color: $colour-warning;
-        color: white;
+        color: darken($colour-warning, 30%);
+        a { 
+          color: darken($colour-warning, 30%); 
+          text-decoration: underline;
+        }
     }
 }

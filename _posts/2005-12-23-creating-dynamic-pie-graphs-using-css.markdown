@@ -96,5 +96,5 @@ The image below, shows the end result in both Internet Explorer 6.0 and an other
  [4]: {{ site.media }}/between.png
  [5]: http://www.w3.org/Graphics/PNG/
  [6]: http://www.dithered.com/css_filters/css_only/child_selector.html
- [7]: {{ site.media }}/pieGraph/pieGraph.html
- [8]: {{ site.media }}/pieGraphIEvsOther.gif
+ [7]: {{ site.media }}/cases/pie-graph/pieGraph.html
+ [8]: {{ site.media }}/cases/pie-graph/IEvsOther.gif
