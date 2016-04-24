@@ -2,7 +2,7 @@
 layout: case
 category: cases
 discipline: architecture
-title: Canal house amsterdam
+title: Amsterdam canal house
 summary: Complete redesign of the interior for an apartment in a monumental building at one of Amsterdam's historic canals. 
 pictures:
   - url: renovation-singel/beletage/00000.jpg
