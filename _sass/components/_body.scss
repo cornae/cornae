@@ -7,9 +7,12 @@ body {
 
   background-position: right 0, 0 0;
   background-repeat: no-repeat, repeat;
-  background-image: url(pattern.png), url(grain.png);
-  background-size: 100% auto, 400px 400px;
+
+  background-image: url(cornelis.png), url(grain.png);
+  background-position: 0 0, 0 0;
+  background-size: 80% auto, 400px 400px;
   background-attachment: fixed, fixed;
+
   background-color: #e1e6f0;
 
   color: rgba(0, 0, 0, 0.6);
@@ -38,9 +41,19 @@ body {
     background-image: url(postStamp.png), url(grain.png);
   }
 
-  &.portfolio,
-  &.portfolio #prologue {
+  &.case,
+  &.case #prologue {
     background-image: url(portfolio.png), url(grain.png);
+    background-position: 0 0, 0 0;
+    background-size: 100% auto, 400px 400px;
+    background-attachment: fixed, fixed;
+  }
+
+  &.article,
+  &.article #prologue { 
+    background-image: url(pattern.png), url(grain.png);
+    background-size: 100% auto, 400px 400px;
+    background-attachment: fixed, fixed;
   }
 
   &.welcome,

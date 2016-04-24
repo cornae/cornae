@@ -8,8 +8,9 @@
   background-repeat: no-repeat, repeat;
   background-size: 100% auto;
   background-attachment: fixed, fixed;
-  background-image: url(pattern.png), url(grain.png);
-  background-size: 100% auto, 400px 400px;
+  background-image: url(cornelis.png), url(grain.png);
+  background-position: 0 0, 0 0;
+  background-size: 80% auto, 400px 400px;
 
   #prologue-content {
     padding: 240px 344px 0 240px;
@@ -44,7 +45,7 @@
 	  transition: all 0.4s;
 	  margin-bottom: 1.5 * $grid-unit;
 	  line-height: 1.5 * $grid-unit;
-	  font-size: 1.2 * $grid-unit;
+	  font-size: 1.15 * $grid-unit;
 	  font-weight: 100;
 	}
 
