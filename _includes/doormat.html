@@ -1,0 +1,47 @@
+<div id="doormat">
+  <h3>
+    Portfolio
+  </h3>
+  <ul class="menu">
+    {% for case in site.categories.cases %}
+      <li>
+        <a class="{% if case.discipline == 'animation' %}icon-video
+            {% elsif case.discipline == 'architecture' %}icon-greek-column
+            {% elsif case.discipline == 'print' %}icon-printed-matter
+            {% elsif case.discipline == 'website' %}icon-network
+            {% elsif case.discipline == 'application' %}icon-window
+            {% elsif case.discipline == 'app' %}icon-mobile
+            {% endif %}"
+
+          href="{{ case.url }}">{{ case.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <h3>
+    Articles
+  </h3>
+  <ul class="menu">
+    {% for article in site.categories.articles %}
+      <li>
+        <a class="icon-feather" href="{{ article.url }}">{{ article.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <h3>
+    Social
+  </h3>
+  <ul class="menu">
+    <li>
+      <a class="icon-twitter" href="http://www.twitter.com/corneliskolbach">Twitter</a>
+    </li>
+    <li>
+      <a class="icon-linkedin-squared" href="http://www.linkedin.com/in/corneliskolbach">LinkedIn</a>
+    </li>
+    <li>
+      <a class="icon-github-circled" href="http://www.github.com/cornae">Github</a>
+    </li>
+    <li>
+      <a class="icon-pinterest-circled" href="http://pinterest.com/corneliskolbach/">Pinterest</a>
+    </li>
+  </ul>
+</div>

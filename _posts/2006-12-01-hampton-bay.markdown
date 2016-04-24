@@ -1,6 +1,7 @@
 ---
 layout: case
 category: cases
+discipline: website
 title: Hampton Bay
 summary: Hampton Bay is a proprietary brand of The Home Depot USA. For the summer season of 2007, a site dedicated to patio sets was launched. Cornelis acted as usability advisor, web standards and searchability advisor, technical director and CSS/XHTML engineer.
 pictures:

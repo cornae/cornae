@@ -3,7 +3,14 @@
     {% if post.layout != 'case' %}
       <img src="/media/{{ post.avatar }}" class="avatar" alt="" />
     {% endif %}
-      <h4>
+      <h4 class="{% if post.discipline == 'animation' %}icon-video
+            {% elsif post.discipline == 'architecture' %}icon-greek-column
+            {% elsif post.discipline == 'print' %}icon-printed-matter
+            {% elsif post.discipline == 'website' %}icon-network
+            {% elsif post.discipline == 'application' %}icon-window
+            {% elsif post.discipline == 'app' %}icon-mobile
+            {% elsif post.category == 'articles' %}icon-feather
+            {% endif %}">
         {% if post.layout == 'case' %}Showcase: {% endif %}{{ post.title }}
       </h4>
       {% if post.layout == 'case' %}

@@ -1,7 +1,8 @@
 ---
 layout: case
 category: cases
-title: Renovation project Singel Amsterdam
+discipline: architecture
+title: Canal house amsterdam
 summary: Complete redesign of the interior for an apartment in a monumental building at one of Amsterdam's historic canals. 
 pictures:
   - url: renovation-singel/beletage/00000.jpg

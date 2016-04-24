@@ -1,6 +1,7 @@
 ---
 layout: case
 category: cases
+discipline: application
 title: Kwik-Fit filiaalagenda
 summary: A planning application for Kwik-Fit. Part of a large European car garage conglomerate. 
 pictures:

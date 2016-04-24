@@ -1,6 +1,7 @@
 ---
 layout: case
 category: cases
+discipline: print
 title: Coben Flyer
 summary: A flyer that was designed to promote the new website of Coben.
 pictures: 

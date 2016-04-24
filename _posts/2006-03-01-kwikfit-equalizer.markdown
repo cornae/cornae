@@ -1,6 +1,7 @@
 ---
 layout: case
 category: cases
+discipline: application
 title: Kwik-Fit Equalizer
 summary: A price management tool for Kwik-Fit. Part of a large European car garage conglomerate. 
 pictures:

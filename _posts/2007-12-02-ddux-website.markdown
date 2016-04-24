@@ -1,6 +1,7 @@
 ---
 layout: case
 category: cases
+discipline: website
 title: DdUX Website
 summary: Cornelis was responsible for the visual design, CSS and markup programming and the design of the interaction models of www.ddux.org. DdUX means Design for Digital User eXperience. It is a web site around a community of researchers, students, teachers and all people who work in the field of User Experience in the Dutch language area.
 pictures:

@@ -1,5 +1,5 @@
 ul.menu {
-  margin: 0 0 1em 0;
+  margin: 0 0 $grid-unit 0;
   list-style-type: none;
   padding: 0;
 
@@ -22,7 +22,7 @@ ul.menu {
       // padding-right: 15px;
       padding: 0 0 0 1.6em;
       color: black;
-      cursor: default;
+      cursor: pointer;
       overflow: hidden;
       border: none;
       background: none;
@@ -33,14 +33,15 @@ ul.menu {
         position: absolute;
         left: 0;
         top: 0;
-        height: 1.8em;
+        height: 100%;
         width: 100%;
       }
 
       &:before {
         margin-left: -1.6em;
-        margin-top: 0.25 * $grid-unit;
+        margin-top: 0.2 * $grid-unit;
         float: left;
+        opacity: 0.5;
       }
 
       &:hover {
