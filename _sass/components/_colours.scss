@@ -154,6 +154,10 @@
   a {
     color: $colour-topaz;
   }
+
+  #home-link {
+    opacity: 1;
+  }
 }
 
 .mood-orchid {
@@ -164,6 +168,10 @@
   a {
     color: $colour-orchid;
   }
+
+  #home-link {
+    opacity: 0.5;
+  }
 }
 
 .mood-mocha {
@@ -173,5 +181,9 @@
 
   a {
     color: $colour-mocha;
+  }
+
+  #home-link {
+    opacity: 0.4;
   }
 }
