@@ -1,5 +1,5 @@
 #main-content {
-  padding: $grid-unit 344px $grid-unit 240px;
+  padding: 1.5 * $grid-unit 344px $grid-unit 240px;
 
   @-moz-document url-prefix() { 
     padding-left: 0;

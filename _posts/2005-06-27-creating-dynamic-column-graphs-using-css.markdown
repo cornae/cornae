@@ -170,7 +170,7 @@ Last but not least adding a scale proportion of 1 : 1.000.000 will not only make
 
  [1]: {{ site.media }}/body.png
  [2]: {{ site.media }}/cases/column-graph/images/columGraphColumSkin.gif
- [3]: {{ site.media }}/cases/column-graph-aliasing.png
+ [3]: {{ site.media }}/column-graph-aliasing.png
  [4]: {{ site.media }}/cases/column-graph/images/columnGraphColumnCentre-base.gif
  [5]: {{ site.media }}/cases/column-graph/columnGraph-stage01.html
  [6]: {{ site.media }}/cases/column-graph/images/columnGraphColumnCentre-lid.gif

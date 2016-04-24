@@ -5,22 +5,32 @@ template: welcome
 
 <div id="prologue">
 	<div id="prologue-content">
-		{% if page.layout == 'post' or page.layout == 'case' %}
+		{% if page.layout == 'case' %}
+			{% if page.summary %}
+				<h1>
+					{{ page.summary }}
+				</h1>
+			{% else %}
+				<h1>
+					{{ page.title }}
+				</h1>
+			{% endif %}
+		{% elsif page.layout == 'post' %}
 			<h1>
 				{{ page.title }}
 			</h1>
-		{% endif %}
-
-		{% if page.layout == 'post' %}
 		    <p class="byline">
 		        Cornelis G.A. Kolbach, {{ page.date | date: "%B, %e, %Y" }}
 		    </p>
-		{% endif %}
-
-		{% if page.summary %}
-		    <p class="introduction">
-		      	{{ page.summary }}
-		    </p>
+			{% if page.summary %}
+			    <p class="introduction">
+			      	{{ page.summary }}
+			    </p>
+			{% endif %}
+		{% else %}
+			<h1>
+				{{ page.summary }}
+			</h1>
 		{% endif %}
 	</div>
 </div>
