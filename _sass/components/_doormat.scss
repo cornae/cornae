@@ -2,10 +2,11 @@
 	column-count: 3;
 	column-gap: 2 * $grid-unit;
 	font-size: 0.7em;
+  	line-height: 0.6 * $grid-unit;
 
 	h3 {
 		padding: 0 0 0 0;
-		margin: 0;
+		margin: 0 0 0.3 * $grid-unit 0;
 		font-weight: bold;
 	}
 }

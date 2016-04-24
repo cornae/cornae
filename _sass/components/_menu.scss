@@ -20,7 +20,7 @@ ul.menu {
       // margin-right: -10px;
       // padding-left: 32px;
       // padding-right: 15px;
-      padding: 0 0 0 1.6em;
+      padding: 0.4em 0 0.4em 1.6em;
       color: black;
       cursor: pointer;
       overflow: hidden;
@@ -39,7 +39,7 @@ ul.menu {
 
       &:before {
         margin-left: -1.6em;
-        margin-top: 0.2 * $grid-unit;
+        margin-top: 0.1 * $grid-unit;
         float: left;
         opacity: 0.5;
       }
