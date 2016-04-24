@@ -117,6 +117,16 @@
 
 // Colour avocado
 
+.mood-blueberry {
+  #prologue {
+    background-color: $colour-blueberry;
+  }
+
+  a {
+    color: $colour-blueberry;
+  }
+}
+
 .mood-avocado {
   #prologue {
     background-color: $colour-avocado;
