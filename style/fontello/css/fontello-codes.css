@@ -78,3 +78,7 @@
 .icon-window:before { content: '\e84c'; } /* '' */
 .icon-printed-matter:before { content: '\e84d'; } /* '' */
 .icon-video:before { content: '\e84e'; } /* '' */
+.icon-left-open-big:before { content: '\e84f'; } /* '' */
+.icon-left-open:before { content: '\e850'; } /* '' */
+.icon-angle-left:before { content: '\e851'; } /* '' */
+.icon-left-big:before { content: '\e852'; } /* '' */

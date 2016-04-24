@@ -1,0 +1,27 @@
+#back-button {
+	background-color: rgba(255,255,255,0.5);
+	float: left;
+	position: relative;
+
+	margin-left: -240px;
+	margin-top: 11px;
+
+	width: 104px;
+	height: 104px;
+
+	overflow: hidden;
+	text-indent: -1000px;
+
+	&:before {
+		content: '\e852';
+		font-family: fontello;
+		text-indent: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		line-height: 104px;
+		text-align: center;
+		font-size: 40px;
+	}
+}
