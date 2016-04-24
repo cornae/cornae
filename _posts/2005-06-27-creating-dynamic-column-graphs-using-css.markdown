@@ -169,11 +169,11 @@ A graph like this, wherein multiple kinds of information are combined, needs a l
 Last but not least adding a scale proportion of 1 : 1.000.000 will not only make this company's results look much better, but will also [finish the graph][9].
 
  [1]: {{ site.media }}/body.png
- [2]: {{ site.media }}/columnGraph/images/columGraphColumSkin.gif
- [3]: {{ site.media }}/columnGraph-aliasing.png
- [4]: {{ site.media }}/columnGraph/images/columnGraphColumnCentre-base.gif
- [5]: {{ site.media }}/columnGraph/columnGraph-stage01.html
- [6]: {{ site.media }}/columnGraph/images/columnGraphColumnCentre-lid.gif
- [7]: {{ site.media }}/columnGraph/columnGraph-stage02.html
- [8]: {{ site.media }}/columnGraph/columnGraph-stage03.html
- [9]: {{ site.media }}/columnGraph/columnGraph.html
+ [2]: {{ site.media }}/cases/column-graph/images/columGraphColumSkin.gif
+ [3]: {{ site.media }}/cases/column-graph-aliasing.png
+ [4]: {{ site.media }}/cases/column-graph/images/columnGraphColumnCentre-base.gif
+ [5]: {{ site.media }}/cases/column-graph/columnGraph-stage01.html
+ [6]: {{ site.media }}/cases/column-graph/images/columnGraphColumnCentre-lid.gif
+ [7]: {{ site.media }}/cases/column-graph/columnGraph-stage02.html
+ [8]: {{ site.media }}/cases/column-graph/columnGraph-stage03.html
+ [9]: {{ site.media }}/cases/column-graph/columnGraph.html
