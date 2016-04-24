@@ -1,7 +1,8 @@
 ---
 layout: case
+title: Didato
 category: cases
-title: "A disruptive renovation and restructuring of two different spaces that had to be merged into a single space for the luxury menswear shop 'Didato' in Amsterdam. Cornelis did the architecture and interior design for the project."
+summary: "A disruptive renovation and restructuring of two different spaces that had to be merged into a single space for the luxury menswear shop 'Didato' in Amsterdam. Cornelis did the architecture and interior design for the project."
 pictures:
   - url: didato/1.jpg
   - url: didato/2.jpg

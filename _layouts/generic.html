@@ -9,6 +9,9 @@ template: welcome
 			<h1>
 				{{ page.title }}
 			</h1>
+		{% endif %}
+
+		{% if page.layout == 'post' %}
 		    <p class="byline">
 		        Cornelis G.A. Kolbach, {{ page.date | date: "%B, %e, %Y" }}
 		    </p>
