@@ -13,13 +13,16 @@
   background-size: 80% auto, 400px 400px;
 
   #prologue-content {
-    padding: 240px 344px 0 240px;
     margin: 0 auto;
-    width: $page-width;
     @include box-sizing;
 
+    @include screen-size(large) {
+      padding: 240px 344px 0 240px;
+      width: $page-width;
+    }
+
     @include screen-size(small-medium) {
-      padding: 240px 104px;
+      padding: 240px 136px 0 136px;
     }
 
     @-moz-document url-prefix() { 

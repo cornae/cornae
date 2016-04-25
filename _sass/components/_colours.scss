@@ -12,6 +12,14 @@
   padding: 0;
   user-select: none;
 
+  @include screen-size(large) {
+    left: 240px;
+  }
+
+  @include screen-size(small-medium) {
+    left: 136px;
+  }
+
   @-moz-document url-prefix() { 
     left: 0;
   }
