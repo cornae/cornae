@@ -4,15 +4,15 @@
 
 	@include screen-size(large) {
       	width: $page-width;
-    }
 
-	@-moz-document url-prefix() {  
-	    max-width: 60%;
-	    width: 100%;
-		position: absolute;
-		top: 0;
-		left: 50%;
-		-moz-transform: translateX(-50%);
-		transform: translateX(-50%);
-	}
+		@-moz-document url-prefix() {  
+		    max-width: 60%;
+		    width: 100%;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			-moz-transform: translateX(-50%);
+			transform: translateX(-50%);
+		}
+    }
 }

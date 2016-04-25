@@ -14,14 +14,18 @@
 
   @include screen-size(large) {
     left: 240px;
+
+    @-moz-document url-prefix() { 
+      left: 0;
+    }
   }
 
-  @include screen-size(small-medium) {
+  @include screen-size(medium) {
     left: 136px;
   }
 
-  @-moz-document url-prefix() { 
-    left: 0;
+  @include screen-size(small) {
+    display: none;
   }
 
   &:before {
