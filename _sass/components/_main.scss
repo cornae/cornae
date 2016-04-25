@@ -1,6 +1,10 @@
 #main {
   	width: $page-width;
 
+  	.touch & {
+		zoom: 1 !important;
+  	}
+
   	@-moz-document url-prefix() { 
 	  width: 100%;
 	}
