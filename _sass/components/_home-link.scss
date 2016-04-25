@@ -14,6 +14,10 @@
   top: $grid-unit;
   margin-top: 1.5 * $grid-unit;
 
+  @include screen-size(small) {
+    display: none;
+  }
+
   float: right;
 
   .csspositionsticky & {

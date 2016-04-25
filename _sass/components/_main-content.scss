@@ -11,8 +11,12 @@
 	  	}
 	}
 
-	@include screen-size(small-medium) {
+	@include screen-size(medium) {
 		padding: 1.5 * $grid-unit 136px $grid-unit 136px;
+	}
+
+	@include screen-size(small) {
+		padding: 1.5 * $grid-unit 10% $grid-unit 10%;
 	}
 
   	margin: 0 auto;

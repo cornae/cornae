@@ -21,8 +21,12 @@
       width: $page-width;
     }
 
-    @include screen-size(small-medium) {
+    @include screen-size(medium) {
       padding: 240px 136px 0 136px;
+    }
+
+    @include screen-size(small) {
+      padding: 104px 10% 0 10%;
     }
 
     @-moz-document url-prefix() { 
