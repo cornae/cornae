@@ -6,6 +6,12 @@
 $grid-unit: 36px;
 $grid-gutter:$grid-unit;
 
+// Responsive
+$break-small: 768px;
+$break-medium: 1024px;
+$break-large: 1280px;
+
+// Colours
 $colour-avocado: #98DDDE; // PANTONE 13-4810 Limpet Shell
 $colour-blueberry: #3d607e; // PANTONE 19-4049 Snorkel Blue
 $colour-topaz: #79C753; // PANTONE 15-0146 Green Flash

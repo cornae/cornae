@@ -18,6 +18,10 @@
     width: $page-width;
     @include box-sizing;
 
+    @include screen-size(small-medium) {
+      padding: 240px 104px;
+    }
+
     @-moz-document url-prefix() { 
       padding-left: 0;
       padding-right: 0;
