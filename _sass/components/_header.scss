@@ -1,6 +1,10 @@
 #header {
-	width: $page-width;
+	
 	margin: 0 auto;
+
+	@include screen-size(large) {
+      	width: $page-width;
+    }
 
 	@-moz-document url-prefix() {  
 	    max-width: 60%;

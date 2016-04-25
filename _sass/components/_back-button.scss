@@ -6,6 +6,10 @@
 	margin-left: -240px;
 	margin-top: 11px;
 
+	@include screen-size(small-medium) {
+      margin-left: -136px;
+    }
+
 	width: 104px;
 	height: 104px;
 
