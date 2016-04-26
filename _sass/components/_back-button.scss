@@ -2,19 +2,30 @@
 	background-color: rgba(255,255,255,0.5);
 	float: left;
 	position: relative;
+	line-height: 104px;
+	width: 104px;
+	height: 104px;
+	overflow: hidden;
+	text-indent: -1000px;
 
 	margin-left: -240px;
 	margin-top: 11px;
 
-	@include screen-size(small-medium) {
+	@include screen-size(medium) {
       margin-left: -136px;
     }
 
-	width: 104px;
-	height: 104px;
-
-	overflow: hidden;
-	text-indent: -1000px;
+	@include screen-size(small) {
+      margin-left: 0;
+      margin-top: 0;
+      top: 0;
+      left: 10%;
+      position: absolute;
+      line-height: 150px;
+      width: 150px;
+      height: 150px;
+      background-color: white;
+	}
 
 	&:before {
 		content: '\e852';
@@ -24,7 +35,6 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		line-height: 104px;
 		text-align: center;
 		font-size: 40px;
 	}

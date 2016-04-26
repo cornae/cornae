@@ -11,6 +11,22 @@
   background-image: url(cornelis.png), url(grain.png);
   background-position: 0 0, 0 0;
   background-size: 80% auto, 400px 400px;
+  
+  @include screen-size(small) {
+    .welcome & {
+      &:before {
+        content: '\E844';
+        font-size: 150px;
+        line-height: 1;
+        text-indent: 0;
+        position: absolute;
+        left: 10%;
+        top: 0;
+        font-weight: normal;
+        font-family: fontello;
+      }
+    }
+  }
 
   #prologue-content {
     margin: 0 auto;
@@ -26,7 +42,7 @@
     }
 
     @include screen-size(small) {
-      padding: 104px 10% 0 10%;
+      padding: 240px 10% 0 10%;
     }
 
     @-moz-document url-prefix() { 
