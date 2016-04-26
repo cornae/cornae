@@ -49,7 +49,8 @@ body {
     background-attachment: fixed, fixed;
 
     @include screen-size(small) {
-      background-size: 130% auto, 400px 400px;
+      background-image: url(portfolio-mobile.png), url(grain.png);
+      background-size: 100% auto, 400px 400px;
     }
   }
 
@@ -67,6 +68,7 @@ body {
     background-size: 80% auto, 400px 400px;
 
     @include screen-size(small) {
+      background-image: url(cornelis-mobile.png), url(grain-mobile.png);
       background-size: 120% auto, 400px 400px;
     }
   }
