@@ -47,10 +47,14 @@ body {
     background-position: 0 0, 0 0;
     background-size: 100% auto, 400px 400px;
     background-attachment: fixed, fixed;
+
+    @include screen-size(small) {
+      background-size: 130% auto, 400px 400px;
+    }
   }
 
-  &.article,
-  &.article #prologue { 
+  &.post,
+  &.post #prologue { 
     background-image: url(pattern.png), url(grain.png);
     background-size: 100% auto, 400px 400px;
     background-attachment: fixed, fixed;
@@ -63,7 +67,7 @@ body {
     background-size: 80% auto, 400px 400px;
 
     @include screen-size(small) {
-      background-size: 130% auto, 400px 400px;
+      background-size: 120% auto, 400px 400px;
     }
   }
 }
