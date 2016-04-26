@@ -61,5 +61,9 @@ body {
     background-image: url(cornelis.png), url(grain.png);
     background-position: 0 0, 0 0;
     background-size: 80% auto, 400px 400px;
+
+    @include screen-size(small) {
+      background-size: 130% auto, 400px 400px;
+    }
   }
 }
