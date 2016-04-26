@@ -11,6 +11,13 @@
 	margin-left: -240px;
 	margin-top: 11px;
 
+	@include screen-size(large) {
+      	margin-left: -128px;
+		// line-height: 175px;
+		// width: 175px;
+		// height: 175px;
+    }
+
 	@include screen-size(medium) {
       margin-left: -136px;
     }
