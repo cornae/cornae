@@ -49,8 +49,6 @@ pictures:
     caption: Study
   - url: renovation-singel/beletage/00023.jpg
     caption: Guest toilet and shower
-  - url: renovation-singel/bathroom/00000.jpg
-    caption: Bedroom — Video projection wall
   - url: renovation-singel/bathroom/00001.jpg
     caption: Bedroom — View on bathroom
   - url: renovation-singel/bathroom/00002.jpg
