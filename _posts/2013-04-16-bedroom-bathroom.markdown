@@ -23,8 +23,6 @@ pictures:
     caption: Wash basin
   - url: renovation-bathroom-bedroom/bathroom/00009.jpg
     caption: Wash basin
-  - url: renovation-bathroom-bedroom/bathroom/00010.jpg
-    caption: Rain showers
   - url: renovation-bathroom-bedroom/bathroom/00011.jpg
     caption: Faucets console
   - url: renovation-bathroom-bedroom/bathroom/00011.jpg
