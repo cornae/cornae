@@ -17,14 +17,14 @@ pictures:
     caption: Bedroom
   - url: renovation-bathroom-bedroom/bathroom/00007.jpg
     caption: Stairs to the bedroom
+  - url: renovation-bathroom-bedroom/bathroom/00006.jpg
+    caption: Bedroom
   - url: renovation-bathroom-bedroom/bathroom/00002.jpg
     caption: Bathroom — Whirlpool
   - url: renovation-bathroom-bedroom/bathroom/00003.jpg
     caption: Bathroom, View from whirlpool
   - url: renovation-bathroom-bedroom/bathroom/00005.jpg
     caption: Double rain shower
-  - url: renovation-bathroom-bedroom/bathroom/00006.jpg
-    caption: Wash basin
   - url: renovation-bathroom-bedroom/bathroom/00008.jpg
     caption: Wash basin
   - url: renovation-bathroom-bedroom/bathroom/00009.jpg
