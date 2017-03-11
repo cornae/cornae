@@ -26,14 +26,14 @@ pictures:
   - url: renovation-bathroom-bedroom/bathroom/00011.jpg
     caption: Faucets console
   - url: renovation-bathroom-bedroom/bathroom/00012.jpg
-    caption: Faucets Toilet group opened
+    caption: Faucets Toilet group closed
   - url: renovation-bathroom-bedroom/bathroom/00013.jpg
     caption: Faucets Toilet group opened
   - url: renovation-bathroom-bedroom/bathroom/00014.jpg
-    caption: Faucets Toilet group opened
+    caption: Bedroom
   - url: renovation-bathroom-bedroom/bathroom/00015.jpg
-    caption: Faucets Toilet group opened
+    caption: Bedroom
   - url: renovation-bathroom-bedroom/bathroom/00016.jpg
-    caption: Faucets Toilet group opened
+    caption: Bedroom
 ---
 
