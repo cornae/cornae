@@ -57,8 +57,6 @@ pictures:
     caption: Bathroom — Whirlpool
   - url: renovation-singel/bathroom/00003.jpg
     caption: Bathroom, View from whirlpool
-  - url: renovation-singel/bathroom/00004.jpg
-    caption: Bedroom
   - url: renovation-singel/bathroom/00005.jpg
     caption: Double rain shower
   - url: renovation-singel/bathroom/00006.jpg
@@ -76,6 +74,14 @@ pictures:
   - url: renovation-singel/bathroom/00011.jpg
     caption: Faucets Toilet group
   - url: renovation-singel/bathroom/00012.jpg
+    caption: Faucets Toilet group opened
+  - url: renovation-singel/bathroom/00013.jpg
+    caption: Faucets Toilet group opened
+  - url: renovation-singel/bathroom/00014.jpg
+    caption: Faucets Toilet group opened
+  - url: renovation-singel/bathroom/00015.jpg
+    caption: Faucets Toilet group opened
+  - url: renovation-singel/bathroom/00016.jpg
     caption: Faucets Toilet group opened
 ---
 
