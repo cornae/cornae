@@ -25,8 +25,6 @@ pictures:
     caption: Wash basin
   - url: renovation-bathroom-bedroom/bathroom/00011.jpg
     caption: Faucets console
-  - url: renovation-bathroom-bedroom/bathroom/00011.jpg
-    caption: Faucets Toilet group
   - url: renovation-bathroom-bedroom/bathroom/00012.jpg
     caption: Faucets Toilet group opened
   - url: renovation-bathroom-bedroom/bathroom/00013.jpg
