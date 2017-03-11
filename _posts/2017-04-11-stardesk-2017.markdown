@@ -10,9 +10,11 @@ pictures:
   - url: stardesk-2017/2.jpg
     caption: Dashboard
   - url: stardesk-2017/3.jpg
-    caption: Workspace
+    caption: Workspaces overview
   - url: stardesk-2017/5.jpg
     caption: Workspace documents
+  - url: stardesk-2017/apps.jpg
+    caption: Apps
   - url: stardesk-2017/6.jpg
     caption: Calendar app
   - url: stardesk-2017/7.jpg
