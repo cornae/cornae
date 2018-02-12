@@ -5,6 +5,7 @@ baseurl: 'http://www.cornae.com'
 domain: cornae.com
 media: /media
 permalink: /:title
+port: 4005
 paginate: 3
 encoding: utf-8
 exclude: ['bungledeps']
