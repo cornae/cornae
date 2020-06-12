@@ -7,8 +7,8 @@ summary: A large renovation project to change an existing bedroom and bathroom i
 pictures:
   - url: renovation-bathroom-bedroom/bathroom/S-04.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-05.jpeg
-    caption: Bedroom — View on bathroom
+#  - url: renovation-bathroom-bedroom/bathroom/S-05.jpeg
+#    caption: Bedroom — View on bathroom
   - url: renovation-bathroom-bedroom/bathroom/S-07.jpeg
     caption: Bedroom
   - url: renovation-bathroom-bedroom/bathroom/S-08.jpeg
