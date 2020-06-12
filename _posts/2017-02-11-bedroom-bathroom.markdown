@@ -5,37 +5,37 @@ discipline: architecture
 title: Bedroom and bathroom renovation
 summary: A large renovation project to change an existing bedroom and bathroom into a modern sleep and bathing zone in the basement of a historic building. 
 pictures:
-  - url: renovation-bathroom-bedroom/bathroom/S-04.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-04.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-05.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-05.jpeg
     caption: Bedroom — View on bathroom
-  - url: renovation-bathroom-bedroom/bathroom/S-07.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-07.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-08.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-08.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-11.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-11.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-14.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-14.jpeg
     caption: Stairs to the bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-16.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-16.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-17.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-17.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-18.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-18.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-19.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-19.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-22.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-22.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-25.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-25.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-27.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-27.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-28.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-28.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-30.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-30.jpeg
     caption: Bedroom
-  - url: renovation-bathroom-bedroom/bathroom/S-32.jpg
+  - url: renovation-bathroom-bedroom/bathroom/S-32.jpeg
     caption: Bedroom
   - url: renovation-bathroom-bedroom/bathroom/00002.jpg
     caption: Bathroom — Whirlpool
