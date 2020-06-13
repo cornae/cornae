@@ -11,14 +11,14 @@ pictures:
     caption: Drawing room
   - url: renovation-singel/beletage/00002.jpg
     caption: Drawing room — Detail
-  - url: renovation-singel/beletage/00004.jpg
-    caption: Drawing room — View
-  - url: renovation-singel/beletage/00005.jpg
-    caption: Drawing room and kitchen
+#  - url: renovation-singel/beletage/00004.jpg
+#    caption: Drawing room — View
+#  - url: renovation-singel/beletage/00005.jpg
+#    caption: Drawing room and kitchen
   - url: renovation-singel/beletage/00006.jpg
     caption: Drawing room
-  - url: renovation-singel/beletage/00007.jpg
-    caption: Renovated fireplace
+#  - url: renovation-singel/beletage/00007.jpg
+#    caption: Renovated fireplace
   - url: renovation-singel/beletage/00009.jpg
     caption: Kitchen cupboards
   - url: renovation-singel/beletage/00010.jpg
