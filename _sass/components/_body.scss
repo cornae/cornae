@@ -1,3 +1,22 @@
 body {
-    
+    background-color: #3d607e;
+    color: white;
+
+    #logo {
+    	font-size: 0;
+
+    	&:before {
+    		content: æ;
+    		display: inline-block;
+    		
+    	}
+    }
+
+    #tagline {
+
+    }
+
+    #colofon {
+
+    }
 }
