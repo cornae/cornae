@@ -60,6 +60,7 @@ body {
             color: white;
             text-decoration: none;
             opacity: 0.6;
+            text-underline-offset: 0.2em;
 
             &:hover {
                 text-decoration: underline;

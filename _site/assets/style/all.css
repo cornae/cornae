@@ -11,7 +11,7 @@ body #tagline li { display: inline-block; margin: 0 20px 12px 0; padding: 0; }
 
 body #colofon { align-self: center; }
 
-body #colofon a { color: white; text-decoration: none; opacity: 0.6; }
+body #colofon a { color: white; text-decoration: none; opacity: 0.6; text-underline-offset: 0.2em; }
 
 body #colofon a:hover { text-decoration: underline; opacity: 1; }
 
