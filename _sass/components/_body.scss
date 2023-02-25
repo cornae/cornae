@@ -1,22 +1,69 @@
+$colour-main: #3d607e !default;
+
 body {
-    background-color: #3d607e;
+    background-color: $colour-main;
     color: white;
+    font-family: Helvetica Neue;
+    height: 100%;
+    display: grid;
+	grid-template-columns: auto;
+    justify-items: center;
+    grid-template-rows: auto 120px auto;
 
     #logo {
-    	font-size: 0;
+        color: transparent;
+        overflow: hidden;
+        align-self: end;
+        font-size: 80px;
+        width: 2em;
+        height: 2em;
 
     	&:before {
-    		content: æ;
+            width: 100%;
+            height: 100%;
+    		content: "æ";
     		display: inline-block;
-    		
+    		background-color: white;
+    		box-sizing: border-box;
+			font-size: 1.40em;
+			line-height: 1.87em;
+			color: #3d607e;
+			font-weight: 300;
+			padding: 0 0 0 0.1em;
+            opacity: 0.6;
+            margin: 0;
     	}
     }
 
     #tagline {
+        display: block;
+        list-style: none;
+        text-align: center;
+        font-size: 42px;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+        font-weight: 200;
 
+        li {
+            display: inline-block;
+            margin: 0 20px 12px 0;
+            padding: 0;
+        }
     }
 
     #colofon {
+        align-self: start;
 
+        a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.6;
+
+            &:hover {
+                text-decoration: underline;
+                opacity: 1;
+            }
+        }
     }
 }
