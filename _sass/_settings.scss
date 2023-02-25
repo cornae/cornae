@@ -3,24 +3,18 @@
 
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('HelveticaNeueCyr-Light.eot');
-    src: local('HelveticaNeueCyr-Light'),
-        url('HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
-        url('HelveticaNeueCyr-Light.woff2') format('woff2'),
-        url('HelveticaNeueCyr-Light.woff') format('woff'),
-        url('HelveticaNeueCyr-Light.ttf') format('truetype');
+    src: local('HelveticaNeue-Light'),
+        url('HelveticaNeue-Light.woff2') format('woff2'),
+        url('HelveticaNeue-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('HelveticaNeueCyr-Medium.eot');
-    src: local('HelveticaNeueCyr-Medium'),
-        url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
-        url('HelveticaNeueCyr-Medium.woff2') format('woff2'),
-        url('HelveticaNeueCyr-Medium.woff') format('woff'),
-        url('HelveticaNeueCyr-Medium.ttf') format('truetype');
+    src: local('HelveticaNeue-Medium'),
+        url('HelveticaNeue-Medium.woff2') format('woff2'),
+        url('HelveticaNeue-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
