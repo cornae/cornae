@@ -29,9 +29,9 @@ body {
 			font-size: 1.40em;
 			line-height: 1.84em;
 			color: #3d607e;
-			font-weight: 300;
+			font-weight: 400;
 			padding: 0 0 0 0.1em;
-            opacity: 0.6;
+            opacity: 0.35;
             margin: 0;
     	}
     }
@@ -44,7 +44,7 @@ body {
         margin: 0;
         padding: 50px 20px;
         align-self: start;
-        font-weight: 200;
+        font-weight: 300;
 
         li {
             display: inline-block;
@@ -59,8 +59,9 @@ body {
         a {
             color: white;
             text-decoration: none;
-            opacity: 0.6;
+            opacity: 0.5;
             text-underline-offset: 0.2em;
+            font-weight: bold;
 
             &:hover {
                 text-decoration: underline;
