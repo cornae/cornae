@@ -1,5 +1,17 @@
 $colour-main: #3d607e !default;
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    to {
+        opacity: 100;
+        transform: scale(1);
+    }
+}
+
 body {
     background-color: $colour-main;
     color: white;
@@ -56,6 +68,21 @@ body {
             display: inline-block;
             margin: 0 10px 18px;
             padding: 0;
+            animation: fade-in 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+
+            &:first-child {
+                animation-delay: 1s;
+            }
+
+            &:nth-child(2) {
+                animation-delay: 1.5s;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 2s;
+            }
         }
     }
 
@@ -68,6 +95,10 @@ body {
             opacity: 0.5;
             text-underline-offset: 0.2em;
             font-weight: bold;
+            animation: fade-in 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            animation-delay: 2.5s;
 
             &:hover {
                 text-decoration: underline;
