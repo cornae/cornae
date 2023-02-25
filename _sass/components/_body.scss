@@ -113,6 +113,9 @@ body {
             opacity: 0;
             animation-fill-mode: forwards;
             animation-delay: 4s;
+            padding: 60px;
+            margin: -60px;
+            display: inline-block;
 
             &:hover {
                 text-decoration: underline;
