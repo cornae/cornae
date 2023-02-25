@@ -39,7 +39,7 @@ body {
         height: 2em;
         margin: 0;
         font-size: 110px;
-        animation: slide-up 1.2s;
+        animation: slide-up 1s;
         animation-delay: 1s;
         animation-fill-mode: forwards;
         transform: translateY(50px);
@@ -112,7 +112,7 @@ body {
             animation: fade-in 1s;
             opacity: 0;
             animation-fill-mode: forwards;
-            animation-delay: 4s;
+            animation-delay: 1s;
             padding: 60px;
             margin: -60px;
             display: inline-block;
