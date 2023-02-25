@@ -7,7 +7,7 @@ $colour-main: #3d607e !default;
     }
 
     to {
-        opacity: 100;
+        opacity: 1;
         transform: scale(1);
     }
 }
@@ -104,19 +104,19 @@ body {
         align-self: center;
 
         a {
-            color: white;
+            color: rgba(255, 255, 255, 0.6);
             text-decoration: none;
             opacity: 0.5;
             text-underline-offset: 0.2em;
             font-weight: bold;
-            // animation: fade-in 1s;
-            // opacity: 0;
-            // animation-fill-mode: forwards;
-            // animation-delay: 2.5s;
+            animation: fade-in 2s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            animation-delay: 4s;
 
             &:hover {
                 text-decoration: underline;
-                opacity: 1;
+                color: rgba(255, 255, 255, 1);
             }
         }
     }
