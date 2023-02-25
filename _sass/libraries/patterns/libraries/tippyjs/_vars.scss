@@ -1,0 +1,6 @@
+$namespace-prefix: '__NAMESPACE_PREFIX__' !default;
+$placements: 'top', 'bottom', 'left', 'right' !default;
+$origins: bottom, top, right, left !default;
+$backdrop-origins: 0% 25%, 0% -50%, 50% 0%, -50% 0% !default;
+$backdrop-border-radii: 40% 40% 0 0, 0 0 30% 30%, 50% 0 0 50%, 0 50% 50% 0 !default;
+$arrow-size: 16px !default;

@@ -1,0 +1,662 @@
+@charset "UTF-8";
+
+$pat-toolbar-button-height: $button-height !default;
+$pat-toolbar-button-line-height: $button-line-height !default;
+$colour-toolbar-button: transparent !default;
+$pat-toolbar-element-separation: 10px !default;
+$pat-tail-white: 15px !default;
+$pat-toolbar-font-size: 18px !default;
+$pat-toolbar-icon-background-colour: transparent !default;
+$pat-toolbar-icon-background-colour-hover: transparent !default;
+$pat-toolbar-icon-text-colour: rgba(0,0,0,0.6) !default;
+$pat-toolbar-icon-text-colour-hover: black !default;
+$pat-toolbar-bump-distance: 100px !default;
+$pat-toolbar-bump-distance-scroll-down: 100px !default;
+$pat-toolbar-top-distance: -1px !default;
+$pat-toolbar-top-distance-scroll-down: -1px !default;
+$pat-toolbar-hiding-speed: 0.3s !default;
+
+.pat-toolbar {
+	@include clear-fix();
+	color: rgba(0,0,0,0.6);
+	position: relative;
+	z-index: 2;
+	padding: 10px;
+	border-radius: $border-radii;
+	font-size: $pat-toolbar-font-size;
+
+	.toolbar-title {
+		font-size: 0.6 * $pat-toolbar-button-height;
+		line-height: $pat-toolbar-button-line-height;
+		margin: 0;
+		font-weight: bold;
+		white-space: nowrap !important;
+		max-width: 100%;
+		box-sizing: border-box;
+	    text-overflow: ellipsis;
+	    text-decoration: none;
+	    display: inline-block;
+
+		&.select {	
+		    overflow: hidden;
+		    color: rgba(0, 0, 0, 0.6);
+		    cursor: default;
+		    padding-right: 1.5em;
+		    background-repeat: no-repeat;
+		    background-position: calc(100% - 10px) center;
+		    background-image: url(data:image/svg+xml;base64,#{$arrow-down-dark});
+		    background-size: auto 10px;
+		    @media print { background-image: none; }
+
+		    &:hover {
+		    	text-decoration: none;
+		    	color: black;
+		    }
+		}
+
+		.icon {
+			height: 0.6 * $pat-toolbar-button-height;
+			width: auto;
+			vertical-align: middle;
+		}
+	}
+
+	.text-button {
+		line-height: $pat-toolbar-button-line-height;
+		display: inline-block;
+		cursor: default;
+		border-radius: $button-border-radius;
+		padding: $button-paddings;
+		margin: 0 -15px;
+
+		&:before {
+			margin-left: 0;
+		}
+
+		&:hover {
+			color: black;
+		}
+
+		&.tooltip-active-click {
+			background-color: $colour-accent;
+			color: white;
+		}
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	@include screen-size(medium-large) {
+		margin: 0 -10px 40px;
+		height: $pat-toolbar-button-height;
+
+		.pat-modal & {
+			margin-bottom: 15px;
+		}
+	}
+
+	@include screen-size(small) {
+		margin: 0;
+		padding: 0;
+	}
+
+	&.inline {
+		margin: 0;
+		padding: 0;
+	}
+
+	&.pat-bumper {
+		-webkit-position: sticky;
+		position: sticky;
+		padding-top: $pat-toolbar-bump-distance;
+		margin-top: -1 * $pat-toolbar-bump-distance;
+		top: $pat-toolbar-top-distance;
+		transition: top $pat-toolbar-hiding-speed;
+
+		.scrolling-down &,
+		.scroll-down & {
+			top: $pat-toolbar-top-distance-scroll-down;
+			padding-top: $pat-toolbar-bump-distance-scroll-down;
+		}
+
+		&:before {
+			position: absolute;
+			left: -5px;
+			right: -5px;
+			top: $pat-toolbar-bump-distance - 15px;
+			bottom: -4px;
+			border-radius: $border-radii;
+			transition: all 1s;
+	      	box-shadow: 0 0 3px rgba(0, 0, 0, 0);
+	      	content: ' ';
+	      	display: block;
+			background-color: rgba(255,255,255,0.9);
+			z-index: -1;
+
+			.backdropfilter & {
+				background-color: rgba(255,255,255,0.8);
+				-webkit-backdrop-filter: blur(10px) saturate(4) brightness(1.2);
+				backdrop-filter: blur(10px) saturate(4) brightness(1.2);
+			}
+		}
+
+	    &.bumped,
+	    &.tiptap-focus {
+	    	&:before {
+	    		box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+	    	}
+	    }
+	}
+
+	&.sticky {
+		-webkit-position: sticky;
+		position: sticky;
+		transition: box-shadow 1s;
+		transition: all 1s;
+		top: -40px;
+
+		&.auto-hide {
+			top: -150px;
+			transition: all 0.4s;
+
+			&.tiptap-focus {
+				top: -40px;
+			}
+
+			@media screen and ( min-height: 601px ) {
+				.scroll-up & {
+					top: -40px;
+				}
+			}
+		}
+
+	    .pat-scroll-box:not(.scroll-position-top) &,
+	    &.tiptap-focus {
+	      	box-shadow: $default-box-shadow;
+
+			background-color: rgba(255,255,255,0.9);
+			.backdropfilter & {
+				background-color: rgba(255,255,255,0.8);
+				-webkit-backdrop-filter: blur(10px) saturate(4) brightness(1.2);
+				backdrop-filter: blur(10px) saturate(4) brightness(1.2);
+			}
+	    }
+	}
+
+	.editor-toolbar {
+		opacity: 0;
+		transition: opacity 0.4s;
+		pointer-events: none;
+		position: relative;
+		z-index: 1;
+
+		&.tiptap-focus {
+			opacity: 1;
+			pointer-events: initial;
+		}
+	}
+
+	&.tiptap-focus {
+		.editor-toolbar {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+
+	.toolbar-navigation-area,
+	.toolbar-functions-area {
+		@include screen-size(medium-large) {
+			display: grid;
+			grid-template-columns: 1fr 4fr 1fr;
+			grid-template-areas: "left middle right";
+		}
+
+		@include screen-size(small) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&.type-document {
+		.toolbar-navigation-area,
+		.toolbar-functions-area {
+			@include screen-size(medium-large) {
+				grid-template-columns: 1fr 0fr 4fr;
+				grid-template-areas: "left middle right";
+			}
+		}
+	}
+
+	.toolbar-navigation-area {
+		@include screen-size(medium-large) {
+			height: 0; 
+		}
+
+		@include screen-size(small) {
+			margin-bottom: 15px;
+		}
+	}
+
+	.toolbar-section {
+		vertical-align: top;
+		box-sizing: border-box;
+
+		* {
+			white-space: normal;
+		}
+
+		&.view-options {
+			grid-area: left;
+			// overflow: hidden; // Required for truncation of .pat-select.bare
+			min-width: 0; // Required for truncation of .pat-select.bare
+
+			.pat-button-cluster,
+			.pat-buttton,
+			> .icon {
+				margin-right: 30px;
+			}
+
+			@include screen-size(small) {
+				float: left;
+				width: auto;	
+				margin-bottom: 15px;		
+			}
+		}
+
+		&.quick-functions {
+			text-align: right;
+			grid-area: right;
+
+			> .icon,
+			> .pat-button,
+			> .context-menu > .pat-button {
+				margin-left: $pat-toolbar-element-separation;
+				margin-right: 0;
+				position: relative; // Raise above the :before element of bumpy toolbars.
+			}
+		}
+
+		&.navigation {
+			grid-area: middle;
+
+
+			@include screen-size(small) {
+				.pat-tabs {
+					z-index: 2;
+				}
+			}
+
+			@include screen-size(medium-large) {
+				text-align: center;
+			}
+
+			.pat-select {
+				margin: 0;
+				box-shadow: inset 0 1px 6px rgba(0,0,0,0.15);
+			}
+		}
+	}
+
+	@media print { display: none; }
+
+	.toolbar-section > label.pat-checklist {
+		// This needs rewriting.
+		
+		margin-left: 1em;
+
+		&:before {
+			top: 0.5 * $pat-toolbar-button-height;
+		}
+		
+		&:hover {
+			color: black;
+		}
+	}
+
+	.pat-context-menu {
+		display: inline-block;
+
+		&.no-label:before {
+			background-color: $pat-toolbar-icon-background-colour;
+			color: $pat-toolbar-icon-text-colour;
+		}
+
+		&:hover {
+			&.no-label:before {
+				color: $pat-toolbar-icon-text-colour-hover;
+				text-decoration: none;
+				background-color: $pat-toolbar-icon-background-colour-hover;
+			}
+		}
+	}
+
+	> .pat-select,
+	.toolbar-section > .pat-select,
+	.pat-context-menu > .context-menu-label,
+	> input[type="search"],
+	.toolbar-section label.pat-checklist {
+		display: inline-block;
+		vertical-align: top;
+		height:  $pat-toolbar-button-height;
+		line-height: $pat-toolbar-button-line-height;
+		font-size: $base-font-size;
+
+		&.bare {
+			&:before {
+				height:  $pat-toolbar-button-height;
+				line-height: $pat-toolbar-button-line-height;
+			}
+		}
+
+		select {
+			line-height: $pat-toolbar-button-line-height;
+			height: $pat-toolbar-button-height;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	> .pat-select:not(.bare),
+	.toolbar-section > .pat-select:not(.bare) {	
+		--select-box-padding-top-bottom: 0;
+		--select-box-box-shadow: none;
+		--select-box-background-color: #{$button-background-colour};
+		--select-box-arrow-text-colour: #{$colour-link};
+
+	    @include select-box;
+	    overflow: hidden;
+	}
+	
+	.pat-button,
+	.icon {
+		display: inline-block;
+		vertical-align: top;
+		line-height: $pat-toolbar-button-line-height;
+		border: none;
+		float: none;
+		white-space: nowrap;
+		font-size: $pat-toolbar-font-size;
+
+		&.meta-data-toggle {
+			transition: transform 0.3s;
+
+			.more-metadata & {
+				transform: scaleY(-1);
+			}
+		}
+
+		@include screen-size(small) {
+			margin: 0 20px 0 0;
+		}
+
+		&:active {
+			box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
+		}
+
+		&:not(.active):not([disabled]):not(.default):hover {
+			color: black
+		}
+	}
+
+	>,
+	.toolbar-section >,
+	.pat-toolbar-section > {
+		.pat-button,
+		.pat-icon,
+		.pat-back-button,
+		.pat-select,
+		.pat-context-menu {
+			margin-right: $pat-toolbar-element-separation;
+		}
+	}
+
+	.pat-progress-bar {
+		margin-top: 9px;
+		width: 540px;
+		float: left;
+	}
+
+	.icon {
+		font-family: fontello;
+		text-indent: -1000em;
+		width: $pat-toolbar-button-height;
+		height: $pat-toolbar-button-height;
+		position: relative;
+		color: rgba(0,0,0,0.6);
+		cursor: default;
+		line-height: $pat-toolbar-button-line-height;
+		// float: left;
+		border-radius: $button-border-radius;
+		display: inline-block;
+		text-align: left;
+		background-color: $pat-toolbar-icon-background-colour;
+		color: $pat-toolbar-icon-text-colour;
+
+		&.progress {
+			.pie-graph {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+
+			&.pat-tooltip.tooltip-active-click {
+				background-color: var(--colour-accent);
+
+				.pie-graph {
+					border-color: white;;
+				}
+			}
+		}
+
+		&:before {
+			font-family: fontello;
+			text-indent: 0;
+			line-height: $pat-toolbar-button-line-height + 1px;
+			text-align: center;
+			position: absolute;
+			margin: 0;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			border-radius: $button-border-radius;
+			box-sizing: border-box;
+		}
+
+		&:hover {
+			color: $pat-toolbar-icon-text-colour-hover;
+			text-decoration: none;
+			background-color: $pat-toolbar-icon-background-colour-hover;
+
+			&:before {
+				color: $pat-toolbar-icon-text-colour-hover;
+			}
+		}
+
+		&.active {
+			color: var(--colour-accent);
+	    	box-shadow: none;
+
+			&:before {
+				color: var(--colour-accent);
+			}
+		}
+
+		&.pat-tooltip.tooltip-active-click {
+
+
+			&:before {
+				background-color: var(--colour-accent);
+				color: white;
+			}
+		}
+
+		&.create,
+		&.new {
+			&:before {
+				content: "#{$glyph-plus}";
+				// font-size: 25px;
+			}
+		}
+
+		&.edit {
+			&:before {
+				content: "#{$glyph-edit}";
+			}
+		}
+
+		&.preview {
+			&:before {
+				content: "#{$glyph-eye}";
+			}
+		}
+
+		&.settings {
+			&:before {
+				content: "#{$glyph-cog}";
+			}
+		}
+
+		&.modify {
+			&:before {
+				content: "#{$glyph-icon-cog}";
+			}
+		}
+
+		&.more {
+			&:before {
+				content: "#{$glyph-icon-ellipsis}";
+			}
+		}
+
+		&.upload {
+			&:before {
+				content: "#{$glyph-upload}";
+			}
+		}
+
+		&.download {
+			&:before {
+				content: "#{$glyph-download}";
+			}
+		}
+
+		&.card-view {
+			&:before {
+				content: "#{$glyph-grid-large}";
+			}
+		}
+
+		&.list-view {
+			&:before {
+				content: "#{$glyph-list-large}";
+			}
+		}
+
+		&.language {
+			&:before {
+				content: "#{$glyph-language}";
+			}
+		}
+
+	}
+
+	.pat-toolbar-search-field {
+		width: $pat-toolbar-button-height;
+		height: $pat-toolbar-button-height;
+		position: relative;
+		// float: left;
+		display: inline-block;
+		z-index: 1;
+		margin-left: $pat-toolbar-element-separation;
+		vertical-align: top;
+		font-size: $base-font-size;
+		background-color: $pat-toolbar-icon-background-colour;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			line-height: $pat-toolbar-button-line-height;
+			width: $pat-toolbar-button-height;
+			text-align: center;
+			font-family: fontello;
+			content: '#{$glyph-icon-search}';
+			font-size: 22px;
+			transition: left 0.5s, padding-left 0.5s, transform 1s;
+			color: $pat-toolbar-icon-text-colour;
+		}
+
+		&:hover {
+			background-color: $pat-toolbar-icon-background-colour-hover;
+
+			&:after {
+				color: $pat-toolbar-icon-text-colour-hover;
+			}
+		}
+
+		input {
+			width: $pat-toolbar-button-height;
+			height: $pat-toolbar-button-height;
+			border-radius: $border-radii;
+			background: white;
+			border: 1px silver solid;
+			max-width: 1000px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			transition: all 0.5s;
+			opacity: 0;
+			padding-left: 34px;
+			margin: 0;
+
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+
+		&.focus,
+		&.has-value,
+		&.fixed {
+			input {
+				width: 270px;
+				opacity: 1;
+
+				@include screen-size(medium-large) {
+					width: 350px;
+				}
+
+				@include screen-size(small) {
+					width: 350px;
+				}
+			}
+
+			&:after {
+				color: gray;
+				transform: scale(0.8);
+				left: -270px;
+
+				@include screen-size(medium-large) {
+					left: -350px;
+					padding-left: 40px;
+				}
+
+				@include screen-size(small) {
+					left: -350px;
+					padding-left: 40px;
+				}
+			}
+		}
+
+		&.fixed {
+			width: 258px;
+
+			&:after {
+				left: -123px;
+			}
+		}
+	}
+}

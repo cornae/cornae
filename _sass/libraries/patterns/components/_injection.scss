@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.pat-inject {
+    &[action],
+    &[formaction],
+    &.pat-subform {
+      &.executing {
+        [type="submit"] {
+              -ms-pointer-events: none;
+             -moz-pointer-events: none;
+          -webkit-pointer-events: none;
+                pointer-events: none;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    &[href] {
+      &.executing {
+          -ms-pointer-events: none;
+         -moz-pointer-events: none;
+      -webkit-pointer-events: none;
+            pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+}

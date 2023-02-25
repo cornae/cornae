@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+textarea.pat-tiptap {
+   opacity: 0
+}
+
+.ProseMirror-gapcursor {
+   position: relative;
+   display: block !important;
+
+   &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: -2px;
+      width: 20px;
+      border-top: 1px solid black;
+   }
+}
+
+.tiptap-container {
+   animation: fadeIn 0.4s;
+
+   .ProseMirror {
+      outline: none;
+      cursor: text;
+
+      > p:first-child[data-placeholder] {
+
+         &:before {
+            content: attr(data-placeholder);
+            color: rgba(0, 0, 0, 0.4);
+            float: right;
+            width: 100%;
+            // height: 0;
+         }
+      }
+   }
+   .ProseMirror-separator + .ProseMirror-trailingBreak,
+   .ProseMirror-separator {
+      display: none !important;
+      // Hiding the unwanted elements like this for the moment. We don't fully understand this yet.
+   }
+
+   .collaboration-cursor__caret {
+      border-left: 1px solid #0d0d0d;
+      border-left-color: rgb(13, 13, 13);
+      border-right: 1px solid #0d0d0d;
+      border-right-color: rgb(13, 13, 13);
+      margin-left: -1px;
+      margin-right: -1px;
+      pointer-events: none;
+      position: relative;
+      word-break: normal;
+   }
+
+   .collaboration-cursor__label {
+      border-radius: 3px 3px 3px 0;
+      color: #0d0d0d;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      left: -1px;
+      line-height: normal;
+      padding: .1rem .3rem;
+      position: absolute;
+      top: -1.4em;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      white-space: nowrap;
+   }
+
+}

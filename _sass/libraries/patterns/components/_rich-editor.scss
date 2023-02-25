@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+div.ProseMirror {
+	outline: none !important;
+
+	body & {
+		-webkit-user-select: text;
+		user-select: text;
+	}
+}
+
+.pat-rich-editor {
+	width: 100%;
+	position: relative;
+
+	&:not(.toolbar-detached) {
+		.pat-form & {
+			padding-top: calc(#{$pat-toolbar-button-height} + 15px);
+		}
+	}
+
+	.tiptap-menubar {
+		display: none;
+	}
+
+	.tiptap-editor__content {
+
+	}
+
+	.canvas-toolbar.inline {
+		background-color: rgba(0,0,0,0.06);
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		padding: 4px $form-input-field-padding-left-right;
+		font-size: 18px;
+
+		.canvas-toolbar-section.editor {
+			font-size: 0.8em;
+		}
+	}
+}

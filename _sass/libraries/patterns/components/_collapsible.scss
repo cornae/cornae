@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.pat-collapsible {
+
+.js {
+	display: none;	  
+
+	.patterns-loaded & {
+	  	display: inherit;
+	}
+}
+
+  	animation: fadeIn 1s;
+}

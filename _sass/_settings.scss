@@ -1,0 +1,440 @@
+// Assets
+@import "../../oira/style/fontello-010/css/fontello.css";
+@import "assets/glyphs";
+
+/* roboto-300 - Condensed bold */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: condensed;
+  src: url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Bold.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Bold.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-300 - Condensed light */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: condensed;
+  src: url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Light.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Light.woff') format('woff'), /* Modern Browsers */
+       url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../oira/style/fonts/roboto-condensed/RobotoCondensed-Light.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-300 - latin-ext_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-italic - latin-ext_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Italic'), local('Roboto-Italic'),
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-italic.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin-ext_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-900 - latin-ext_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Black'), local('Roboto-Black'),
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../oira/style/fonts/roboto/roboto-v18-latin-ext_latin-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* BEGIN Condensed Bold */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/CondensedBold/OpenSans-CondBold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: condensed;
+}
+/* END Light */
+/* BEGIN Condensed Light */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/CondensedLight/OpenSans-CondLight-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+}
+/* END Light */
+/* BEGIN Light */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/Light/OpenSans-Light.woff2?v=1.1.0") format("woff2"), 
+       url("../../oira/style/fonts/open-sans/Light/OpenSans-Light.woff?v=1.1.0") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+/* END Light */
+/* BEGIN Light Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/LightItalic/OpenSans-LightItalic.woff2?v=1.1.0") format("woff2"), url("../../oira/style/fonts/open-sans/LightItalic/OpenSans-LightItalic.woff?v=1.1.0") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+/* END Light Italic */
+/* BEGIN Regular */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/Regular/OpenSans-Regular.woff2?v=1.1.0") format("woff2"), 
+       url("../../oira/style/fonts/open-sans/Regular/OpenSans-Regular.woff?v=1.1.0") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* END Regular */
+/* BEGIN Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/Italic/OpenSans-Italic.woff2?v=1.1.0") format("woff2"), url("../../oira/style/fonts/open-sans/Italic/OpenSans-Italic.woff?v=1.1.0") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+/* END Italic */
+/* BEGIN Semibold */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/Semibold/OpenSans-Semibold.woff2?v=1.1.0") format("woff2"), 
+       url("../../oira/style/fonts/open-sans/Semibold/OpenSans-Semibold.woff?v=1.1.0") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+/* END Semibold */
+/* BEGIN Semibold Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.woff2?v=1.1.0") format("woff2"), 
+       url("../../oira/style/fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.woff?v=1.1.0") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+/* END Semibold Italic */
+/* BEGIN Bold */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/Bold/OpenSans-Bold.woff2?v=1.1.0") format("woff2"), 
+       url("../../oira/style/fonts/open-sans/Bold/OpenSans-Bold.woff?v=1.1.0") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/* END Bold */
+/* BEGIN Bold Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/BoldItalic/OpenSans-BoldItalic.woff2?v=1.1.0") format("woff2"), 
+       url("../../oira/style/fonts/open-sans/BoldItalic/OpenSans-BoldItalic.woff?v=1.1.0") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+/* END Bold Italic */
+/* BEGIN Extrabold */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/ExtraBold/OpenSans-ExtraBold.woff2?v=1.1.0") format("woff2"), 
+       url("../../oira/style/fonts/open-sans/ExtraBold/OpenSans-ExtraBold.woff?v=1.1.0") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+/* END Extrabold */
+/* BEGIN Extrabold Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../oira/style/fonts/open-sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff2?v=1.1.0") format("woff2"), 
+       url("../../oira/style/fonts/open-sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff?v=1.1.0") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+/* END Extrabold Italic */
+
+$tool-tile-padding: 22px;
+$bullet-space: 26px;
+
+// Menu list
+
+$menu-list-top-bottom-padding: 4px !default;
+
+// OiRA Colours
+$colour-oira-cyan: #10B2E4;
+$colour-oira-purple-xl: #dfd8e4;
+$colour-oira-cyan-xl: #e7f2fb;
+
+// Primary colours
+$colour-primary: #996699 !default;
+$colour-secondary: #003399 !default;
+$colour-base: $colour-oira-cyan-xl !default;
+$colour-alert: red !default;
+$colour-accent: #0081be !default;
+$colour-success: #acc700 !default;
+$colour-warning: #f6a400 !default;
+$colour-info: #10b2e4 !default;
+$colour-notice: #fceea9 !default;
+$colour-tag: #b4a4bf !default;
+$colour-link: DodgerBlue !default;
+
+$colour-base-font: #222222 !default;
+$colour-sidebar: $colour-base !default;
+$colour-sidebar-text: #666 !default;
+$colour-sidebar-links: black !default;
+$colour-toolbar: $colour-oira-cyan !default;
+$colour-lines: #e6e6e6 !default;
+$colour-menu-lines: #c8c8c8 !default; 
+$colour-tree-section-active: #efefef !default;
+$colour-form-fields-background: rgba(0,0,0,0.04) !default;
+$colour-comment-trail: #f2f2f2 !default;
+
+$colour-ueber-back-button: #d7d7d7 !default;
+$colour-ueber-back-button-text: $colour-link !default;
+
+$colour-button-continue: $colour-primary !default;
+$colour-button-continue-text: white !default;
+
+$colour-separation-lines: #dddddd !default;
+
+$border-radii: 10px !default;
+
+$button-border: none !default;
+$button-border-radius: $border-radii !default;
+$button-background-image: none !default;
+$button-font-weight: bold !default;
+
+$button-background-colour: rgba(0, 0, 0, 0.15) !default;
+$button-background-colour-hover: rgba(0,0,0,0.20) !default;
+$button-text-colour: $colour-link !default;
+$button-text-colour-hover: $colour-link !default;
+
+$button-background-colour-subdued: rgba(0, 0, 0, 0.15) !default;
+$button-text-colour-subdued: rgba(0,0,0,0.6) !default;
+$button-text-colour-subdued-hover: black !default;
+
+$button-background-colour-default: $colour-link !default;
+$button-background-colour-default-hover: darken($colour-link, 5) !default;
+$button-text-colour-default: white !default;
+$button-text-colour-default-hover: white !default;
+
+$back-button-background-colour: #d9d9d9 !default;
+$back-button-text-colour: #575757 !default;
+$back-button-text-colour-hover: black !default;
+
+$button-background-colour-disabled: #efefef !default;
+$button-text-colour-disabled: silver !default;
+$button-background-colour-disabled-hover: #efefef !default;
+$button-text-colour-disabled-hover: silver !default;
+
+// Shadows
+
+$default-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25) !default;
+$default-box-shadow-hover: 0 0 15px rgba(0,0,0,0.2) !default;
+$default-box-shadow-active: inset 0 0 10px rgba(0,0,0,0.4) !default;
+
+// Photoswipe 
+
+$pswp__assets-path: '/assets/oira/style/photoswipe/';
+
+// Form parameters
+
+$form-param-is: "is";
+$form-param-equals: "equals";
+$form-param-not-equals: "";
+$form-param-contains: "";
+$form-param-contains-not: "";
+$form-param-before: "";
+$form-param-after: "";
+
+// Grid
+$grid-gutter: 1.5rem;
+
+// Background symbols
+$arrow-down-dark: "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA4LjQgNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOC40IDc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtvcGFjaXR5OjAuNjt9DQo8L3N0eWxlPg0KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIwLDAgNC4yLDcgOC40LDAgIi8+DQo8L3N2Zz4=";
+$arrow-down-white: "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgOC40IDciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDguNCA3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMCwwIDQuMiw3IDguNCwwICIvPgo8L3N2Zz4=";
+
+// Font treatment
+$base-font-size: 18px;
+$base-line-height: 1.4;
+$font-weight-normal: 300;
+$font-weight-bold: bold;
+
+// We use these to control various global styles
+$body-bg: white !default;
+$body-font-color: #222222 !default;
+$body-font-family: 'Roboto', sans-serif !default;
+$body-font-weight: $font-weight-normal !default;
+$body-font-style: normal !default;
+
+$base-space: 1em; // Create universal white space (e.g. margin, padding, left)
+
+$sidebar-left-padding: 6% !default;
+$sidebar-right-padding: 6% !default;
+$sidebar-top-padding: 1.7rem !default;
+
+// Responsive variables
+
+$break-small: 768px;
+$break-medium: 769px;
+$break-large: 1280px;
+
+$small-screen-padding: 20px;
+
+// Libraries
+@import "libraries/patterns/patterns";
+
+// Project components
+@import "components/advanced-search";
+@import "components/assessment-toc";
+@import "components/anchor";
+@import "components/appendix";
+@import "components/ankeiler";
+@import "components/assessments";
+@import "components/assistive-text";
+// @import "components/auto-suggest";
+@import "components/bar-buttons";
+@import "components/body";
+@import "components/browser-warning";
+@import "components/button-bar";
+@import "components/button";
+@import "components/certificate";
+@import "components/certificate-overview";
+@import "components/certificate-print-sheet";
+@import "components/checklist";
+@import "components/canvas-alert-bar";
+@import "components/canvas-banner";
+@import "components/collapsible";
+@import "components/comment";
+@import "components/comment-sentinel";
+@import "components/comments";
+@import "components/conditions";
+@import "components/container";
+@import "components/content";
+@import "components/content-mirror";
+@import "components/context-menu";
+@import "components/custom-risks";
+@import "components/dashboard";
+@import "components/data-matrix";
+@import "components/download-blocks";
+@import "components/evaluation";
+@import "components/form";
+@import "components/form-iteration";
+@import "components/global-header";
+// @import "components/grid-list";
+@import "components/infinite-scrolling-trigger";
+@import "components/image";
+@import "components/image-collage";
+@import "components/image-uploader";
+@import "components/icon";
+@import "components/info-icon";
+@import "components/link-list";
+@import "components/logo";
+@import "components/long-read";
+@import "components/main";
+@import "components/measures";
+@import "components/message";
+@import "components/menu-list";
+// @import "components/modal";
+@import "components/modal-pop-over";
+@import "components/more-or-less";
+@import "components/miller-columns";
+@import "components/nav-tiles";
+@import "components/notification";
+@import "components/object-history";
+@import "components/onscreen-help";
+@import "components/osc";
+@import "components/page-actions";
+@import "components/page-module";
+@import "components/page-toc";
+@import "components/pick-list";
+@import "components/portal";
+@import "components/portlet";
+@import "components/presentation-slide";
+@import "components/presentation-section";
+@import "components/published-certificate";
+@import "components/pie-graph";
+@import "components/report";
+@import "components/rich";
+@import "components/risk-module";
+@import "components/risk-title";
+@import "components/update-social";
+@import "components/sample-list";
+@import "components/score-badge";
+@import "components/screen-intro";
+@import "components/search-filters";
+@import "components/search-form";
+@import "components/session-list";
+@import "components/site-header";
+@import "components/splash-message";
+@import "components/status";
+@import "components/statuses";
+@import "components/steps";
+@import "components/sub-nav-bar";
+@import "components/tag-cloud";
+@import "components/table";
+@import "components/training-passess";
+// @import "components/tabs";
+@import "components/text-container";
+@import "components/toolbar";
+@import "components/tooltip";
+@import "components/tool-icon";
+@import "components/tool-list";
+@import "components/tool-tiles";
+@import "components/tool-tile";
+@import "components/tool-info-sheet";
+@import "components/tool-preview";
+@import "components/ueber-back-button";
+@import "components/warning-bar";
+@import "components/well";
+@import "components/questions";

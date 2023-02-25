@@ -1,0 +1,281 @@
+$namespace-prefix: 'tippy';
+$placements: 'top', 'bottom', 'left', 'right';
+$origins: bottom, top, right, left;
+$backdrop-origins: 0% 25%, 0% -50%, 50% 0%, -50% 0%;
+$backdrop-border-radii: 40% 40% 0 0, 0 0 30% 30%, 50% 0 0 50%, 0 50% 50% 0;
+$bullet-space: 22px !default;
+$tooltip-border-radii: $border-radii !default;
+$tooltip-background-colour: white !default;
+$bullet-space: 22px !default;
+
+@import "../libraries/tippyjs/index";
+@import "../libraries/tippyjs/themes/patterns-tooltip";
+// @import "../libraries/tippyjs/themes/light-border";
+
+.tooltip-container {
+  overflow: visible;
+  font-size: 1rem;
+  padding: 0;
+
+  @media print {
+    display: none !important;
+  }
+
+  .tippy-content {
+    min-width: 250px;
+    border-radius: $tooltip-border-radii;
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul.menu {
+    // margin: 0;
+    list-style-type: none;
+    
+    li {
+      line-height: 1.5em;
+
+      > button,
+      > form > button,
+      > fieldset.pat-checklist label,
+      > a {
+        background: none;
+        display: block;
+        color: #666;
+        // line-height: 1.5em;
+        cursor: default;
+        // padding: 0.1em 0 0.1em $bullet-space;
+        box-shadow: none;
+        font-size: 1em;
+        font-family: $body-font-family;
+        padding-left: $bullet-space;
+
+        &:hover {
+          text-decoration: none;
+          color: black;
+        }
+
+        &:active,
+        &.active {
+          box-shadow: none;
+        }
+      }
+
+      > *,
+      > form > *,
+      > form > label > * {
+
+        &.disabled,
+        &[disabled] {
+          color: rgba(0, 0, 0, 0.2);
+          cursor: default;
+          -webkit-pointer-events: none;
+          pointer-events: none;
+
+          &:hover,
+          &:active {
+            color: rgba(0, 0, 0, 0.2) !important;
+          }
+        }
+
+      }
+
+      a:before, 
+      button:before {
+        margin-left: -1 * $bullet-space;
+        float: left;
+        // margin-top: 0.1em;
+        // line-height: 1.5em;
+      }
+
+      &.current {
+        // &:before {
+        //   content: "✓";
+        //   float: left;
+        //   margin-left: -1.5em;
+        //   font: 1em fontello;
+        // }
+
+        color: white;
+        background-color: $colour-accent;
+        margin: 0 -10px;
+        padding: 0 10px;
+        border-radius: $tooltip-border-radii;
+
+        a {
+          color: white;
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+
+      &.file-upload {
+        position: relative;
+        text-indent: 20px;
+        height: 25px;
+        overflow: hidden;
+        
+        &:before {
+          content: "\e808";
+          font-family: fontello;
+          position: absolute;
+          left: -13px;
+        }
+        
+        form {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          label {
+            position: absolute;
+            margin-left: 0;
+            left: 0;
+            overflow: hidden;
+            display: block;
+            right: 0;
+            cursor: pointer;
+            padding-left: 2px;
+          }
+          input {
+            opacity: 0;
+            filter: alpha(opacity = 0);
+            width: 100%;
+            cursor: pointer;
+            position: absolute;
+            top: 3px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // Variations
+
+  &.label {
+    .tippy-content {
+      text-align: center;
+      min-width: 0;
+      padding: 6px 10px;
+    }
+  }
+
+  .tippy-content {
+    background-color: $tooltip-background-colour;
+  }
+
+  [data-placement^='bottom'] .tippy-arrow {
+    border-bottom-color: $tooltip-background-colour;
+
+    &::before {
+      border-bottom-color: $tooltip-background-colour;
+    }
+  }
+
+  [data-placement^='left'] .tippy-arrow {
+    border-left-color: $tooltip-background-colour;
+
+    &::before {
+      border-left-color: $tooltip-background-colour;
+    }
+  }
+
+  [data-placement^='right'] .tippy-arrow {
+    border-right-color: $tooltip-background-colour;
+
+    &::before {
+      border-right-color: $tooltip-background-colour;
+    }
+  }
+
+  [data-placement^='top'] .tippy-arrow {
+    border-top-color: $tooltip-background-colour;
+
+    &::before {
+      border-top-color: $tooltip-background-colour;
+    }
+  }
+
+  &.info {
+    .tippy-content {
+      background-color: $colour-notice;
+    }
+
+    [data-placement^='bottom'] .tippy-arrow {
+      border-bottom-color: $colour-notice;
+
+      &::before {
+        border-bottom-color: $colour-notice;
+      }
+    }
+
+    [data-placement^='left'] .tippy-arrow {
+      border-left-color: $colour-notice;
+
+      &::before {
+        border-left-color: $colour-notice;
+      }
+    }
+
+    [data-placement^='right'] .tippy-arrow {
+      border-right-color: $colour-notice;
+
+      &::before {
+        border-right-color: $colour-notice;
+      }
+    }
+
+    [data-placement^='top'] .tippy-arrow {
+      border-top-color: $colour-notice;
+
+      &::before {
+        border-top-color: $colour-notice;
+      }
+    }
+  }
+
+  &.rich {
+    .tippy-content {
+      @include pat-rich();
+      p,h1,h2,h3,h4,h5,ul,ol,table {
+        margin-bottom: 0.5em;
+      }
+
+      > *:not(.footer):last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.large {
+    @include screen-size(large) {
+      // width: 50%;
+      // Width 50% caused trouble with the lock steal tooltip.
+    }
+  }
+
+  h4 {
+    color: #3b3b3b;
+    /* font-size: 12px; */
+    font-size: 1em;
+    /* line-height: 18px; */
+    margin-bottom: 5px;
+  }
+
+  .item-selector {
+    position: static;
+  }
+
+  .button-bar.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

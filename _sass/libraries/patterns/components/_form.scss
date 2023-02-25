@@ -1,0 +1,1057 @@
+@import "../components/checklist";
+@import "../components/file-upload-button";
+
+$colour-portlet-background: rgba(255,255,255,0.5) !default;
+$form-proportion-ceiling: 170% !default;
+$form-proportion-name: 30% !default;
+$form-proportion-value: 100% !default;
+$form-proportion-gutter: 15px !default;
+$form-input-field-line-height: inherit !default;
+$form-input-field-padding-top-bottom: 0.2em !default;
+$form-input-field-padding-left-right: 0.5em !default;
+$form-input-field-padding-top-bottom-disabled: 0 !default;
+$form-input-field-padding-left-right-disabled: 0 !default;
+$form-field-tail-white: 1em !default;
+$colour-form-fields-background: #efefef !default;
+$colour-form-fields-background-disabled: transparent !default;
+$form-fields-border-radius: $border-radii !default;
+$colour-placeholder: rgba(0,0,0,0.35);
+$colour-input-field-text: inherit !default;
+$colour-input-field-text-disabled: rgba(0,0,0,0.5) !default;
+$colour-form-panel: $colour-portlet-background !default;
+$form-panel-collapsible-button-height: $collapsible-button-height !default;
+$form-input-field-outline: none !default;
+$form-input-field-outline-offset: 0 !default;
+$form-input-field-outline-focus: none !default;
+$form-input-field-border: none !default;
+$form-input-field-border-focus: none !default;
+$form-input-field-box-shadow: none !default;
+$form-input-field-box-shadow-disabled: none !default;
+$form-input-field-box-shadow-focus: none !default;
+$form-panels-box-shadow-hover: 0 0 1px 1px rgba(0, 0, 0, 0.5) !default;
+
+@mixin form-field-width {
+  max-width: (100% - $form-proportion-name) / $form-proportion-name * $form-proportion-value;
+  min-width: (100% - $form-proportion-name) / $form-proportion-name * $form-proportion-value;
+  width: (100% - $form-proportion-name) / $form-proportion-name * $form-proportion-value;
+
+}
+
+.pat-form,
+form {
+  section.help .panel-content {  
+    padding-bottom: 2em;
+  }
+
+  p.instruction .pat-message {  
+    margin: 1em 0 0;
+  }
+
+  .form-separation-title,
+  .form-separation-header {
+    margin: 2em 0 1em;
+    font-size: 28px;
+    font-weight: normal;
+  }
+
+  &.panel-style .form-panel {   
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: $default-box-shadow;
+    border-radius: $border-radii;
+    background-color: $colour-form-panel;
+    margin-bottom: $default-tail-white;
+
+    .panel-content > *:last-child {
+      margin-bottom: 0;
+    }
+
+    .panel-content > .button-bar:last-child {
+      margin-bottom: -10px;
+    }
+
+    .form-separation-header {
+      margin-top: 0;
+      transition: padding 0.4s;
+    }
+
+    &.pat-collapsible {
+      transition: padding 0.4s;
+      padding: 0;
+
+      .form-separation-header {
+        padding-right: 50px;
+        padding-left: 40px;
+        position: relative;
+        margin: 0;
+
+        @include pat-collapsible-button;
+      }
+
+      &.open,
+      &.closed.in-progress {
+        transition: box-shadow 2s;
+
+        .form-separation-header {
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+      }
+
+      &.closed {
+        &:hover {
+          box-shadow: $form-panels-box-shadow-hover;
+        }
+      }
+
+      &.closed,
+      &.open.in-progress {
+
+        .form-separation-header {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          border-radius: $border-radii;
+
+          &:after {
+            content: '#{$glyph-down-open}';
+          }
+
+        }
+      }
+
+      .panel-content {
+        padding: 0 40px 40px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .pat-message,
+  .message {
+    @include pat-message();
+    @include box-sizing();
+
+    display: block;
+    clear: both;
+    margin-top: 0.5em;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+  }
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  .form-section-header {
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    font-size: 1.1em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .field-cluster,
+  .field-list {
+    margin: -0.5 * $form-input-field-padding-top-bottom 0;
+    max-width: 100%;
+    line-height: $form-input-field-line-height;
+  }
+
+  input,
+  textarea,
+  .textarea.group,
+  select,
+  .select2-container .select2-choice,
+  .select2-container .select2-choices,
+  .md-editor .md-render,
+  .pat-rich-editor,
+  .output-field,
+    {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: $body-font-family;
+    display: block;
+    @include box-sizing();
+    padding: $form-input-field-padding-top-bottom $form-input-field-padding-left-right;
+    margin: -1 * $form-input-field-padding-top-bottom 0;
+    border: $form-input-field-border;
+    box-shadow: $form-input-field-box-shadow;
+    outline: $form-input-field-outline;
+    outline-offset: $form-input-field-outline-offset;
+    color: $colour-input-field-text;
+    font-size: 100%;
+    border-radius: 0;
+    max-width: 100%;
+    background-color: $colour-form-fields-background;
+    border-radius: $form-fields-border-radius;
+    line-height: $form-input-field-line-height;
+    
+    &:focus {
+      outline: $form-input-field-outline-focus;
+      border: $form-input-field-border-focus;
+      box-shadow: $form-input-field-box-shadow-focus;
+    }
+
+    &:disabled,
+    &.disabled {
+      border: transparent;
+      outline: none;
+      opacity: 1;
+      padding-left: $form-input-field-padding-left-right-disabled;
+      padding-right: $form-input-field-padding-left-right-disabled;
+      padding-top: $form-input-field-padding-top-bottom-disabled;
+      padding-bottom: $form-input-field-padding-top-bottom-disabled;
+      background: $colour-form-fields-background-disabled;
+      box-shadow: $form-input-field-box-shadow-disabled;
+      color: $colour-input-field-text-disabled;
+    }
+
+    @media print { 
+      border: transparent;
+      opacity: 1;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
+  .select2-container-active {
+    .select2-choice, 
+    .select2-choices {
+      outline: $form-input-field-outline-focus;
+      border: $form-input-field-border-focus;
+      box-shadow: $form-input-field-box-shadow-focus;
+    }
+  }
+
+  .field-list {
+    > label {
+      position: relative;
+      color: transparent;
+      display: block;
+      margin-bottom: 24px;
+      
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      > input,
+      > .output-field {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .field-cluster {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px,1fr));
+    grid-column-gap: 10px;
+
+    label {
+      position: relative;
+      color: transparent;
+
+      input,
+      .output-field {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        color: initial;
+      }
+    }
+
+    &.layout-date-time {
+      grid-template-columns: auto 100px;
+    }
+
+    &.layout-address-line-nl {  
+      grid-template-columns: auto 100px 60px;    
+    }
+
+    &.layout-postal-code-place-line-nl {
+      grid-template-columns: 100px auto;   
+    }
+  }
+
+  .pat-rich-editor {
+    .ProseMirror {
+      // > *:last-child {
+      //   margin: 0;
+      // }
+      overflow: hidden;
+    }
+  }
+
+  input[type=time] {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  ::-webkit-datetime-edit {
+    padding-top: $form-input-field-padding-top-bottom;
+    padding-bottom: $form-input-field-padding-top-bottom;
+    margin-bottom: -1.5 * $form-input-field-padding-top-bottom;
+    line-height: $form-input-field-line-height;
+    font-size: inherit;
+
+    > * {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  ::-webkit-datetime-edit-minute-field,
+  ::-webkit-datetime-edit-hour-field,
+  ::-webkit-datetime-edit-text {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $colour-placeholder; 
+  }
+
+  ::placeholder,
+  .select2-container .select2-choice.select2-default {
+    color: $colour-placeholder; 
+  }
+
+  .output-field {
+    position: relative;
+    padding-right: 27px;
+
+    span.placeholder {
+      color: $colour-placeholder;
+    }
+
+    &:after {
+      content: ' ';
+      display: inline-block;
+    }
+
+    &:hover {
+      box-shadow: inset 0 0 1px 1px $colour-accent;
+    }
+
+    .cancel-button,
+    .select2-search-choice-close {
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
+
+      &:before {
+        font-family: fontello;
+        text-align: center;
+        display: block;
+        content: '#{$glyph-cancel}';
+        color: rgba(0,0,0,0.5);
+      }
+
+      &:hover {
+        &:before {
+          color: rgba(0,0,0,0.7);
+        }
+      }
+    }
+  }
+
+  .file-upload-button,
+  fieldset.horizontal fieldset.group .file-upload-button{
+    margin: -1 * $form-input-field-padding-top-bottom 0 0;
+    display: inline-block !important; // Temporary !important till rewrite of form.scss.
+  }
+
+  .group {
+    &.layout-date {
+      label {
+        display: inline-block;
+
+        &.day {
+          width: 80px;
+        }
+
+        &.year {
+          width: 83px;
+        }
+      }
+    }
+  }
+
+  .select2-container {
+    margin: -0.5 * $form-input-field-padding-top-bottom 0;
+
+    .select2-choice,
+    .select2-choices {
+      padding-top: $form-input-field-padding-top-bottom;
+      padding-bottom: $form-input-field-padding-top-bottom;
+      margin: 0 0 -8px 0;
+    }
+  }
+
+  textarea {
+    @media print {
+      display: block;
+      height: auto;
+    }
+  }
+
+  input[type=search] {
+    appearance: search;
+    -webkit-appearance: search;
+
+    &::-webkit-search-decoration {
+      display: none;
+    }    
+  }
+
+  input[type="file"] {
+    align-items: center;
+    column-gap: 15px;
+    display: inline-flex !important; // !important can go after the next rewrite ofr form.scss
+
+    &::file-selector-button {
+      @include pat-button();
+      font-size: 16px;
+      padding: $button-small-paddings;
+      height: 22px;
+      line-height: 21px;
+      box-shadow: $button-small-shadow;
+      font-weight: 600;
+      vertical-align: middle;
+      margin: 3px 0 2px 0;
+      display: inline-block;
+    }
+  }
+
+  input[type=range] {
+      /*removes default webkit styles*/
+      -webkit-appearance: none;
+      padding: 0.2em 0;
+
+      background: transparent;
+      
+      /*fix for FF unable to apply focus style bug */
+      // border: 1px solid gray;
+      border-radius: 1em;
+      
+      /*required for proper track sizing in FF*/
+      // width: 300px;
+  }
+
+  input[type=range]:focus {
+      outline: none;
+      border: 1px solid white;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+      // width: 300px;
+      height: 0.5em;
+      background: rgba(0,0,0,0.3);
+      border: none;
+      box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+      border-radius: 1em;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 1.4em;
+      width: 1.4em;
+      border-radius: 50%;
+      background: $colour-accent;
+      margin-top: -0.45em;
+  }
+
+  input[type=range]::-moz-range-track {
+      // width: 300px;
+      height: 0.5em;
+      background: rgba(0,0,0,0.3);
+      box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+      border: none;
+      border-radius: 1em;
+  }
+
+  input[type=range]::-moz-range-thumb {
+      border: none;
+      height: 1.4em;
+      width: 1.4em;
+      border-radius: 50%;
+      background: $colour-accent;
+  }
+
+  input[type=range]:-moz-focusring{
+      outline: 1px solid white;
+      outline-offset: -1px;
+  }
+
+  input[type=range]::-ms-track {
+      height: 0.5em;
+      background: $colour-base;
+      border-color: transparent;
+      border-width: 0.5em 0;
+      color: transparent;
+  }
+
+  input[type=range]::-ms-thumb {
+      border: none;
+      height: 1.4em;
+      width: 1.4em;
+      border-radius: 50%;
+      background: $colour-accent;
+  }
+
+  input[type=range]:focus::-ms-fill-lower {
+      background: #888;
+  }
+
+  input[type=range]:focus::-ms-fill-upper {
+      background: #ccc;
+  }
+
+  .colour-chooser-launcher {
+    margin: 0;
+
+    .pat-button {
+      display: inline-block;
+      text-align: center;
+      margin-right: 0;
+      // font-size: 18px;
+      color: white;
+
+      &#portal-header-colour-chooser-trigger {
+        background-color: $colour-chooser-default;
+      }
+    }
+  }
+
+  .slider-labels {
+    width: 100%;
+    overflow: hidden;
+    font-size: 0.8em;
+
+    .label {
+      float: left;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: 0.5em 0 1.2em 0em;
+
+      .iconified {
+        display: block;
+        line-height: 12px;
+        clear: both;
+        font-size: 10px;
+        margin-top: 1px;
+        width: auto;
+        text-align: center;
+
+        &:before {
+          margin-right: 2px;
+        }
+      }
+
+      &.disabled {
+        opacity: 0.5;
+      }
+
+      &:first-child {
+        text-align: left;
+
+        .iconified {
+          text-align: left;
+        }
+      }
+
+      &:last-child {
+        text-align: right;
+
+        .iconified {
+          text-align: right;
+        }
+      }
+    }
+
+    &.two {
+      .label {
+        width: 50%;
+      }
+    }
+
+    &.three {
+      .label {
+        width: 33.3333332%;
+      }
+    }
+
+    &.four {
+      .label {
+        width: 33.333333332%;
+      }
+
+      .label:first-child,
+      .label:last-child {
+        width: 16.666666667%;
+      }
+    }
+
+    &.five {
+      .label {
+        width: 24%;
+      }
+
+      .label:first-child,
+      .label:last-child {
+        width: 14%
+      }
+    }
+  }
+
+  .currency-field {
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: " ";
+      display: block;
+      height: 1px;
+      width: 1px;
+    }
+
+    .currency {
+      position: absolute;
+      left: 0.5em;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    input,
+    output {
+      padding-left: 1.5em;
+      display: inline-block;
+    } 
+  }
+
+  .percentage-field {
+    display: inline-block;
+
+    input {
+      display: inline-block;
+    }
+  }
+
+  .button-field {
+    position: relative;
+
+    input,
+    select {
+      width: calc(100% - 40px) !important;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    > .follow {
+      border-radius: 0;
+      border-top-right-radius: $border-radii;
+      border-bottom-right-radius: $border-radii;
+      width: 40px;
+      overflow: hidden;
+      color: transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border: 0;
+      color: transparent;
+      background-color: var(--colour-accent);
+      cursor: default;
+
+      &[href] {
+
+        &:before {
+          opacity: 1;
+        }
+
+        &:hover {
+          filter: brightness(1.1);
+        }
+      }
+
+      &:before {
+        opacity: 0.5;
+        content: ' ';
+        font-family: fontello;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        position: absolute;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    &.type-url > .follow:before {
+      content: '#{$glyph-icon-right-circled}';
+    }
+  }
+
+  select {
+    /*Next 2 lines is a bizarre patch to make misbehaving FF hide the original dropdown button*/
+    text-indent: 0.01px;
+    text-overflow: '';
+    
+    // border-right: 0.35em solid rgba(0, 0, 0, 0);
+    padding-right: 1.5em;
+
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-image: url(data:image/svg+xml;base64,#{$arrow-down-dark});
+    background-size: auto 10px;
+
+    &::-ms-expand{
+      display:none;
+    }
+  }
+
+  fieldset {
+    border-style: none;
+    margin: 0 0 1em;
+    padding: 0;
+    min-width: inherit;
+
+    &:after {
+      display: table;
+      clear: both;
+      content: ' ';
+    }
+
+      &.section {
+        margin: 0 0 2em;
+      }
+   
+      &.horizontal,
+      &.horizontal > .panel-content {
+        @include screen-size(medium-large) { 
+        width: 100%;
+
+        .field-cluster,
+        .field-list {
+          width: $form-proportion-value;
+        }
+
+        > br {
+          display: none;
+        }
+        
+        .legend {
+          width: $form-proportion-name;
+          margin: 0;
+          padding: 0 0 1em 0;
+          font-weight: bold;
+          letter-spacing: 0;
+          text-transform: none;
+          float: left;
+        }
+
+        .group > .link-list,
+        .group.image-selection > img,
+        .group.image-upload > img,
+        .group.image-upload > input,
+        .group.video-upload > video,
+        .group.video-upload > input,
+        .group > .pat-rich-editor,
+        .help .help-content {
+            max-width: $form-proportion-value;
+
+        }
+
+        > label {
+          position: relative;
+          display: block;
+          padding-right: calc(100% - #{$form-proportion-name});
+          margin-bottom: $form-field-tail-white;
+          left: 0;
+
+          &:after {
+            content: " ";
+            height: 0;
+            display: block;
+            clear: both;
+          }
+
+          > {
+            input, 
+            textarea, 
+            select, 
+            .composed,
+            .pat-message,
+            .message,
+            .select2-container,
+            .colour-chooser-launcher,
+            .read-only-field,
+            .pat-rich-editor,
+            .output-field,
+            dfn.help {
+              position: relative;
+              left: 100%;
+              margin-right: -1000%;
+              float: left;
+              @include form-field-width;
+            }
+
+            .select2-container {
+              width: $form-proportion-ceiling;
+            }
+
+            .colour-chooser-launcher {
+              height: 0.6em;
+            }
+
+            .message {
+              width: $form-proportion-ceiling;
+            }
+          }
+
+          &.checkbox:before, &[data-option]:after {
+            position: relative;
+            vertical-align: top;
+            max-width: $form-proportion-ceiling;
+            left: 100%;
+            margin-right: -200%;
+            margin-left: 0;
+            float: left;
+          }
+        }
+
+        label {
+          .iconified {
+            float: none;
+            position: static;
+            line-height: 10px;
+            margin-top: 0;
+            vertical-align: baseline;
+            filter: none;
+          }
+
+          sup.required {
+            float: none;
+            position: static;
+            margin-top: 0;
+            vertical-align: baseline;
+            filter: none;
+            margin: 0;
+          }
+
+          textarea {
+            width: $form-proportion-ceiling;
+          }
+        }
+
+        fieldset.group,
+        div.group,
+        > .pat-checklist,
+        > .help,
+        .instruction {
+          width: 100% - $form-proportion-name;
+          clear: left;
+          border-style: none;
+          margin: 0 0 $form-field-tail-white 0;
+          padding-left: #{$form-proportion-name};
+          position: relative;
+          padding-bottom: 0;
+          padding-top: 0;
+
+          &.layout-inline {
+            label {
+              display: inline-block;
+            }
+          }
+
+          legend {
+            position: absolute;
+            left: 0;
+            font-weight: $font-weight-normal;
+            font-style: normal;
+            top: 0;
+          }
+
+          .legend {
+            width: $form-proportion-name * 100% / (100% - $form-proportion-name);
+            display: inline;
+            text-align: left;
+            padding: 0 1em 0 0;
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            font-weight: $font-weight-normal;
+            font-style: normal;
+            margin: 0 0 0 $form-proportion-name * 100% / (100% - $form-proportion-name) * -1;
+            text-transform: none;
+            letter-spacing: 0;
+          }
+
+          :not(.free-form) {
+            label {
+              width: auto;
+            }
+          }
+
+          label {
+            font-weight: $font-weight-normal;
+            font-style: normal;
+            position: relative;
+            border-style: none;
+            // margin: 0;
+
+            & + .pat-checklist {
+              margin-top: 0.5em; // Gives some whitespace between an input field and a tickbox that's underneath it.
+              display: block;
+            }
+          }
+      }  
+
+      dfn.help {
+        @include box-sizing;
+        margin: 0;
+        width: $form-proportion-name * 100% / (100% - $form-proportion-name);
+        width: 80%;
+      }
+
+    }
+  }
+
+  @mixin form-vertical () {
+    > br,
+    .group > br {
+      display: none;
+    }
+
+    label {
+      position: relative;
+      display: block;
+
+      &.columns,
+      &.column {
+        display: inline-block;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .group.pat-checklist {
+      legend,
+      .legend {
+        margin-bottom: 0.2em;
+      }
+    }
+
+    label >,
+    .group > {
+      input,
+      textarea,
+      select,
+      .sortable-items-list,
+      .select2-container,
+      .button-field,
+      .group.textarea,
+      .field-value,
+      .group.md-editor,
+      .colour-chooser-launcher,
+      .read-only-field,
+      .pat-rich-editor,
+      .pat-miller-columns,
+      .output-field,
+      .composed,
+      .field-cluster,
+      .attachment-list {
+        // Output field differs from read only field in the sense that an output field still looks like an input field, albeit uneditable.
+        display: block;
+        margin-top: 0.2em;
+        width: 100%;
+        font-weight: $font-weight-normal;
+      }   
+    }
+
+    .row {
+      margin: 0 -5px 0.8em;
+
+      .column,
+      .columns {
+        margin-bottom: 0;
+        padding: 0 5px;
+
+        > * {
+          margin-bottom: 0;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    label >,
+    .group > {
+      .composed {
+        input {
+          width: 100%;
+        }
+      }
+    }
+
+    textarea.pat-content-mirror,
+    .group.md-editor .md-render {
+      margin-top: 0;
+    }
+
+    .legend,
+    > label,
+    .group > label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    .legend {
+      margin-bottom: 0em;
+      margin-top: 8px;
+    }
+
+    // .currency-field {
+    //   display: block;
+
+    //   abbr {font-weight: normal; top: 0.2em}
+    // }
+  }
+
+
+    @include screen-size(small) {
+      &.horizontal {
+        @include form-vertical();
+      }
+    }
+
+    &.vertical {
+      @include form-vertical();
+    }
+  }
+}

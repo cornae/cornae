@@ -1,0 +1,1201 @@
+# Label
+
+label_internal_link:
+  nl: Interne koppeling
+  en: Internal link
+label_external_link:
+  nl: Externe koppeling
+  en: External link
+label_new_table:
+  nl: Nieuwe tabel
+  en: New table
+label_remove_table_imp:
+  nl: Verwijder tabel
+  en: Remove table
+label_add_column_to_the_left_imp:
+  nl: Voeg een kolom links toe
+  en: Add a column to the left
+label_add_column_to_the_right_imp:
+  nl: Voeg een kolom rechts toe
+  en: Add a column to the right
+label_remove_column_imp:
+  nl: Verwijder kolom
+  en: Remove column
+label_remove_row_imp:
+  nl: Verwijder rij
+  en: Remove row
+label_add_row_above_imp:
+  nl: Voeg een rij boven toe
+  en: Add a row above
+label_add_row_below_imp:
+  nl: Voeg een rij onder toe
+  en: Add a row below
+label_ordered_list:
+  nl: Geordende lijst
+  en: Ordered list
+label_unordered_list:
+  nl: Ongeordende lijst
+  en: Unordered list
+label_paragraph:
+  nl: Alinea
+  en: Paragraph
+label_quote:
+  nl: Citaat
+  en: Quote
+label_header_level_1:
+  nl: Kop, niveau 1
+  en: Header level 1
+label_header_level_2:
+  nl: Kop, niveau 2
+  en: Header level 2
+label_header_level_3:
+  nl: Kop, niveau 3
+  en: Header level 3
+label_header_level_4:
+  nl: Kop, niveau 4
+  en: Header level 4
+label_header_level_5:
+  nl: Kop, niveau 5
+  en: Header level 5
+label_header_level_6:
+  nl: Kop, niveau 6
+  en: Header level 6
+label_undo:
+  nl: Maak ongedaan
+  en: Undo
+label_redo:
+  nl: Herstel
+  en: Redo
+label_code:
+  nl: Code
+  en: Code
+label_hyperlink:
+  nl: Hyperlink
+  en: Hyperlink
+  de: Hyperlink
+  fr: Lien hypertexte
+label_bold:
+  nl: Vet
+  en: Bold
+label_italic:
+  nl: Cursief
+  en: Italic
+label_formatting:
+  nl: Formattering
+  en: Formatting
+label_strike_through:
+  nl: Doorhalen
+  en: Strike through
+label_horizontal_rule:
+  nl: Horizontale regel
+  en: Horizontal rule
+label_lists:
+  nl: Lijsten
+  en: Lists
+label_image:
+  nl: Afbeelding
+  en: Image
+label_video:
+  nl: Video
+  en: Video
+label_table:
+  nl: Tabel
+  en: Table
+label_paste:
+  nl: Plakken
+  en: Paste
+  fr: Coller
+  de: Einsetzen
+label_paste_imp:
+  nl: Plak
+  en: Paste
+  fr: Coller
+  de: Einsetzen
+label_continue:
+  bg: Напред
+  ca: Següent
+  cs: Další
+  de: Weiter
+  el: Επόμενο
+  en: Continue
+  es: Siguiente
+  fi: Seuraava
+  fr: Suivant
+  hr: Sljedeće
+  hu: Következő
+  is: Næsta
+  it: Avanti
+  lt: Toliau
+  lv: Tālāk
+  mt: Li jmiss
+  nl: Volgende
+  nl_BE: Volgende
+  pt: Seguinte
+  sl: Naprej
+label_url:
+  nl: Url
+  en: URL
+  de: URL
+  fr: URL
+label_thanks_form:
+  nl: Dankuwel
+  en: Thank you
+  de: Vielen Dank
+  fr: Merci
+label_share:
+  de: Teilen
+  en: Share
+  nl: Delen
+  fr: Partager
+label_share_imp:
+  de: Teilen
+  en: Share
+  nl: Deel
+  fr: Partager
+label_homescreen:
+  nl: Home
+  en: Home
+  fr: Accueil
+  de: Startseite
+label_organisation:
+  nl: Organisatie
+  en: Organisation
+label_all_organisations:
+  nl: Alle rganisaties
+  en: All organisations
+  fr: Toutes les organisations
+  de: Alle Organisationen
+label_download_imp:
+  nl: Download
+  en: Download
+  de: Herunterladen
+  fr: Télécharger
+label_confirm_imp:
+  fr: Confirmer
+  de: Bestätigen
+  en: Confirm
+  nl: Bevestig
+label_download_imp:
+  nl: Download
+  en: Download
+  de: Herunterladen
+  fr: Télécharger
+label_confirm_imp:
+  fr: Confirmer
+  de: Bestätigen
+  en: Confirm
+  nl: Bevestig
+label_personal_details:
+  nl: Persoonlijke gegevens
+  en: Personal details
+label_optional: 
+  nl: Optioneel
+  en: Optional
+snippet_optional: 
+  nl: optioneel
+  en: optional
+label_first_name:
+  nl: Voornaam
+  en: First name
+  de: Vorname
+label_last_name:
+  nl: Achternaam
+  en: Family name
+  de: Nachname
+label_height: 
+  nl: Hoogte
+  en: Height
+  de: Höhe
+  fr: Hauteur
+label_position: 
+  nl: Positie
+  en: Position
+  de: Position
+  fr: Position
+label_password_confirm:
+  bg: Паролата отново
+  ca: Repetició de la contrasenya
+  cs: Heslo znovu
+  de: Wiederholung Passwort
+  el: Κωδικός πρόσβασης ξανά
+  en: Again password
+  es: Repetir contraseña
+  fi: Toista salasana
+  fr: Confirmer le mot de passe
+  hr: Ponovite lozinku
+  hu: Jelszó még egyszer
+  is: Staðfesta lykilorð
+  it: Ripetere password
+  lt: Pakartoti slaptažodį
+  lv: Ievadiet paroli vēlreiz
+  mt: Erġa' daħħal il-password
+  nl: Nogmaals wachtwoord
+  nl_BE: Wachtwoord opnieuw invoeren
+  'no': ''
+  pt: Repetir a palavra-passe
+  sl: Ponovno geslo
+label_password:
+  bg: Парола
+  ca: Contrasenya
+  cs: Heslo
+  de: Gewünschtes Passwort
+  el: Κωδικός
+  en: Password
+  es: Contraseña
+  fi: Salasana
+  fr: Mot de passe
+  hr: Lozinka
+  hu: Jelszó
+  is: Lykilorð
+  it: Password
+  lt: Slaptažodis
+  lv: Parole
+  mt: Password
+  nl: Wachtwoord
+  nl_BE: Wachtwoord
+  'no': ''
+  pt: Palavra-passe
+  sl: Prijava
+label_table_of_contents:
+  en: Table of contents
+  nl: Inhoudsopgave
+label_reply_imp:
+  en: Reply
+  nl: Beantwoorden
+  de: Antworten
+  fr: Répondre
+label_comment_imp:
+  en: Comment
+  nl: Reageer
+  de: Kommentieren
+  fr: Répondre
+label_like_imp:
+  nl: Leuk
+  en: Like
+  de: Gefällt mir
+  fr: J'aime
+label_unlike_imp:
+  nl: Niet meer leuk
+  en: Unlike
+  de: Gefällt mir nicht mehr
+  fr: N'aime pas
+label_post:
+  de: Abschicken
+  en: Send
+  nl: Verstuur
+  fr: Publier
+label_leave_comment:
+  de: Kommentar verfassen
+  en: Leave a comment
+  nl: Reageer
+  fr: Commenter
+label_sunday:
+  en: Sunday
+  nl: Zondag
+  de: Sonntag
+  fr: Dimanche
+label_monday:
+  en: Monday
+  nl: Maandag
+  de: Montag
+  fr: Lundi
+label_tuesday:
+  en: Tuesday
+  nl: Maandag
+  de: Dienstag
+  fr: Mardi
+label_wednesday:
+  en: Wednesday
+  nl: Maandag
+  de: Mittwoch
+  fr: Mercredi
+label_thursday:
+  en: Thursday
+  nl: Maandag
+  de: Donnerstag
+  fr: jeudi
+label_friday:
+  en: Friday
+  nl: Maandag
+  de: Freitag
+  fr: vendredi
+label_saturday:
+  en: Saturday
+  nl: Maandag
+  de: Samstag
+  fr: samedi
+label_afghanistan:
+  en: Afghanistan
+label_albania:
+  en: Albania
+label_algeria:
+  en: Algeria
+label_andorra:
+  en: Andorra
+label_angola:
+  en: Angola
+label_antigua-and-barbuda:
+  en: Antigua and Barbuda
+label_argentina:
+  en: Argentina
+label_armenia:
+  en: Armenia
+label_australia:
+  en: Australia
+label_austria:
+  en: Austria
+label_azerbaijan:
+  en: Azerbaijan
+label_bahamas:
+  en: Bahamas
+label_bahrain:
+  en: Bahrain
+label_bangladesh:
+  en: Bangladesh
+label_barbados:
+  en: Barbados
+label_belarus:
+  en: Belarus
+label_belgium:
+  en: Belgium
+label_belize:
+  en: Belize
+label_benin:
+  en: Benin
+label_bhutan:
+  en: Bhutan
+label_bolivia:
+  en: Bolivia
+label_bosnia-and-herzegovina:
+  en: Bosnia and Herzegovina
+label_botswana:
+  en: Botswana
+label_brazil:
+  en: Brazil
+label_brunei:
+  en: Brunei
+label_bulgaria:
+  en: Bulgaria
+label_burkina-faso:
+  en: Burkina Faso
+label_burundi:
+  en: Burundi
+label_côte-d'ivoire:
+  en: Côte d'Ivoire
+label_cabo-verde:
+  en: Cabo Verde
+label_cambodia:
+  en: Cambodia
+label_cameroon:
+  en: Cameroon
+label_canada:
+  en: Canada
+label_central-african-republic:
+  en: Central African Republic
+label_chad:
+  en: Chad
+label_chile:
+  en: Chile
+label_china:
+  en: China
+label_colombia:
+  en: Colombia
+label_comoros:
+  en: Comoros
+label_congo-(congo-brazzaville):
+  en: Congo (Congo-Brazzaville)
+label_costa-rica:
+  en: Costa Rica
+label_croatia:
+  en: Croatia
+label_cuba:
+  en: Cuba
+label_cyprus:
+  en: Cyprus
+label_czechia-(czech-republic):
+  en: Czechia (Czech Republic)
+label_democratic-republic-of-the-congo:
+  en: Democratic Republic of the Congo
+label_denmark:
+  en: Denmark
+label_djibouti:
+  en: Djibouti
+label_dominica:
+  en: Dominica
+label_dominican-republic:
+  en: Dominican Republic
+label_ecuador:
+  en: Ecuador
+label_egypt:
+  en: Egypt
+label_el-salvador:
+  en: El Salvador
+label_equatorial-guinea:
+  en: Equatorial Guinea
+label_eritrea:
+  en: Eritrea
+label_estonia:
+  en: Estonia
+label_eswatini-(fmr.-"swaziland"):
+  en: Eswatini (fmr. "Swaziland")
+label_ethiopia:
+  en: Ethiopia
+label_fiji:
+  en: Fiji
+label_finland:
+  en: Finland
+label_france:
+  en: France
+label_gabon:
+  en: Gabon
+label_gambia:
+  en: Gambia
+label_georgia:
+  en: Georgia
+label_germany:
+  en: Germany
+label_ghana:
+  en: Ghana
+label_greece:
+  en: Greece
+label_grenada:
+  en: Grenada
+label_guatemala:
+  en: Guatemala
+label_guinea:
+  en: Guinea
+label_guinea-bissau:
+  en: Guinea-Bissau
+label_guyana:
+  en: Guyana
+label_haiti:
+  en: Haiti
+label_holy-see:
+  en: Holy See
+label_honduras:
+  en: Honduras
+label_hungary:
+  en: Hungary
+label_iceland:
+  en: Iceland
+label_india:
+  en: India
+label_indonesia:
+  en: Indonesia
+label_iran:
+  en: Iran
+label_iraq:
+  en: Iraq
+label_ireland:
+  en: Ireland
+label_israel:
+  en: Israel
+label_italy:
+  en: Italy
+label_jamaica:
+  en: Jamaica
+label_japan:
+  en: Japan
+label_jordan:
+  en: Jordan
+label_kazakhstan:
+  en: Kazakhstan
+label_kenya:
+  en: Kenya
+label_kiribati:
+  en: Kiribati
+label_kuwait:
+  en: Kuwait
+label_kyrgyzstan:
+  en: Kyrgyzstan
+label_laos:
+  en: Laos
+label_latvia:
+  en: Latvia
+label_lebanon:
+  en: Lebanon
+label_lesotho:
+  en: Lesotho
+label_liberia:
+  en: Liberia
+label_libya:
+  en: Libya
+label_liechtenstein:
+  en: Liechtenstein
+label_lithuania:
+  en: Lithuania
+label_luxembourg:
+  en: Luxembourg
+label_madagascar:
+  en: Madagascar
+label_malawi:
+  en: Malawi
+label_malaysia:
+  en: Malaysia
+label_maldives:
+  en: Maldives
+label_mali:
+  en: Mali
+label_malta:
+  en: Malta
+label_marshall-islands:
+  en: Marshall Islands
+label_mauritania:
+  en: Mauritania
+label_mauritius:
+  en: Mauritius
+label_mexico:
+  en: Mexico
+label_micronesia:
+  en: Micronesia
+label_moldova:
+  en: Moldova
+label_monaco:
+  en: Monaco
+label_mongolia:
+  en: Mongolia
+label_montenegro:
+  en: Montenegro
+label_morocco:
+  en: Morocco
+label_mozambique:
+  en: Mozambique
+label_myanmar-(formerly-burma):
+  en: Myanmar (formerly Burma)
+label_namibia:
+  en: Namibia
+label_nauru:
+  en: Nauru
+label_nepal:
+  en: Nepal
+label_netherlands:
+  en: Netherlands
+label_new-zealand:
+  en: New Zealand
+label_nicaragua:
+  en: Nicaragua
+label_niger:
+  en: Niger
+label_nigeria:
+  en: Nigeria
+label_north-korea:
+  en: North Korea
+label_north-macedonia:
+  en: North Macedonia
+label_norway:
+  en: Norway
+label_oman:
+  en: Oman
+label_pakistan:
+  en: Pakistan
+label_palau:
+  en: Palau
+label_palestine-state:
+  en: Palestine State
+label_panama:
+  en: Panama
+label_papua-new-guinea:
+  en: Papua New Guinea
+label_paraguay:
+  en: Paraguay
+label_peru:
+  en: Peru
+label_philippines:
+  en: Philippines
+label_poland:
+  en: Poland
+label_portugal:
+  en: Portugal
+label_qatar:
+  en: Qatar
+label_romania:
+  en: Romania
+label_russia:
+  en: Russia
+label_rwanda:
+  en: Rwanda
+label_saint-kitts-and-nevis:
+  en: Saint Kitts and Nevis
+label_saint-lucia:
+  en: Saint Lucia
+label_saint-vincent-and-the-grenadines:
+  en: Saint Vincent and the Grenadines
+label_samoa:
+  en: Samoa
+label_san-marino:
+  en: San Marino
+label_sao-tome-and-principe:
+  en: Sao Tome and Principe
+label_saudi-arabia:
+  en: Saudi Arabia
+label_senegal:
+  en: Senegal
+label_serbia:
+  en: Serbia
+label_seychelles:
+  en: Seychelles
+label_sierra-leone:
+  en: Sierra Leone
+label_singapore:
+  en: Singapore
+label_slovakia:
+  en: Slovakia
+label_slovenia:
+  en: Slovenia
+label_solomon-islands:
+  en: Solomon Islands
+label_somalia:
+  en: Somalia
+label_south-africa:
+  en: South Africa
+label_south-korea:
+  en: South Korea
+label_south-sudan:
+  en: South Sudan
+label_spain:
+  en: Spain
+label_sri-lanka:
+  en: Sri Lanka
+label_sudan:
+  en: Sudan
+label_suriname:
+  en: Suriname
+label_sweden:
+  en: Sweden
+label_switzerland:
+  en: Switzerland
+label_syria:
+  en: Syria
+label_tajikistan:
+  en: Tajikistan
+label_tanzania:
+  en: Tanzania
+label_thailand:
+  en: Thailand
+label_timor-leste:
+  en: Timor-Leste
+label_togo:
+  en: Togo
+label_tonga:
+  en: Tonga
+label_trinidad-and-tobago:
+  en: Trinidad and Tobago
+label_tunisia:
+  en: Tunisia
+label_turkey:
+  en: Turkey
+label_turkmenistan:
+  en: Turkmenistan
+label_tuvalu:
+  en: Tuvalu
+label_uganda:
+  en: Uganda
+label_ukraine:
+  en: Ukraine
+label_united-arab-emirates:
+  en: United Arab Emirates
+label_united-kingdom:
+  en: United Kingdom
+label_united-states-of-america:
+  en: United States of America
+label_uruguay:
+  en: Uruguay
+label_uzbekistan:
+  en: Uzbekistan
+label_vanuatu:
+  en: Vanuatu
+label_venezuela:
+  en: Venezuela
+label_vietnam:
+  en: Vietnam
+label_yemen:
+  en: Yemen
+label_zambia:
+  en: Zambia
+label_zimbabwe:
+  en: Zimbabwe
+
+label_ok:
+  en: Okay
+  nl: Oké
+label_cancel:
+  de: Abbrechen
+  en: Cancel
+  nl: Annuleren
+  fr: Annuler
+label_cancel_imp:
+  de: Abbrechen
+  en: Cancel
+  nl: Annuleer
+  fr: Annuler
+label_remove:
+  nl: Verwijder
+  en: Remove
+  fr: Supprimer
+  de: Entfernen
+label_delete:
+  nl: Verwijderen
+  en: Delete
+  fr: Effacer
+  de: Löschen
+label_delete_imp:
+  nl: Verwijder
+  en: Delete
+  fr: Effacer
+  de: Löschen
+label_no:
+  bg: Не
+  ca: 'No'
+  cs: Ne
+  de: Nein
+  el: Όχι
+  en: 'No'
+  es: 'No'
+  fi: Ei
+  fr: Non
+  hr: Ne
+  hu: Nem
+  is: Nei
+  it: 'No'
+  lt: Ne
+  lv: Nē
+  mt: Le
+  nl: Nee
+  nl_BE: Nee
+  'no': ''
+  pt: Não
+  sl: Ne
+label_yes:
+  nl: Ja
+  en: Yes
+  fr: Oui
+  de: Ja
+label_time:
+  nl: Tijd
+  en: Time
+  fr: Heure
+  de: Zeit
+label_date:
+  nl: Datum
+  en: Date
+  fr: Date
+  de: Datum
+label_previous:
+  bg: Назад
+  ca: Anterior
+  cs: Předchozí
+  de: Vorhergehende
+  el: Προηγούμενο
+  en: Previous
+  es: Anterior
+  fi: Edellinen
+  fr: Précédent
+  hr: Prethodni
+  hu: Előző
+  is: Fyrra
+  it: Indietro
+  lt: Ankstesnis
+  lv: Atpakaļ
+  mt: Preċedenti
+  nl: Vorige
+  nl_BE: Vorige
+  'no': ''
+  pt: Anterior
+  sl: Nazaj
+label_next:
+  bg: Напред
+  ca: Següent
+  cs: Další
+  de: Weiter
+  el: Επόμενο
+  en: Next
+  es: Siguiente
+  fi: Seuraava
+  fr: Suivant
+  hr: Sljedeće
+  hu: Következő
+  is: Næsta
+  it: Avanti
+  lt: Toliau
+  lv: Tālāk
+  mt: Li jmiss
+  nl: Volgende
+  nl_BE: Volgende
+  'no': ''
+  pt: Seguinte
+  sl: Naprej
+label_sorting:
+  nl: Sortering
+  en: Sorting
+  fr: Tri
+  de: Sortierung
+label_edit:
+  nl: Bewerk
+  de: Bearbeiten
+  en: Edit
+  fr: Modifier
+label_never:
+  nl: Nooit
+  en: Never
+  de: Nie
+label_immediately: 
+  nl: Onmiddelijk
+  en: Immediately
+  de: Sofort
+label_close:
+  de: Schließen
+  en: Close
+  fr: Fermer
+  nl: Sluit
+label_daily: 
+  nl: Dagelijks
+  en: Daily
+  de: Täglich
+  fr: Du quotidien
+label_weekly:
+  nl: Wekelijks
+  en: Weekly
+  de: Wöchentlich
+  fr: Hebdomadaire
+label_monthly: 
+  nl: Maandelijks
+  en: Monthly
+  de: Monatlich
+  fr: Mensuel
+label_contrast:
+  nl: Contrast
+  en: Contrast
+  de: Kontrast
+label_font_size:
+  nl: Lettertypegrootte
+  en: Font size
+  de: Schriftgröße
+label_dashboard:
+  nl: Dashboard
+  en: Dashboard
+  de: Dashboard
+label_accessibility:
+  nl: Toegankelijkheid
+  en: Accessibility
+  de: Barrierefreiheit
+label_no_notification:
+  nl: Geen berichtgeving
+  en: No notification
+  de: Keine Benachrichtigung
+label_notifications:
+  nl: Berichtgeving
+  en: Notifications
+  de: Benachrichtigungen
+label_language:
+  nl: Taal
+  en: Language
+  de: Sprache
+  fr: Langue
+label_system_language:
+  nl: Systeemtaal
+  en: System language
+  de: Systemsprache
+  fr: Langue du système
+label_english:
+  nl: Engels
+  en: English
+  de: Englisch
+  fr: Anglais
+label_dutch:
+  nl: Nederlands
+  en: Dutch
+  de: Niederländisch
+  fr: Néerlandais
+label_german:
+  nl: Duits
+  en: German
+  de: Deutsch
+  fr: Allemand
+label_german_native:
+  nl: Deutsch
+  en: Deutsch
+  de: Deutsch
+  fr: Deutsch
+label_french:
+  nl: Frans
+  en: French
+  de: Französisch
+  fr: Français
+label_french_native:
+  nl: Français
+  en: Français
+  de: Français
+  fr: Français
+label_dutch_native:
+  nl: Nederlands
+  en: Nederlands
+  de: Nederlands
+  fr: Nederlands
+label_english_native:
+  nl: English
+  en: English
+  de: English
+  fr: English
+label_maintenance:
+  nl: Onderhoud
+  en: Maintenance
+  de: Instandhaltung
+label_visibility: 
+  nl: Zichtbaarheid
+  en: Visibility
+  de: Sichtbarkeit
+  fr: Visibilité
+label_back:
+  nl: Terug
+  de: Zurück
+  en: Back
+  fr: Retourner
+label_contributions:
+  nl: Bijdragen
+  de: Contributions
+  en: Contributions
+label_users:
+  nl: Gebruikers
+  en: Users
+  de: Benutzer
+  fr: Utilisateurs
+label_account: 
+  nl: Account
+  en: Account
+  de: Konto
+  fr: Compte
+label_preview: 
+  nl: Voorvertoning
+  en: Preview
+  de: Vorschau
+  fr: Aperçu
+label_settings:
+  nl: Instellingen
+  en: Settings
+  de: Einstellungen
+  fr: Paramètres
+label_save_imp:
+  nl: Bewaar
+  en: Save
+  de: Speichern
+  fr: Enregistrez
+label_save:
+  nl: Bewaren
+  en: Save
+  de: Speichern
+  fr: Enregistrez
+label_job_title:
+  nl: Functie
+  en: Job title
+  de: Berufsbezeichnung
+label_department:
+  nl: Afdeling
+  en: Department
+  de: Abteilung
+label_primary_location: 
+  nl: Hoofdlocatie
+  en: Primary location
+  de: Hauptstandort
+label_time_zone:
+  nl: Tijdzone
+  en: Time zone
+  de: Zeitzone
+label_telephone_number:
+  nl: Telefoonnummer
+  en: Telephone number
+  fr: Numéro de téléphone
+  de: Telefonnummer
+label_telephone_number_mobile:
+  nl: Mobiel telefoonnummer
+  en: Telephone number mobile
+  de: Telefonnummer Handy
+  fr: Numéro de portable
+label_telephone_number_internal:
+  nl: Telefoonnummer intern
+  en: Telephone number internal
+  de: Interne Telefonnummer
+  fr: Numéro de téléphone interne
+label_email:
+  nl: E-mail
+  en: E-mail
+  de: E-mail
+  fr: Courriel
+label_email_address:
+  bg: Имей адрес
+  ca: Adreça electrònica
+  cs: E-mailová adresa
+  de: E-Mail-Adresse
+  el: Διεύθυνση email
+  en: E-mail address
+  es: Dirección de correo electrónico
+  fi: Sähköpostiosoite
+  fr: Adresse e-mail
+  hr: Adresa e-pošte
+  hu: E-mailcím
+  is: Tölvupóstfang
+  it: Indirizzo e-mail
+  lt: El. pašto adresas
+  lv: E-pasta adrese
+  mt: Indirizz elettroniku
+  nl: E-mailadres
+  nl_BE: E-mailadres
+  'no': ''
+  pt: Endereço de e-mail
+  sk: E-mailová adresa
+  sl: E-poštni naslov
+label_title:
+  nl: Titel
+  en: Title
+  de: Titel
+label_description:
+  nl: Beschrijving
+  en: Description
+  de: Description
+label_biography:
+  nl: Biografie
+  en: Biography
+  de: Biografie  
+label_day:
+  nl: Dag
+  en: Day
+  de: Tag  
+label_year:
+  nl: Jaar
+  en: Year
+  de: Jahr  
+label_january:
+  nl: Januari
+  en: January
+  de: Januar  
+label_february:
+  nl: Februari
+  en: February  
+  de: Februar
+label_march:
+  nl: Maart
+  en: March  
+  de: März
+label_april:
+  nl: April
+  en: April
+  de: April  
+label_may:
+  nl: Mei
+  en: May
+  de: Mai  
+label_june:
+  nl: Juni
+  en: June  
+  de: Juni
+label_july:
+  nl: Juli
+  en: July  
+  de: Juli
+label_august:
+  nl: Augustus
+  en: August  
+  de: August
+label_september:
+  nl: September
+  en: September
+  de: Septembers
+label_october:
+  nl: Oktober
+  en: October  
+  de: Oktober
+label_november:
+  nl: November
+  en: November  
+  de: November
+label_december:
+  nl: December
+  en: December
+  de: Dezember 
+label_birthdate:
+  nl: Geboortedatum
+  en: Birthdate
+  de: Geburtstag
+label_options:
+  nl: Opties
+  en: Options
+  de: Optionen
+  fr: Options
+
+label_bookmarks:
+  nl: Bladwijzers
+  en: Bookmarks
+  en: Lesezeichen
+label_select:
+  nl: Selecteren
+  en: Select
+  de: Auswählen
+  fr: Sélectionnez
+label_select_imp:
+  nl: Selecteer
+  en: Select
+  de: Auswählen
+  fr: Sélectionnez
+label_read_more:
+  bg: Прочетете повече
+  ca: Més informació
+  cs: Více informací
+  de: Lesen Sie mehr
+  el: Διαβάστε περισσότερα
+  en: Read more
+  es: Leer más
+  fi: Lue lisää
+  fr: Pour en savoir plus
+  hr: Saznajte više
+  hu: Olvasson többet
+  is: Lesa meira
+  it: Ulteriori informazioni
+  lt: Sužinokite daugiau
+  lv: Lasīt vairāk
+  mt: Aqra aktar
+  nl: Lees verder
+  nl_BE: Meer informatie
+  'no': ''
+  pt: Saiba mais
+  sl: Več informacij
+label_step:
+  nl: Stap
+  en: Step
+label_log_out:
+  nl: Log uit
+  en: Log out
+  de: Ausloggen
+label_my_profile:
+  nl: Mijn profiel
+  en: My profile
+  de: Mein Profil
+label_change_password:
+  nl: Wijzig wachtwoord
+  en: Change password
+  de: Passwort ändern
+label_preferences:
+  nl: Voorkeuren
+  en: Preferences
+  de: Einstellungen
+label_replace_photo:
+  nl: Vervang foto
+  en: Replace photo
+  de: Foto ersetzen
+label_upload_photo:
+  nl: Laad een foto op
+  en: Upload a photo
+  de: Ein Foto hochladen
+label_upload_from_device:
+  nl: Opladen vanaf apparaat
+  en: Upload from device
+  de: Vom Gerät hochladen
+  fr: Télécharger depuis l'appareil
+label_watch:
+  nl: Horloge
+  en: Watch
+  de: "Folgen"
+  fr: Regardez
+label_watching:
+  nl: "aan het kijken"
+  en: Watching
+  de: "Folgen beenden"
+  fr: "En train de regarder"

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+.data-table-top {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 0.3em;
+  overflow: hidden;
+  @include clear;
+
+  .dataTables_info {
+    float: left;
+  }
+
+  .dataTables_filter {
+    float: right;
+    color: transparent;
+
+    input {
+      background-color: rgba(0,0,0,0.09);
+      padding: 0 0.2em;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      line-height: 30px;
+      border-radius: $border-radii;
+      margin-right: 0;
+      color: black;
+    }
+  }
+}
+
+.data-table-bottom {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  @include clear;
+  line-height: $button-height;
+
+  .dataTables_paginate {
+    float: left;
+
+    .paginate_button {
+      display: inline-block;
+      padding: 0;
+      cursor: pointer;
+      width: $button-height;
+      height: $button-height;
+      text-align: center;
+      line-height: $button-height;
+      border-radius: $button-border-radius;
+
+      &:hover {
+        background-color: rgba(0,0,0,0.09);
+      }
+
+      &.current {
+        background-color: $colour-accent;
+        color: white;
+      }
+    }
+  }
+
+  .dataTables_length {
+    float: right;
+
+    select {
+      font-size: 18px;
+    }
+  }
+}
+
+.pat-sortable-table {
+    thead {
+      th {
+        @include sortable-table-cell;
+        cursor: default;
+      }  
+    }
+}

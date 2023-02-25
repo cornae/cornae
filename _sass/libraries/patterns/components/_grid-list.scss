@@ -1,0 +1,86 @@
+.pat-grid-list {
+  margin-bottom: 2em;
+  margin-top: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  @include screen-size(medium-large) {
+    display: grid;
+    grid-column-gap: 0;
+    grid-template-columns: 40% 60%;
+  }
+
+  @media print {
+    display: grid;
+    grid-column-gap: 0;
+    grid-template-columns: 40% 60%;
+  }
+
+  dt {
+    font-weight: bold;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    padding-top: 0.5em;
+
+    @include screen-size(medium-large) {
+      padding-right: 2%;
+      padding-bottom: 0.5em;
+      // color: rgba(0,0,0,0.7);
+      // width: 40%;
+      // box-sizing: border-box;
+    }
+
+    @include screen-size(small) {
+      width: 100%;
+      float: none;
+      display: block;
+      margin: 0;
+      overflow: hidden;
+      clear: left;
+    }
+
+    @media print {
+      display: block;
+      width: 100%;
+      border: none;
+    }
+  }
+
+  dd {
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: 0;
+
+    @media print {
+      display: block;
+      border: none;
+      clear: both;
+      width: 100%;
+    }
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+
+    @include screen-size(medium-large) {
+      // width: 60%;
+      // display: inline-block;
+      // float: left;
+      // margin-right: -100%;
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    @include screen-size(small) {
+      width: 100%;
+      float: none;
+      display: block;
+      border: none;
+      overflow: hidden;
+
+      #user-data-view & {
+        padding-left: 30px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

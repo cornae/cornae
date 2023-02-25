@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+// Assets
+
+@import "assets/animations";
+@import "assets/glyphs";
+@import "assets/colours";
+@import "assets/symbols";
+@import "assets/mixins";
+
+// Parameters
+
+$body-font-family: 'Source Sans Pro', sans-serif !default;
+$font-weight-normal: normal !default;
+
+$break-small: 768px !default;
+$break-large: 1280px !default;
+$pat-tail-white: 15px !default;
+
+// Menu list
+
+$menu-list-top-bottom-padding: 2px !default;
+
+// Buttons
+
+$button-border: none !default;
+$button-border-radius: $border-radii !default;
+$button-background-image: none !default;
+$button-font-weight: bold !default;
+
+$button-text-colour: white !default;
+$button-text-colour-hover: white !default;
+$button-background-colour: $colour-accent !default;
+$button-background-colour-hover: darken($colour-accent, 10%) !default;
+$button-shadow: none !default;
+
+$button-text-colour-subdued: rgba(0,0,0,0.6) !default;
+$button-text-colour-subdued-hover: rgba(0,0,0,1) !default;
+$button-background-colour-subdued: rgba(0, 0, 0, 0.1) !default;
+$button-background-colour-subdued-hover: rgba(0, 0, 0, 0.15) !default;
+
+$button-background-colour-default: $colour-accent !default;
+$button-background-colour-default-hover: darken($colour-accent, 10%) !default;
+$button-text-colour-default: white !default;
+$button-text-colour-default-hover: white !default;
+$button-shadow-default: none !default;
+
+$button-text-colour-disabled: rgba(black, 0.3) !default;
+$button-text-colour-disabled-hover: rgba(black, 0.3) !default;
+$button-background-colour-disabled: $button-background-colour !default;
+$button-background-colour-disabled-hover: $button-background-colour !default;
+
+
+$button-height: 35px !default;
+$button-line-height: 35px !default;
+$button-font-size: 1em !default;
+$button-paddings: 0 1em !default;
+
+$button-small-height: 20px !default;
+$button-small-line-height: 20px !default;
+$button-small-font-size: 0.8em !default;
+$button-small-paddings: 0 0.8em !default;
+$button-small-shadow: none !default;
+
+$pat-toolbar-button-height: $button-height !default;
+$pat-toolbar-button-line-height: $button-line-height !default;
+
+$grid-gutter: '1em' !default;
+
+$default-screen-padding: 40px !default;
+$default-screen-padding-small: 15px !default;
+
+$default-tail-white: 25px !default;
+
+$border-radii: 10px !default;
+$tooltip-border-radii: $border-radii !default;
+$tooltip-padding: 18px !default;
+$default-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25) !default;
+$default-box-shadow-hover: 0 0 15px rgba(0,0,0,0.2) !default;
+$default-box-shadow-active: inset 0 0 10px rgba(0,0,0,0.4) !default;
+$default-focus-marking: 0 0 2px rgba(0,0,0,0.5) !default;
+$form-fields-border-radius: $border-radii !default;
+$form-input-field-line-height: inherit !default;
+
+$collapsible-button-height: 31px !default;
+
+// Libraries
+
+@import "libraries/reset";
+@import "libraries/animate";
+
+// Components
+
+@import "components/attachment-list";
+@import "components/avatar";
+@import "components/auto-scale";
+@import "components/auto-suggest";
+@import "components/back-button";
+@import "components/breadcrumbs";
+@import "components/bumper";
+@import "components/button";
+@import "components/button-cluster";
+@import "components/context-menu";
+@import "components/checklist";
+@import "components/carousel";
+@import "components/collapsible";
+@import "components/container";
+@import "components/date-picker";
+@import "components/editor-toolbar";
+@import "components/expandable-tree";
+@import "components/gallery";
+@import "components/grid";
+@import "components/grid-list";
+@import "components/form";
+@import "components/honey-pot";
+@import "components/icon";
+@import "components/injection";
+@import "components/message";
+@import "components/modal";
+@import "components/notifications";
+@import "components/rich-editor";
+@import "components/screenshot";
+@import "components/sortable-table";
+@import "components/syntax-highlight";
+@import "components/select";
+@import "components/toolbar";
+@import "components/tiptap";
+@import "components/tooltip";
+@import "components/upload";
+@import "components/verification-code";
+@import "components/well";

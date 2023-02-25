@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+$context-menu-text-colour: rgba(0,0,0,0.6) !default;
+$context-menu-text-colour-hover: black !default;
+
+.pat-context-menu {
+	position: relative;
+
+	.close-menu {
+		color: transparent;
+		text-align: right;
+		cursor: default;
+		
+		height: 0;
+		margin: 0;
+		opacity: 0;
+
+		&:after {
+		    font-family: fontello;
+		    content: '#{$glyph-cancel}';
+		    color: gray;
+		    font-size: 1.2em;
+		}
+
+		&:hover {
+			&:after {
+				color: black;
+			}
+		}
+	}
+
+	.context-menu-label {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
+		font-weight: normal;
+		cursor: default;
+		display: inline-block;
+
+		.canvas-subnav & {
+			// margin-right: 10px;
+		}
+		
+
+		&.collapsible-closed,
+		&.collapsible-open {
+			padding: 0 30px 0 0;
+			text-decoration: none;
+			color: $context-menu-text-colour;
+			cursor: default;
+
+			&:hover,
+			&:active {
+				color: $context-menu-text-colour-hover;
+			}
+		}
+
+		&.collapsible-closed {
+			text-decoration: none;
+
+			.canvas-subnav & {
+				cursor: pointer;
+			}
+		}
+
+		&.collapsible-open {
+
+			&:before {
+				display: block;
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0; 
+				z-index: 1;
+				content: ' ';
+			}
+		}
+
+		&:not(.iconified):after,
+		&.iconified.pat-button:after {
+			content: ' ';
+			padding-right: 1em;
+			box-shadow: none !important;  
+
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+
+			position: absolute; // Added to avoid dropdowns to push open display table elements such as the contextual button bar of item selector/sidebar.
+      		top: 2%; // Added to avoid dropdowns to push open display table elements such as the contextual button bar of item selector/sidebar.
+      		right: 12px; // Added to avoid dropdowns to push open display table elements such as the contextual button bar of item selector/sidebar.
+      		bottom: 0; // Added to avoid dropdowns to push open display table elements such as the contextual button bar of item selector/sidebar.
+
+
+			background-repeat: no-repeat;
+			background-position: right center;
+			background-image: url(data:image/svg+xml;base64,#{$arrow-down-dark});
+			background-size: auto 10px;
+		}
+
+		&.iconified {
+			text-indent: -1000px;
+			overflow: hidden;
+			width: 2.2em;
+
+			&.pat-button {
+				width: 2.4em;
+				position: relative;
+
+				&:after {
+					position: absolute;
+					right: 0.3em;
+					width: 100%;
+					height: 1em;
+					top: 0.2em;
+				}
+
+				&:before {
+					width: 1.7em;
+					line-height: 1.75em;
+					display: block;
+				}
+
+				&.collapsible-open {
+					&:after,
+					&:before {
+						color: $colour-accent;
+					}
+				}
+
+			}
+
+			&:before {
+				position: absolute;
+				font-family: fontello;
+				content: '#{$glyph-icon-ellipsis}';
+				padding: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				text-indent: 0;
+				text-align: center;
+			}
+		}
+	}
+
+	&.no-label {
+		&:before {
+			width: 100%;
+			height: 100%;
+			line-height: $pat-toolbar-button-height;
+			position: absolute;
+			margin: 0;
+		}
+
+		&:hover {
+			&:before {
+				color: $context-menu-text-colour-hover;
+			}
+		}
+
+		&.open,
+		&.in-progress.closed {
+			&:before {
+				background: $colour-accent;
+				color: white;
+				border-radius: $button-border-radius;
+			}
+		}
+
+		.context-menu-label {
+			opacity: 0;
+			width: $button-height;
+			padding: 0;
+		}
+
+		.panel-content {
+			top: 45px;
+		}
+	}
+
+	&.open {
+		.label {
+			color: black;
+
+			&.pat-button {
+				box-shadow: inset 0 0 0.3em rgba(0, 0, 0, 0.3);
+			}
+		}
+		
+		&.iconified {
+			.label {
+				color: $colour-accent;
+			}
+		}
+
+		.panel-content {
+			display: block;
+		}
+	}
+
+	.panel-content {
+		position: absolute;
+		top: 1.8em;
+		left: 0;
+		display: none;
+		background-color: white;
+		padding: 15px !important; // !important overrules inline styles by .js
+		width: 250px;
+		z-index: 10;
+		border-radius: $border-radii;
+		font-size: $base-font-size;
+		height: auto !important; // !important overrules inline styles by .js
+
+		*:last-child {
+			margin-bottom: 0;
+		}
+			
+		li {
+			button,
+			.button {
+				display: block;
+				padding: 8px 15px;
+				margin: 0 -15px;
+				width: calc(100% + 30px);
+				font-size: 18px;
+
+				&:hover {
+					background-color: #efefef;
+				}
+			}
+		}
+
+		.batch-functions & {
+			width: 85%;
+			right: 0;
+			left: inherit;
+		}
+
+	    border: 1px solid silver;
+	    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+	    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+	    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+	}
+
+	&.align-right {
+		.panel-content {
+			@include screen-size(medium-large) {
+				right: 0;
+				left: inherit;
+			}
+		}
+	}
+}

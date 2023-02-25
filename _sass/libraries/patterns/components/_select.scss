@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.js { 
+  select.pat-select,
+  label.pat-select select {
+    @include select-box;
+  }
+
+  label.pat-select.bare,
+  a.pat-select.bare {
+    position: relative;
+    cursor: default;
+    @include box-sizing();
+    padding: 0 29px 0 0;
+    white-space: nowrap; // Used to be commented out. Check if this doesn't give trouble anywhere.
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+
+    &:hover,
+    &.focus { 
+      text-decoration: none;
+    }
+
+    @media print { 
+      background-image: none; 
+      padding-right: 0;
+    }
+
+    &:after {
+      content: ' ';
+      padding-right: 1.5em;
+      box-shadow: none !important;
+      position: absolute; // Added to avoid dropdowns to push open display table elements such as the contextual button bar of item selector/sidebar.
+      top: 2%; // Added to avoid dropdowns to push open display table elements such as the contextual button bar of item selector/sidebar.
+      right: 0; // Added to avoid dropdowns to push open display table elements such as the contextual button bar of item selector/sidebar.
+      bottom: 0; // Added to avoid dropdowns to push open display table elements such as the contextual button bar of item selector/sidebar.
+      pointer-events: none; // Added to avoid dropdowns to push open display table elements such as the contextual button bar of item selector/sidebar.
+
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      background-repeat: no-repeat;
+      background-position: calc(100% - 10px) center;
+      background-image: url(data:image/svg+xml;base64,#{$arrow-down-dark});
+      background-size: auto 10px;
+    }
+
+    &:before {
+      display: inline-block;
+      content: attr(data-option);
+      float: left; // Needed for IE
+      max-height: 100%;
+      max-width: 100%;
+      font-weight: normal;
+
+      // @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      //   margin-right: 2.6em;
+      // }
+
+      box-shadow: none !important;  
+
+      overflow: hidden;
+      // white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    select {
+      opacity: 0;
+      line-height: 1.5em;
+      font-size: 1em;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      max-width: 100%;
+      width: 100%;
+      border-right: none;
+    }
+  }
+}

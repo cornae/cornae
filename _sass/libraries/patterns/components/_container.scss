@@ -1,0 +1,30 @@
+$pat-container-width: 1280px !default;
+
+@charset "UTF-8";
+
+@mixin container {
+   display: block;
+   margin: 0 auto;
+   max-width: $pat-container-width;
+   padding: 0 $default-screen-padding;
+
+   @include screen-size(small) {
+      padding: 0 $default-screen-padding-small;
+   }
+
+   @include screen-size(medium) {
+      // padding: 0 1.5em;
+   }
+
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+
+   .tooltip-container & {
+      padding: 0;
+   }
+}
+
+.pat-container {
+  @include container();
+}

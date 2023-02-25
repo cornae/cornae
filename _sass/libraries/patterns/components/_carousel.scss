@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+$carousel-button-distance: 10px !default;
+$carousel-button-width: 40px !default;
+$carousel-button-height: 40px !default;
+$carousel-default-height-large: 500px !default;
+$carousel-default-height-small: 200px !default;
+$carousel-default-dot-colour: #f73558 !default;
+
+@import "../libraries/slick/slick.scss";
+
+.pat-carousel {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    &:hover {
+        .slick-dots {
+            opacity: 1;
+        }
+    }
+
+    &[data-pat-carousel*="height: fixed"] {
+        .slick-slide {
+            img {
+                height: $carousel-default-height-large;
+                @include screen-size(small) {
+                    height: $carousel-default-height-small;
+                }
+                object-fit: cover;
+            }
+        }
+    }
+
+    .slick-slide {
+        position: relative;
+
+        div {
+            li {
+                display: block !important; // Prevents unwanted bottom margin because of carrier returns in the markup.
+            }
+        }
+
+        img {
+            width: 100%;
+            background-color: $colour-base;
+        }
+
+        .icon-zoom-in {
+            opacity: 0;
+            transition: opacity 0.4s;
+            transition-delay: 0.5s;
+            right: $carousel-button-distance + $carousel-button-width + $carousel-button-distance + $carousel-button-width + $carousel-button-distance;
+        
+            @include screen-size(small) {
+                display: none;
+            }
+        }
+
+        &.slick-current {
+            figcaption {
+                opacity: 1;
+            }
+
+            .icon-zoom-in {
+                opacity: 0.5;
+            }
+        }
+
+        figcaption {
+            color: rgba(0,0,0,0.5);
+            font-size: 0.8em;
+            padding-top: 0.5em;
+            line-height: 1.5;
+            opacity: 0;
+            transition: opacity 0.5s;
+            transition-delay: 0.5s;
+        }
+    }
+
+    .icon,
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        opacity: 0.5;
+        top: $carousel-button-distance;
+        right: $carousel-button-distance;
+        background: rgba(0, 0, 0, 0.6);
+        color: transparent;
+        height: $carousel-button-width;
+        width: $carousel-button-height;
+        border-radius: $border-radii;
+        transition: opacity 0.4s;
+        overflow: hidden;
+        z-index: 1;
+        cursor: default;
+        box-sizing: border-box;
+        box-shadow: 0 0 0 2px rgba(white, 0.7); 
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.8);
+            text-decoration: none;
+        }
+
+        &:before {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: white;
+            display: block;
+            line-height: $carousel-button-height;
+            margin: 0;
+            font-family: fontello;        }
+    }
+
+    .slick-prev.slick-disabled,
+    .slick-next.slick-disabled
+    {
+        opacity: .2;
+        -webkit-pointer-events: none;
+        pointer-events: none;
+    }
+
+    .slick-prev
+    {
+        right: $carousel-button-distance + $carousel-button-width + $carousel-button-distance;
+    }
+    [dir='rtl'] .slick-prev
+    {
+        left: $carousel-button-distance + $carousel-button-width + $carousel-button-distance;
+        right: auto;
+    }
+    .slick-prev:before
+    {
+        content: '#{$glyph-left-big}';
+        font-size: 15px;
+    }
+    [dir='rtl'] .slick-prev:before
+    {
+        content: '#{$glyph-left-big}';
+    }
+
+    .slick-next
+    {
+        right: $carousel-button-distance;
+    }
+    [dir='rtl'] .slick-next
+    {
+        right: auto;
+        left: $carousel-button-distance;
+    }
+    .slick-next:before
+    {
+        content: '#{$glyph-right-big}';
+        font-size: 15px;
+    }
+    [dir='rtl'] .slick-next:before
+    {
+        content: '#{$glyph-left-big}';
+    }
+
+    /* Dots */
+    .slick-dotted.slick-slider
+    {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+.slick-dots {
+    list-style: none;
+    // text-align: center;
+    text-align: left;
+    // bottom: 15px;
+    // margin-top: -50px;
+    position: absolute;
+    // left: 10px;
+    // right: 10px;
+    // bottom: 30px;
+    line-height: 15px;
+    left: 14px;
+    top: 10px;
+    right: 160px;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    @include screen-size(small) {
+        display: none !important;
+    }
+
+    li {
+        padding: 10px 8px;
+        margin: 0;
+        position: relative;
+        width: 20px;
+        height: 15px;
+        margin: 0 5px;
+        display: inline-block;
+
+        &:hover {
+            button {
+                // border: 1px solid black;
+                background-color: rgba(0,0,0,0.8);
+            }
+        }
+
+        button {
+            border-radius: 50%;
+            border: 2px white solid;
+            background-color: rgba(0,0,0,0.4);
+            width: 15px;
+            height: 15px;
+            color: transparent;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        &.slick-active {
+            button {
+                background-color: $carousel-default-dot-colour;
+                border: 2px solid white;
+            }
+        }
+    }
+}

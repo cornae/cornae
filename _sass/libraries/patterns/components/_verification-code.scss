@@ -1,0 +1,59 @@
+$caret-colour: black !default;
+
+$verification-code-background-6-pos: "code-digits-6.svg" !default;
+
+form,
+form.pat-form {
+	.pat-verification-code {
+		width: 352px;
+		height: 80px;
+		background: url($verification-code-background-6-pos) no-repeat;
+		background-size: 352px 100%;
+		background-position: 0 0;
+		position: relative;
+		margin: 40px 0;
+		display: block;
+		padding: 0 0 0 0;
+		clip-path: inset(0 0 0 0);
+		font-size: 0;
+		color: transparent;
+
+		input[type=text]::-ms-clear {
+		  display: none;
+		}
+
+		input.code {
+			border: none !important;
+			outline: none !important;
+			box-shadow: none !important;
+			background-color: transparent;
+			font-family: "Courier", monospace;
+			padding: 0;
+			text-indent: 12px;
+			font-size: 50px;
+			text-align: justify;
+			letter-spacing: 30px;
+			line-height: 60px;
+			font-weight: bold;
+			height:    100%;
+			width: 	   140%;
+			max-width: 140%;
+			box-sizing: border-box;
+			color: black;
+			margin: 0;
+			display: inline-block;
+			resize: none;
+			white-space: nowrap;
+			overflow: hidden;
+			caret-shape: underscore;
+
+			@include screen-size(small) {
+				caret-color: $caret-colour;
+			}
+
+			&::selection {
+				background: transparent;
+			}
+		}
+	}
+}

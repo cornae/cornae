@@ -1,10 +1,13 @@
----
 title: Cornae
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
+author: Daniël E. Cornelis Kolbach
+baseurl: '/'
+bundle_url: /assets/oira/script/bundle.min.js
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - config.codekit
+  - config.rb
+  - src/
+  - node_modules/
+  - .jekyll-cache/
+  - cache/

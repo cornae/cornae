@@ -1,0 +1,59 @@
+$pswp__assets-path: '/assets/quaive/style/photoswipe/' !default;
+
+$gallery-button-distance: 10px !default;
+$gallery-button-width: 40px !default;
+$gallery-button-height: 40px !default;
+$gallery-default-height: 400px !default;
+
+@import "../libraries/photoswipe/main";
+@import "../libraries/photoswipe/default-skin/default-skin";
+
+.pswp img {
+	&[src*=".svg"] {
+		background: white;
+	}
+}
+
+.pswp__button--arrow--left:before, 
+.pswp__button--arrow--right:before {
+	width: $gallery-button-width;
+	height: $gallery-button-height;
+	line-height: $gallery-button-height;
+    box-shadow: 0 0 0 2px rgba(white, 0.7); 
+    background: rgba(0, 0, 0, 0.3) !important;
+	border-radius: $border-radii;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	font-family: fontello;
+
+	&:hover {
+	  background: rgba(0, 0, 0, 0.6) !important;
+	}
+}
+
+.pswp__button--arrow--left:before {
+	content: '#{$glyph-left-big}';
+}
+
+.pswp__button--arrow--right:before {
+	content: '#{$glyph-right-big}';
+}
+
+.pswp__bg {
+	@include modal-background;
+}
+
+.pswp__counter {
+	color: black;
+}
+
+.pswp__ui--fit .pswp__top-bar, 
+.pswp__ui--fit .pswp__caption {
+	background: none;
+
+	.pswp__caption__center {
+		text-align: center;
+		color: black;
+	}
+}

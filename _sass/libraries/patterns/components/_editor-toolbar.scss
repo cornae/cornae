@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+$canvas-toolbar-button-height: $button-height !default;
+
+#editor-toolbar,
+.editor-toolbar {
+	@media print { display: none; }
+
+	&.redactor {
+
+		.redactor-toolbar.redactor-toolbar-external {
+			border: none;
+			overflow: hidden;
+
+			.re-button {
+				postition: relative;
+				text-align: center;
+				outline: none;
+				box-shadow: none;
+				border: none;
+				text-decoration: none;
+				cursor: default;
+				zoom: 1;
+				-webkit-box-sizing: content-box;
+				-moz-box-sizing: content-box;
+				box-sizing: content-box;
+				height: $canvas-toolbar-button-height;
+				width: $canvas-toolbar-button-height;
+				line-height: $canvas-toolbar-button-height;
+				padding: 0;
+				color: transparent;
+				float: left;
+				margin: 0;
+				background: transparent;
+				border-radius: $border-radii;
+
+				&:hover {
+				  outline: none;
+				  background-color: transparent;
+				  cursor: default;
+
+				  &:before {
+				  	color: black;
+				  }
+				}
+
+				&.redactor-button-active {
+					background-color: $colour-accent !important;
+
+					&:before {
+						color: white;
+					}
+				}
+
+				&:before {
+					font-family: fontello;
+					color: rgba(0,0,0,0.6);
+					position: absolute;
+				  	font-weight: normal;
+				  	font-style: normal;
+				  	width: 100%;
+				  	display: block;
+				}
+
+				&.re-video:before {
+				  content: "\e841";
+				}
+				&.re-unorderedlist:before,
+				&.re-lists:before {
+				  content: "\e85b";
+				}
+				&.re-undo:before {
+				  content: "\e602";
+				}
+				&.re-underline:before {
+				  content: "\e603";
+				}
+				&.re-textdirection:before {
+				  content: "\e604";
+				}
+				&.re-fontcolor:before {
+				  content: "\e605";
+				}
+				&.re-table:before {
+				  content: "\e864";
+				}
+				&.re-redo:before {
+				  content: "\e607";
+				}
+				&.re-quote:before {
+				  content: "\e608";
+				}
+				&.re-outdent:before {
+				  content: "\e609";
+				}
+				&.re-orderedlist:before {
+				  content: "\e60a";
+				}
+				&.re-link:before {
+				  content: "\e83b";
+				}
+				&.re-line:before {
+				  content: "—";
+				}
+				&.re-italic:before {
+				  content: "\e863";
+				}
+				&.re-indent:before {
+				  content: "\e60e";
+				}
+				&.re-image:before {
+				  content: "#{$glyph-icon-picture}";
+				}
+				&.re-fullscreen:before {
+				  content: "\e744";
+				}
+				&.re-normalscreen:before {
+				  content: "\e611";
+				}
+				&.re-format:before {
+				  content: "\e861";
+				}
+				&.re-fontsize:before {
+				  content: "\e613";
+				}
+				&.re-fontfamily:before {
+				  content: "\e614";
+				}
+				&.re-deleted:before {
+				  content: "\e85d";
+				}
+				&.re-html:before {
+				  content: "<>";
+				}
+				&.re-clips:before {
+				  content: "\e617";
+				}
+				&.re-bold:before {
+				  content: "\e862";
+				}
+				&.re-backcolor:before {
+				  content: "\e619";
+				}
+				&.re-file:before {
+				  content: "\e61a";
+				}
+				&.re-alignright:before {
+				  content: "\e859";
+				}
+				&.re-alignment:before,
+				&.re-alignleft:before {
+				  content: "\e857";
+				}
+				&.re-alignjustify:before {
+				  content: "\e85a";
+				}
+				&.re-aligncenter:before {
+				  content: "\e858";
+				}
+				&.re-undo:before {
+				  content: "\e867";
+				}
+				&.re-redo:before {
+				  content: "\e866";
+				}
+				&.re-romanlisting:before {
+					content: "I./II.";
+				}
+			}
+		}
+	}
+
+	.icon {
+		margin: 0;
+	}
+
+	@include screen-size(small) {
+		display: none;
+	}
+}
