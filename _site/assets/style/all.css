@@ -1,15 +1,15 @@
 @charset "UTF-8";
-body { background-color: #3d607e; color: white; font-family: Helvetica Neue; height: 100%; display: grid; grid-template-columns: auto; justify-items: center; grid-template-rows: auto 120px auto; }
+body { background-color: #3d607e; color: white; font-family: Helvetica Neue; height: 100%; display: grid; grid-template-columns: auto; justify-items: center; grid-template-rows: auto 140px auto; }
 
-body #logo { color: transparent; overflow: hidden; align-self: end; font-size: 80px; width: 2em; height: 2em; }
+body #logo { color: transparent; overflow: hidden; align-self: end; font-size: 100px; width: 2em; height: 2em; margin: 0; }
 
-body #logo:before { width: 100%; height: 100%; content: "æ"; display: inline-block; background-color: white; box-sizing: border-box; font-size: 1.40em; line-height: 1.87em; color: #3d607e; font-weight: 300; padding: 0 0 0 0.1em; opacity: 0.6; margin: 0; }
+body #logo:before { width: 100%; height: 100%; content: "æ"; display: inline-block; background-color: white; box-sizing: border-box; font-size: 1.40em; line-height: 1.84em; color: #3d607e; font-weight: 300; padding: 0 0 0 0.1em; opacity: 0.6; margin: 0; }
 
-body #tagline { display: block; list-style: none; text-align: center; font-size: 42px; margin: 0; padding: 0; align-self: center; font-weight: 200; }
+body #tagline { display: block; list-style: none; text-align: center; font-size: 22px; margin: 0; padding: 50px 20px; align-self: start; font-weight: 200; }
 
 body #tagline li { display: inline-block; margin: 0 20px 12px 0; padding: 0; }
 
-body #colofon { align-self: start; }
+body #colofon { align-self: center; }
 
 body #colofon a { color: white; text-decoration: none; opacity: 0.6; }
 

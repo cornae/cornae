@@ -8,15 +8,16 @@ body {
     display: grid;
 	grid-template-columns: auto;
     justify-items: center;
-    grid-template-rows: auto 120px auto;
+    grid-template-rows: auto 140px auto;
 
     #logo {
         color: transparent;
         overflow: hidden;
         align-self: end;
-        font-size: 80px;
+        font-size: 100px;
         width: 2em;
         height: 2em;
+        margin: 0;
 
     	&:before {
             width: 100%;
@@ -26,7 +27,7 @@ body {
     		background-color: white;
     		box-sizing: border-box;
 			font-size: 1.40em;
-			line-height: 1.87em;
+			line-height: 1.84em;
 			color: #3d607e;
 			font-weight: 300;
 			padding: 0 0 0 0.1em;
@@ -39,10 +40,10 @@ body {
         display: block;
         list-style: none;
         text-align: center;
-        font-size: 42px;
+        font-size: 22px;
         margin: 0;
-        padding: 0;
-        align-self: center;
+        padding: 50px 20px;
+        align-self: start;
         font-weight: 200;
 
         li {
@@ -53,7 +54,7 @@ body {
     }
 
     #colofon {
-        align-self: start;
+        align-self: center;
 
         a {
             color: white;
