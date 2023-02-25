@@ -5,7 +5,7 @@ body #logo { color: transparent; overflow: hidden; align-self: end; width: 2em; 
 
 @media screen and (max-width: 768px) { body #logo { font-size: 60px; } }
 
-body #logo:before { width: 100%; height: 100%; content: "æ"; display: inline-block; background-color: rgba(255, 255, 255, 0.3); box-sizing: border-box; font-size: 1.40em; line-height: 1.84em; color: #3d607e; font-weight: 500; padding: 0 0 0 0.1em; margin: 0; box-shadow: inset 0 0 0.08em rgba(0, 0, 0, 0.3); }
+body #logo:before { width: 100%; height: 100%; content: "æ"; display: inline-block; background-color: rgba(255, 255, 255, 0.4); box-sizing: border-box; font-size: 1.40em; line-height: 1.84em; color: #3d607e; font-weight: 500; padding: 0 0 0 0.1em; margin: 0; box-shadow: inset 0 0 0.08em rgba(0, 0, 0, 0.4); }
 
 body #tagline { display: block; list-style: none; text-align: center; font-size: 22px; margin: 0; padding: 50px 50px; align-self: start; font-weight: 300; }
 
