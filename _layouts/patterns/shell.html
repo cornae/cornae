@@ -8,7 +8,7 @@
     <meta 
       name="Description" 
       CONTENT="{{ page.description }}">
-  	<title>{{ page.title }} — {{ site.title }}</title>
+  	<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
     <meta 
       name="viewport" 
       content="width=device-width, initial-scale=1" />
