@@ -45,7 +45,7 @@ body {
         animation-fill-mode: forwards;
         transform: translateY(50px);
 
-        @media screen and ( max-width:768px ) {
+        @media screen and ( max-width:460px ) {
             font-size: 60px;
         }
 
@@ -86,6 +86,10 @@ body {
             animation: fade-in 1s;
             opacity: 0;
             animation-fill-mode: forwards;
+
+            @media screen and ( max-width:460px ) {
+                display: block;
+            }
 
             &:first-child {
                 animation-delay: 2s;
